@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <None Include="..\..\PetGameUE.uproject" />
+    <Filter Include="Source">
+      <UniqueIdentifier>{F31BBDD1-B3E8-3BCC-9652-680E16935819}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\PetGameUE.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <None Include="..\..\Source\PetGameUEEditor.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <Filter Include="Config">
+      <UniqueIdentifier>{FA535FFB-25E1-3D20-B416-52F9BE21E06E}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Config\DefaultEditor.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultEngine.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultGame.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultInput.ini">
+      <Filter>Config</Filter>
+    </None>
+    <Filter Include="Source\PetGameUE">
+      <UniqueIdentifier>{289FAA05-9954-3820-8BB0-E4D6BD69F5E8}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\PetGameUE\PetGameUE.Build.cs">
+      <Filter>Source\PetGameUE</Filter>
+    </None>
+    <ClCompile Include="..\..\Source\PetGameUE\PetGameUE.cpp">
+      <Filter>Source\PetGameUE</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\PetGameUE\PetGameUE.h">
+      <Filter>Source\PetGameUE</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

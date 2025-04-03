@@ -1,0 +1,8 @@
+{
+	"SourceFiles": [
+		"Z:\\Year Three\\Module4\\Unreal\\PetGameUE\\PetGameUE\\Source\\PetGameUE\\PetGameUE.Build.cs",
+		"Z:\\Year Three\\Module4\\Unreal\\PetGameUE\\PetGameUE\\Source\\PetGameUE.Target.cs",
+		"Z:\\Year Three\\Module4\\Unreal\\PetGameUE\\PetGameUE\\Source\\PetGameUEEditor.Target.cs"
+	],
+	"EngineVersion": "5.3.2"
+}

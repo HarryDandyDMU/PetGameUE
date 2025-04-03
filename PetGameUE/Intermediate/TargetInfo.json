@@ -1,0 +1,14 @@
+{
+	"Targets": [
+		{
+			"Name": "PetGameUE",
+			"Path": "..\\Source\\PetGameUE.Target.cs",
+			"Type": "Game"
+		},
+		{
+			"Name": "PetGameUEEditor",
+			"Path": "..\\Source\\PetGameUEEditor.Target.cs",
+			"Type": "Editor"
+		}
+	]
+}
