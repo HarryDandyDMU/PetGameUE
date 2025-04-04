@@ -1402,3 +1402,634 @@ LogConfig: Set CVar [[r.Shadow.DetectVertexShaderLayerAtRuntime:1]]
 [2025.04.04-07.26.03:508][769]LogLiveCoding: Warning: Live coding succeeded, data type changes may cause packaging to fail if assets reference the new or updated data types
 [2025.04.04-07.26.03:840][769]LogSlate: Vector cache flush requested. Reason: Large atlases out of space; 2/1 Textures; frames since last flush: 18446739271367603553
 [2025.04.04-07.26.03:840][769]LogSlate: Warning: Setting the threshold to trigger a flush to 2 non-atlased textures as there is a lot of font data being cached.
+[2025.04.04-07.27.03:629][194]LogLiveCoding: Display: Starting Live Coding compile.
+[2025.04.04-07.27.13:855][312]LogLiveCoding: Display:    Creating library Z:\Year Three\Module4\Unreal\PetGameUE\PetGameUE\Binaries\Win64\UnrealEditor-PetGameUE.patch_1.lib and object Z:\Year Three\Module4\Unreal\PetGameUE\PetGameUE\Binaries\Win64\UnrealEditor-PetGameUE.patch_1.exp
+[2025.04.04-07.27.14:070][316]LogUObjectHash: Compacting FUObjectHashTables data took   0.50ms
+[2025.04.04-07.27.14:118][317]Display: Reload/Re-instancing Complete: 1 package changed, 1 class unchanged
+[2025.04.04-07.27.14:118][317]LogLiveCoding: Display: Live coding succeeded
+[2025.04.04-07.35.15:026][171]LogLiveCoding: Display: Starting Live Coding compile.
+[2025.04.04-07.35.30:750][925]LogLiveCoding: Display:    Creating library Z:\Year Three\Module4\Unreal\PetGameUE\PetGameUE\Binaries\Win64\UnrealEditor-PetGameUE.patch_2.lib and object Z:\Year Three\Module4\Unreal\PetGameUE\PetGameUE\Binaries\Win64\UnrealEditor-PetGameUE.patch_2.exp
+[2025.04.04-07.35.30:929][929]LogUObjectHash: Compacting FUObjectHashTables data took   0.54ms
+[2025.04.04-07.35.30:987][930]Display: Reload/Re-instancing Complete: 1 class unchanged
+[2025.04.04-07.35.30:987][930]LogLiveCoding: Display: Live coding succeeded
+[2025.04.04-07.44.15:314][548]LogLiveCoding: Display: Starting Live Coding compile.
+[2025.04.04-07.44.21:850][  1]LogLiveCoding: Display:    Creating library Z:\Year Three\Module4\Unreal\PetGameUE\PetGameUE\Binaries\Win64\UnrealEditor-PetGameUE.patch_3.lib and object Z:\Year Three\Module4\Unreal\PetGameUE\PetGameUE\Binaries\Win64\UnrealEditor-PetGameUE.patch_3.exp
+[2025.04.04-07.44.22:228][  2]LogClass: UPackage /Script/PetGameUE Reload.
+[2025.04.04-07.44.22:228][  2]LogClass: UClass MainCharacter Reload.
+[2025.04.04-07.44.22:228][  2]LogClass: Could not find existing class MainCharacter in package /Script/PetGameUE for reload, assuming new or modified class
+[2025.04.04-07.44.22:233][  2]Re-instancing MainCharacter after reload.
+[2025.04.04-07.44.22:284][  2]LogUObjectHash: Compacting FUObjectHashTables data took   0.53ms
+[2025.04.04-07.44.22:524][  3]Display: Reload/Re-instancing Complete: 1 package changed, 1 class changed
+[2025.04.04-07.44.22:524][  3]LogLiveCoding: Warning: Live coding succeeded, data type changes may cause packaging to fail if assets reference the new or updated data types
+[2025.04.04-07.45.37:019][928]LogLiveCoding: Display: Starting Live Coding compile.
+[2025.04.04-07.45.48:811][239]LogLiveCoding: Display:    Creating library Z:\Year Three\Module4\Unreal\PetGameUE\PetGameUE\Binaries\Win64\UnrealEditor-PetGameUE.patch_4.lib and object Z:\Year Three\Module4\Unreal\PetGameUE\PetGameUE\Binaries\Win64\UnrealEditor-PetGameUE.patch_4.exp
+[2025.04.04-07.45.48:959][243]LogUObjectHash: Compacting FUObjectHashTables data took   0.29ms
+[2025.04.04-07.45.49:003][244]Display: Reload/Re-instancing Complete: No object changes detected
+[2025.04.04-07.45.49:003][244]LogLiveCoding: Display: Live coding succeeded
+[2025.04.04-07.46.51:089][896]LogLiveCoding: Display: Starting Live Coding compile.
+[2025.04.04-07.47.04:972][436]LogLiveCoding: Display:    Creating library Z:\Year Three\Module4\Unreal\PetGameUE\PetGameUE\Binaries\Win64\UnrealEditor-PetGameUE.patch_5.lib and object Z:\Year Three\Module4\Unreal\PetGameUE\PetGameUE\Binaries\Win64\UnrealEditor-PetGameUE.patch_5.exp
+MainCharacter.cpp.obj : error LNK2019: unresolved external symbol "public: void __cdecl AMainCharacter::Look(struct FInputActionValue const &)" (?Look@AMainCharacter@@QEAAXAEBUFInputActionValue@@@Z) referenced in function "public: virtual void __cdecl AMainCharacter::SetupPlayerInputComponent(class UInputComponent *)" (?SetupPlayerInputComponent@AMainCharacter@@UEAAXPEAVUInputComponent@@@Z)
+MainCharacter.cpp.obj : error LNK2019: unresolved external symbol "public: void __cdecl AMainCharacter::Jumping(void)" (?Jumping@AMainCharacter@@QEAAXXZ) referenced in function "public: virtual void __cdecl AMainCharacter::SetupPlayerInputComponent(class UInputComponent *)" (?SetupPlayerInputComponent@AMainCharacter@@UEAAXPEAVUInputComponent@@@Z)
+Z:\Year Three\Module4\Unreal\PetGameUE\PetGameUE\Binaries\Win64\UnrealEditor-PetGameUE.patch_5.exe : fatal error LNK1120: 2 unresolved externals
+[2025.04.04-07.47.04:977][437]Display: Reload/Re-instancing Complete: No object changes detected
+[2025.04.04-07.47.04:977][437]LogLiveCoding: Error: Live coding failed, please see Live console for more information
+[2025.04.04-07.48.19:570][378]LogLiveCoding: Display: Starting Live Coding compile.
+[2025.04.04-07.48.28:064][337]LogLiveCoding: Display:    Creating library Z:\Year Three\Module4\Unreal\PetGameUE\PetGameUE\Binaries\Win64\UnrealEditor-PetGameUE.patch_5.lib and object Z:\Year Three\Module4\Unreal\PetGameUE\PetGameUE\Binaries\Win64\UnrealEditor-PetGameUE.patch_5.exp
+[2025.04.04-07.48.28:229][341]LogUObjectHash: Compacting FUObjectHashTables data took   0.49ms
+[2025.04.04-07.48.28:278][342]Display: Reload/Re-instancing Complete: 1 class unchanged
+[2025.04.04-07.48.28:278][342]LogLiveCoding: Display: Live coding succeeded
+[2025.04.04-07.48.31:344][651]LogLiveCoding: Display: Starting Live Coding compile.
+[2025.04.04-07.48.32:519][787]Display: Reload/Re-instancing Complete: No object changes detected
+[2025.04.04-07.48.32:519][787]LogLiveCoding: Display: Live coding succeeded, no code changes detected
+[2025.04.04-07.49.42:268][178]LogLiveCoding: Display: Starting Live Coding compile.
+[2025.04.04-07.49.55:073][473]LogLiveCoding: Display:    Creating library Z:\Year Three\Module4\Unreal\PetGameUE\PetGameUE\Binaries\Win64\UnrealEditor-PetGameUE.patch_6.lib and object Z:\Year Three\Module4\Unreal\PetGameUE\PetGameUE\Binaries\Win64\UnrealEditor-PetGameUE.patch_6.exp
+[2025.04.04-07.49.55:378][474]LogUObjectHash: Compacting FUObjectHashTables data took   0.27ms
+[2025.04.04-07.49.55:645][475]Display: Reload/Re-instancing Complete: No object changes detected
+[2025.04.04-07.49.55:645][475]LogLiveCoding: Display: Live coding succeeded
+[2025.04.04-07.50.01:906][631]LogDebuggerCommands: Repeating last play command: Selected Viewport
+[2025.04.04-07.50.01:917][631]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2025.04.04-07.50.01:917][631]PIE: New page: PIE session: TestLevel (4 Apr 2025, 09:50:01)
+[2025.04.04-07.50.01:923][631]LogOnline: OSS: Created online subsystem instance for: NULL
+[2025.04.04-07.50.01:923][631]LogOnline: OSS: TryLoadSubsystemAndSetDefault: Loaded subsystem for type [NULL]
+[2025.04.04-07.50.01:923][631]LogPlayLevel: Creating play world package: /Game/UEDPIE_0_TestLevel
+[2025.04.04-07.50.01:924][631]LogPlayLevel: PIE: StaticDuplicateObject took: (0.001871s)
+[2025.04.04-07.50.01:924][631]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/TestLevel.TestLevel to /Game/UEDPIE_0_TestLevel.TestLevel (0.001924s)
+[2025.04.04-07.50.01:928][631]LogUObjectHash: Compacting FUObjectHashTables data took   0.49ms
+[2025.04.04-07.50.01:929][631]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2025.04.04-07.50.01:929][631]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2025.04.04-07.50.01:930][631]LogAIModule: Creating AISystem for world TestLevel
+[2025.04.04-07.50.01:930][631]LogPlayLevel: PIE: World Init took: (0.001145s)
+[2025.04.04-07.50.01:930][631]LogAudio: Display: Creating Audio Device:                 Id: 2, Scope: Unique, Realtime: True
+[2025.04.04-07.50.01:930][631]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2025.04.04-07.50.01:930][631]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2025.04.04-07.50.01:930][631]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2025.04.04-07.50.01:930][631]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2025.04.04-07.50.01:930][631]LogAudioMixer: Display: 	Number of buffers to queue:			  1
+[2025.04.04-07.50.01:930][631]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2025.04.04-07.50.01:930][631]LogAudioMixer: Display: 	Number of Async Source Workers:		  4
+[2025.04.04-07.50.01:930][631]LogAudio: Display: AudioDevice MaxSources: 32
+[2025.04.04-07.50.01:931][631]LogAudio: Display: Audio Spatialization Plugin: None (built-in).
+[2025.04.04-07.50.01:931][631]LogAudio: Display: Audio Reverb Plugin: None (built-in).
+[2025.04.04-07.50.01:931][631]LogAudio: Display: Audio Occlusion Plugin: None (built-in).
+[2025.04.04-07.50.01:933][631]LogAudioMixer: Display: Initializing audio mixer using platform API: 'XAudio2'
+[2025.04.04-07.50.01:993][631]LogAudioMixer: Display: Using Audio Hardware Device SteelSeries Sonar - Gaming (SteelSeries Sonar Virtual Audio Device)
+[2025.04.04-07.50.01:993][631]LogAudioMixer: Display: Initializing Sound Submixes...
+[2025.04.04-07.50.01:993][631]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2025.04.04-07.50.01:994][631]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2025.04.04-07.50.01:995][631]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called. InstanceID=2
+[2025.04.04-07.50.01:995][631]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=8, Samples=8192, InstanceID=2
+[2025.04.04-07.50.01:997][631]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal(), InstanceID=2
+[2025.04.04-07.50.01:997][631]LogInit: FAudioDevice initialized with ID 2.
+[2025.04.04-07.50.01:997][631]LogAudio: Display: Audio Device (ID: 2) registered with world 'TestLevel'.
+[2025.04.04-07.50.01:997][631]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time. InstanceID=2
+[2025.04.04-07.50.01:997][631]LogAudioMixer: Initializing Audio Bus Subsystem for audio device with ID 2
+[2025.04.04-07.50.02:001][631]LogLoad: Game class is 'GameModeBase'
+[2025.04.04-07.50.02:002][631]LogWorld: Bringing World /Game/UEDPIE_0_TestLevel.TestLevel up for play (max tick rate 0) at 2025.04.04-08.50.02
+[2025.04.04-07.50.02:002][631]LogWorld: Bringing up level for play took: 0.000832
+[2025.04.04-07.50.02:004][631]LogOnline: OSS: Created online subsystem instance for: :Context_1
+[2025.04.04-07.50.02:019][631]PIE: Server logged in
+[2025.04.04-07.50.02:020][631]PIE: Play in editor total start time 0.103 seconds.
+[2025.04.04-07.50.10:424][602]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2025.04.04-07.50.10:424][602]LogWorld: BeginTearingDown for /Game/UEDPIE_0_TestLevel
+[2025.04.04-07.50.10:425][602]LogWorld: UWorld::CleanupWorld for TestLevel, bSessionEnded=true, bCleanupResources=true
+[2025.04.04-07.50.10:425][602]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2025.04.04-07.50.10:428][602]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2025.04.04-07.50.10:431][602]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2025.04.04-07.50.10:434][602]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2025.04.04-07.50.10:434][602]LogAudioMixer: Deinitializing Audio Bus Subsystem for audio device with ID 2
+[2025.04.04-07.50.10:434][602]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=2
+[2025.04.04-07.50.10:437][602]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=2
+[2025.04.04-07.50.10:443][602]LogUObjectHash: Compacting FUObjectHashTables data took   0.54ms
+[2025.04.04-07.50.10:641][603]LogPlayLevel: Display: Destroying online subsystem :Context_1
+[2025.04.04-07.50.32:891][ 75]LogAssetEditorSubsystem: Opening Asset editor for Blueprint /Game/BP_PlayerCharacter.BP_PlayerCharacter
+[2025.04.04-07.50.32:892][ 75]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2025.04.04-07.50.32:892][ 75]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2025.04.04-07.50.32:905][ 75]LogSlate: Warning: The command 'BlueprintEditorSpawnNodes.AddActorRefAction->CommandInfo' has the same default chord as 'BlueprintEditorSpawnNodes.(Class=/Script/BlueprintGraph.K2Node_Knot Key=R Shift=false Ctrl=false Alt=false)' [R]
+[2025.04.04-07.50.34:393][ 75]LogSlate: Window 'Add Blueprint Class' being destroyed
+[2025.04.04-07.50.34:525][ 75]LogViewport: Scene viewport resized to 1675x1414, mode Windowed.
+[2025.04.04-07.50.38:444][364]BlueprintLog: New page: Compile BP_PlayerCharacter
+[2025.04.04-07.50.38:540][364]LogUObjectHash: Compacting FUObjectHashTables data took   0.95ms
+[2025.04.04-07.50.39:308][399]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2025.04.04-07.50.39:345][399]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/BP_PlayerCharacter" FILE="Z:/Year Three/Module4/Unreal/PetGameUE/PetGameUE/Content/BP_PlayerCharacter.uasset" SILENT=true
+[2025.04.04-07.50.39:348][399]LogWorldPartition: Can't find class descriptor '/Game/BP_PlayerCharacter.BP_PlayerCharacter_C' for saving '/Game/BP_PlayerCharacter.BP_PlayerCharacter_C'
+[2025.04.04-07.50.39:348][399]LogWorldPartition: Can't find class descriptor '/Game/BP_PlayerCharacter.BP_PlayerCharacter_C' for saving '/Game/BP_PlayerCharacter.BP_PlayerCharacter_C'
+[2025.04.04-07.50.39:351][399]LogSavePackage: Moving output files for package: /Game/BP_PlayerCharacter
+[2025.04.04-07.50.39:351][399]LogSavePackage: Moving 'Z:/Year Three/Module4/Unreal/PetGameUE/PetGameUE/Saved/BP_PlayerCharacter5D871519466C0D7D561B359198A16962.tmp' to 'Z:/Year Three/Module4/Unreal/PetGameUE/PetGameUE/Content/BP_PlayerCharacter.uasset'
+[2025.04.04-07.50.39:366][399]LogFileHelpers: InternalPromptForCheckoutAndSave took 58 ms (total: 1.69 sec)
+[2025.04.04-07.50.39:367][399]AssetCheck: New page: Asset Save: BP_PlayerCharacter
+[2025.04.04-07.50.39:367][399]LogContentValidation: Display: Validating /Script/Engine.Blueprint /Game/BP_PlayerCharacter.BP_PlayerCharacter
+[2025.04.04-07.51.05:274][551]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2025.04.04-07.51.05:309][551]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/BP_PlayerCharacter" FILE="Z:/Year Three/Module4/Unreal/PetGameUE/PetGameUE/Content/BP_PlayerCharacter.uasset" SILENT=true
+[2025.04.04-07.51.05:311][551]LogWorldPartition: Can't find class descriptor '/Game/BP_PlayerCharacter.BP_PlayerCharacter_C' for saving '/Game/BP_PlayerCharacter.BP_PlayerCharacter_C'
+[2025.04.04-07.51.05:311][551]LogWorldPartition: Can't find class descriptor '/Game/BP_PlayerCharacter.BP_PlayerCharacter_C' for saving '/Game/BP_PlayerCharacter.BP_PlayerCharacter_C'
+[2025.04.04-07.51.05:315][551]LogSavePackage: Moving output files for package: /Game/BP_PlayerCharacter
+[2025.04.04-07.51.05:316][551]LogSavePackage: Moving 'Z:/Year Three/Module4/Unreal/PetGameUE/PetGameUE/Saved/BP_PlayerCharacterF8517B96431C441879EE46BD10879A37.tmp' to 'Z:/Year Three/Module4/Unreal/PetGameUE/PetGameUE/Content/BP_PlayerCharacter.uasset'
+[2025.04.04-07.51.05:330][551]LogFileHelpers: InternalPromptForCheckoutAndSave took 55 ms (total: 1.75 sec)
+[2025.04.04-07.51.05:330][551]AssetCheck: New page: Asset Save: BP_PlayerCharacter
+[2025.04.04-07.51.05:331][551]LogContentValidation: Display: Validating /Script/Engine.Blueprint /Game/BP_PlayerCharacter.BP_PlayerCharacter
+[2025.04.04-07.51.06:304][595]BlueprintLog: New page: Compile BP_PlayerCharacter
+[2025.04.04-07.51.06:394][595]LogUObjectHash: Compacting FUObjectHashTables data took   1.28ms
+[2025.04.04-07.51.07:503][656]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2025.04.04-07.51.07:540][656]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/BP_PlayerCharacter" FILE="Z:/Year Three/Module4/Unreal/PetGameUE/PetGameUE/Content/BP_PlayerCharacter.uasset" SILENT=true
+[2025.04.04-07.51.07:543][656]LogWorldPartition: Can't find class descriptor '/Game/BP_PlayerCharacter.BP_PlayerCharacter_C' for saving '/Game/BP_PlayerCharacter.BP_PlayerCharacter_C'
+[2025.04.04-07.51.07:543][656]LogWorldPartition: Can't find class descriptor '/Game/BP_PlayerCharacter.BP_PlayerCharacter_C' for saving '/Game/BP_PlayerCharacter.BP_PlayerCharacter_C'
+[2025.04.04-07.51.07:545][656]LogSavePackage: Moving output files for package: /Game/BP_PlayerCharacter
+[2025.04.04-07.51.07:546][656]LogSavePackage: Moving 'Z:/Year Three/Module4/Unreal/PetGameUE/PetGameUE/Saved/BP_PlayerCharacter5156DE0C41F1A14BCAB325B9BABE1B44.tmp' to 'Z:/Year Three/Module4/Unreal/PetGameUE/PetGameUE/Content/BP_PlayerCharacter.uasset'
+[2025.04.04-07.51.07:556][656]LogFileHelpers: InternalPromptForCheckoutAndSave took 53 ms (total: 1.80 sec)
+[2025.04.04-07.51.07:557][656]AssetCheck: New page: Asset Save: BP_PlayerCharacter
+[2025.04.04-07.51.07:557][656]LogContentValidation: Display: Validating /Script/Engine.Blueprint /Game/BP_PlayerCharacter.BP_PlayerCharacter
+[2025.04.04-07.52.31:655][ 39]Running E:/epic/UE_5.3/Engine/Build/BatchFiles/Build.bat  -projectfiles -project="Z:/Year Three/Module4/Unreal/PetGameUE/PetGameUE/PetGameUE.uproject" -game -rocket -progress
+[2025.04.04-07.52.31:893][ 39]Using bundled DotNet SDK version: 6.0.302
+[2025.04.04-07.52.31:893][ 39]Running UnrealBuildTool: dotnet "..\..\Engine\Binaries\DotNET\UnrealBuildTool\UnrealBuildTool.dll" -projectfiles -project="Z:/Year Three/Module4/Unreal/PetGameUE/PetGameUE/PetGameUE.uproject" -game -rocket -progress
+[2025.04.04-07.52.32:299][ 39]Log file: C:\Users\hchy1\AppData\Local\UnrealBuildTool\Log_GPF.txt
+[2025.04.04-07.52.32:599][ 39]
+[2025.04.04-07.52.32:599][ 39]Generating VisualStudio project files:
+[2025.04.04-07.52.32:599][ 39]Discovering modules, targets and source code for project...
+[2025.04.04-07.52.33:602][ 39]Binding IntelliSense data...
+[2025.04.04-07.52.36:822][ 39]Binding IntelliSense data... 100%
+[2025.04.04-07.52.36:822][ 39]Creating common properties file...
+[2025.04.04-07.52.36:822][ 39]Creating common properties file... 0%
+[2025.04.04-07.52.36:822][ 39]Writing project files...
+[2025.04.04-07.52.38:233][ 39]Writing project files... 100%
+[2025.04.04-07.52.38:233][ 39]
+[2025.04.04-07.52.38:233][ 39]Generating QueryTargets data for editor...
+[2025.04.04-07.52.38:738][ 39]LogLiveCoding: Display: Starting Live Coding compile.
+[2025.04.04-07.52.39:500][ 39]LogVSAccessor: Warning: Couldn't goto line number '1' in 'Z:/Year Three/Module4/Unreal/PetGameUE/PetGameUE/Source/PetGameUE/Public/PetGameModeBase.h'.
+[2025.04.04-07.52.39:500][ 39]LogVSAccessor: Warning: Couldn't open file 'Z:/Year Three/Module4/Unreal/PetGameUE/PetGameUE/Source/PetGameUE/Private/PetGameModeBase.cpp'.
+[2025.04.04-07.52.39:501][ 39]LogSlate: Window 'Add C++ Class' being destroyed
+[2025.04.04-07.52.46:979][153]LogLiveCoding: Display:    Creating library Z:\Year Three\Module4\Unreal\PetGameUE\PetGameUE\Binaries\Win64\UnrealEditor-PetGameUE.patch_7.lib and object Z:\Year Three\Module4\Unreal\PetGameUE\PetGameUE\Binaries\Win64\UnrealEditor-PetGameUE.patch_7.exp
+[2025.04.04-07.52.47:084][156]LogClass: UPackage /Script/PetGameUE Reload.
+[2025.04.04-07.52.47:084][156]LogClass: Could not find existing class PetGameModeBase in package /Script/PetGameUE for reload, assuming new or modified class
+[2025.04.04-07.52.47:154][156]LogUObjectHash: Compacting FUObjectHashTables data took   1.21ms
+[2025.04.04-07.52.47:609][157]Display: Reload/Re-instancing Complete: 1 package changed, 1 class new
+[2025.04.04-07.52.47:609][157]LogLiveCoding: Warning: Live coding succeeded, data type changes may cause packaging to fail if assets reference the new or updated data types
+[2025.04.04-07.52.51:267][435]LogLiveCoding: Display: Starting Live Coding compile.
+[2025.04.04-07.52.52:547][587]Display: Reload/Re-instancing Complete: No object changes detected
+[2025.04.04-07.52.52:547][587]LogLiveCoding: Display: Live coding succeeded, no code changes detected
+[2025.04.04-07.53.10:393][729]LogAssetEditorSubsystem: Opening Asset editor for Blueprint /Game/BP_PetGameModeBase.BP_PetGameModeBase
+[2025.04.04-07.53.10:393][729]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2025.04.04-07.53.10:393][729]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2025.04.04-07.53.10:676][729]LogSlate: Window 'Add Blueprint Class' being destroyed
+[2025.04.04-07.53.10:797][729]LogViewport: Scene viewport resized to 1675x1414, mode Windowed.
+[2025.04.04-07.53.15:245][ 33]BlueprintLog: New page: Compile BP_PetGameModeBase
+[2025.04.04-07.53.15:344][ 33]LogUObjectHash: Compacting FUObjectHashTables data took   1.54ms
+[2025.04.04-07.53.16:109][ 84]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2025.04.04-07.53.16:144][ 84]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/BP_PetGameModeBase" FILE="Z:/Year Three/Module4/Unreal/PetGameUE/PetGameUE/Content/BP_PetGameModeBase.uasset" SILENT=true
+[2025.04.04-07.53.16:147][ 84]LogWorldPartition: Can't find class descriptor '/Game/BP_PetGameModeBase.BP_PetGameModeBase_C' for saving '/Game/BP_PetGameModeBase.BP_PetGameModeBase_C'
+[2025.04.04-07.53.16:147][ 84]LogWorldPartition: Can't find class descriptor '/Game/BP_PetGameModeBase.BP_PetGameModeBase_C' for saving '/Game/BP_PetGameModeBase.BP_PetGameModeBase_C'
+[2025.04.04-07.53.16:152][ 84]LogSavePackage: Moving output files for package: /Game/BP_PetGameModeBase
+[2025.04.04-07.53.16:152][ 84]LogSavePackage: Moving 'Z:/Year Three/Module4/Unreal/PetGameUE/PetGameUE/Saved/BP_PetGameModeBase61E2D1C042EF5C12F55947B6B05C3871.tmp' to 'Z:/Year Three/Module4/Unreal/PetGameUE/PetGameUE/Content/BP_PetGameModeBase.uasset'
+[2025.04.04-07.53.16:164][ 84]LogFileHelpers: InternalPromptForCheckoutAndSave took 55 ms (total: 1.85 sec)
+[2025.04.04-07.53.16:164][ 84]AssetCheck: New page: Asset Save: BP_PetGameModeBase
+[2025.04.04-07.53.16:164][ 84]LogContentValidation: Display: Validating /Script/Engine.Blueprint /Game/BP_PetGameModeBase.BP_PetGameModeBase
+[2025.04.04-07.53.24:884][921]LogLiveCoding: Display: Starting Live Coding compile.
+[2025.04.04-07.53.30:677][566]Display: Reload/Re-instancing Complete: No object changes detected
+[2025.04.04-07.53.30:677][566]LogLiveCoding: Display: Live coding succeeded, no code changes detected
+[2025.04.04-07.53.33:897][894]LogDebuggerCommands: Repeating last play command: Selected Viewport
+[2025.04.04-07.53.33:920][894]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2025.04.04-07.53.33:920][894]PIE: New page: PIE session: TestLevel (4 Apr 2025, 09:53:33)
+[2025.04.04-07.53.33:964][894]LogPlayLevel: Creating play world package: /Game/UEDPIE_0_TestLevel
+[2025.04.04-07.53.33:966][894]LogPlayLevel: PIE: StaticDuplicateObject took: (0.001787s)
+[2025.04.04-07.53.33:966][894]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/TestLevel.TestLevel to /Game/UEDPIE_0_TestLevel.TestLevel (0.001832s)
+[2025.04.04-07.53.34:013][894]LogUObjectHash: Compacting FUObjectHashTables data took   1.23ms
+[2025.04.04-07.53.34:017][894]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2025.04.04-07.53.34:018][894]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2025.04.04-07.53.34:018][894]LogAIModule: Creating AISystem for world TestLevel
+[2025.04.04-07.53.34:018][894]LogPlayLevel: PIE: World Init took: (0.001057s)
+[2025.04.04-07.53.34:018][894]LogAudio: Display: Creating Audio Device:                 Id: 3, Scope: Unique, Realtime: True
+[2025.04.04-07.53.34:019][894]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2025.04.04-07.53.34:019][894]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2025.04.04-07.53.34:019][894]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2025.04.04-07.53.34:019][894]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2025.04.04-07.53.34:019][894]LogAudioMixer: Display: 	Number of buffers to queue:			  1
+[2025.04.04-07.53.34:019][894]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2025.04.04-07.53.34:019][894]LogAudioMixer: Display: 	Number of Async Source Workers:		  4
+[2025.04.04-07.53.34:019][894]LogAudio: Display: AudioDevice MaxSources: 32
+[2025.04.04-07.53.34:019][894]LogAudio: Display: Audio Spatialization Plugin: None (built-in).
+[2025.04.04-07.53.34:019][894]LogAudio: Display: Audio Reverb Plugin: None (built-in).
+[2025.04.04-07.53.34:019][894]LogAudio: Display: Audio Occlusion Plugin: None (built-in).
+[2025.04.04-07.53.34:022][894]LogAudioMixer: Display: Initializing audio mixer using platform API: 'XAudio2'
+[2025.04.04-07.53.34:074][894]LogAudioMixer: Display: Using Audio Hardware Device SteelSeries Sonar - Gaming (SteelSeries Sonar Virtual Audio Device)
+[2025.04.04-07.53.34:074][894]LogAudioMixer: Display: Initializing Sound Submixes...
+[2025.04.04-07.53.34:074][894]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2025.04.04-07.53.34:074][894]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2025.04.04-07.53.34:075][894]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called. InstanceID=3
+[2025.04.04-07.53.34:075][894]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=8, Samples=8192, InstanceID=3
+[2025.04.04-07.53.34:077][894]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal(), InstanceID=3
+[2025.04.04-07.53.34:077][894]LogInit: FAudioDevice initialized with ID 3.
+[2025.04.04-07.53.34:077][894]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time. InstanceID=3
+[2025.04.04-07.53.34:077][894]LogAudio: Display: Audio Device (ID: 3) registered with world 'TestLevel'.
+[2025.04.04-07.53.34:077][894]LogAudioMixer: Initializing Audio Bus Subsystem for audio device with ID 3
+[2025.04.04-07.53.34:081][894]LogLoad: Game class is 'BP_PetGameModeBase_C'
+[2025.04.04-07.53.34:081][894]LogWorld: Bringing World /Game/UEDPIE_0_TestLevel.TestLevel up for play (max tick rate 0) at 2025.04.04-08.53.34
+[2025.04.04-07.53.34:082][894]LogWorld: Bringing up level for play took: 0.000696
+[2025.04.04-07.53.34:084][894]LogOnline: OSS: Created online subsystem instance for: :Context_4
+[2025.04.04-07.53.34:093][894]PIE: Server logged in
+[2025.04.04-07.53.34:094][894]PIE: Play in editor total start time 0.174 seconds.
+[2025.04.04-07.54.11:252][720]LogShaderCompilers: Display: ================================================
+[2025.04.04-07.54.11:252][720]LogShaderCompilers: Display: === FShaderJobCache stats ===
+[2025.04.04-07.54.11:252][720]LogShaderCompilers: Display: Total job queries 3,651, among them cache hits 6 (0.16%)
+[2025.04.04-07.54.11:252][720]LogShaderCompilers: Display: Tracking 3,642 distinct input hashes that result in 2,620 distinct outputs (71.94%)
+[2025.04.04-07.54.11:252][720]LogShaderCompilers: Display: RAM used: 67.04 MiB of 3.20 GiB budget. Usage: 2.05%
+[2025.04.04-07.54.11:252][720]LogShaderCompilers: Display: === Shader Compilation stats ===
+[2025.04.04-07.54.11:252][720]LogShaderCompilers: Display: Shaders Compiled: 3,642
+[2025.04.04-07.54.11:252][720]LogShaderCompilers: Display: Jobs assigned 3,645, completed 3,642 (99.92%)
+[2025.04.04-07.54.11:252][720]LogShaderCompilers: Display: Average time worker was idle: 21.84 s
+[2025.04.04-07.54.11:252][720]LogShaderCompilers: Display: Time job spent in pending queue: average 45.62 s, longest 98.38 s
+[2025.04.04-07.54.11:252][720]LogShaderCompilers: Display: Job execution time: average 3.29 s, max 12.13 s
+[2025.04.04-07.54.11:252][720]LogShaderCompilers: Display: Job life time (pending + execution): average 48.96 s, max 105.03
+[2025.04.04-07.54.11:252][720]LogShaderCompilers: Display: Shader code size: average 38.297 KiB, min 2.086 KiB, max 162.84 KiB
+[2025.04.04-07.54.11:252][720]LogShaderCompilers: Display: Time at least one job was in flight (either pending or executed): 113.27 s
+[2025.04.04-07.54.11:252][720]LogShaderCompilers: Display: Jobs were issued in 424 batches (only local compilation was used), average 8.60 jobs/batch
+[2025.04.04-07.54.11:252][720]LogShaderCompilers: Display: Average processing rate: 32.15 jobs/sec
+[2025.04.04-07.54.11:252][720]LogShaderCompilers: Display: Total thread time: 1,221.507 s
+[2025.04.04-07.54.11:252][720]LogShaderCompilers: Display: Total thread preprocess time: 73.872 s
+[2025.04.04-07.54.11:252][720]LogShaderCompilers: Display: Percentage time preprocessing: 6.05%
+[2025.04.04-07.54.11:252][720]LogShaderCompilers: Display: Effective parallelization: 10.78 (times faster than compiling all shaders on one thread). Compare with number of workers: 12
+[2025.04.04-07.54.11:252][720]LogShaderCompilers: Display: Top 5 most expensive shader types by average time:
+[2025.04.04-07.54.11:252][720]LogShaderCompilers: Display:                                          FClusteredShadingPS (compiled    4 times, average 4.59 sec, max 7.90 sec, min 1.44 sec)
+[2025.04.04-07.54.11:252][720]LogShaderCompilers: Display:                                   FSSDTemporalAccumulationCS (compiled   10 times, average 4.19 sec, max 4.91 sec, min 3.41 sec)
+[2025.04.04-07.54.11:252][720]LogShaderCompilers: Display:                                    FSSDSpatialAccumulationCS (compiled   33 times, average 1.54 sec, max 2.77 sec, min 0.87 sec)
+[2025.04.04-07.54.11:252][720]LogShaderCompilers: Display:                                             FDeferredLightPS (compiled  134 times, average 1.21 sec, max 1.75 sec, min 0.97 sec)
+[2025.04.04-07.54.11:252][720]LogShaderCompilers: Display:                                        FCloudRenderViewPS011 (compiled    1 times, average 1.16 sec, max 1.16 sec, min 1.16 sec)
+[2025.04.04-07.54.11:252][720]LogShaderCompilers: Display: Top 5 shader types by total compile time:
+[2025.04.04-07.54.11:252][720]LogShaderCompilers: Display:                                             FDeferredLightPS - 13.30% of total time (compiled  134 times, average 1.21 sec, max 1.75 sec, min 0.97 sec)
+[2025.04.04-07.54.11:252][720]LogShaderCompilers: Display:                                FVirtualShadowMapProjectionCS - 5.58% of total time (compiled   96 times, average 0.71 sec, max 1.26 sec, min 0.41 sec)
+[2025.04.04-07.54.11:252][720]LogShaderCompilers: Display:                                  FScreenProbeTraceMeshSDFsCS - 4.70% of total time (compiled   96 times, average 0.60 sec, max 1.04 sec, min 0.14 sec)
+[2025.04.04-07.54.11:252][720]LogShaderCompilers: Display:                      FRenderSingleScatteringWithPreshadingCS - 4.37% of total time (compiled  128 times, average 0.42 sec, max 0.89 sec, min 0.13 sec)
+[2025.04.04-07.54.11:252][720]LogShaderCompilers: Display:                                    FSSDSpatialAccumulationCS - 4.17% of total time (compiled   33 times, average 1.54 sec, max 2.77 sec, min 0.87 sec)
+[2025.04.04-07.54.11:252][720]LogShaderCompilers: Display: ================================================
+[2025.04.04-07.54.11:517][724]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2025.04.04-07.54.20:885][355]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2025.04.04-07.54.20:885][355]LogWorld: BeginTearingDown for /Game/UEDPIE_0_TestLevel
+[2025.04.04-07.54.20:885][355]LogWorld: UWorld::CleanupWorld for TestLevel, bSessionEnded=true, bCleanupResources=true
+[2025.04.04-07.54.20:885][355]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2025.04.04-07.54.20:889][355]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2025.04.04-07.54.20:895][355]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2025.04.04-07.54.20:910][355]LogAudio: Display: Audio Device unregistered from world 'None'.
+[2025.04.04-07.54.20:910][355]LogAudioMixer: Deinitializing Audio Bus Subsystem for audio device with ID 3
+[2025.04.04-07.54.20:911][355]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=3
+[2025.04.04-07.54.20:913][355]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=3
+[2025.04.04-07.54.20:919][355]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2025.04.04-07.54.20:921][355]LogUObjectHash: Compacting FUObjectHashTables data took   1.17ms
+[2025.04.04-07.54.20:967][356]LogPlayLevel: Display: Destroying online subsystem :Context_4
+[2025.04.04-07.54.21:978][422]BlueprintLog: New page: Compile BP_PlayerCharacter
+[2025.04.04-07.54.22:007][422]LogUObjectHash: Compacting FUObjectHashTables data took   1.14ms
+[2025.04.04-07.54.22:944][468]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2025.04.04-07.54.22:985][468]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/BP_PlayerCharacter" FILE="Z:/Year Three/Module4/Unreal/PetGameUE/PetGameUE/Content/BP_PlayerCharacter.uasset" SILENT=true
+[2025.04.04-07.54.22:988][468]LogWorldPartition: Can't find class descriptor '/Game/BP_PlayerCharacter.BP_PlayerCharacter_C' for saving '/Game/BP_PlayerCharacter.BP_PlayerCharacter_C'
+[2025.04.04-07.54.22:988][468]LogWorldPartition: Can't find class descriptor '/Game/BP_PlayerCharacter.BP_PlayerCharacter_C' for saving '/Game/BP_PlayerCharacter.BP_PlayerCharacter_C'
+[2025.04.04-07.54.22:992][468]LogSavePackage: Moving output files for package: /Game/BP_PlayerCharacter
+[2025.04.04-07.54.22:993][468]LogSavePackage: Moving 'Z:/Year Three/Module4/Unreal/PetGameUE/PetGameUE/Saved/BP_PlayerCharacter8C6F046347D608DEFDF805902B02A77E.tmp' to 'Z:/Year Three/Module4/Unreal/PetGameUE/PetGameUE/Content/BP_PlayerCharacter.uasset'
+[2025.04.04-07.54.23:006][468]LogFileHelpers: InternalPromptForCheckoutAndSave took 61 ms (total: 1.92 sec)
+[2025.04.04-07.54.23:007][468]AssetCheck: New page: Asset Save: BP_PlayerCharacter
+[2025.04.04-07.54.23:007][468]LogContentValidation: Display: Validating /Script/Engine.Blueprint /Game/BP_PlayerCharacter.BP_PlayerCharacter
+[2025.04.04-07.54.43:454][986]LogDebuggerCommands: Repeating last play command: Selected Viewport
+[2025.04.04-07.54.43:465][986]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2025.04.04-07.54.43:465][986]PIE: New page: PIE session: TestLevel (4 Apr 2025, 09:54:43)
+[2025.04.04-07.54.43:465][986]LogPlayLevel: Creating play world package: /Game/UEDPIE_0_TestLevel
+[2025.04.04-07.54.43:467][986]LogPlayLevel: PIE: StaticDuplicateObject took: (0.001845s)
+[2025.04.04-07.54.43:467][986]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/TestLevel.TestLevel to /Game/UEDPIE_0_TestLevel.TestLevel (0.001886s)
+[2025.04.04-07.54.43:483][986]LogUObjectHash: Compacting FUObjectHashTables data took   1.31ms
+[2025.04.04-07.54.43:486][986]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2025.04.04-07.54.43:486][986]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2025.04.04-07.54.43:487][986]LogAIModule: Creating AISystem for world TestLevel
+[2025.04.04-07.54.43:487][986]LogPlayLevel: PIE: World Init took: (0.001010s)
+[2025.04.04-07.54.43:487][986]LogAudio: Display: Creating Audio Device:                 Id: 4, Scope: Unique, Realtime: True
+[2025.04.04-07.54.43:487][986]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2025.04.04-07.54.43:487][986]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2025.04.04-07.54.43:487][986]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2025.04.04-07.54.43:487][986]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2025.04.04-07.54.43:487][986]LogAudioMixer: Display: 	Number of buffers to queue:			  1
+[2025.04.04-07.54.43:487][986]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2025.04.04-07.54.43:487][986]LogAudioMixer: Display: 	Number of Async Source Workers:		  4
+[2025.04.04-07.54.43:487][986]LogAudio: Display: AudioDevice MaxSources: 32
+[2025.04.04-07.54.43:488][986]LogAudio: Display: Audio Spatialization Plugin: None (built-in).
+[2025.04.04-07.54.43:488][986]LogAudio: Display: Audio Reverb Plugin: None (built-in).
+[2025.04.04-07.54.43:488][986]LogAudio: Display: Audio Occlusion Plugin: None (built-in).
+[2025.04.04-07.54.43:490][986]LogAudioMixer: Display: Initializing audio mixer using platform API: 'XAudio2'
+[2025.04.04-07.54.43:554][986]LogAudioMixer: Display: Using Audio Hardware Device SteelSeries Sonar - Gaming (SteelSeries Sonar Virtual Audio Device)
+[2025.04.04-07.54.43:555][986]LogAudioMixer: Display: Initializing Sound Submixes...
+[2025.04.04-07.54.43:555][986]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2025.04.04-07.54.43:555][986]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2025.04.04-07.54.43:557][986]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called. InstanceID=4
+[2025.04.04-07.54.43:557][986]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=8, Samples=8192, InstanceID=4
+[2025.04.04-07.54.43:559][986]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal(), InstanceID=4
+[2025.04.04-07.54.43:559][986]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time. InstanceID=4
+[2025.04.04-07.54.43:559][986]LogInit: FAudioDevice initialized with ID 4.
+[2025.04.04-07.54.43:559][986]LogAudio: Display: Audio Device (ID: 4) registered with world 'TestLevel'.
+[2025.04.04-07.54.43:559][986]LogAudioMixer: Initializing Audio Bus Subsystem for audio device with ID 4
+[2025.04.04-07.54.43:563][986]LogLoad: Game class is 'BP_PetGameModeBase_C'
+[2025.04.04-07.54.43:564][986]LogWorld: Bringing World /Game/UEDPIE_0_TestLevel.TestLevel up for play (max tick rate 0) at 2025.04.04-08.54.43
+[2025.04.04-07.54.43:564][986]LogWorld: Bringing up level for play took: 0.000706
+[2025.04.04-07.54.43:567][986]LogOnline: OSS: Created online subsystem instance for: :Context_6
+[2025.04.04-07.54.43:569][986]PIE: Server logged in
+[2025.04.04-07.54.43:570][986]PIE: Play in editor total start time 0.105 seconds.
+[2025.04.04-07.54.51:504][900]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2025.04.04-07.54.51:504][900]LogWorld: BeginTearingDown for /Game/UEDPIE_0_TestLevel
+[2025.04.04-07.54.51:504][900]LogWorld: UWorld::CleanupWorld for TestLevel, bSessionEnded=true, bCleanupResources=true
+[2025.04.04-07.54.51:505][900]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2025.04.04-07.54.51:508][900]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2025.04.04-07.54.51:513][900]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2025.04.04-07.54.51:526][900]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2025.04.04-07.54.51:526][900]LogAudioMixer: Deinitializing Audio Bus Subsystem for audio device with ID 4
+[2025.04.04-07.54.51:526][900]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=4
+[2025.04.04-07.54.51:528][900]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=4
+[2025.04.04-07.54.51:553][900]LogUObjectHash: Compacting FUObjectHashTables data took   1.17ms
+[2025.04.04-07.54.51:597][901]LogPlayLevel: Display: Destroying online subsystem :Context_6
+[2025.04.04-07.55.20:137][788]BlueprintLog: New page: Compile BP_PlayerCharacter
+[2025.04.04-07.55.20:165][788]LogUObjectHash: Compacting FUObjectHashTables data took   1.14ms
+[2025.04.04-07.55.21:019][858]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2025.04.04-07.55.21:067][858]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/BP_PlayerCharacter" FILE="Z:/Year Three/Module4/Unreal/PetGameUE/PetGameUE/Content/BP_PlayerCharacter.uasset" SILENT=true
+[2025.04.04-07.55.21:070][858]LogWorldPartition: Can't find class descriptor '/Game/BP_PlayerCharacter.BP_PlayerCharacter_C' for saving '/Game/BP_PlayerCharacter.BP_PlayerCharacter_C'
+[2025.04.04-07.55.21:070][858]LogWorldPartition: Can't find class descriptor '/Game/BP_PlayerCharacter.BP_PlayerCharacter_C' for saving '/Game/BP_PlayerCharacter.BP_PlayerCharacter_C'
+[2025.04.04-07.55.21:073][858]LogSavePackage: Moving output files for package: /Game/BP_PlayerCharacter
+[2025.04.04-07.55.21:076][858]LogSavePackage: Moving 'Z:/Year Three/Module4/Unreal/PetGameUE/PetGameUE/Saved/BP_PlayerCharacter880682D846F5BA0EC1FB9783D348F487.tmp' to 'Z:/Year Three/Module4/Unreal/PetGameUE/PetGameUE/Content/BP_PlayerCharacter.uasset'
+[2025.04.04-07.55.21:089][858]LogFileHelpers: InternalPromptForCheckoutAndSave took 69 ms (total: 1.99 sec)
+[2025.04.04-07.55.21:089][858]AssetCheck: New page: Asset Save: BP_PlayerCharacter
+[2025.04.04-07.55.21:090][858]LogContentValidation: Display: Validating /Script/Engine.Blueprint /Game/BP_PlayerCharacter.BP_PlayerCharacter
+[2025.04.04-07.55.27:053][463]LogDebuggerCommands: Repeating last play command: Selected Viewport
+[2025.04.04-07.55.27:064][463]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2025.04.04-07.55.27:064][463]PIE: New page: PIE session: TestLevel (4 Apr 2025, 09:55:27)
+[2025.04.04-07.55.27:094][463]LogPlayLevel: Creating play world package: /Game/UEDPIE_0_TestLevel
+[2025.04.04-07.55.27:096][463]LogPlayLevel: PIE: StaticDuplicateObject took: (0.001821s)
+[2025.04.04-07.55.27:096][463]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/TestLevel.TestLevel to /Game/UEDPIE_0_TestLevel.TestLevel (0.001867s)
+[2025.04.04-07.55.27:111][463]LogUObjectHash: Compacting FUObjectHashTables data took   1.13ms
+[2025.04.04-07.55.27:112][463]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2025.04.04-07.55.27:112][463]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2025.04.04-07.55.27:113][463]LogAIModule: Creating AISystem for world TestLevel
+[2025.04.04-07.55.27:113][463]LogPlayLevel: PIE: World Init took: (0.000977s)
+[2025.04.04-07.55.27:113][463]LogAudio: Display: Creating Audio Device:                 Id: 5, Scope: Unique, Realtime: True
+[2025.04.04-07.55.27:113][463]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2025.04.04-07.55.27:113][463]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2025.04.04-07.55.27:113][463]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2025.04.04-07.55.27:113][463]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2025.04.04-07.55.27:113][463]LogAudioMixer: Display: 	Number of buffers to queue:			  1
+[2025.04.04-07.55.27:113][463]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2025.04.04-07.55.27:113][463]LogAudioMixer: Display: 	Number of Async Source Workers:		  4
+[2025.04.04-07.55.27:113][463]LogAudio: Display: AudioDevice MaxSources: 32
+[2025.04.04-07.55.27:114][463]LogAudio: Display: Audio Spatialization Plugin: None (built-in).
+[2025.04.04-07.55.27:114][463]LogAudio: Display: Audio Reverb Plugin: None (built-in).
+[2025.04.04-07.55.27:114][463]LogAudio: Display: Audio Occlusion Plugin: None (built-in).
+[2025.04.04-07.55.27:116][463]LogAudioMixer: Display: Initializing audio mixer using platform API: 'XAudio2'
+[2025.04.04-07.55.27:169][463]LogAudioMixer: Display: Using Audio Hardware Device SteelSeries Sonar - Gaming (SteelSeries Sonar Virtual Audio Device)
+[2025.04.04-07.55.27:169][463]LogAudioMixer: Display: Initializing Sound Submixes...
+[2025.04.04-07.55.27:169][463]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2025.04.04-07.55.27:169][463]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2025.04.04-07.55.27:170][463]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called. InstanceID=5
+[2025.04.04-07.55.27:170][463]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=8, Samples=8192, InstanceID=5
+[2025.04.04-07.55.27:172][463]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal(), InstanceID=5
+[2025.04.04-07.55.27:173][463]LogInit: FAudioDevice initialized with ID 5.
+[2025.04.04-07.55.27:173][463]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time. InstanceID=5
+[2025.04.04-07.55.27:173][463]LogAudio: Display: Audio Device (ID: 5) registered with world 'TestLevel'.
+[2025.04.04-07.55.27:173][463]LogAudioMixer: Initializing Audio Bus Subsystem for audio device with ID 5
+[2025.04.04-07.55.27:176][463]LogLoad: Game class is 'BP_PetGameModeBase_C'
+[2025.04.04-07.55.27:176][463]LogWorld: Bringing World /Game/UEDPIE_0_TestLevel.TestLevel up for play (max tick rate 0) at 2025.04.04-08.55.27
+[2025.04.04-07.55.27:177][463]LogWorld: Bringing up level for play took: 0.000617
+[2025.04.04-07.55.27:179][463]LogOnline: OSS: Created online subsystem instance for: :Context_7
+[2025.04.04-07.55.27:180][463]PIE: Server logged in
+[2025.04.04-07.55.27:181][463]PIE: Play in editor total start time 0.117 seconds.
+[2025.04.04-07.55.44:345][391]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2025.04.04-07.55.44:345][391]LogWorld: BeginTearingDown for /Game/UEDPIE_0_TestLevel
+[2025.04.04-07.55.44:345][391]LogWorld: UWorld::CleanupWorld for TestLevel, bSessionEnded=true, bCleanupResources=true
+[2025.04.04-07.55.44:346][391]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2025.04.04-07.55.44:349][391]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2025.04.04-07.55.44:354][391]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2025.04.04-07.55.44:367][391]LogAudio: Display: Audio Device unregistered from world 'None'.
+[2025.04.04-07.55.44:367][391]LogAudioMixer: Deinitializing Audio Bus Subsystem for audio device with ID 5
+[2025.04.04-07.55.44:367][391]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=5
+[2025.04.04-07.55.44:370][391]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=5
+[2025.04.04-07.55.44:376][391]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2025.04.04-07.55.44:379][391]LogUObjectHash: Compacting FUObjectHashTables data took   1.46ms
+[2025.04.04-07.55.44:427][392]LogPlayLevel: Display: Destroying online subsystem :Context_7
+[2025.04.04-07.56.10:724][283]BlueprintLog: New page: Compile BP_PlayerCharacter
+[2025.04.04-07.56.10:759][283]LogUObjectHash: Compacting FUObjectHashTables data took   1.12ms
+[2025.04.04-07.56.11:352][307]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2025.04.04-07.56.11:391][307]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/BP_PlayerCharacter" FILE="Z:/Year Three/Module4/Unreal/PetGameUE/PetGameUE/Content/BP_PlayerCharacter.uasset" SILENT=true
+[2025.04.04-07.56.11:394][307]LogWorldPartition: Can't find class descriptor '/Game/BP_PlayerCharacter.BP_PlayerCharacter_C' for saving '/Game/BP_PlayerCharacter.BP_PlayerCharacter_C'
+[2025.04.04-07.56.11:394][307]LogWorldPartition: Can't find class descriptor '/Game/BP_PlayerCharacter.BP_PlayerCharacter_C' for saving '/Game/BP_PlayerCharacter.BP_PlayerCharacter_C'
+[2025.04.04-07.56.11:545][307]LogSavePackage: Moving output files for package: /Game/BP_PlayerCharacter
+[2025.04.04-07.56.11:546][307]LogSavePackage: Moving 'Z:/Year Three/Module4/Unreal/PetGameUE/PetGameUE/Saved/BP_PlayerCharacterDDE8903449DF4ADF77590E8F3E5B4B0A.tmp' to 'Z:/Year Three/Module4/Unreal/PetGameUE/PetGameUE/Content/BP_PlayerCharacter.uasset'
+[2025.04.04-07.56.11:556][307]LogFileHelpers: InternalPromptForCheckoutAndSave took 203 ms (total: 2.19 sec)
+[2025.04.04-07.56.11:557][307]AssetCheck: New page: Asset Save: BP_PlayerCharacter
+[2025.04.04-07.56.11:557][307]LogContentValidation: Display: Validating /Script/Engine.Blueprint /Game/BP_PlayerCharacter.BP_PlayerCharacter
+[2025.04.04-07.56.23:344][187]LogDebuggerCommands: Repeating last play command: Selected Viewport
+[2025.04.04-07.56.23:355][187]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2025.04.04-07.56.23:356][187]PIE: New page: PIE session: TestLevel (4 Apr 2025, 09:56:23)
+[2025.04.04-07.56.23:384][187]LogPlayLevel: Creating play world package: /Game/UEDPIE_0_TestLevel
+[2025.04.04-07.56.23:386][187]LogPlayLevel: PIE: StaticDuplicateObject took: (0.001838s)
+[2025.04.04-07.56.23:386][187]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/TestLevel.TestLevel to /Game/UEDPIE_0_TestLevel.TestLevel (0.001886s)
+[2025.04.04-07.56.23:401][187]LogUObjectHash: Compacting FUObjectHashTables data took   1.08ms
+[2025.04.04-07.56.23:403][187]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2025.04.04-07.56.23:403][187]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2025.04.04-07.56.23:404][187]LogAIModule: Creating AISystem for world TestLevel
+[2025.04.04-07.56.23:404][187]LogPlayLevel: PIE: World Init took: (0.001010s)
+[2025.04.04-07.56.23:404][187]LogAudio: Display: Creating Audio Device:                 Id: 6, Scope: Unique, Realtime: True
+[2025.04.04-07.56.23:404][187]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2025.04.04-07.56.23:404][187]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2025.04.04-07.56.23:404][187]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2025.04.04-07.56.23:404][187]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2025.04.04-07.56.23:404][187]LogAudioMixer: Display: 	Number of buffers to queue:			  1
+[2025.04.04-07.56.23:404][187]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2025.04.04-07.56.23:404][187]LogAudioMixer: Display: 	Number of Async Source Workers:		  4
+[2025.04.04-07.56.23:404][187]LogAudio: Display: AudioDevice MaxSources: 32
+[2025.04.04-07.56.23:405][187]LogAudio: Display: Audio Spatialization Plugin: None (built-in).
+[2025.04.04-07.56.23:405][187]LogAudio: Display: Audio Reverb Plugin: None (built-in).
+[2025.04.04-07.56.23:405][187]LogAudio: Display: Audio Occlusion Plugin: None (built-in).
+[2025.04.04-07.56.23:408][187]LogAudioMixer: Display: Initializing audio mixer using platform API: 'XAudio2'
+[2025.04.04-07.56.23:460][187]LogAudioMixer: Display: Using Audio Hardware Device SteelSeries Sonar - Gaming (SteelSeries Sonar Virtual Audio Device)
+[2025.04.04-07.56.23:460][187]LogAudioMixer: Display: Initializing Sound Submixes...
+[2025.04.04-07.56.23:460][187]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2025.04.04-07.56.23:461][187]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2025.04.04-07.56.23:462][187]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called. InstanceID=6
+[2025.04.04-07.56.23:462][187]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=8, Samples=8192, InstanceID=6
+[2025.04.04-07.56.23:464][187]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal(), InstanceID=6
+[2025.04.04-07.56.23:464][187]LogInit: FAudioDevice initialized with ID 6.
+[2025.04.04-07.56.23:464][187]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time. InstanceID=6
+[2025.04.04-07.56.23:464][187]LogAudio: Display: Audio Device (ID: 6) registered with world 'TestLevel'.
+[2025.04.04-07.56.23:464][187]LogAudioMixer: Initializing Audio Bus Subsystem for audio device with ID 6
+[2025.04.04-07.56.23:467][187]LogLoad: Game class is 'BP_PetGameModeBase_C'
+[2025.04.04-07.56.23:468][187]LogWorld: Bringing World /Game/UEDPIE_0_TestLevel.TestLevel up for play (max tick rate 0) at 2025.04.04-08.56.23
+[2025.04.04-07.56.23:468][187]LogWorld: Bringing up level for play took: 0.000617
+[2025.04.04-07.56.23:470][187]LogOnline: OSS: Created online subsystem instance for: :Context_8
+[2025.04.04-07.56.23:472][187]PIE: Server logged in
+[2025.04.04-07.56.23:474][187]PIE: Play in editor total start time 0.118 seconds.
+[2025.04.04-07.56.39:824][976]LogViewport: Scene viewport resized to 1676x578, mode Windowed.
+[2025.04.04-07.56.46:829][495]Cmd: CAMERA ALIGN ACTIVEVIEWPORTONLY
+[2025.04.04-07.56.49:635][686]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2025.04.04-07.56.49:635][686]LogWorld: BeginTearingDown for /Game/UEDPIE_0_TestLevel
+[2025.04.04-07.56.49:635][686]LogWorld: UWorld::CleanupWorld for TestLevel, bSessionEnded=true, bCleanupResources=true
+[2025.04.04-07.56.49:635][686]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2025.04.04-07.56.49:638][686]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2025.04.04-07.56.49:644][686]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2025.04.04-07.56.49:657][686]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2025.04.04-07.56.49:657][686]LogAudioMixer: Deinitializing Audio Bus Subsystem for audio device with ID 6
+[2025.04.04-07.56.49:657][686]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=6
+[2025.04.04-07.56.49:659][686]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=6
+[2025.04.04-07.56.49:665][686]LogUObjectHash: Compacting FUObjectHashTables data took   1.29ms
+[2025.04.04-07.56.49:855][687]LogPlayLevel: Display: Destroying online subsystem :Context_8
+[2025.04.04-07.56.55:925][236]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2025.04.04-07.56.56:736][249]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2025.04.04-07.57.09:608][ 88]BlueprintLog: New page: Compile BP_PlayerCharacter
+[2025.04.04-07.57.09:644][ 88]LogUObjectHash: Compacting FUObjectHashTables data took   1.15ms
+[2025.04.04-07.57.10:153][109]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2025.04.04-07.57.10:220][109]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/BP_PlayerCharacter" FILE="Z:/Year Three/Module4/Unreal/PetGameUE/PetGameUE/Content/BP_PlayerCharacter.uasset" SILENT=true
+[2025.04.04-07.57.10:226][109]LogWorldPartition: Can't find class descriptor '/Game/BP_PlayerCharacter.BP_PlayerCharacter_C' for saving '/Game/BP_PlayerCharacter.BP_PlayerCharacter_C'
+[2025.04.04-07.57.10:227][109]LogWorldPartition: Can't find class descriptor '/Game/BP_PlayerCharacter.BP_PlayerCharacter_C' for saving '/Game/BP_PlayerCharacter.BP_PlayerCharacter_C'
+[2025.04.04-07.57.10:229][109]LogSavePackage: Moving output files for package: /Game/BP_PlayerCharacter
+[2025.04.04-07.57.10:229][109]LogSavePackage: Moving 'Z:/Year Three/Module4/Unreal/PetGameUE/PetGameUE/Saved/BP_PlayerCharacter5AEC228E4D73F898BC28D498C32755F6.tmp' to 'Z:/Year Three/Module4/Unreal/PetGameUE/PetGameUE/Content/BP_PlayerCharacter.uasset'
+[2025.04.04-07.57.10:240][109]LogFileHelpers: InternalPromptForCheckoutAndSave took 86 ms (total: 2.27 sec)
+[2025.04.04-07.57.10:241][109]AssetCheck: New page: Asset Save: BP_PlayerCharacter
+[2025.04.04-07.57.10:241][109]LogContentValidation: Display: Validating /Script/Engine.Blueprint /Game/BP_PlayerCharacter.BP_PlayerCharacter
+[2025.04.04-07.57.12:791][321]LogDebuggerCommands: Repeating last play command: Selected Viewport
+[2025.04.04-07.57.12:803][321]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2025.04.04-07.57.12:803][321]PIE: New page: PIE session: TestLevel (4 Apr 2025, 09:57:12)
+[2025.04.04-07.57.12:803][321]LogPlayLevel: Creating play world package: /Game/UEDPIE_0_TestLevel
+[2025.04.04-07.57.12:805][321]LogPlayLevel: PIE: StaticDuplicateObject took: (0.001839s)
+[2025.04.04-07.57.12:805][321]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/TestLevel.TestLevel to /Game/UEDPIE_0_TestLevel.TestLevel (0.001876s)
+[2025.04.04-07.57.12:819][321]LogUObjectHash: Compacting FUObjectHashTables data took   1.11ms
+[2025.04.04-07.57.12:822][321]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2025.04.04-07.57.12:823][321]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2025.04.04-07.57.12:823][321]LogAIModule: Creating AISystem for world TestLevel
+[2025.04.04-07.57.12:823][321]LogPlayLevel: PIE: World Init took: (0.001066s)
+[2025.04.04-07.57.12:823][321]LogAudio: Display: Creating Audio Device:                 Id: 7, Scope: Unique, Realtime: True
+[2025.04.04-07.57.12:823][321]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2025.04.04-07.57.12:823][321]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2025.04.04-07.57.12:824][321]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2025.04.04-07.57.12:824][321]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2025.04.04-07.57.12:824][321]LogAudioMixer: Display: 	Number of buffers to queue:			  1
+[2025.04.04-07.57.12:824][321]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2025.04.04-07.57.12:824][321]LogAudioMixer: Display: 	Number of Async Source Workers:		  4
+[2025.04.04-07.57.12:824][321]LogAudio: Display: AudioDevice MaxSources: 32
+[2025.04.04-07.57.12:824][321]LogAudio: Display: Audio Spatialization Plugin: None (built-in).
+[2025.04.04-07.57.12:824][321]LogAudio: Display: Audio Reverb Plugin: None (built-in).
+[2025.04.04-07.57.12:824][321]LogAudio: Display: Audio Occlusion Plugin: None (built-in).
+[2025.04.04-07.57.12:826][321]LogAudioMixer: Display: Initializing audio mixer using platform API: 'XAudio2'
+[2025.04.04-07.57.12:878][321]LogAudioMixer: Display: Using Audio Hardware Device SteelSeries Sonar - Gaming (SteelSeries Sonar Virtual Audio Device)
+[2025.04.04-07.57.12:878][321]LogAudioMixer: Display: Initializing Sound Submixes...
+[2025.04.04-07.57.12:878][321]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2025.04.04-07.57.12:878][321]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2025.04.04-07.57.12:880][321]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called. InstanceID=7
+[2025.04.04-07.57.12:880][321]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=8, Samples=8192, InstanceID=7
+[2025.04.04-07.57.12:881][321]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal(), InstanceID=7
+[2025.04.04-07.57.12:881][321]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time. InstanceID=7
+[2025.04.04-07.57.12:881][321]LogInit: FAudioDevice initialized with ID 7.
+[2025.04.04-07.57.12:881][321]LogAudio: Display: Audio Device (ID: 7) registered with world 'TestLevel'.
+[2025.04.04-07.57.12:881][321]LogAudioMixer: Initializing Audio Bus Subsystem for audio device with ID 7
+[2025.04.04-07.57.12:884][321]LogLoad: Game class is 'BP_PetGameModeBase_C'
+[2025.04.04-07.57.12:885][321]LogWorld: Bringing World /Game/UEDPIE_0_TestLevel.TestLevel up for play (max tick rate 0) at 2025.04.04-08.57.12
+[2025.04.04-07.57.12:885][321]LogWorld: Bringing up level for play took: 0.000684
+[2025.04.04-07.57.12:888][321]LogOnline: OSS: Created online subsystem instance for: :Context_11
+[2025.04.04-07.57.12:897][321]PIE: Server logged in
+[2025.04.04-07.57.12:898][321]PIE: Play in editor total start time 0.095 seconds.
+[2025.04.04-07.57.26:724][817]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2025.04.04-07.57.26:724][817]LogWorld: BeginTearingDown for /Game/UEDPIE_0_TestLevel
+[2025.04.04-07.57.26:724][817]LogWorld: UWorld::CleanupWorld for TestLevel, bSessionEnded=true, bCleanupResources=true
+[2025.04.04-07.57.26:725][817]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2025.04.04-07.57.26:728][817]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2025.04.04-07.57.26:733][817]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2025.04.04-07.57.26:747][817]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2025.04.04-07.57.26:747][817]LogAudioMixer: Deinitializing Audio Bus Subsystem for audio device with ID 7
+[2025.04.04-07.57.26:747][817]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=7
+[2025.04.04-07.57.26:749][817]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=7
+[2025.04.04-07.57.26:756][817]LogUObjectHash: Compacting FUObjectHashTables data took   1.16ms
+[2025.04.04-07.57.26:945][818]LogPlayLevel: Display: Destroying online subsystem :Context_11
+[2025.04.04-07.57.28:126][924]LogShaderCompilers: Display: ================================================
+[2025.04.04-07.57.28:126][924]LogShaderCompilers: Display: === FShaderJobCache stats ===
+[2025.04.04-07.57.28:126][924]LogShaderCompilers: Display: Total job queries 3,672, among them cache hits 11 (0.30%)
+[2025.04.04-07.57.28:126][924]LogShaderCompilers: Display: Tracking 3,654 distinct input hashes that result in 2,625 distinct outputs (71.84%)
+[2025.04.04-07.57.28:126][924]LogShaderCompilers: Display: RAM used: 67.28 MiB of 3.20 GiB budget. Usage: 2.05%
+[2025.04.04-07.57.28:126][924]LogShaderCompilers: Display: === Shader Compilation stats ===
+[2025.04.04-07.57.28:126][924]LogShaderCompilers: Display: Shaders Compiled: 3,654
+[2025.04.04-07.57.28:126][924]LogShaderCompilers: Display: Jobs assigned 3,657, completed 3,654 (99.92%)
+[2025.04.04-07.57.28:126][924]LogShaderCompilers: Display: Average time worker was idle: 23.06 s
+[2025.04.04-07.57.28:126][924]LogShaderCompilers: Display: Time job spent in pending queue: average 45.47 s, longest 98.38 s
+[2025.04.04-07.57.28:126][924]LogShaderCompilers: Display: Job execution time: average 3.28 s, max 12.13 s
+[2025.04.04-07.57.28:126][924]LogShaderCompilers: Display: Job life time (pending + execution): average 48.80 s, max 105.03
+[2025.04.04-07.57.28:126][924]LogShaderCompilers: Display: Shader code size: average 38.283 KiB, min 2.086 KiB, max 162.84 KiB
+[2025.04.04-07.57.28:126][924]LogShaderCompilers: Display: Time at least one job was in flight (either pending or executed): 114.97 s
+[2025.04.04-07.57.28:126][924]LogShaderCompilers: Display: Jobs were issued in 436 batches (only local compilation was used), average 8.39 jobs/batch
+[2025.04.04-07.57.28:126][924]LogShaderCompilers: Display: Average processing rate: 31.78 jobs/sec
+[2025.04.04-07.57.28:126][924]LogShaderCompilers: Display: Total thread time: 1,224.236 s
+[2025.04.04-07.57.28:126][924]LogShaderCompilers: Display: Total thread preprocess time: 74.159 s
+[2025.04.04-07.57.28:126][924]LogShaderCompilers: Display: Percentage time preprocessing: 6.06%
+[2025.04.04-07.57.28:126][924]LogShaderCompilers: Display: Effective parallelization: 10.65 (times faster than compiling all shaders on one thread). Compare with number of workers: 12
+[2025.04.04-07.57.28:126][924]LogShaderCompilers: Display: Top 5 most expensive shader types by average time:
+[2025.04.04-07.57.28:126][924]LogShaderCompilers: Display:                                          FClusteredShadingPS (compiled    4 times, average 4.59 sec, max 7.90 sec, min 1.44 sec)
+[2025.04.04-07.57.28:126][924]LogShaderCompilers: Display:                                   FSSDTemporalAccumulationCS (compiled   10 times, average 4.19 sec, max 4.91 sec, min 3.41 sec)
+[2025.04.04-07.57.28:126][924]LogShaderCompilers: Display:                                    FSSDSpatialAccumulationCS (compiled   33 times, average 1.54 sec, max 2.77 sec, min 0.87 sec)
+[2025.04.04-07.57.28:127][924]LogShaderCompilers: Display:                                             FDeferredLightPS (compiled  134 times, average 1.21 sec, max 1.75 sec, min 0.97 sec)
+[2025.04.04-07.57.28:127][924]LogShaderCompilers: Display:                                        FCloudRenderViewPS011 (compiled    1 times, average 1.16 sec, max 1.16 sec, min 1.16 sec)
+[2025.04.04-07.57.28:127][924]LogShaderCompilers: Display: Top 5 shader types by total compile time:
+[2025.04.04-07.57.28:127][924]LogShaderCompilers: Display:                                             FDeferredLightPS - 13.27% of total time (compiled  134 times, average 1.21 sec, max 1.75 sec, min 0.97 sec)
+[2025.04.04-07.57.28:127][924]LogShaderCompilers: Display:                                FVirtualShadowMapProjectionCS - 5.57% of total time (compiled   96 times, average 0.71 sec, max 1.26 sec, min 0.41 sec)
+[2025.04.04-07.57.28:127][924]LogShaderCompilers: Display:                                  FScreenProbeTraceMeshSDFsCS - 4.69% of total time (compiled   96 times, average 0.60 sec, max 1.04 sec, min 0.14 sec)
+[2025.04.04-07.57.28:127][924]LogShaderCompilers: Display:                      FRenderSingleScatteringWithPreshadingCS - 4.36% of total time (compiled  128 times, average 0.42 sec, max 0.89 sec, min 0.13 sec)
+[2025.04.04-07.57.28:127][924]LogShaderCompilers: Display:                                    FSSDSpatialAccumulationCS - 4.16% of total time (compiled   33 times, average 1.54 sec, max 2.77 sec, min 0.87 sec)
+[2025.04.04-07.57.28:127][924]LogShaderCompilers: Display: ================================================
+[2025.04.04-07.57.28:864][994]LogDebuggerCommands: Repeating last play command: Selected Viewport
+[2025.04.04-07.57.28:875][994]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2025.04.04-07.57.28:875][994]PIE: New page: PIE session: TestLevel (4 Apr 2025, 09:57:28)
+[2025.04.04-07.57.28:875][994]LogPlayLevel: Creating play world package: /Game/UEDPIE_0_TestLevel
+[2025.04.04-07.57.28:877][994]LogPlayLevel: PIE: StaticDuplicateObject took: (0.001784s)
+[2025.04.04-07.57.28:877][994]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/TestLevel.TestLevel to /Game/UEDPIE_0_TestLevel.TestLevel (0.001819s)
+[2025.04.04-07.57.28:892][994]LogUObjectHash: Compacting FUObjectHashTables data took   1.08ms
+[2025.04.04-07.57.28:895][994]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2025.04.04-07.57.28:895][994]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2025.04.04-07.57.28:896][994]LogAIModule: Creating AISystem for world TestLevel
+[2025.04.04-07.57.28:896][994]LogPlayLevel: PIE: World Init took: (0.001005s)
+[2025.04.04-07.57.28:896][994]LogAudio: Display: Creating Audio Device:                 Id: 8, Scope: Unique, Realtime: True
+[2025.04.04-07.57.28:896][994]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2025.04.04-07.57.28:896][994]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2025.04.04-07.57.28:896][994]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2025.04.04-07.57.28:896][994]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2025.04.04-07.57.28:896][994]LogAudioMixer: Display: 	Number of buffers to queue:			  1
+[2025.04.04-07.57.28:896][994]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2025.04.04-07.57.28:896][994]LogAudioMixer: Display: 	Number of Async Source Workers:		  4
+[2025.04.04-07.57.28:896][994]LogAudio: Display: AudioDevice MaxSources: 32
+[2025.04.04-07.57.28:897][994]LogAudio: Display: Audio Spatialization Plugin: None (built-in).
+[2025.04.04-07.57.28:897][994]LogAudio: Display: Audio Reverb Plugin: None (built-in).
+[2025.04.04-07.57.28:897][994]LogAudio: Display: Audio Occlusion Plugin: None (built-in).
+[2025.04.04-07.57.28:899][994]LogAudioMixer: Display: Initializing audio mixer using platform API: 'XAudio2'
+[2025.04.04-07.57.28:950][994]LogAudioMixer: Display: Using Audio Hardware Device SteelSeries Sonar - Gaming (SteelSeries Sonar Virtual Audio Device)
+[2025.04.04-07.57.28:950][994]LogAudioMixer: Display: Initializing Sound Submixes...
+[2025.04.04-07.57.28:950][994]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2025.04.04-07.57.28:950][994]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2025.04.04-07.57.28:951][994]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called. InstanceID=8
+[2025.04.04-07.57.28:951][994]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=8, Samples=8192, InstanceID=8
+[2025.04.04-07.57.28:953][994]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal(), InstanceID=8
+[2025.04.04-07.57.28:953][994]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time. InstanceID=8
+[2025.04.04-07.57.28:953][994]LogInit: FAudioDevice initialized with ID 8.
+[2025.04.04-07.57.28:953][994]LogAudio: Display: Audio Device (ID: 8) registered with world 'TestLevel'.
+[2025.04.04-07.57.28:953][994]LogAudioMixer: Initializing Audio Bus Subsystem for audio device with ID 8
+[2025.04.04-07.57.28:957][994]LogLoad: Game class is 'BP_PetGameModeBase_C'
+[2025.04.04-07.57.28:958][994]LogWorld: Bringing World /Game/UEDPIE_0_TestLevel.TestLevel up for play (max tick rate 0) at 2025.04.04-08.57.28
+[2025.04.04-07.57.28:958][994]LogWorld: Bringing up level for play took: 0.000616
+[2025.04.04-07.57.28:961][994]LogOnline: OSS: Created online subsystem instance for: :Context_12
+[2025.04.04-07.57.28:962][994]PIE: Server logged in
+[2025.04.04-07.57.28:963][994]PIE: Play in editor total start time 0.088 seconds.
+[2025.04.04-07.57.35:964][797]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2025.04.04-07.57.35:964][797]LogWorld: BeginTearingDown for /Game/UEDPIE_0_TestLevel
+[2025.04.04-07.57.35:964][797]LogWorld: UWorld::CleanupWorld for TestLevel, bSessionEnded=true, bCleanupResources=true
+[2025.04.04-07.57.35:965][797]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2025.04.04-07.57.35:968][797]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2025.04.04-07.57.35:973][797]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2025.04.04-07.57.35:987][797]LogAudio: Display: Audio Device unregistered from world 'None'.
+[2025.04.04-07.57.35:988][797]LogAudioMixer: Deinitializing Audio Bus Subsystem for audio device with ID 8
+[2025.04.04-07.57.35:988][797]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=8
+[2025.04.04-07.57.35:990][797]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=8
+[2025.04.04-07.57.35:994][797]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2025.04.04-07.57.35:997][797]LogUObjectHash: Compacting FUObjectHashTables data took   1.10ms
+[2025.04.04-07.57.36:076][798]LogPlayLevel: Display: Destroying online subsystem :Context_12
+[2025.04.04-07.57.36:705][863]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2025.04.04-07.57.36:748][863]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/TestLevel" FILE="Z:/Year Three/Module4/Unreal/PetGameUE/PetGameUE/Content/TestLevel.umap" SILENT=true AUTOSAVING=false KEEPDIRTY=false
+[2025.04.04-07.57.36:788][863]LogUObjectHash: Compacting FUObjectHashTables data took   1.13ms
+[2025.04.04-07.57.36:800][863]LogSavePackage: Moving output files for package: /Game/TestLevel
+[2025.04.04-07.57.36:801][863]LogSavePackage: Moving 'Z:/Year Three/Module4/Unreal/PetGameUE/PetGameUE/Saved/TestLevel8EBAB1754B47500EAECF87A589CEE453.tmp' to 'Z:/Year Three/Module4/Unreal/PetGameUE/PetGameUE/Content/TestLevel.umap'
+[2025.04.04-07.57.36:949][863]LogFileHelpers: Saving map 'TestLevel' took 0.201
+[2025.04.04-07.57.36:958][863]LogFileHelpers: InternalPromptForCheckoutAndSave took 252 ms (total: 2.53 sec)
+[2025.04.04-07.57.36:959][863]AssetCheck: New page: Asset Save: TestLevel
+[2025.04.04-07.57.36:959][863]LogContentValidation: Display: Validating /Script/Engine.World /Game/TestLevel.TestLevel
+[2025.04.04-07.57.41:285][333]LogLiveCoding: Display: Starting Live Coding compile.
+[2025.04.04-07.57.42:464][434]Display: Reload/Re-instancing Complete: No object changes detected
+[2025.04.04-07.57.42:464][434]LogLiveCoding: Display: Live coding succeeded, no code changes detected

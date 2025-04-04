@@ -260,6 +260,8 @@
 /I "Z:\Year Three\Module4\Unreal\PetGameUE\PetGameUE\Intermediate\Build\Win64\UnrealEditor\Inc\PetGameUE\UHT"
 /I "Z:\Year Three\Module4\Unreal\PetGameUE\PetGameUE\Source"
 /I "Z:\Year Three\Module4\Unreal\PetGameUE\PetGameUE\Source\PetGameUE\Public"
+/I "..\Plugins\EnhancedInput\Intermediate\Build\Win64\UnrealEditor\Inc\EnhancedInput\UHT"
+/I "..\Plugins\EnhancedInput\Source\EnhancedInput\Public"
 /external:W0
 /external:I "ThirdParty\mimalloc\include"
 /external:I "ThirdParty\LibTiff\Source\Win64"
