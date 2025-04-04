@@ -1361,3 +1361,44 @@ LogConfig: Set CVar [[r.Shadow.DetectVertexShaderLayerAtRuntime:1]]
 [2025.04.04-07.24.46:751][320]AssetCheck: New page: Asset Save: IMC_PlayerCharacter
 [2025.04.04-07.24.46:751][320]LogContentValidation: Display: Validating /Script/EnhancedInput.InputMappingContext /Game/Inputs/IMC_PlayerCharacter.IMC_PlayerCharacter
 [2025.04.04-07.24.48:556][455]LogSlate: Window 'IMC_PlayerCharacter' being destroyed
+[2025.04.04-07.25.25:906][276]LogLiveCoding: Display: Starting Live Coding compile.
+[2025.04.04-07.25.27:243][281]Display: Reload/Re-instancing Complete: No object changes detected
+[2025.04.04-07.25.27:243][281]LogLiveCoding: Display: Live coding succeeded, no code changes detected
+[2025.04.04-07.25.31:833][602]LogSlate: Took 0.000252 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-BoldCondensed.ttf' (158K)
+[2025.04.04-07.25.42:597][754]Running E:/epic/UE_5.3/Engine/Build/BatchFiles/Build.bat  -projectfiles -project="Z:/Year Three/Module4/Unreal/PetGameUE/PetGameUE/PetGameUE.uproject" -game -rocket -progress
+[2025.04.04-07.25.42:835][754]Using bundled DotNet SDK version: 6.0.302
+[2025.04.04-07.25.42:835][754]Running UnrealBuildTool: dotnet "..\..\Engine\Binaries\DotNET\UnrealBuildTool\UnrealBuildTool.dll" -projectfiles -project="Z:/Year Three/Module4/Unreal/PetGameUE/PetGameUE/PetGameUE.uproject" -game -rocket -progress
+[2025.04.04-07.25.43:250][754]Log file: C:\Users\hchy1\AppData\Local\UnrealBuildTool\Log_GPF.txt
+[2025.04.04-07.25.43:552][754]
+[2025.04.04-07.25.43:552][754]Generating VisualStudio project files:
+[2025.04.04-07.25.43:552][754]Discovering modules, targets and source code for project...
+[2025.04.04-07.25.44:860][754]Binding IntelliSense data...
+[2025.04.04-07.25.50:309][754]Binding IntelliSense data... 100%
+[2025.04.04-07.25.50:309][754]Creating common properties file...
+[2025.04.04-07.25.50:309][754]Creating common properties file... 0%
+[2025.04.04-07.25.50:309][754]Writing project files...
+[2025.04.04-07.25.52:018][754]Writing project files... 100%
+[2025.04.04-07.25.52:018][754]
+[2025.04.04-07.25.52:018][754]Generating QueryTargets data for editor...
+[2025.04.04-07.25.52:630][754]LogLiveCoding: Display: Starting Live Coding compile.
+[2025.04.04-07.25.52:654][754]LogSlate: Window 'Add C++ Class' being destroyed
+[2025.04.04-07.25.55:677][754]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2025.04.04-07.25.55:834][755]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2025.04.04-07.25.55:841][755]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2025.04.04-07.25.56:180][756]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2025.04.04-07.25.56:241][756]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2025.04.04-07.25.56:503][757]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2025.04.04-07.25.56:516][757]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2025.04.04-07.25.56:939][758]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2025.04.04-07.25.56:961][758]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2025.04.04-07.25.57:181][759]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2025.04.04-07.25.57:187][759]LogVSAccessor: Warning: Visual Studio is open but could not be queried - it may be blocked by a modal operation
+[2025.04.04-07.26.00:192][760]LogVSAccessor: Warning: Couldn't goto line number '1' in 'Z:/Year Three/Module4/Unreal/PetGameUE/PetGameUE/Source/PetGameUE/Public/MainCharacter.h'.
+[2025.04.04-07.26.01:110][760]LogVSAccessor: Warning: Couldn't goto line number '1' in 'Z:/Year Three/Module4/Unreal/PetGameUE/PetGameUE/Source/PetGameUE/Private/MainCharacter.cpp'.
+[2025.04.04-07.26.02:784][766]LogLiveCoding: Display:    Creating library Z:\Year Three\Module4\Unreal\PetGameUE\PetGameUE\Binaries\Win64\UnrealEditor-PetGameUE.patch_0.lib and object Z:\Year Three\Module4\Unreal\PetGameUE\PetGameUE\Binaries\Win64\UnrealEditor-PetGameUE.patch_0.exp
+[2025.04.04-07.26.03:229][768]LogClass: Could not find existing package /Script/PetGameUE for reload of class MainCharacter, assuming a new package.
+[2025.04.04-07.26.03:306][768]LogUObjectHash: Compacting FUObjectHashTables data took   0.88ms
+[2025.04.04-07.26.03:507][769]Display: Reload/Re-instancing Complete: 1 package new, 1 class new
+[2025.04.04-07.26.03:508][769]LogLiveCoding: Warning: Live coding succeeded, data type changes may cause packaging to fail if assets reference the new or updated data types
+[2025.04.04-07.26.03:840][769]LogSlate: Vector cache flush requested. Reason: Large atlases out of space; 2/1 Textures; frames since last flush: 18446739271367603553
+[2025.04.04-07.26.03:840][769]LogSlate: Warning: Setting the threshold to trigger a flush to 2 non-atlased textures as there is a lot of font data being cached.

@@ -11,6 +11,7 @@
     <None Include="..\..\Source\PetGameUEEditor.Target.cs">
       <Filter>Source</Filter>
     </None>
+    <None Include="..\..\.vsconfig" />
     <Filter Include="Config">
       <UniqueIdentifier>{FA535FFB-25E1-3D20-B416-52F9BE21E06E}</UniqueIdentifier>
     </Filter>
@@ -37,6 +38,18 @@
     </ClCompile>
     <ClInclude Include="..\..\Source\PetGameUE\PetGameUE.h">
       <Filter>Source\PetGameUE</Filter>
+    </ClInclude>
+    <Filter Include="Source\PetGameUE\Private">
+      <UniqueIdentifier>{B1840729-A067-3ECA-935D-6AABE1EE9CE7}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\PetGameUE\Private\MainCharacter.cpp">
+      <Filter>Source\PetGameUE\Private</Filter>
+    </ClCompile>
+    <Filter Include="Source\PetGameUE\Public">
+      <UniqueIdentifier>{0E79E863-F160-3C06-BCF5-1891E471A3DF}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Source\PetGameUE\Public\MainCharacter.h">
+      <Filter>Source\PetGameUE\Public</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
