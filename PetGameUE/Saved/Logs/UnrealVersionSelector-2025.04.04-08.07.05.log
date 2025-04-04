@@ -1,8 +1,8 @@
-Log started at 04/04/2025 08:01:16 (2025-04-04T07:01:16Z)
+Log started at 04/04/2025 08:07:05 (2025-04-04T07:07:05Z)
 No config file at C:\Users\hchy1\OneDrive - De Montfort University\Documents\Unreal Engine\UnrealBuildTool\BuildConfiguration.xml
 Configuration will be read from:
   C:\Users\hchy1\AppData\Roaming\Unreal Engine\UnrealBuildTool\BuildConfiguration.xml
-Log file: Z:\Year Three\Module4\Unreal\PetGameUE\PetGameUE\Saved\Logs\UnrealVersionSelector-2025.04.04-08.01.16.log
+Log file: Z:\Year Three\Module4\Unreal\PetGameUE\PetGameUE\Saved\Logs\UnrealVersionSelector-2025.04.04-08.07.05.log
 
 Setting temp directory to 'C:\Users\hchy1\AppData\Local\Temp\UnrealBuildTool\83eb45bd'
     Registering build platform: UnrealBuildTool.AndroidPlatformFactory
@@ -22,7 +22,7 @@ Found Universal CRT version 10.0.26100.0 at C:\Program Files (x86)\Windows Kits\
 Win64 Installed SDK(s): MinVersion_Sdk=10.0.00000.0, MaxVersion_Sdk=10.9.99999.0, CurrentVersion_Sdk=10.0.26100.0, Version_AutoSdk=10.0.18362.0, CurrentVersion_AutoSdk=
         Registering build platform: Win64 - buildable: True
 Log file: C:\Users\hchy1\AppData\Local\UnrealBuildTool\Log_GPF.txt
-Deleting old log file: C:\Users\hchy1\AppData\Local\UnrealBuildTool\Log_GPF-backup-2025.03.30-16.54.49.txt
+Deleting old log file: C:\Users\hchy1\AppData\Local\UnrealBuildTool\Log_GPF-backup-2025.03.30-17.11.55.txt
 Resolved project argument Z:/Year Three/Module4/Unreal/PetGameUE/PetGameUE/PetGameUE.uproject to Z:\Year Three\Module4\Unreal\PetGameUE\PetGameUE\PetGameUE.uproject
 Registering project generator UnrealBuildTool.AndroidProjectGenerator for Android
 Skipping project file generator registration for Android due to no valid BuildPlatform.
@@ -1761,8 +1761,8 @@ Binding IntelliSense data...
 @progress 'Binding IntelliSense data...' 0%
 Found target: UnrealEditor
 Found target: PetGameUEEditor
-Building UnrealEditor - PetGameUEEditor - Win64 - Development
 Building UnrealEditor - UnrealEditor - Win64 - Development
+Building UnrealEditor - PetGameUEEditor - Win64 - Development
 Excluding module AndroidLocalNotification: Excluded folder name
 Excluding module AndroidRuntimeSettings: Excluded folder name
 Excluding module AudioMixerAndroid: Excluded folder name
@@ -1773,10 +1773,10 @@ Excluding module AudioCaptureAndroid: Excluded folder name
 Excluding module AudioCaptureAudioUnit: Excluded folder name
 Excluding module IOSAudio: Excluded folder name
 Excluding module IOSLocalNotification: Excluded folder name
-@progress 'Binding IntelliSense data...' 25%
 Excluding module IOSPlatformFeatures: Excluded folder name
 Excluding module IOSRuntimeSettings: Excluded folder name
 Excluding module AudioMixerSDL: Excluded folder name
+@progress 'Binding IntelliSense data...' 25%
 Excluding module UnixCommonStartup: Excluded folder name
 Excluding module AndroidDeviceDetection: Excluded folder name
 Excluding module AndroidPlatformEditor: Excluded folder name
@@ -8307,5 +8307,5 @@ WriteFileIfChanged() wrote 5 changed files of 1505 requested writes.
 Timeline:
 
 [ 0.000]
-[ 0.000](+7.979) <unknown>
-[ 7.979]
+[ 0.000](+7.891) <unknown>
+[ 7.891]
