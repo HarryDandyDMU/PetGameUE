@@ -2033,3 +2033,29 @@ Z:\Year Three\Module4\Unreal\PetGameUE\PetGameUE\Binaries\Win64\UnrealEditor-Pet
 [2025.04.04-07.57.41:285][333]LogLiveCoding: Display: Starting Live Coding compile.
 [2025.04.04-07.57.42:464][434]Display: Reload/Re-instancing Complete: No object changes detected
 [2025.04.04-07.57.42:464][434]LogLiveCoding: Display: Live coding succeeded, no code changes detected
+[2025.04.04-08.02.33:964][719]Running E:/epic/UE_5.3/Engine/Build/BatchFiles/Build.bat  -projectfiles -project="Z:/Year Three/Module4/Unreal/PetGameUE/PetGameUE/PetGameUE.uproject" -game -rocket -progress
+[2025.04.04-08.02.34:197][719]Using bundled DotNet SDK version: 6.0.302
+[2025.04.04-08.02.34:197][719]Running UnrealBuildTool: dotnet "..\..\Engine\Binaries\DotNET\UnrealBuildTool\UnrealBuildTool.dll" -projectfiles -project="Z:/Year Three/Module4/Unreal/PetGameUE/PetGameUE/PetGameUE.uproject" -game -rocket -progress
+[2025.04.04-08.02.34:798][719]Log file: C:\Users\hchy1\AppData\Local\UnrealBuildTool\Log_GPF.txt
+[2025.04.04-08.02.34:998][719]
+[2025.04.04-08.02.34:998][719]Generating VisualStudio project files:
+[2025.04.04-08.02.34:998][719]Discovering modules, targets and source code for project...
+[2025.04.04-08.02.36:000][719]Binding IntelliSense data...
+[2025.04.04-08.02.39:815][719]Binding IntelliSense data... 100%
+[2025.04.04-08.02.39:815][719]Creating common properties file...
+[2025.04.04-08.02.39:815][719]Creating common properties file... 0%
+[2025.04.04-08.02.39:815][719]Writing project files...
+[2025.04.04-08.02.41:019][719]Writing project files... 100%
+[2025.04.04-08.02.41:020][719]
+[2025.04.04-08.02.41:020][719]Generating QueryTargets data for editor...
+[2025.04.04-08.02.41:524][719]LogLiveCoding: Display: Starting Live Coding compile.
+[2025.04.04-08.02.41:712][719]LogSlate: Window 'Add C++ Class' being destroyed
+[2025.04.04-08.02.49:806][361]LogLiveCoding: Display:    Creating library Z:\Year Three\Module4\Unreal\PetGameUE\PetGameUE\Binaries\Win64\UnrealEditor-PetGameUE.patch_8.lib and object Z:\Year Three\Module4\Unreal\PetGameUE\PetGameUE\Binaries\Win64\UnrealEditor-PetGameUE.patch_8.exp
+[2025.04.04-08.02.50:117][362]LogClass: UPackage /Script/PetGameUE Reload.
+[2025.04.04-08.02.50:117][362]LogClass: Could not find existing class PetMasterClass in package /Script/PetGameUE for reload, assuming new or modified class
+[2025.04.04-08.02.50:193][362]LogUObjectHash: Compacting FUObjectHashTables data took   1.37ms
+[2025.04.04-08.02.50:835][363]Display: Reload/Re-instancing Complete: 1 package changed, 1 class new
+[2025.04.04-08.02.50:835][363]LogLiveCoding: Warning: Live coding succeeded, data type changes may cause packaging to fail if assets reference the new or updated data types
+[2025.04.04-08.06.57:019][685]LogLiveCoding: Display: Starting Live Coding compile.
+[2025.04.04-08.07.01:130][129]Display: Reload/Re-instancing Complete: No object changes detected
+[2025.04.04-08.07.01:130][129]LogLiveCoding: Display: Live coding succeeded, no code changes detected

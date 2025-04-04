@@ -48,6 +48,9 @@
     <ClCompile Include="..\..\Source\PetGameUE\Private\PetGameModeBase.cpp">
       <Filter>Source\PetGameUE\Private</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\Source\PetGameUE\Private\PetMasterClass.cpp">
+      <Filter>Source\PetGameUE\Private</Filter>
+    </ClCompile>
     <Filter Include="Source\PetGameUE\Public">
       <UniqueIdentifier>{0E79E863-F160-3C06-BCF5-1891E471A3DF}</UniqueIdentifier>
     </Filter>
@@ -55,6 +58,9 @@
       <Filter>Source\PetGameUE\Public</Filter>
     </ClInclude>
     <ClInclude Include="..\..\Source\PetGameUE\Public\PetGameModeBase.h">
+      <Filter>Source\PetGameUE\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\PetGameUE\Public\PetMasterClass.h">
       <Filter>Source\PetGameUE\Public</Filter>
     </ClInclude>
   </ItemGroup>
