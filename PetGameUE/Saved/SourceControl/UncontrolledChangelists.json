@@ -5,14 +5,9 @@
 			"guid": "00000000000000000000000000000000",
 			"description": "Default Uncontrolled Changelist",
 			"files": [
-				"Z:/Year Three/Module4/Unreal/PetGameUE/PetGameUE/Content/TestLevel.umap",
-				"Z:/Year Three/Module4/Unreal/PetGameUE/PetGameUE/Content/Inputs/IA_Look.uasset",
-				"Z:/Year Three/Module4/Unreal/PetGameUE/PetGameUE/Content/Inputs/IA_Move.uasset",
-				"Z:/Year Three/Module4/Unreal/PetGameUE/PetGameUE/Content/Inputs/IA_Jump.uasset",
-				"Z:/Year Three/Module4/Unreal/PetGameUE/PetGameUE/Content/Inputs/IMC_PlayerCharacter.uasset",
-				"Z:/Year Three/Module4/Unreal/PetGameUE/PetGameUE/Content/BP_PlayerCharacter.uasset",
-				"Z:/Year Three/Module4/Unreal/PetGameUE/PetGameUE/Content/BP_PetGameModeBase.uasset",
-				"Z:/Year Three/Module4/Unreal/PetGameUE/PetGameUE/Content/TestLeel.umap"
+				"Z:/Year Three/Module4/Learning/Inventory4/PetGameUE/Content/Items/BP_ARedGem.uasset",
+				"Z:/Year Three/Module4/Learning/Inventory4/PetGameUE/Content/TestLevel.umap",
+				"Z:/Year Three/Module4/Unreal/PetGameUE/PetGameUE/Content/TestLevel.umap"
 			]
 		}
 	]

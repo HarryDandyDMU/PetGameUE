@@ -27,7 +27,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{21877354-7700-3A87-8D30-0B66F43C4514}</ProjectGuid>
+    <ProjectGuid>{3167E43A-3FB1-39BC-818E-C0068D7AC112}</ProjectGuid>
     <RootNamespace>PetGameUE</RootNamespace>
   </PropertyGroup>
   <Import Project="UECommon.props" />
@@ -121,6 +121,11 @@
       <AdditionalOptions>$(ClCompile_AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <ClInclude Include="..\..\Source\PetGameUE\PetGameUE.h"/>
+    <ClCompile Include="..\..\Source\PetGameUE\Private\AGem.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles)</ForcedIncludeFiles>
+      <AdditionalOptions>$(ClCompile_AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
     <ClCompile Include="..\..\Source\PetGameUE\Private\MainCharacter.cpp">
       <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles)</ForcedIncludeFiles>
@@ -136,6 +141,7 @@
       <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles)</ForcedIncludeFiles>
       <AdditionalOptions>$(ClCompile_AdditionalOptions)</AdditionalOptions>
     </ClCompile>
+    <ClInclude Include="..\..\Source\PetGameUE\Public\AGem.h"/>
     <ClInclude Include="..\..\Source\PetGameUE\Public\MainCharacter.h"/>
     <ClInclude Include="..\..\Source\PetGameUE\Public\PetGameModeBase.h"/>
     <ClInclude Include="..\..\Source\PetGameUE\Public\PetMasterClass.h"/>

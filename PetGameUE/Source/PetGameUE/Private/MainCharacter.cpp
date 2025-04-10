@@ -4,6 +4,7 @@
 #include "MainCharacter.h"
 #include "GameFramework/Controller.h"
 #include "EnhancedInputComponent.h"
+#include "Kismet/KismetSystemLibrary.h"// should allow sphere trace
 #include "EnhancedInputSubsystems.h"
 
 
@@ -30,6 +31,8 @@ void AMainCharacter::BeginPlay()
 			Subsystem->AddMappingContext(DefaultMappingContext, 0);
 		}
 	}
+
+	InitialiseTrace();
 
 	
 }
@@ -76,7 +79,7 @@ void AMainCharacter::Move(const FInputActionValue& Value)
 		const FRotator YawRotation(0, Rotation.Yaw, 0);
 
 		// get forward vector
-		const FVector ForwardDirection = FRotationMatrix(YawRotation).GetUnitAxis(EAxis::X);
+		ForwardDirection = FRotationMatrix(YawRotation).GetUnitAxis(EAxis::X);
 
 		// get right vector 
 		const FVector RightDirection = FRotationMatrix(YawRotation).GetUnitAxis(EAxis::Y);
@@ -105,5 +108,41 @@ void AMainCharacter::Look(const FInputActionValue& Value)
 void AMainCharacter::Jumping()
 {
 	Jump();
+}
+
+
+//trace
+
+void AMainCharacter::InitialiseTrace() //WRONG TRACE TYPE
+{
+	//create start and end locations
+	const FVector Start = GetOwner()->GetActorLocation();//returns root location
+	const FVector End = (GetOwner()->GetActorLocation()) + (ForwardDirection * Distance);//returns root add forward vector times by distance
+
+	//array of actors to ignore;
+	TArray<AActor*> ActorsToIgnore;
+
+	//variable of hit returns array
+	TArray<FHitResult> HitArray;
+
+	//add self to actors that need to be ignored
+	ActorsToIgnore.Add(this);
+
+	//sphere trace for multiple objects with bool
+	//uses camera channel and complex collision is true
+	//Green for trace and red for hit and final float is 60secs
+	const bool Hit = UKismetSystemLibrary::SphereTraceMulti(GetWorld(), Start, End, Radius, UEngineTypes::ConvertToTraceType(ECC_Camera), true, ActorsToIgnore, EDrawDebugTrace::ForDuration, HitArray, true, FLinearColor::Green, FLinearColor::Red, 60.f);
+
+	if (Hit == true)
+	{
+		for (const FHitResult HitResult : HitArray)//for each hit result in array
+		{
+			GEngine->AddOnScreenDebugMessage(-1, 60.f, FColor::Emerald, FString::Printf(TEXT("Hit: %s"), *HitResult.GetActor()->GetName()));
+		}
+	}
+}
+
+void AMainCharacter::Trace()
+{
 }
 

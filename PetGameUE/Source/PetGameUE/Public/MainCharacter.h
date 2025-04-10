@@ -53,5 +53,23 @@ public:
 	void Jumping();
 
 
+	//item detection tracing
+	
+	UPROPERTY(EditAnywhere, Category = "Detection Tracing")
+	float Radius = 300.f;//easy default sphere range
+
+	UPROPERTY(EditAnywhere, Category = "Detection Tracing")
+	float Distance = 500.f;//easy distance to end point
+
+	UPROPERTY(VisibleAnywhere, Category = "Movement")
+	FVector ForwardDirection;//used in the trace aswell as movement
+
+	//runs in begin play to init trace
+	void InitialiseTrace();
+
+	//see item
+	void Trace();
+
+
 
 };
