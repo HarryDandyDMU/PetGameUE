@@ -117,11 +117,11 @@ void EmptyLinkFunctionForGeneratedCodeMainCharacter() {}
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AMainCharacter_Statics::NewProp_DefaultMappingContext_MetaData[] = {
 		{ "Category", "Input" },
 #if !UE_BUILD_SHIPPING
-		{ "Comment", "/** Mapping Context file */" },
+		{ "Comment", "//imc\n" },
 #endif
 		{ "ModuleRelativePath", "Public/MainCharacter.h" },
 #if !UE_BUILD_SHIPPING
-		{ "ToolTip", "Mapping Context file" },
+		{ "ToolTip", "imc" },
 #endif
 	};
 #endif
@@ -130,11 +130,11 @@ void EmptyLinkFunctionForGeneratedCodeMainCharacter() {}
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AMainCharacter_Statics::NewProp_JumpAction_MetaData[] = {
 		{ "Category", "Input" },
 #if !UE_BUILD_SHIPPING
-		{ "Comment", "/** Jump Input Action */" },
+		{ "Comment", "//ia jump\n" },
 #endif
 		{ "ModuleRelativePath", "Public/MainCharacter.h" },
 #if !UE_BUILD_SHIPPING
-		{ "ToolTip", "Jump Input Action" },
+		{ "ToolTip", "ia jump" },
 #endif
 	};
 #endif
@@ -143,11 +143,11 @@ void EmptyLinkFunctionForGeneratedCodeMainCharacter() {}
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AMainCharacter_Statics::NewProp_MoveAction_MetaData[] = {
 		{ "Category", "Input" },
 #if !UE_BUILD_SHIPPING
-		{ "Comment", "/** Move Input Action */" },
+		{ "Comment", "//ia move\n" },
 #endif
 		{ "ModuleRelativePath", "Public/MainCharacter.h" },
 #if !UE_BUILD_SHIPPING
-		{ "ToolTip", "Move Input Action" },
+		{ "ToolTip", "ia move" },
 #endif
 	};
 #endif
@@ -156,11 +156,11 @@ void EmptyLinkFunctionForGeneratedCodeMainCharacter() {}
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AMainCharacter_Statics::NewProp_LookAction_MetaData[] = {
 		{ "Category", "Input" },
 #if !UE_BUILD_SHIPPING
-		{ "Comment", "/** Look Input Action */" },
+		{ "Comment", "//ia look\n" },
 #endif
 		{ "ModuleRelativePath", "Public/MainCharacter.h" },
 #if !UE_BUILD_SHIPPING
-		{ "ToolTip", "Look Input Action" },
+		{ "ToolTip", "ia look" },
 #endif
 	};
 #endif
@@ -253,9 +253,9 @@ void EmptyLinkFunctionForGeneratedCodeMainCharacter() {}
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
 	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_PetGameUE_Source_PetGameUE_Public_MainCharacter_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_AMainCharacter, AMainCharacter::StaticClass, TEXT("AMainCharacter"), &Z_Registration_Info_UClass_AMainCharacter, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AMainCharacter), 3762015000U) },
+		{ Z_Construct_UClass_AMainCharacter, AMainCharacter::StaticClass, TEXT("AMainCharacter"), &Z_Registration_Info_UClass_AMainCharacter, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AMainCharacter), 1734853209U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_PetGameUE_Source_PetGameUE_Public_MainCharacter_h_2733385797(TEXT("/Script/PetGameUE"),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_PetGameUE_Source_PetGameUE_Public_MainCharacter_h_4243207440(TEXT("/Script/PetGameUE"),
 		Z_CompiledInDeferFile_FID_PetGameUE_Source_PetGameUE_Public_MainCharacter_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_PetGameUE_Source_PetGameUE_Public_MainCharacter_h_Statics::ClassInfo),
 		nullptr, 0,
 		nullptr, 0);

@@ -163,7 +163,7 @@ void AMainCharacter::InitialiseTrace()
 	if (Hit == true)
 	{
 		
-			GEngine->AddOnScreenDebugMessage(-1, 60.f, FColor::Emerald, FString::Printf(TEXT("Hit: %s"), *HitResult.GetActor()->GetName()));
+			//GEngine->AddOnScreenDebugMessage(-1, 60.f, FColor::Emerald, FString::Printf(TEXT("Hit: %s"), *HitResult.GetActor()->GetName()));
 			if (HitResult.GetActor()->IsA(AAGem::StaticClass())) //if trace is a gem
 			{
 				GEngine->AddOnScreenDebugMessage(-1, 60.f, FColor::Magenta, FString::Printf(TEXT("Hit: %s"), *HitResult.GetActor()->GetName()));
@@ -172,7 +172,18 @@ void AMainCharacter::InitialiseTrace()
 	}
 }
 
-void AMainCharacter::Trace()
+void AMainCharacter::AddToInventory()
 {
+	//make hit result public or at least a class variables
+
+	//do the gem check above
+
+	//get max stack size
+
+	//get gem type
+
+	//add one to gem type if it's under max stack size
+
+	//destroy the hit result
 }
 

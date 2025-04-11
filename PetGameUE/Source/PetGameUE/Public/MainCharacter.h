@@ -40,29 +40,32 @@ public:
 	// Called to bind functionality to input
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
 
-	/** Mapping Context file */
+	//imc
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Input")
 	class UInputMappingContext* DefaultMappingContext;
 
-	/** Jump Input Action */
+	//ia jump
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Input")
 	class UInputAction* JumpAction;
 
-	/** Move Input Action */
+	//ia move
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Input")
 	class UInputAction* MoveAction;
 
-	/** Look Input Action */
+	//ia look
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Input")
 	class UInputAction* LookAction;
 
-	/** Called for movement input */
+	//setup input action for pickup F key with bool type
+
+
+	//move
 	void Move(const FInputActionValue& Value);
 
-	/** Called for looking input */
+	//look
 	void Look(const FInputActionValue& Value);
 
-	/** Called for Jumping input */
+	//jump
 	void Jumping();
 
 
@@ -80,8 +83,8 @@ public:
 	//runs in begin play to init trace
 	void InitialiseTrace();
 
-	//see item 
-	void Trace();
+	//add item to inventory
+	void AddToInventory();
 
 
 
