@@ -5,6 +5,8 @@
 #include "CoreMinimal.h"
 #include "GameFramework/Character.h"
 #include "InputActionValue.h"
+#include "Camera/CameraComponent.h"//include for camera
+#include "Components/CapsuleComponent.h" //included for capulse
 #include "MainCharacter.generated.h"
 
 UCLASS()
@@ -15,6 +17,17 @@ class PETGAMEUE_API AMainCharacter : public ACharacter
 public:
 	// Sets default values for this character's properties
 	AMainCharacter();
+
+
+	//ITEMS THAT MAKE UP THE CHARACTER
+
+	//mesh5
+	UPROPERTY(VisibleDefaultsOnly, Category = "Components")
+	USkeletalMeshComponent* MainCharacterMesh;
+	//camera
+
+	UPROPERTY(VisibleAnywhere, Category = "Components") //fps cam
+		UCameraComponent* CameraComponent;
 
 protected:
 	// Called when the game starts or when spawned
@@ -69,6 +82,9 @@ public:
 
 	//see item 
 	void Trace();
+
+
+
 
 
 

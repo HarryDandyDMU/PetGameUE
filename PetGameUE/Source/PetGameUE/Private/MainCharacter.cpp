@@ -14,6 +14,25 @@ AMainCharacter::AMainCharacter()
  	// Set this character to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
 
+	//initialise the camera
+	CameraComponent = CreateDefaultSubobject<UCameraComponent>(TEXT("Camera"));
+	check(CameraComponent != nullptr);
+
+	//attach to capsule
+	CameraComponent->SetupAttachment(CastChecked<USceneComponent, UCapsuleComponent>(GetCapsuleComponent()));
+
+	//move to eye height
+	CameraComponent->SetRelativeLocation(FVector(0.f, 0.f, 25.f)); //CURRENTLY MAGIC NUMBER NEED CHANGE
+	CameraComponent->bUsePawnControlRotation = true;
+
+	//initialise the mesh
+	MainCharacterMesh = CreateDefaultSubobject<USkeletalMeshComponent>(TEXT("Skel Mesh"));
+	check(MainCharacterMesh != nullptr);
+
+	//attach mesh to camera cause it's first person
+	MainCharacterMesh->SetupAttachment(CameraComponent);
+
+
 }
 
 // Called when the game starts or when spawned
@@ -31,6 +50,10 @@ void AMainCharacter::BeginPlay()
 			Subsystem->AddMappingContext(DefaultMappingContext, 0);
 		}
 	}
+
+
+	MainCharacterMesh->bCastDynamicShadow = false; //stops weird floating shadows
+	MainCharacterMesh->CastShadow = false;
 
 	
 
@@ -118,9 +141,13 @@ void AMainCharacter::Jumping()
 void AMainCharacter::InitialiseTrace() 
 {
 	//create start and end locations
-	const FVector Start = GetOwner()->GetActorLocation();//returns root location
-	const FVector End = (GetOwner()->GetActorLocation()) + (ForwardDirection * Distance);//returns root add forward vector times by distance
-	//swap above for GetActorForwardVector()
+	FVector Start = CameraComponent->GetComponentLocation();//returns rcamera root location
+	FVector End = (Start) + (CameraComponent->GetForwardVector() * Distance);//returns root add forward vector times by distance
+	//swap above for camera forward vector
+
+	
+
+	
 
 	//array of actors to ignore;
 	TArray<AActor*> ActorsToIgnore;
