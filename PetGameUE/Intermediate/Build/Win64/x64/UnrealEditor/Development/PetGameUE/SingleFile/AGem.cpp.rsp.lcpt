@@ -1,8 +1,8 @@
-"Z:\Year Three\Module4\Learning\Inventory4\PetGameUE\Source\PetGameUE\Private\AGem.cpp"
-/FI"Z:\Year Three\Module4\Learning\Inventory4\PetGameUE\Intermediate\Build\Win64\x64\UnrealEditor\Development\PetGameUE\Definitions.PetGameUE.h"
-/Fo"Z:\Year Three\Module4\Learning\Inventory4\PetGameUE\Intermediate\Build\Win64\x64\UnrealEditor\Development\PetGameUE\SingleFile\AGem.cpp.lcpt.obj"
-/sourceDependencies"Z:\Year Three\Module4\Learning\Inventory4\PetGameUE\Intermediate\Build\Win64\x64\UnrealEditor\Development\PetGameUE\SingleFile\AGem.cpp.dep.lcpt.json"
-@"Z:\Year Three\Module4\Learning\Inventory4\PetGameUE\Intermediate\Build\Win64\x64\UnrealEditor\Development\PetGameUE\PetGameUE.Shared.rsp"
+"Z:\Year Three\Module4\Unreal\PetGameUE\PetGameUE\Source\PetGameUE\Private\AGem.cpp"
+/FI"Z:\Year Three\Module4\Unreal\PetGameUE\PetGameUE\Intermediate\Build\Win64\x64\UnrealEditor\Development\PetGameUE\Definitions.PetGameUE.h"
+/Fo"Z:\Year Three\Module4\Unreal\PetGameUE\PetGameUE\Intermediate\Build\Win64\x64\UnrealEditor\Development\PetGameUE\SingleFile\AGem.cpp.lcpt.obj"
+/sourceDependencies"Z:\Year Three\Module4\Unreal\PetGameUE\PetGameUE\Intermediate\Build\Win64\x64\UnrealEditor\Development\PetGameUE\SingleFile\AGem.cpp.dep.lcpt.json"
+@"Z:\Year Three\Module4\Unreal\PetGameUE\PetGameUE\Intermediate\Build\Win64\x64\UnrealEditor\Development\PetGameUE\PetGameUE.Shared.rsp"
 /Zc:inline
 /nologo
 /Oi

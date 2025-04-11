@@ -1992,3 +1992,884 @@ LogConfig: Set CVar [[r.Shadow.DetectVertexShaderLayerAtRuntime:1]]
 [2025.04.11-11.19.51:361][710]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=13
 [2025.04.11-11.19.51:397][710]LogUObjectHash: Compacting FUObjectHashTables data took   2.43ms
 [2025.04.11-11.19.51:486][711]LogPlayLevel: Display: Destroying online subsystem :Context_20
+[2025.04.11-11.22.45:478][123]LogDerivedDataCache: C:/Users/hchy1/AppData/Local/UnrealEngine/Common/DerivedDataCache: Maintenance finished in +00:00:04.112 and deleted 0 files with total size 0 MiB and 0 empty folders. Scanned 2300 files in 3189 folders with total size 114 MiB.
+[2025.04.11-11.35.06:831][141]LogLiveCoding: Display: Starting Live Coding compile.
+[2025.04.11-11.36.16:818][587]LogLiveCoding: Display:    Creating library Z:\Year Three\Module4\Learning\Inventory4\PetGameUE\Binaries\Win64\UnrealEditor-PetGameUE.patch_9.lib and object Z:\Year Three\Module4\Learning\Inventory4\PetGameUE\Binaries\Win64\UnrealEditor-PetGameUE.patch_9.exp
+[2025.04.11-11.36.17:229][588]LogUObjectHash: Compacting FUObjectHashTables data took   1.20ms
+[2025.04.11-11.36.17:698][589]Display: Reload/Re-instancing Complete: 1 package changed, 4 classes unchanged
+[2025.04.11-11.36.17:699][589]LogLiveCoding: Display: Live coding succeeded
+[2025.04.11-11.36.55:508][814]LogDebuggerCommands: Repeating last play command: Selected Viewport
+[2025.04.11-11.36.56:125][814]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2025.04.11-11.36.56:125][814]PIE: New page: PIE session: TestLevel (11 Apr 2025, 13:36:56)
+[2025.04.11-11.36.56:125][814]LogPlayLevel: Creating play world package: /Game/UEDPIE_0_TestLevel
+[2025.04.11-11.36.56:127][814]LogPlayLevel: PIE: StaticDuplicateObject took: (0.001969s)
+[2025.04.11-11.36.56:127][814]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/TestLevel.TestLevel to /Game/UEDPIE_0_TestLevel.TestLevel (0.002008s)
+[2025.04.11-11.36.56:215][814]LogUObjectHash: Compacting FUObjectHashTables data took   1.54ms
+[2025.04.11-11.36.56:216][814]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2025.04.11-11.36.56:216][814]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2025.04.11-11.36.56:217][814]LogAIModule: Creating AISystem for world TestLevel
+[2025.04.11-11.36.56:217][814]LogPlayLevel: PIE: World Init took: (0.001489s)
+[2025.04.11-11.36.56:218][814]LogAudio: Display: Creating Audio Device:                 Id: 14, Scope: Unique, Realtime: True
+[2025.04.11-11.36.56:218][814]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2025.04.11-11.36.56:218][814]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2025.04.11-11.36.56:218][814]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2025.04.11-11.36.56:218][814]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2025.04.11-11.36.56:218][814]LogAudioMixer: Display: 	Number of buffers to queue:			  1
+[2025.04.11-11.36.56:218][814]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2025.04.11-11.36.56:218][814]LogAudioMixer: Display: 	Number of Async Source Workers:		  4
+[2025.04.11-11.36.56:218][814]LogAudio: Display: AudioDevice MaxSources: 32
+[2025.04.11-11.36.56:219][814]LogAudio: Display: Audio Spatialization Plugin: None (built-in).
+[2025.04.11-11.36.56:219][814]LogAudio: Display: Audio Reverb Plugin: None (built-in).
+[2025.04.11-11.36.56:219][814]LogAudio: Display: Audio Occlusion Plugin: None (built-in).
+[2025.04.11-11.36.56:222][814]LogAudioMixer: Display: Initializing audio mixer using platform API: 'XAudio2'
+[2025.04.11-11.36.56:286][814]LogAudioMixer: Display: Using Audio Hardware Device SteelSeries Sonar - Gaming (SteelSeries Sonar Virtual Audio Device)
+[2025.04.11-11.36.56:287][814]LogAudioMixer: Display: Initializing Sound Submixes...
+[2025.04.11-11.36.56:287][814]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2025.04.11-11.36.56:287][814]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2025.04.11-11.36.56:287][814]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called. InstanceID=14
+[2025.04.11-11.36.56:287][814]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=8, Samples=8192, InstanceID=14
+[2025.04.11-11.36.56:290][814]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal(), InstanceID=14
+[2025.04.11-11.36.56:290][814]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time. InstanceID=14
+[2025.04.11-11.36.56:290][814]LogInit: FAudioDevice initialized with ID 14.
+[2025.04.11-11.36.56:290][814]LogAudio: Display: Audio Device (ID: 14) registered with world 'TestLevel'.
+[2025.04.11-11.36.56:290][814]LogAudioMixer: Initializing Audio Bus Subsystem for audio device with ID 14
+[2025.04.11-11.36.56:293][814]LogLoad: Game class is 'BP_PetGameModeBase_C'
+[2025.04.11-11.36.56:294][814]LogWorld: Bringing World /Game/UEDPIE_0_TestLevel.TestLevel up for play (max tick rate 0) at 2025.04.11-12.36.56
+[2025.04.11-11.36.56:294][814]LogWorld: Bringing up level for play took: 0.000766
+[2025.04.11-11.36.56:296][814]LogOnline: OSS: Created online subsystem instance for: :Context_21
+[2025.04.11-11.36.56:298][814]PIE: Server logged in
+[2025.04.11-11.36.56:299][814]PIE: Play in editor total start time 0.175 seconds.
+[2025.04.11-11.37.19:124][211]LogContentBrowser: Deferred new asset file creation: BP_ARedGem1
+[2025.04.11-11.37.19:129][211]LogContentBrowser: Creating deferred item: BP_ARedGem1
+[2025.04.11-11.37.19:148][212]LogContentBrowser: Renaming the item being created (Deferred Item: BP_ARedGem1).
+[2025.04.11-11.37.24:187][808]LogContentBrowser: Attempting asset rename: BP_ARedGem1 -> BP_AGreenGem
+[2025.04.11-11.37.24:204][808]LogUObjectHash: Compacting FUObjectHashTables data took   1.23ms
+[2025.04.11-11.37.24:210][808]LogContentBrowser: End creating deferred item BP_ARedGem1
+[2025.04.11-11.37.26:092][  5]LogContentBrowser: Deferred new asset file creation: BP_AGreenGem1
+[2025.04.11-11.37.26:098][  5]LogContentBrowser: Creating deferred item: BP_AGreenGem1
+[2025.04.11-11.37.26:111][  6]LogContentBrowser: Renaming the item being created (Deferred Item: BP_AGreenGem1).
+[2025.04.11-11.37.31:437][618]LogContentBrowser: Attempting asset rename: BP_AGreenGem1 -> BP_ABlueGem
+[2025.04.11-11.37.31:456][618]LogUObjectHash: Compacting FUObjectHashTables data took   1.11ms
+[2025.04.11-11.37.31:462][618]LogContentBrowser: End creating deferred item BP_AGreenGem1
+[2025.04.11-11.37.33:839][863]LogContentBrowser: Deferred new asset file creation: BP_ABlueGem1
+[2025.04.11-11.37.33:845][863]LogContentBrowser: Creating deferred item: BP_ABlueGem1
+[2025.04.11-11.37.33:856][864]LogContentBrowser: Renaming the item being created (Deferred Item: BP_ABlueGem1).
+[2025.04.11-11.37.42:640][903]LogContentBrowser: Attempting asset rename: BP_ABlueGem1 -> BP_AYellowGem
+[2025.04.11-11.37.42:659][903]LogUObjectHash: Compacting FUObjectHashTables data took   1.13ms
+[2025.04.11-11.37.42:666][903]LogContentBrowser: End creating deferred item BP_ABlueGem1
+[2025.04.11-11.37.44:063][ 42]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2025.04.11-11.37.44:063][ 42]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Items/BP_AYellowGem" FILE="Z:/Year Three/Module4/Unreal/PetGameUE/PetGameUE/Content/Items/BP_AYellowGem.uasset" SILENT=true
+[2025.04.11-11.37.44:075][ 42]LogSavePackage: Moving output files for package: /Game/Items/BP_AYellowGem
+[2025.04.11-11.37.44:075][ 42]LogSavePackage: Moving 'Z:/Year Three/Module4/Unreal/PetGameUE/PetGameUE/Saved/BP_AYellowGemFFA2C263475AE67D1515D98AC042F41E.tmp' to 'Z:/Year Three/Module4/Unreal/PetGameUE/PetGameUE/Content/Items/BP_AYellowGem.uasset'
+[2025.04.11-11.37.44:079][ 42]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Items/BP_ABlueGem" FILE="Z:/Year Three/Module4/Unreal/PetGameUE/PetGameUE/Content/Items/BP_ABlueGem.uasset" SILENT=true
+[2025.04.11-11.37.44:091][ 42]LogSavePackage: Moving output files for package: /Game/Items/BP_ABlueGem
+[2025.04.11-11.37.44:091][ 42]LogSavePackage: Moving 'Z:/Year Three/Module4/Unreal/PetGameUE/PetGameUE/Saved/BP_ABlueGemA0605A6D45D80A73C930BAA712382C0A.tmp' to 'Z:/Year Three/Module4/Unreal/PetGameUE/PetGameUE/Content/Items/BP_ABlueGem.uasset'
+[2025.04.11-11.37.44:094][ 42]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Items/BP_AGreenGem" FILE="Z:/Year Three/Module4/Unreal/PetGameUE/PetGameUE/Content/Items/BP_AGreenGem.uasset" SILENT=true
+[2025.04.11-11.37.44:104][ 42]LogSavePackage: Moving output files for package: /Game/Items/BP_AGreenGem
+[2025.04.11-11.37.44:104][ 42]LogSavePackage: Moving 'Z:/Year Three/Module4/Unreal/PetGameUE/PetGameUE/Saved/BP_AGreenGem5A33914A4FDD487BD6D86FA246032DEF.tmp' to 'Z:/Year Three/Module4/Unreal/PetGameUE/PetGameUE/Content/Items/BP_AGreenGem.uasset'
+[2025.04.11-11.37.44:107][ 42]LogFileHelpers: InternalPromptForCheckoutAndSave took 44 ms (total: 415 ms)
+[2025.04.11-11.37.44:108][ 42]AssetCheck: New page: Asset Save: multiple assets
+[2025.04.11-11.37.44:108][ 42]LogContentValidation: Display: Validating /Script/Engine.Blueprint /Game/Items/BP_AYellowGem.BP_AYellowGem
+[2025.04.11-11.37.44:108][ 42]LogContentValidation: Display: Validating /Script/Engine.Blueprint /Game/Items/BP_ABlueGem.BP_ABlueGem
+[2025.04.11-11.37.44:108][ 42]LogContentValidation: Display: Validating /Script/Engine.Blueprint /Game/Items/BP_AGreenGem.BP_AGreenGem
+[2025.04.11-11.37.44:949][128]LogAssetEditorSubsystem: Opening Asset editor for Blueprint /Game/Items/BP_ABlueGem.BP_ABlueGem
+[2025.04.11-11.37.44:949][128]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2025.04.11-11.37.44:949][128]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2025.04.11-11.37.45:242][128]LogActor: Warning: BP_ABlueGem_C /Engine/Transient.World_8:PersistentLevel.BP_ABlueGem_C_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2025.04.11-11.37.47:275][290]LogWorld: UWorld::CleanupWorld for World_8, bSessionEnded=true, bCleanupResources=true
+[2025.04.11-11.37.47:275][290]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2025.04.11-11.37.47:291][290]LogAssetEditorSubsystem: Opening Asset editor for Blueprint /Game/Items/BP_ABlueGem.BP_ABlueGem
+[2025.04.11-11.37.47:291][290]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2025.04.11-11.37.47:291][290]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2025.04.11-11.37.47:414][290]LogActor: Warning: BP_ABlueGem_C /Engine/Transient.World_9:PersistentLevel.BP_ABlueGem_C_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2025.04.11-11.37.49:236][410]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2025.04.11-11.37.49:237][410]LogWorld: BeginTearingDown for /Game/UEDPIE_0_TestLevel
+[2025.04.11-11.37.49:237][410]LogWorld: UWorld::CleanupWorld for TestLevel, bSessionEnded=true, bCleanupResources=true
+[2025.04.11-11.37.49:237][410]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2025.04.11-11.37.49:240][410]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2025.04.11-11.37.49:245][410]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2025.04.11-11.37.49:256][410]LogAudio: Display: Audio Device unregistered from world 'None'.
+[2025.04.11-11.37.49:257][410]LogAudioMixer: Deinitializing Audio Bus Subsystem for audio device with ID 14
+[2025.04.11-11.37.49:257][410]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=14
+[2025.04.11-11.37.49:259][410]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=14
+[2025.04.11-11.37.49:263][410]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2025.04.11-11.37.49:267][410]LogUObjectHash: Compacting FUObjectHashTables data took   1.17ms
+[2025.04.11-11.37.49:343][411]LogPlayLevel: Display: Destroying online subsystem :Context_21
+[2025.04.11-11.37.53:792][738]LogViewport: Scene viewport resized to 1675x1414, mode Windowed.
+[2025.04.11-11.37.57:222][975]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2025.04.11-11.37.57:229][975]LogActor: Warning: BP_ABlueGem_C /Engine/Transient.World_10:PersistentLevel.BP_ABlueGem_C_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2025.04.11-11.37.58:689][ 61]BlueprintLog: New page: Compile BP_ABlueGem
+[2025.04.11-11.37.58:723][ 61]LogActor: Warning: BP_ABlueGem_C /Engine/Transient.World_9:PersistentLevel.BP_ABlueGem_C_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2025.04.11-11.37.58:723][ 61]LogActor: Warning: BP_ABlueGem_C /Engine/Transient.World_10:PersistentLevel.BP_ABlueGem_C_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2025.04.11-11.37.58:745][ 61]LogUObjectHash: Compacting FUObjectHashTables data took   1.14ms
+[2025.04.11-11.37.58:749][ 61]LogActor: Warning: BP_ABlueGem_C /Engine/Transient.World_10:PersistentLevel.BP_ABlueGem_C_1 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2025.04.11-11.37.59:269][ 87]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2025.04.11-11.37.59:324][ 87]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2025.04.11-11.37.59:329][ 87]LogActor: Warning: BP_ABlueGem_C /Engine/Transient.World_11:PersistentLevel.BP_ABlueGem_C_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2025.04.11-11.37.59:337][ 87]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Items/BP_ABlueGem" FILE="Z:/Year Three/Module4/Unreal/PetGameUE/PetGameUE/Content/Items/BP_ABlueGem.uasset" SILENT=true
+[2025.04.11-11.37.59:344][ 87]LogSavePackage: Moving output files for package: /Game/Items/BP_ABlueGem
+[2025.04.11-11.37.59:345][ 87]LogSavePackage: Moving 'Z:/Year Three/Module4/Unreal/PetGameUE/PetGameUE/Saved/BP_ABlueGem87E1B4FA49982E00B1B34198F43D9B2D.tmp' to 'Z:/Year Three/Module4/Unreal/PetGameUE/PetGameUE/Content/Items/BP_ABlueGem.uasset'
+[2025.04.11-11.37.59:360][ 87]LogFileHelpers: InternalPromptForCheckoutAndSave took 91 ms (total: 507 ms)
+[2025.04.11-11.37.59:361][ 87]AssetCheck: New page: Asset Save: BP_ABlueGem
+[2025.04.11-11.37.59:361][ 87]LogContentValidation: Display: Validating /Script/Engine.Blueprint /Game/Items/BP_ABlueGem.BP_ABlueGem
+[2025.04.11-11.38.01:345][246]LogAssetEditorSubsystem: Opening Asset editor for Blueprint /Game/Items/BP_AGreenGem.BP_AGreenGem
+[2025.04.11-11.38.01:346][246]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2025.04.11-11.38.01:346][246]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2025.04.11-11.38.01:612][246]LogActor: Warning: BP_AGreenGem_C /Engine/Transient.World_12:PersistentLevel.BP_AGreenGem_C_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2025.04.11-11.38.02:930][339]LogWorld: UWorld::CleanupWorld for World_12, bSessionEnded=true, bCleanupResources=true
+[2025.04.11-11.38.02:930][339]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2025.04.11-11.38.03:122][339]LogAssetEditorSubsystem: Opening Asset editor for Blueprint /Game/Items/BP_AGreenGem.BP_AGreenGem
+[2025.04.11-11.38.03:123][339]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2025.04.11-11.38.03:123][339]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2025.04.11-11.38.03:248][339]LogActor: Warning: BP_AGreenGem_C /Engine/Transient.World_13:PersistentLevel.BP_AGreenGem_C_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2025.04.11-11.38.07:821][618]BlueprintLog: New page: Compile BP_AGreenGem
+[2025.04.11-11.38.07:847][618]LogActor: Warning: BP_AGreenGem_C /Engine/Transient.World_13:PersistentLevel.BP_AGreenGem_C_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2025.04.11-11.38.07:872][618]LogUObjectHash: Compacting FUObjectHashTables data took   1.14ms
+[2025.04.11-11.38.08:513][653]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2025.04.11-11.38.08:551][653]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Items/BP_AGreenGem" FILE="Z:/Year Three/Module4/Unreal/PetGameUE/PetGameUE/Content/Items/BP_AGreenGem.uasset" SILENT=true
+[2025.04.11-11.38.08:580][653]LogSavePackage: Moving output files for package: /Game/Items/BP_AGreenGem
+[2025.04.11-11.38.08:612][653]LogSavePackage: Moving 'Z:/Year Three/Module4/Unreal/PetGameUE/PetGameUE/Saved/BP_AGreenGem83CC2F244493886FE8365186BA92EB61.tmp' to 'Z:/Year Three/Module4/Unreal/PetGameUE/PetGameUE/Content/Items/BP_AGreenGem.uasset'
+[2025.04.11-11.38.08:623][653]LogFileHelpers: InternalPromptForCheckoutAndSave took 109 ms (total: 617 ms)
+[2025.04.11-11.38.08:624][653]AssetCheck: New page: Asset Save: BP_AGreenGem
+[2025.04.11-11.38.08:624][653]LogContentValidation: Display: Validating /Script/Engine.Blueprint /Game/Items/BP_AGreenGem.BP_AGreenGem
+[2025.04.11-11.38.11:516][824]LogViewport: Scene viewport resized to 1675x1414, mode Windowed.
+[2025.04.11-11.38.15:801][110]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2025.04.11-11.38.15:809][110]LogActor: Warning: BP_AGreenGem_C /Engine/Transient.World_14:PersistentLevel.BP_AGreenGem_C_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2025.04.11-11.38.17:101][174]BlueprintLog: New page: Compile BP_AGreenGem
+[2025.04.11-11.38.17:126][174]LogActor: Warning: BP_AGreenGem_C /Engine/Transient.World_13:PersistentLevel.BP_AGreenGem_C_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2025.04.11-11.38.17:127][174]LogActor: Warning: BP_AGreenGem_C /Engine/Transient.World_14:PersistentLevel.BP_AGreenGem_C_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2025.04.11-11.38.17:146][174]LogUObjectHash: Compacting FUObjectHashTables data took   1.12ms
+[2025.04.11-11.38.17:150][174]LogActor: Warning: BP_AGreenGem_C /Engine/Transient.World_14:PersistentLevel.BP_AGreenGem_C_1 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2025.04.11-11.38.17:794][208]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2025.04.11-11.38.17:836][208]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2025.04.11-11.38.17:842][208]LogActor: Warning: BP_AGreenGem_C /Engine/Transient.World_15:PersistentLevel.BP_AGreenGem_C_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2025.04.11-11.38.17:851][208]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Items/BP_AGreenGem" FILE="Z:/Year Three/Module4/Unreal/PetGameUE/PetGameUE/Content/Items/BP_AGreenGem.uasset" SILENT=true
+[2025.04.11-11.38.17:858][208]LogSavePackage: Moving output files for package: /Game/Items/BP_AGreenGem
+[2025.04.11-11.38.17:858][208]LogSavePackage: Moving 'Z:/Year Three/Module4/Unreal/PetGameUE/PetGameUE/Saved/BP_AGreenGemE16BF99E4BEE6D2ED2F2458D73A4D5B7.tmp' to 'Z:/Year Three/Module4/Unreal/PetGameUE/PetGameUE/Content/Items/BP_AGreenGem.uasset'
+[2025.04.11-11.38.17:872][208]LogFileHelpers: InternalPromptForCheckoutAndSave took 78 ms (total: 695 ms)
+[2025.04.11-11.38.17:873][208]AssetCheck: New page: Asset Save: BP_AGreenGem
+[2025.04.11-11.38.17:873][208]LogContentValidation: Display: Validating /Script/Engine.Blueprint /Game/Items/BP_AGreenGem.BP_AGreenGem
+[2025.04.11-11.38.20:166][390]LogAssetEditorSubsystem: Opening Asset editor for Blueprint /Game/Items/BP_AYellowGem.BP_AYellowGem
+[2025.04.11-11.38.20:167][390]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2025.04.11-11.38.20:167][390]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2025.04.11-11.38.20:425][390]LogActor: Warning: BP_AYellowGem_C /Engine/Transient.World_16:PersistentLevel.BP_AYellowGem_C_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2025.04.11-11.38.22:093][509]LogWorld: UWorld::CleanupWorld for World_16, bSessionEnded=true, bCleanupResources=true
+[2025.04.11-11.38.22:093][509]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2025.04.11-11.38.22:109][509]LogAssetEditorSubsystem: Opening Asset editor for Blueprint /Game/Items/BP_AYellowGem.BP_AYellowGem
+[2025.04.11-11.38.22:110][509]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2025.04.11-11.38.22:110][509]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2025.04.11-11.38.22:240][509]LogActor: Warning: BP_AYellowGem_C /Engine/Transient.World_17:PersistentLevel.BP_AYellowGem_C_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2025.04.11-11.38.27:054][808]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2025.04.11-11.38.27:071][808]LogActor: Warning: BP_AYellowGem_C /Engine/Transient.World_18:PersistentLevel.BP_AYellowGem_C_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2025.04.11-11.38.28:184][858]LogViewport: Scene viewport resized to 1675x1414, mode Windowed.
+[2025.04.11-11.38.28:931][905]LogUObjectHash: Compacting FUObjectHashTables data took   1.12ms
+[2025.04.11-11.38.28:937][905]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2025.04.11-11.38.28:981][905]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2025.04.11-11.38.28:989][905]LogActor: Warning: BP_AYellowGem_C /Engine/Transient.World_19:PersistentLevel.BP_AYellowGem_C_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2025.04.11-11.38.28:997][905]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Items/BP_AYellowGem" FILE="Z:/Year Three/Module4/Unreal/PetGameUE/PetGameUE/Content/Items/BP_AYellowGem.uasset" SILENT=true
+[2025.04.11-11.38.29:018][905]LogSavePackage: Moving output files for package: /Game/Items/BP_AYellowGem
+[2025.04.11-11.38.29:019][905]LogSavePackage: Moving 'Z:/Year Three/Module4/Unreal/PetGameUE/PetGameUE/Saved/BP_AYellowGemAC409D5B4C59CDF0A9C753A4C959A6D4.tmp' to 'Z:/Year Three/Module4/Unreal/PetGameUE/PetGameUE/Content/Items/BP_AYellowGem.uasset'
+[2025.04.11-11.38.29:028][905]LogFileHelpers: InternalPromptForCheckoutAndSave took 91 ms (total: 787 ms)
+[2025.04.11-11.38.29:029][905]AssetCheck: New page: Asset Save: BP_AYellowGem
+[2025.04.11-11.38.29:029][905]LogContentValidation: Display: Validating /Script/Engine.Blueprint /Game/Items/BP_AYellowGem.BP_AYellowGem
+[2025.04.11-11.38.29:815][948]BlueprintLog: New page: Compile BP_AYellowGem
+[2025.04.11-11.38.29:841][948]LogActor: Warning: BP_AYellowGem_C /Engine/Transient.World_18:PersistentLevel.BP_AYellowGem_C_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2025.04.11-11.38.29:841][948]LogActor: Warning: BP_AYellowGem_C /Engine/Transient.World_17:PersistentLevel.BP_AYellowGem_C_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2025.04.11-11.38.29:842][948]LogActor: Warning: BP_AYellowGem_C /Engine/Transient.World_19:PersistentLevel.BP_AYellowGem_C_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2025.04.11-11.38.29:865][948]LogUObjectHash: Compacting FUObjectHashTables data took   1.16ms
+[2025.04.11-11.38.29:867][948]LogActor: Warning: BP_AYellowGem_C /Engine/Transient.World_18:PersistentLevel.BP_AYellowGem_C_1 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2025.04.11-11.38.30:673][992]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2025.04.11-11.38.30:725][992]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Items/BP_AYellowGem" FILE="Z:/Year Three/Module4/Unreal/PetGameUE/PetGameUE/Content/Items/BP_AYellowGem.uasset" SILENT=true
+[2025.04.11-11.38.30:745][992]LogSavePackage: Moving output files for package: /Game/Items/BP_AYellowGem
+[2025.04.11-11.38.30:780][992]LogSavePackage: Moving 'Z:/Year Three/Module4/Unreal/PetGameUE/PetGameUE/Saved/BP_AYellowGem7174195646F4674B7E15F6BE1268C052.tmp' to 'Z:/Year Three/Module4/Unreal/PetGameUE/PetGameUE/Content/Items/BP_AYellowGem.uasset'
+[2025.04.11-11.38.30:791][992]LogFileHelpers: InternalPromptForCheckoutAndSave took 116 ms (total: 903 ms)
+[2025.04.11-11.38.30:792][992]AssetCheck: New page: Asset Save: BP_AYellowGem
+[2025.04.11-11.38.30:792][992]LogContentValidation: Display: Validating /Script/Engine.Blueprint /Game/Items/BP_AYellowGem.BP_AYellowGem
+[2025.04.11-11.38.40:992][951]LogContentBrowser: Deferred new asset file creation: NewMaterial
+[2025.04.11-11.38.41:000][951]LogContentBrowser: Creating deferred item: NewMaterial
+[2025.04.11-11.38.41:013][952]LogContentBrowser: Renaming the item being created (Deferred Item: NewMaterial).
+[2025.04.11-11.38.44:760][389]LogContentBrowser: Attempting asset rename: NewMaterial -> M_SimpleGem
+[2025.04.11-11.38.44:769][389]LogContentBrowser: End creating deferred item NewMaterial
+[2025.04.11-11.38.46:111][529]LogAssetEditorSubsystem: Opening Asset editor for Material /Game/Items/M_SimpleGem.M_SimpleGem
+[2025.04.11-11.38.46:131][529]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2025.04.11-11.38.46:131][529]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2025.04.11-11.38.46:340][529]MaterialEditorStats: Texture samplers: 0/16
+[2025.04.11-11.38.46:340][529]MaterialEditorStats: Texture Lookups (Est.): VS(0), PS(3)
+[2025.04.11-11.38.46:340][529]MaterialEditorStats: Shader Count: 0
+[2025.04.11-11.38.46:356][529]LogViewport: Scene viewport resized to 754x913, mode Windowed.
+[2025.04.11-11.38.48:732][672]LogShaderCompilers: Display: ================================================
+[2025.04.11-11.38.48:732][672]LogShaderCompilers: Display: === FShaderJobCache stats ===
+[2025.04.11-11.38.48:732][672]LogShaderCompilers: Display: Total job queries 4, among them cache hits 0 (0.00%)
+[2025.04.11-11.38.48:732][672]LogShaderCompilers: Display: Tracking 1 distinct input hashes that result in 1 distinct outputs (100.00%)
+[2025.04.11-11.38.48:732][672]LogShaderCompilers: Display: RAM used: 18.11 KiB of 3.20 GiB budget. Usage: 0.00%
+[2025.04.11-11.38.48:732][672]LogShaderCompilers: Display: === Shader Compilation stats ===
+[2025.04.11-11.38.48:732][672]LogShaderCompilers: Display: Shaders Compiled: 1
+[2025.04.11-11.38.48:732][672]LogShaderCompilers: Display: Jobs assigned 4, completed 1 (25.00%)
+[2025.04.11-11.38.48:732][672]LogShaderCompilers: Display: Time job spent in pending queue: average 0.08 s, longest 0.15 s
+[2025.04.11-11.38.48:732][672]LogShaderCompilers: Display: Job execution time: average 2.12 s, max 2.12 s
+[2025.04.11-11.38.48:732][672]LogShaderCompilers: Display: Job life time (pending + execution): average 2.28 s, max 2.28
+[2025.04.11-11.38.48:732][672]LogShaderCompilers: Display: Shader code size: average 29.613 KiB, min 29.613 KiB, max 29.613 KiB
+[2025.04.11-11.38.48:732][672]LogShaderCompilers: Display: Time at least one job was in flight (either pending or executed): 2.28 s
+[2025.04.11-11.38.48:732][672]LogShaderCompilers: Display: Jobs were issued in 4 batches (only local compilation was used), average 1.00 jobs/batch
+[2025.04.11-11.38.48:732][672]LogShaderCompilers: Display: Average processing rate: 0.44 jobs/sec
+[2025.04.11-11.38.48:732][672]LogShaderCompilers: Display: Total thread time: 0.133 s
+[2025.04.11-11.38.48:732][672]LogShaderCompilers: Display: Total thread preprocess time: 0.024 s
+[2025.04.11-11.38.48:732][672]LogShaderCompilers: Display: Percentage time preprocessing: 18.33%
+[2025.04.11-11.38.48:732][672]LogShaderCompilers: Display: Effective parallelization: 0.06 (times faster than compiling all shaders on one thread). Compare with number of workers: 12
+[2025.04.11-11.38.48:732][672]LogShaderCompilers: Display: Top 1 most expensive shader types by average time:
+[2025.04.11-11.38.48:732][672]LogShaderCompilers: Display:                                          FLumenCardPS<false> (compiled    1 times, average 0.13 sec, max 0.13 sec, min 0.13 sec)
+[2025.04.11-11.38.48:732][672]LogShaderCompilers: Display: Top 1 shader types by total compile time:
+[2025.04.11-11.38.48:732][672]LogShaderCompilers: Display:                                          FLumenCardPS<false> - 100.00% of total time (compiled    1 times, average 0.13 sec, max 0.13 sec, min 0.13 sec)
+[2025.04.11-11.38.48:732][672]LogShaderCompilers: Display: ================================================
+[2025.04.11-11.38.48:958][688]MaterialEditorStats: Base pass shader: 187 instructions
+[2025.04.11-11.38.48:958][688]MaterialEditorStats: Base pass vertex shader: 131 instructions
+[2025.04.11-11.38.48:958][688]MaterialEditorStats: Texture samplers: 2/16
+[2025.04.11-11.38.48:958][688]MaterialEditorStats: Texture Lookups (Est.): VS(0), PS(3)
+[2025.04.11-11.38.48:958][688]MaterialEditorStats: Shader Count: 4
+[2025.04.11-11.38.53:199][ 22]MaterialEditorStats: Texture samplers: 0/16
+[2025.04.11-11.38.53:199][ 22]MaterialEditorStats: Texture Lookups (Est.): VS(0), PS(3)
+[2025.04.11-11.38.53:199][ 22]MaterialEditorStats: Shader Count: 0
+[2025.04.11-11.38.53:247][ 24]MaterialEditorStats: Base pass shader: 187 instructions
+[2025.04.11-11.38.53:247][ 24]MaterialEditorStats: Base pass vertex shader: 131 instructions
+[2025.04.11-11.38.53:247][ 24]MaterialEditorStats: Texture samplers: 2/16
+[2025.04.11-11.38.53:247][ 24]MaterialEditorStats: Texture Lookups (Est.): VS(0), PS(3)
+[2025.04.11-11.38.53:247][ 24]MaterialEditorStats: Shader Count: 4
+[2025.04.11-11.38.56:783][319]MaterialEditorStats: Texture samplers: 0/16
+[2025.04.11-11.38.56:783][319]MaterialEditorStats: Texture Lookups (Est.): VS(0), PS(3)
+[2025.04.11-11.38.56:783][319]MaterialEditorStats: Shader Count: 0
+[2025.04.11-11.38.57:213][345]MaterialEditorStats: Base pass vertex shader: 131 instructions
+[2025.04.11-11.38.57:213][345]MaterialEditorStats: Texture samplers: 0/16
+[2025.04.11-11.38.57:213][345]MaterialEditorStats: Texture Lookups (Est.): VS(0), PS(3)
+[2025.04.11-11.38.57:213][345]MaterialEditorStats: Shader Count: 3
+[2025.04.11-11.38.57:323][352]MaterialEditorStats: Base pass shader: 187 instructions
+[2025.04.11-11.38.57:323][352]MaterialEditorStats: Base pass vertex shader: 131 instructions
+[2025.04.11-11.38.57:323][352]MaterialEditorStats: Texture samplers: 2/16
+[2025.04.11-11.38.57:323][352]MaterialEditorStats: Texture Lookups (Est.): VS(0), PS(3)
+[2025.04.11-11.38.57:323][352]MaterialEditorStats: Shader Count: 4
+[2025.04.11-11.39.01:415][662]MaterialEditorStats: Texture samplers: 0/16
+[2025.04.11-11.39.01:415][662]MaterialEditorStats: Texture Lookups (Est.): VS(0), PS(3)
+[2025.04.11-11.39.01:415][662]MaterialEditorStats: Shader Count: 0
+[2025.04.11-11.39.02:667][670]MaterialEditorStats: Base pass shader: 189 instructions
+[2025.04.11-11.39.02:667][670]MaterialEditorStats: Base pass vertex shader: 131 instructions
+[2025.04.11-11.39.02:667][670]MaterialEditorStats: Texture samplers: 2/16
+[2025.04.11-11.39.02:667][670]MaterialEditorStats: Texture Lookups (Est.): VS(0), PS(3)
+[2025.04.11-11.39.02:667][670]MaterialEditorStats: Shader Count: 4
+[2025.04.11-11.39.05:798][889]MaterialEditorStats: Texture samplers: 0/16
+[2025.04.11-11.39.05:798][889]MaterialEditorStats: Texture Lookups (Est.): VS(0), PS(3)
+[2025.04.11-11.39.05:798][889]MaterialEditorStats: Shader Count: 0
+[2025.04.11-11.39.06:133][907]MaterialEditorStats: Base pass shader: 190 instructions
+[2025.04.11-11.39.06:133][907]MaterialEditorStats: Base pass vertex shader: 131 instructions
+[2025.04.11-11.39.06:133][907]MaterialEditorStats: Texture samplers: 2/16
+[2025.04.11-11.39.06:133][907]MaterialEditorStats: Texture Lookups (Est.): VS(0), PS(3)
+[2025.04.11-11.39.06:133][907]MaterialEditorStats: Shader Count: 4
+[2025.04.11-11.39.10:064][197]MaterialEditorStats: Texture samplers: 0/16
+[2025.04.11-11.39.10:064][197]MaterialEditorStats: Texture Lookups (Est.): VS(0), PS(3)
+[2025.04.11-11.39.10:064][197]MaterialEditorStats: Shader Count: 0
+[2025.04.11-11.39.10:098][199]MaterialEditorStats: Base pass shader: 190 instructions
+[2025.04.11-11.39.10:099][199]MaterialEditorStats: Base pass vertex shader: 131 instructions
+[2025.04.11-11.39.10:099][199]MaterialEditorStats: Texture samplers: 2/16
+[2025.04.11-11.39.10:099][199]MaterialEditorStats: Texture Lookups (Est.): VS(0), PS(3)
+[2025.04.11-11.39.10:099][199]MaterialEditorStats: Shader Count: 4
+[2025.04.11-11.39.12:297][359]MaterialEditorStats: Texture samplers: 0/16
+[2025.04.11-11.39.12:297][359]MaterialEditorStats: Texture Lookups (Est.): VS(0), PS(3)
+[2025.04.11-11.39.12:297][359]MaterialEditorStats: Shader Count: 0
+[2025.04.11-11.39.12:336][361]MaterialEditorStats: Base pass shader: 190 instructions
+[2025.04.11-11.39.12:336][361]MaterialEditorStats: Base pass vertex shader: 131 instructions
+[2025.04.11-11.39.12:336][361]MaterialEditorStats: Texture samplers: 2/16
+[2025.04.11-11.39.12:336][361]MaterialEditorStats: Texture Lookups (Est.): VS(0), PS(3)
+[2025.04.11-11.39.12:336][361]MaterialEditorStats: Shader Count: 4
+[2025.04.11-11.39.17:876][784]MaterialEditorStats: Texture samplers: 0/16
+[2025.04.11-11.39.17:876][784]MaterialEditorStats: Texture Lookups (Est.): VS(0), PS(3)
+[2025.04.11-11.39.17:876][784]MaterialEditorStats: Shader Count: 0
+[2025.04.11-11.39.18:209][800]MaterialEditorStats: Base pass shader: 196 instructions
+[2025.04.11-11.39.18:209][800]MaterialEditorStats: Base pass vertex shader: 131 instructions
+[2025.04.11-11.39.18:209][800]MaterialEditorStats: Texture samplers: 2/16
+[2025.04.11-11.39.18:209][800]MaterialEditorStats: Texture Lookups (Est.): VS(0), PS(3)
+[2025.04.11-11.39.18:209][800]MaterialEditorStats: Shader Count: 3
+[2025.04.11-11.39.23:121][163]LogMaterialEditor: Applying material M_SimpleGem
+[2025.04.11-11.39.23:272][163]LogUObjectHash: Compacting FUObjectHashTables data took   1.26ms
+[2025.04.11-11.39.23:733][163]LogUObjectHash: Compacting FUObjectHashTables data took   0.58ms
+[2025.04.11-11.39.23:743][163]MaterialEditorStats: Texture samplers: 0/16
+[2025.04.11-11.39.23:743][163]MaterialEditorStats: Texture Lookups (Est.): VS(0), PS(3)
+[2025.04.11-11.39.23:743][163]MaterialEditorStats: Shader Count: 2
+[2025.04.11-11.39.23:786][165]MaterialEditorStats: Base pass shader: 196 instructions
+[2025.04.11-11.39.23:786][165]MaterialEditorStats: Base pass vertex shader: 131 instructions
+[2025.04.11-11.39.23:786][165]MaterialEditorStats: Texture samplers: 2/16
+[2025.04.11-11.39.23:786][165]MaterialEditorStats: Texture Lookups (Est.): VS(0), PS(3)
+[2025.04.11-11.39.23:786][165]MaterialEditorStats: Shader Count: 6
+[2025.04.11-11.39.24:555][218]LogMaterialEditor: Saving and Compiling material M_SimpleGem
+[2025.04.11-11.39.24:558][218]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2025.04.11-11.39.25:375][218]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Items/M_SimpleGem" FILE="Z:/Year Three/Module4/Unreal/PetGameUE/PetGameUE/Content/Items/M_SimpleGem.uasset" SILENT=true
+[2025.04.11-11.39.25:543][218]LogSavePackage: Moving output files for package: /Game/Items/M_SimpleGem
+[2025.04.11-11.39.25:543][218]LogSavePackage: Moving 'Z:/Year Three/Module4/Unreal/PetGameUE/PetGameUE/Saved/M_SimpleGemABB5C5524576509F7056C19369EF6AA5.tmp' to 'Z:/Year Three/Module4/Unreal/PetGameUE/PetGameUE/Content/Items/M_SimpleGem.uasset'
+[2025.04.11-11.39.25:580][218]LogFileHelpers: InternalPromptForCheckoutAndSave took 1.02 sec (total: 1.92 sec)
+[2025.04.11-11.39.25:581][218]AssetCheck: New page: Asset Save: M_SimpleGem
+[2025.04.11-11.39.25:581][218]LogContentValidation: Display: Validating /Script/Engine.Material /Game/Items/M_SimpleGem.M_SimpleGem
+[2025.04.11-11.39.25:582][218]MaterialEditorStats: Base pass shader: 196 instructions
+[2025.04.11-11.39.25:582][218]MaterialEditorStats: Base pass vertex shader: 131 instructions
+[2025.04.11-11.39.25:582][218]MaterialEditorStats: MaxSampler: 243 instructions
+[2025.04.11-11.39.25:582][218]MaterialEditorStats: Texture samplers: 3/16
+[2025.04.11-11.39.25:582][218]MaterialEditorStats: Texture Lookups (Est.): VS(0), PS(3)
+[2025.04.11-11.39.25:582][218]MaterialEditorStats: Shader Count: 16
+[2025.04.11-11.39.27:228][331]LogSlate: Window 'M_SimpleGem' being destroyed
+[2025.04.11-11.39.27:237][331]LogSlate: Window 'M_SimpleGem' being destroyed
+[2025.04.11-11.39.27:244][331]LogWorld: UWorld::CleanupWorld for World_7, bSessionEnded=true, bCleanupResources=true
+[2025.04.11-11.39.27:245][331]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2025.04.11-11.39.27:504][331]LogActorComponent: UnregisterComponent: (/Engine/Transient.EditorFloorComp) Not registered. Aborting.
+[2025.04.11-11.39.27:504][331]LogWorld: UWorld::CleanupWorld for World_9, bSessionEnded=true, bCleanupResources=true
+[2025.04.11-11.39.27:504][331]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2025.04.11-11.39.27:555][331]LogActorComponent: UnregisterComponent: (/Engine/Transient.EditorFloorComp) Not registered. Aborting.
+[2025.04.11-11.39.27:556][331]LogWorld: UWorld::CleanupWorld for World_13, bSessionEnded=true, bCleanupResources=true
+[2025.04.11-11.39.27:556][331]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2025.04.11-11.39.27:593][331]LogActorComponent: UnregisterComponent: (/Engine/Transient.EditorFloorComp) Not registered. Aborting.
+[2025.04.11-11.39.27:593][331]LogWorld: UWorld::CleanupWorld for World_17, bSessionEnded=true, bCleanupResources=true
+[2025.04.11-11.39.27:594][331]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2025.04.11-11.39.27:693][331]LogWorld: UWorld::CleanupWorld for World_20, bSessionEnded=true, bCleanupResources=true
+[2025.04.11-11.39.27:693][331]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2025.04.11-11.39.29:439][505]LogContentBrowser: Deferred new asset file creation: M_SimpleGem_Inst
+[2025.04.11-11.39.29:486][505]LogContentBrowser: Creating deferred item: M_SimpleGem_Inst
+[2025.04.11-11.39.29:507][506]LogContentBrowser: Renaming the item being created (Deferred Item: M_SimpleGem_Inst).
+[2025.04.11-11.39.32:170][819]LogContentBrowser: Attempting asset rename: M_SimpleGem_Inst -> M_SimpleGem_Red
+[2025.04.11-11.39.32:171][819]LogContentBrowser: End creating deferred item M_SimpleGem_Inst
+[2025.04.11-11.39.35:259][118]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2025.04.11-11.39.35:305][118]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Items/M_SimpleGem_Red" FILE="Z:/Year Three/Module4/Unreal/PetGameUE/PetGameUE/Content/Items/M_SimpleGem_Red.uasset" SILENT=true
+[2025.04.11-11.39.35:307][118]LogSavePackage: Moving output files for package: /Game/Items/M_SimpleGem_Red
+[2025.04.11-11.39.35:307][118]LogSavePackage: Moving 'Z:/Year Three/Module4/Unreal/PetGameUE/PetGameUE/Saved/M_SimpleGem_Red0F72F6ED4D0FC40FC313AD94458B7AA3.tmp' to 'Z:/Year Three/Module4/Unreal/PetGameUE/PetGameUE/Content/Items/M_SimpleGem_Red.uasset'
+[2025.04.11-11.39.35:319][118]LogFileHelpers: InternalPromptForCheckoutAndSave took 59 ms (total: 1.98 sec)
+[2025.04.11-11.39.35:319][118]AssetCheck: New page: Asset Save: M_SimpleGem_Red
+[2025.04.11-11.39.35:319][118]LogContentValidation: Display: Validating /Script/Engine.MaterialInstanceConstant /Game/Items/M_SimpleGem_Red.M_SimpleGem_Red
+[2025.04.11-11.39.36:770][259]LogContentBrowser: Deferred new asset file creation: M_SimpleGem_Red1
+[2025.04.11-11.39.36:775][259]LogContentBrowser: Creating deferred item: M_SimpleGem_Red1
+[2025.04.11-11.39.36:786][260]LogContentBrowser: Renaming the item being created (Deferred Item: M_SimpleGem_Red1).
+[2025.04.11-11.39.40:549][706]LogContentBrowser: Attempting asset rename: M_SimpleGem_Red1 -> M_SimpleGem_Yellow
+[2025.04.11-11.39.40:550][706]LogContentBrowser: End creating deferred item M_SimpleGem_Red1
+[2025.04.11-11.39.41:576][799]LogContentBrowser: Deferred new asset file creation: M_SimpleGem_Yellow1
+[2025.04.11-11.39.41:582][799]LogContentBrowser: Creating deferred item: M_SimpleGem_Yellow1
+[2025.04.11-11.39.41:607][800]LogContentBrowser: Renaming the item being created (Deferred Item: M_SimpleGem_Yellow1).
+[2025.04.11-11.39.45:954][310]LogContentBrowser: Attempting asset rename: M_SimpleGem_Yellow1 -> M_SimpleGem_Green
+[2025.04.11-11.39.45:955][310]LogContentBrowser: End creating deferred item M_SimpleGem_Yellow1
+[2025.04.11-11.39.47:650][453]LogContentBrowser: Deferred new asset file creation: M_SimpleGem_Green1
+[2025.04.11-11.39.47:656][453]LogContentBrowser: Creating deferred item: M_SimpleGem_Green1
+[2025.04.11-11.39.47:673][454]LogContentBrowser: Renaming the item being created (Deferred Item: M_SimpleGem_Green1).
+[2025.04.11-11.39.51:156][832]LogContentBrowser: Attempting asset rename: M_SimpleGem_Green1 -> M_SimpleGem_Blue
+[2025.04.11-11.39.51:157][832]LogContentBrowser: End creating deferred item M_SimpleGem_Green1
+[2025.04.11-11.39.52:364][923]LogAssetEditorSubsystem: Opening Asset editor for MaterialInstanceConstant /Game/Items/M_SimpleGem_Blue.M_SimpleGem_Blue
+[2025.04.11-11.39.52:373][923]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2025.04.11-11.39.52:373][923]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2025.04.11-11.39.52:667][923]LogViewport: Scene viewport resized to 2672x1835, mode Windowed.
+[2025.04.11-11.39.57:616][335]LogSlate: Window 'Color Picker' being destroyed
+[2025.04.11-11.39.59:009][449]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2025.04.11-11.39.59:058][449]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Items/M_SimpleGem_Blue" FILE="Z:/Year Three/Module4/Unreal/PetGameUE/PetGameUE/Content/Items/M_SimpleGem_Blue.uasset" SILENT=true
+[2025.04.11-11.39.59:076][449]LogUObjectHash: Compacting FUObjectHashTables data took   1.16ms
+[2025.04.11-11.39.59:095][449]LogUObjectHash: Compacting FUObjectHashTables data took   1.13ms
+[2025.04.11-11.39.59:100][449]LogSavePackage: Moving output files for package: /Game/Items/M_SimpleGem_Blue
+[2025.04.11-11.39.59:100][449]LogSavePackage: Moving 'Z:/Year Three/Module4/Unreal/PetGameUE/PetGameUE/Saved/M_SimpleGem_Blue6A76D4254CE72332D7F7CDB2326395BB.tmp' to 'Z:/Year Three/Module4/Unreal/PetGameUE/PetGameUE/Content/Items/M_SimpleGem_Blue.uasset'
+[2025.04.11-11.39.59:111][449]LogFileHelpers: InternalPromptForCheckoutAndSave took 101 ms (total: 2.08 sec)
+[2025.04.11-11.39.59:111][449]AssetCheck: New page: Asset Save: M_SimpleGem_Blue
+[2025.04.11-11.39.59:111][449]LogContentValidation: Display: Validating /Script/Engine.MaterialInstanceConstant /Game/Items/M_SimpleGem_Blue.M_SimpleGem_Blue
+[2025.04.11-11.40.01:532][650]LogAssetEditorSubsystem: Opening Asset editor for MaterialInstanceConstant /Game/Items/M_SimpleGem_Green.M_SimpleGem_Green
+[2025.04.11-11.40.01:534][650]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2025.04.11-11.40.01:534][650]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2025.04.11-11.40.01:869][650]LogViewport: Scene viewport resized to 2672x1835, mode Windowed.
+[2025.04.11-11.40.07:696][143]LogSlate: Window 'Color Picker' being destroyed
+[2025.04.11-11.40.08:790][232]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2025.04.11-11.40.08:835][232]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Items/M_SimpleGem_Green" FILE="Z:/Year Three/Module4/Unreal/PetGameUE/PetGameUE/Content/Items/M_SimpleGem_Green.uasset" SILENT=true
+[2025.04.11-11.40.08:850][232]LogUObjectHash: Compacting FUObjectHashTables data took   1.13ms
+[2025.04.11-11.40.08:866][232]LogUObjectHash: Compacting FUObjectHashTables data took   0.55ms
+[2025.04.11-11.40.09:014][232]LogSavePackage: Moving output files for package: /Game/Items/M_SimpleGem_Green
+[2025.04.11-11.40.09:014][232]LogSavePackage: Moving 'Z:/Year Three/Module4/Unreal/PetGameUE/PetGameUE/Saved/M_SimpleGem_Green63E9388D42C7C1129A48018555F41D59.tmp' to 'Z:/Year Three/Module4/Unreal/PetGameUE/PetGameUE/Content/Items/M_SimpleGem_Green.uasset'
+[2025.04.11-11.40.09:024][232]LogFileHelpers: InternalPromptForCheckoutAndSave took 233 ms (total: 2.32 sec)
+[2025.04.11-11.40.09:024][232]AssetCheck: New page: Asset Save: M_SimpleGem_Green
+[2025.04.11-11.40.09:024][232]LogContentValidation: Display: Validating /Script/Engine.MaterialInstanceConstant /Game/Items/M_SimpleGem_Green.M_SimpleGem_Green
+[2025.04.11-11.40.11:078][403]LogAssetEditorSubsystem: Opening Asset editor for MaterialInstanceConstant /Game/Items/M_SimpleGem_Red.M_SimpleGem_Red
+[2025.04.11-11.40.11:079][403]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2025.04.11-11.40.11:079][403]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2025.04.11-11.40.11:373][403]LogViewport: Scene viewport resized to 2672x1835, mode Windowed.
+[2025.04.11-11.40.16:972][860]LogSlate: Window 'Color Picker' being destroyed
+[2025.04.11-11.40.18:078][950]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2025.04.11-11.40.18:123][950]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Items/M_SimpleGem_Red" FILE="Z:/Year Three/Module4/Unreal/PetGameUE/PetGameUE/Content/Items/M_SimpleGem_Red.uasset" SILENT=true
+[2025.04.11-11.40.18:139][950]LogUObjectHash: Compacting FUObjectHashTables data took   1.14ms
+[2025.04.11-11.40.18:152][950]LogUObjectHash: Compacting FUObjectHashTables data took   0.55ms
+[2025.04.11-11.40.18:240][950]LogSavePackage: Moving output files for package: /Game/Items/M_SimpleGem_Red
+[2025.04.11-11.40.18:240][950]LogSavePackage: Moving 'Z:/Year Three/Module4/Unreal/PetGameUE/PetGameUE/Saved/M_SimpleGem_Red78EBD86B48C1571421D6A6A4169925AF.tmp' to 'Z:/Year Three/Module4/Unreal/PetGameUE/PetGameUE/Content/Items/M_SimpleGem_Red.uasset'
+[2025.04.11-11.40.18:251][950]LogFileHelpers: InternalPromptForCheckoutAndSave took 171 ms (total: 2.49 sec)
+[2025.04.11-11.40.18:252][950]AssetCheck: New page: Asset Save: M_SimpleGem_Red
+[2025.04.11-11.40.18:252][950]LogContentValidation: Display: Validating /Script/Engine.MaterialInstanceConstant /Game/Items/M_SimpleGem_Red.M_SimpleGem_Red
+[2025.04.11-11.40.20:818][180]LogAssetEditorSubsystem: Opening Asset editor for MaterialInstanceConstant /Game/Items/M_SimpleGem_Yellow.M_SimpleGem_Yellow
+[2025.04.11-11.40.20:819][180]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2025.04.11-11.40.20:819][180]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2025.04.11-11.40.21:028][180]LogViewport: Scene viewport resized to 2672x1835, mode Windowed.
+[2025.04.11-11.40.25:043][516]LogSlate: Window 'Color Picker' being destroyed
+[2025.04.11-11.40.26:145][601]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2025.04.11-11.40.26:194][601]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Items/M_SimpleGem_Yellow" FILE="Z:/Year Three/Module4/Unreal/PetGameUE/PetGameUE/Content/Items/M_SimpleGem_Yellow.uasset" SILENT=true
+[2025.04.11-11.40.26:210][601]LogUObjectHash: Compacting FUObjectHashTables data took   1.12ms
+[2025.04.11-11.40.26:223][601]LogUObjectHash: Compacting FUObjectHashTables data took   0.54ms
+[2025.04.11-11.40.26:226][601]LogSavePackage: Moving output files for package: /Game/Items/M_SimpleGem_Yellow
+[2025.04.11-11.40.26:226][601]LogSavePackage: Moving 'Z:/Year Three/Module4/Unreal/PetGameUE/PetGameUE/Saved/M_SimpleGem_YellowCE77A9DB4F29A92C46F188AA4D01E106.tmp' to 'Z:/Year Three/Module4/Unreal/PetGameUE/PetGameUE/Content/Items/M_SimpleGem_Yellow.uasset'
+[2025.04.11-11.40.26:249][601]LogFileHelpers: InternalPromptForCheckoutAndSave took 104 ms (total: 2.59 sec)
+[2025.04.11-11.40.26:250][601]AssetCheck: New page: Asset Save: M_SimpleGem_Yellow
+[2025.04.11-11.40.26:250][601]LogContentValidation: Display: Validating /Script/Engine.MaterialInstanceConstant /Game/Items/M_SimpleGem_Yellow.M_SimpleGem_Yellow
+[2025.04.11-11.40.28:919][831]LogAssetEditorSubsystem: Opening Asset editor for Blueprint /Game/Items/BP_ABlueGem.BP_ABlueGem
+[2025.04.11-11.40.28:919][831]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2025.04.11-11.40.28:919][831]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2025.04.11-11.40.29:057][831]LogActor: Warning: BP_ABlueGem_C /Engine/Transient.World_25:PersistentLevel.BP_ABlueGem_C_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2025.04.11-11.40.39:076][427]LogSlate: Window 'BP_ABlueGem' being destroyed
+[2025.04.11-11.40.39:083][427]LogSlate: Window 'BP_ABlueGem' being destroyed
+[2025.04.11-11.40.39:106][427]LogWorld: UWorld::CleanupWorld for World_21, bSessionEnded=true, bCleanupResources=true
+[2025.04.11-11.40.39:106][427]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2025.04.11-11.40.39:132][427]LogWorld: UWorld::CleanupWorld for World_22, bSessionEnded=true, bCleanupResources=true
+[2025.04.11-11.40.39:132][427]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2025.04.11-11.40.39:155][427]LogWorld: UWorld::CleanupWorld for World_23, bSessionEnded=true, bCleanupResources=true
+[2025.04.11-11.40.39:155][427]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2025.04.11-11.40.39:175][427]LogWorld: UWorld::CleanupWorld for World_24, bSessionEnded=true, bCleanupResources=true
+[2025.04.11-11.40.39:175][427]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2025.04.11-11.40.39:194][427]LogWorld: UWorld::CleanupWorld for World_25, bSessionEnded=true, bCleanupResources=true
+[2025.04.11-11.40.39:194][427]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2025.04.11-11.40.41:291][623]LogAssetEditorSubsystem: Opening Asset editor for Blueprint /Game/Items/BP_ABlueGem.BP_ABlueGem
+[2025.04.11-11.40.41:291][623]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2025.04.11-11.40.41:291][623]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2025.04.11-11.40.41:488][623]LogActor: Warning: BP_ABlueGem_C /Engine/Transient.World_26:PersistentLevel.BP_ABlueGem_C_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2025.04.11-11.40.43:631][742]LogViewport: Scene viewport resized to 1675x1414, mode Windowed.
+[2025.04.11-11.40.51:243][221]BlueprintLog: New page: Compile BP_ABlueGem
+[2025.04.11-11.40.51:267][221]LogActor: Warning: BP_ABlueGem_C /Engine/Transient.World_11:PersistentLevel.BP_ABlueGem_C_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2025.04.11-11.40.51:268][221]LogActor: Warning: BP_ABlueGem_C /Engine/Transient.World_10:PersistentLevel.BP_ABlueGem_C_1 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2025.04.11-11.40.51:269][221]LogActor: Warning: BP_ABlueGem_C /Engine/Transient.World_26:PersistentLevel.BP_ABlueGem_C_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2025.04.11-11.40.51:294][221]LogUObjectHash: Compacting FUObjectHashTables data took   1.16ms
+[2025.04.11-11.40.51:302][221]LogActor: Warning: BP_ABlueGem_C /Engine/Transient.World_10:PersistentLevel.BP_ABlueGem_C_2 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2025.04.11-11.40.51:841][248]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2025.04.11-11.40.51:885][248]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Items/BP_ABlueGem" FILE="Z:/Year Three/Module4/Unreal/PetGameUE/PetGameUE/Content/Items/BP_ABlueGem.uasset" SILENT=true
+[2025.04.11-11.40.51:889][248]LogSavePackage: Moving output files for package: /Game/Items/BP_ABlueGem
+[2025.04.11-11.40.51:890][248]LogSavePackage: Moving 'Z:/Year Three/Module4/Unreal/PetGameUE/PetGameUE/Saved/BP_ABlueGem09EFC309412B64CF8875F8ABA2354D20.tmp' to 'Z:/Year Three/Module4/Unreal/PetGameUE/PetGameUE/Content/Items/BP_ABlueGem.uasset'
+[2025.04.11-11.40.51:899][248]LogFileHelpers: InternalPromptForCheckoutAndSave took 58 ms (total: 2.65 sec)
+[2025.04.11-11.40.51:900][248]AssetCheck: New page: Asset Save: BP_ABlueGem
+[2025.04.11-11.40.51:900][248]LogContentValidation: Display: Validating /Script/Engine.Blueprint /Game/Items/BP_ABlueGem.BP_ABlueGem
+[2025.04.11-11.40.57:184][603]LogAssetEditorSubsystem: Opening Asset editor for Blueprint /Game/Items/BP_AGreenGem.BP_AGreenGem
+[2025.04.11-11.40.57:185][603]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2025.04.11-11.40.57:185][603]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2025.04.11-11.40.57:317][603]LogActor: Warning: BP_AGreenGem_C /Engine/Transient.World_27:PersistentLevel.BP_AGreenGem_C_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2025.04.11-11.41.03:493][949]BlueprintLog: New page: Compile BP_AGreenGem
+[2025.04.11-11.41.03:517][949]LogActor: Warning: BP_AGreenGem_C /Engine/Transient.World_15:PersistentLevel.BP_AGreenGem_C_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2025.04.11-11.41.03:517][949]LogActor: Warning: BP_AGreenGem_C /Engine/Transient.World_14:PersistentLevel.BP_AGreenGem_C_1 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2025.04.11-11.41.03:518][949]LogActor: Warning: BP_AGreenGem_C /Engine/Transient.World_27:PersistentLevel.BP_AGreenGem_C_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2025.04.11-11.41.03:541][949]LogUObjectHash: Compacting FUObjectHashTables data took   1.15ms
+[2025.04.11-11.41.03:546][949]LogActor: Warning: BP_AGreenGem_C /Engine/Transient.World_14:PersistentLevel.BP_AGreenGem_C_2 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2025.04.11-11.41.04:135][975]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2025.04.11-11.41.04:176][975]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Items/BP_AGreenGem" FILE="Z:/Year Three/Module4/Unreal/PetGameUE/PetGameUE/Content/Items/BP_AGreenGem.uasset" SILENT=true
+[2025.04.11-11.41.04:181][975]LogSavePackage: Moving output files for package: /Game/Items/BP_AGreenGem
+[2025.04.11-11.41.04:181][975]LogSavePackage: Moving 'Z:/Year Three/Module4/Unreal/PetGameUE/PetGameUE/Saved/BP_AGreenGem2A76F8D847666A8DAA9BA7A00A573F96.tmp' to 'Z:/Year Three/Module4/Unreal/PetGameUE/PetGameUE/Content/Items/BP_AGreenGem.uasset'
+[2025.04.11-11.41.04:192][975]LogFileHelpers: InternalPromptForCheckoutAndSave took 57 ms (total: 2.71 sec)
+[2025.04.11-11.41.04:193][975]AssetCheck: New page: Asset Save: BP_AGreenGem
+[2025.04.11-11.41.04:193][975]LogContentValidation: Display: Validating /Script/Engine.Blueprint /Game/Items/BP_AGreenGem.BP_AGreenGem
+[2025.04.11-11.41.06:257][128]LogAssetEditorSubsystem: Opening Asset editor for Blueprint /Game/Items/BP_ARedGem.BP_ARedGem
+[2025.04.11-11.41.06:257][128]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2025.04.11-11.41.06:257][128]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2025.04.11-11.41.06:370][128]LogActor: Warning: BP_ARedGem_C /Engine/Transient.World_28:PersistentLevel.BP_ARedGem_C_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2025.04.11-11.41.10:287][401]LogWorld: UWorld::CleanupWorld for World_28, bSessionEnded=true, bCleanupResources=true
+[2025.04.11-11.41.10:287][401]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2025.04.11-11.41.10:304][401]LogAssetEditorSubsystem: Opening Asset editor for Blueprint /Game/Items/BP_ARedGem.BP_ARedGem
+[2025.04.11-11.41.10:305][401]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2025.04.11-11.41.10:305][401]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2025.04.11-11.41.10:534][401]LogActor: Warning: BP_ARedGem_C /Engine/Transient.World_29:PersistentLevel.BP_ARedGem_C_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2025.04.11-11.41.14:114][612]LogViewport: Scene viewport resized to 1675x1414, mode Windowed.
+[2025.04.11-11.41.19:807][965]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2025.04.11-11.41.19:818][965]LogActor: Warning: BP_ARedGem_C /Engine/Transient.World_30:PersistentLevel.BP_ARedGem_C_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2025.04.11-11.41.22:938][150]BlueprintLog: New page: Compile BP_ARedGem
+[2025.04.11-11.41.22:963][150]LogActor: Warning: BP_ARedGem_C /Game/TestLevel.TestLevel:PersistentLevel.BP_ARedGem_C_1 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2025.04.11-11.41.22:963][150]LogActor: Warning: BP_ARedGem_C /Engine/Transient.World_29:PersistentLevel.BP_ARedGem_C_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2025.04.11-11.41.22:964][150]LogActor: Warning: BP_ARedGem_C /Engine/Transient.World_30:PersistentLevel.BP_ARedGem_C_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2025.04.11-11.41.22:989][150]LogUObjectHash: Compacting FUObjectHashTables data took   1.15ms
+[2025.04.11-11.41.22:993][150]LogActor: Warning: BP_ARedGem_C /Engine/Transient.World_30:PersistentLevel.BP_ARedGem_C_1 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2025.04.11-11.41.23:608][182]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2025.04.11-11.41.23:651][182]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2025.04.11-11.41.23:657][182]LogActor: Warning: BP_ARedGem_C /Engine/Transient.World_31:PersistentLevel.BP_ARedGem_C_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2025.04.11-11.41.23:665][182]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Items/BP_ARedGem" FILE="Z:/Year Three/Module4/Unreal/PetGameUE/PetGameUE/Content/Items/BP_ARedGem.uasset" SILENT=true
+[2025.04.11-11.41.23:671][182]LogSavePackage: Moving output files for package: /Game/Items/BP_ARedGem
+[2025.04.11-11.41.23:673][182]LogSavePackage: Moving 'Z:/Year Three/Module4/Unreal/PetGameUE/PetGameUE/Saved/BP_ARedGem9D172EC44AD63B761A175A89B93CC4AC.tmp' to 'Z:/Year Three/Module4/Unreal/PetGameUE/PetGameUE/Content/Items/BP_ARedGem.uasset'
+[2025.04.11-11.41.23:686][182]LogFileHelpers: InternalPromptForCheckoutAndSave took 77 ms (total: 2.79 sec)
+[2025.04.11-11.41.23:687][182]AssetCheck: New page: Asset Save: BP_ARedGem
+[2025.04.11-11.41.23:687][182]LogContentValidation: Display: Validating /Script/Engine.Blueprint /Game/Items/BP_ARedGem.BP_ARedGem
+[2025.04.11-11.41.31:718][626]BlueprintLog: New page: Compile BP_ARedGem
+[2025.04.11-11.41.31:743][626]LogActor: Warning: BP_ARedGem_C /Game/TestLevel.TestLevel:PersistentLevel.BP_ARedGem_C_1 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2025.04.11-11.41.31:744][626]LogActor: Warning: BP_ARedGem_C /Engine/Transient.World_29:PersistentLevel.BP_ARedGem_C_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2025.04.11-11.41.31:745][626]LogActor: Warning: BP_ARedGem_C /Engine/Transient.World_30:PersistentLevel.BP_ARedGem_C_1 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2025.04.11-11.41.31:745][626]LogActor: Warning: BP_ARedGem_C /Engine/Transient.World_31:PersistentLevel.BP_ARedGem_C_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2025.04.11-11.41.31:767][626]LogUObjectHash: Compacting FUObjectHashTables data took   1.16ms
+[2025.04.11-11.41.31:773][626]LogActor: Warning: BP_ARedGem_C /Engine/Transient.World_30:PersistentLevel.BP_ARedGem_C_2 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2025.04.11-11.41.32:352][655]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2025.04.11-11.41.32:396][655]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Items/BP_ARedGem" FILE="Z:/Year Three/Module4/Unreal/PetGameUE/PetGameUE/Content/Items/BP_ARedGem.uasset" SILENT=true
+[2025.04.11-11.41.32:400][655]LogSavePackage: Moving output files for package: /Game/Items/BP_ARedGem
+[2025.04.11-11.41.32:401][655]LogSavePackage: Moving 'Z:/Year Three/Module4/Unreal/PetGameUE/PetGameUE/Saved/BP_ARedGem1CB32A204B3014D72E192A9BD1475275.tmp' to 'Z:/Year Three/Module4/Unreal/PetGameUE/PetGameUE/Content/Items/BP_ARedGem.uasset'
+[2025.04.11-11.41.32:410][655]LogFileHelpers: InternalPromptForCheckoutAndSave took 58 ms (total: 2.84 sec)
+[2025.04.11-11.41.32:412][655]AssetCheck: New page: Asset Save: BP_ARedGem
+[2025.04.11-11.41.32:412][655]LogContentValidation: Display: Validating /Script/Engine.Blueprint /Game/Items/BP_ARedGem.BP_ARedGem
+[2025.04.11-11.41.34:794][796]LogViewport: Scene viewport resized to 1675x1414, mode Windowed.
+[2025.04.11-11.41.40:221][173]LogAssetEditorSubsystem: Opening Asset editor for Blueprint /Game/Items/BP_AYellowGem.BP_AYellowGem
+[2025.04.11-11.41.40:221][173]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2025.04.11-11.41.40:221][173]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2025.04.11-11.41.40:500][173]LogActor: Warning: BP_AYellowGem_C /Engine/Transient.World_32:PersistentLevel.BP_AYellowGem_C_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2025.04.11-11.41.52:233][882]BlueprintLog: New page: Compile BP_AYellowGem
+[2025.04.11-11.41.52:258][882]LogActor: Warning: BP_AYellowGem_C /Engine/Transient.World_18:PersistentLevel.BP_AYellowGem_C_1 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2025.04.11-11.41.52:259][882]LogActor: Warning: BP_AYellowGem_C /Engine/Transient.World_19:PersistentLevel.BP_AYellowGem_C_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2025.04.11-11.41.52:260][882]LogActor: Warning: BP_AYellowGem_C /Engine/Transient.World_32:PersistentLevel.BP_AYellowGem_C_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2025.04.11-11.41.52:282][882]LogUObjectHash: Compacting FUObjectHashTables data took   1.14ms
+[2025.04.11-11.41.52:286][882]LogActor: Warning: BP_AYellowGem_C /Engine/Transient.World_18:PersistentLevel.BP_AYellowGem_C_2 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2025.04.11-11.41.52:963][917]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2025.04.11-11.41.53:007][917]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Items/BP_AYellowGem" FILE="Z:/Year Three/Module4/Unreal/PetGameUE/PetGameUE/Content/Items/BP_AYellowGem.uasset" SILENT=true
+[2025.04.11-11.41.53:011][917]LogSavePackage: Moving output files for package: /Game/Items/BP_AYellowGem
+[2025.04.11-11.41.53:012][917]LogSavePackage: Moving 'Z:/Year Three/Module4/Unreal/PetGameUE/PetGameUE/Saved/BP_AYellowGem3515A52F4C661063D29C20AA947068C8.tmp' to 'Z:/Year Three/Module4/Unreal/PetGameUE/PetGameUE/Content/Items/BP_AYellowGem.uasset'
+[2025.04.11-11.41.53:021][917]LogFileHelpers: InternalPromptForCheckoutAndSave took 58 ms (total: 2.90 sec)
+[2025.04.11-11.41.53:022][917]AssetCheck: New page: Asset Save: BP_AYellowGem
+[2025.04.11-11.41.53:022][917]LogContentValidation: Display: Validating /Script/Engine.Blueprint /Game/Items/BP_AYellowGem.BP_AYellowGem
+[2025.04.11-11.42.01:137][706]LogActorFactory: Actor Factory attempting to spawn BlueprintGeneratedClass /Game/Items/BP_AYellowGem.BP_AYellowGem_C
+[2025.04.11-11.42.01:138][706]LogActorFactory: Actor Factory attempting to spawn BlueprintGeneratedClass /Game/Items/BP_AYellowGem.BP_AYellowGem_C
+[2025.04.11-11.42.01:138][706]LogActor: Warning: BP_AYellowGem_C /Game/TestLevel.TestLevel:PersistentLevel.BP_AYellowGem_C_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2025.04.11-11.42.01:139][706]LogActorFactory: Actor Factory spawned Blueprint /Game/Items/BP_AYellowGem.BP_AYellowGem as actor: BP_AYellowGem_C /Game/TestLevel.TestLevel:PersistentLevel.BP_AYellowGem_C_0
+[2025.04.11-11.42.01:139][706]LogActorFactory: Actor Factory spawned Blueprint /Game/Items/BP_AYellowGem.BP_AYellowGem as actor: BP_AYellowGem_C /Game/TestLevel.TestLevel:PersistentLevel.BP_AYellowGem_C_0
+[2025.04.11-11.42.01:141][706]LogActorFactory: Loading ActorFactory Class /Script/Engine.LevelInstance
+[2025.04.11-11.42.01:300][715]LogActorFactory: Actor Factory attempting to spawn BlueprintGeneratedClass /Game/Items/BP_AYellowGem.BP_AYellowGem_C
+[2025.04.11-11.42.01:300][715]LogActorFactory: Actor Factory attempting to spawn BlueprintGeneratedClass /Game/Items/BP_AYellowGem.BP_AYellowGem_C
+[2025.04.11-11.42.01:301][715]LogActor: Warning: BP_AYellowGem_C /Game/TestLevel.TestLevel:PersistentLevel.BP_AYellowGem_C_1 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2025.04.11-11.42.01:301][715]LogActorFactory: Actor Factory spawned Blueprint /Game/Items/BP_AYellowGem.BP_AYellowGem as actor: BP_AYellowGem_C /Game/TestLevel.TestLevel:PersistentLevel.BP_AYellowGem_C_1
+[2025.04.11-11.42.01:301][715]LogActorFactory: Actor Factory spawned Blueprint /Game/Items/BP_AYellowGem.BP_AYellowGem as actor: BP_AYellowGem_C /Game/TestLevel.TestLevel:PersistentLevel.BP_AYellowGem_C_1
+[2025.04.11-11.42.03:421][902]LogActorFactory: Actor Factory attempting to spawn BlueprintGeneratedClass /Game/Items/BP_AGreenGem.BP_AGreenGem_C
+[2025.04.11-11.42.03:421][902]LogActorFactory: Actor Factory attempting to spawn BlueprintGeneratedClass /Game/Items/BP_AGreenGem.BP_AGreenGem_C
+[2025.04.11-11.42.03:421][902]LogActor: Warning: BP_AGreenGem_C /Game/TestLevel.TestLevel:PersistentLevel.BP_AGreenGem_C_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2025.04.11-11.42.03:421][902]LogActorFactory: Actor Factory spawned Blueprint /Game/Items/BP_AGreenGem.BP_AGreenGem as actor: BP_AGreenGem_C /Game/TestLevel.TestLevel:PersistentLevel.BP_AGreenGem_C_0
+[2025.04.11-11.42.03:421][902]LogActorFactory: Actor Factory spawned Blueprint /Game/Items/BP_AGreenGem.BP_AGreenGem as actor: BP_AGreenGem_C /Game/TestLevel.TestLevel:PersistentLevel.BP_AGreenGem_C_0
+[2025.04.11-11.42.03:804][935]LogActorFactory: Actor Factory attempting to spawn BlueprintGeneratedClass /Game/Items/BP_AGreenGem.BP_AGreenGem_C
+[2025.04.11-11.42.03:804][935]LogActorFactory: Actor Factory attempting to spawn BlueprintGeneratedClass /Game/Items/BP_AGreenGem.BP_AGreenGem_C
+[2025.04.11-11.42.03:805][935]LogActor: Warning: BP_AGreenGem_C /Game/TestLevel.TestLevel:PersistentLevel.BP_AGreenGem_C_1 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2025.04.11-11.42.03:806][935]LogActorFactory: Actor Factory spawned Blueprint /Game/Items/BP_AGreenGem.BP_AGreenGem as actor: BP_AGreenGem_C /Game/TestLevel.TestLevel:PersistentLevel.BP_AGreenGem_C_1
+[2025.04.11-11.42.03:806][935]LogActorFactory: Actor Factory spawned Blueprint /Game/Items/BP_AGreenGem.BP_AGreenGem as actor: BP_AGreenGem_C /Game/TestLevel.TestLevel:PersistentLevel.BP_AGreenGem_C_1
+[2025.04.11-11.42.05:479][108]LogActorFactory: Actor Factory attempting to spawn BlueprintGeneratedClass /Game/Items/BP_ABlueGem.BP_ABlueGem_C
+[2025.04.11-11.42.05:479][108]LogActorFactory: Actor Factory attempting to spawn BlueprintGeneratedClass /Game/Items/BP_ABlueGem.BP_ABlueGem_C
+[2025.04.11-11.42.05:479][108]LogActor: Warning: BP_ABlueGem_C /Game/TestLevel.TestLevel:PersistentLevel.BP_ABlueGem_C_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2025.04.11-11.42.05:479][108]LogActorFactory: Actor Factory spawned Blueprint /Game/Items/BP_ABlueGem.BP_ABlueGem as actor: BP_ABlueGem_C /Game/TestLevel.TestLevel:PersistentLevel.BP_ABlueGem_C_0
+[2025.04.11-11.42.05:480][108]LogActorFactory: Actor Factory spawned Blueprint /Game/Items/BP_ABlueGem.BP_ABlueGem as actor: BP_ABlueGem_C /Game/TestLevel.TestLevel:PersistentLevel.BP_ABlueGem_C_0
+[2025.04.11-11.42.05:885][141]LogActorFactory: Actor Factory attempting to spawn BlueprintGeneratedClass /Game/Items/BP_ABlueGem.BP_ABlueGem_C
+[2025.04.11-11.42.05:885][141]LogActorFactory: Actor Factory attempting to spawn BlueprintGeneratedClass /Game/Items/BP_ABlueGem.BP_ABlueGem_C
+[2025.04.11-11.42.05:885][141]LogActor: Warning: BP_ABlueGem_C /Game/TestLevel.TestLevel:PersistentLevel.BP_ABlueGem_C_1 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2025.04.11-11.42.05:886][141]LogActorFactory: Actor Factory spawned Blueprint /Game/Items/BP_ABlueGem.BP_ABlueGem as actor: BP_ABlueGem_C /Game/TestLevel.TestLevel:PersistentLevel.BP_ABlueGem_C_1
+[2025.04.11-11.42.05:886][141]LogActorFactory: Actor Factory spawned Blueprint /Game/Items/BP_ABlueGem.BP_ABlueGem as actor: BP_ABlueGem_C /Game/TestLevel.TestLevel:PersistentLevel.BP_ABlueGem_C_1
+[2025.04.11-11.42.07:765][349]LogDebuggerCommands: Repeating last play command: Selected Viewport
+[2025.04.11-11.42.07:775][349]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2025.04.11-11.42.07:775][349]PIE: New page: PIE session: TestLevel (11 Apr 2025, 13:42:07)
+[2025.04.11-11.42.07:775][349]LogPlayLevel: Creating play world package: /Game/UEDPIE_0_TestLevel
+[2025.04.11-11.42.07:777][349]LogPlayLevel: PIE: StaticDuplicateObject took: (0.001971s)
+[2025.04.11-11.42.07:777][349]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/TestLevel.TestLevel to /Game/UEDPIE_0_TestLevel.TestLevel (0.002005s)
+[2025.04.11-11.42.07:790][349]LogUObjectHash: Compacting FUObjectHashTables data took   1.11ms
+[2025.04.11-11.42.07:792][349]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2025.04.11-11.42.07:792][349]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2025.04.11-11.42.07:793][349]LogAIModule: Creating AISystem for world TestLevel
+[2025.04.11-11.42.07:794][349]LogPlayLevel: PIE: World Init took: (0.001042s)
+[2025.04.11-11.42.07:794][349]LogAudio: Display: Creating Audio Device:                 Id: 15, Scope: Unique, Realtime: True
+[2025.04.11-11.42.07:794][349]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2025.04.11-11.42.07:794][349]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2025.04.11-11.42.07:794][349]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2025.04.11-11.42.07:794][349]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2025.04.11-11.42.07:794][349]LogAudioMixer: Display: 	Number of buffers to queue:			  1
+[2025.04.11-11.42.07:794][349]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2025.04.11-11.42.07:794][349]LogAudioMixer: Display: 	Number of Async Source Workers:		  4
+[2025.04.11-11.42.07:794][349]LogAudio: Display: AudioDevice MaxSources: 32
+[2025.04.11-11.42.07:795][349]LogAudio: Display: Audio Spatialization Plugin: None (built-in).
+[2025.04.11-11.42.07:795][349]LogAudio: Display: Audio Reverb Plugin: None (built-in).
+[2025.04.11-11.42.07:795][349]LogAudio: Display: Audio Occlusion Plugin: None (built-in).
+[2025.04.11-11.42.07:796][349]LogAudioMixer: Display: Initializing audio mixer using platform API: 'XAudio2'
+[2025.04.11-11.42.07:851][349]LogAudioMixer: Display: Using Audio Hardware Device SteelSeries Sonar - Gaming (SteelSeries Sonar Virtual Audio Device)
+[2025.04.11-11.42.07:852][349]LogAudioMixer: Display: Initializing Sound Submixes...
+[2025.04.11-11.42.07:852][349]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2025.04.11-11.42.07:852][349]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2025.04.11-11.42.07:853][349]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called. InstanceID=15
+[2025.04.11-11.42.07:853][349]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=8, Samples=8192, InstanceID=15
+[2025.04.11-11.42.07:855][349]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal(), InstanceID=15
+[2025.04.11-11.42.07:855][349]LogInit: FAudioDevice initialized with ID 15.
+[2025.04.11-11.42.07:855][349]LogAudio: Display: Audio Device (ID: 15) registered with world 'TestLevel'.
+[2025.04.11-11.42.07:855][349]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time. InstanceID=15
+[2025.04.11-11.42.07:855][349]LogAudioMixer: Initializing Audio Bus Subsystem for audio device with ID 15
+[2025.04.11-11.42.07:859][349]LogLoad: Game class is 'BP_PetGameModeBase_C'
+[2025.04.11-11.42.07:860][349]LogWorld: Bringing World /Game/UEDPIE_0_TestLevel.TestLevel up for play (max tick rate 0) at 2025.04.11-12.42.07
+[2025.04.11-11.42.07:860][349]LogWorld: Bringing up level for play took: 0.000901
+[2025.04.11-11.42.07:862][349]LogOnline: OSS: Created online subsystem instance for: :Context_47
+[2025.04.11-11.42.07:871][349]PIE: Server logged in
+[2025.04.11-11.42.07:872][349]PIE: Play in editor total start time 0.098 seconds.
+[2025.04.11-11.42.22:037][955]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2025.04.11-11.42.22:037][955]LogWorld: BeginTearingDown for /Game/UEDPIE_0_TestLevel
+[2025.04.11-11.42.22:037][955]LogWorld: UWorld::CleanupWorld for TestLevel, bSessionEnded=true, bCleanupResources=true
+[2025.04.11-11.42.22:037][955]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2025.04.11-11.42.22:042][955]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2025.04.11-11.42.22:047][955]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2025.04.11-11.42.22:060][955]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2025.04.11-11.42.22:061][955]LogAudioMixer: Deinitializing Audio Bus Subsystem for audio device with ID 15
+[2025.04.11-11.42.22:061][955]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=15
+[2025.04.11-11.42.22:062][955]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=15
+[2025.04.11-11.42.22:069][955]LogUObjectHash: Compacting FUObjectHashTables data took   1.13ms
+[2025.04.11-11.42.22:134][956]LogPlayLevel: Display: Destroying online subsystem :Context_47
+[2025.04.11-11.42.28:505][398]BlueprintLog: New page: Compile BP_ARedGem
+[2025.04.11-11.42.28:529][398]LogActor: Warning: BP_ARedGem_C /Game/TestLevel.TestLevel:PersistentLevel.BP_ARedGem_C_1 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2025.04.11-11.42.28:531][398]LogActor: Warning: BP_ARedGem_C /Engine/Transient.World_29:PersistentLevel.BP_ARedGem_C_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2025.04.11-11.42.28:531][398]LogActor: Warning: BP_ARedGem_C /Engine/Transient.World_31:PersistentLevel.BP_ARedGem_C_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2025.04.11-11.42.28:532][398]LogActor: Warning: BP_ARedGem_C /Engine/Transient.World_30:PersistentLevel.BP_ARedGem_C_2 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2025.04.11-11.42.28:554][398]LogUObjectHash: Compacting FUObjectHashTables data took   1.09ms
+[2025.04.11-11.42.28:557][398]LogActor: Warning: BP_ARedGem_C /Engine/Transient.World_30:PersistentLevel.BP_ARedGem_C_3 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2025.04.11-11.42.29:183][427]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2025.04.11-11.42.29:219][427]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Items/BP_ARedGem" FILE="Z:/Year Three/Module4/Unreal/PetGameUE/PetGameUE/Content/Items/BP_ARedGem.uasset" SILENT=true
+[2025.04.11-11.42.29:226][427]LogSavePackage: Moving output files for package: /Game/Items/BP_ARedGem
+[2025.04.11-11.42.29:228][427]LogSavePackage: Moving 'Z:/Year Three/Module4/Unreal/PetGameUE/PetGameUE/Saved/BP_ARedGemA02C4F304A644E3C9EA2D9922BACC50B.tmp' to 'Z:/Year Three/Module4/Unreal/PetGameUE/PetGameUE/Content/Items/BP_ARedGem.uasset'
+[2025.04.11-11.42.29:240][427]LogFileHelpers: InternalPromptForCheckoutAndSave took 56 ms (total: 2.96 sec)
+[2025.04.11-11.42.29:241][427]AssetCheck: New page: Asset Save: BP_ARedGem
+[2025.04.11-11.42.29:241][427]LogContentValidation: Display: Validating /Script/Engine.Blueprint /Game/Items/BP_ARedGem.BP_ARedGem
+[2025.04.11-11.42.35:875][812]BlueprintLog: New page: Compile BP_ARedGem
+[2025.04.11-11.42.35:900][812]LogActor: Warning: BP_ARedGem_C /Game/TestLevel.TestLevel:PersistentLevel.BP_ARedGem_C_1 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2025.04.11-11.42.35:901][812]LogActor: Warning: BP_ARedGem_C /Engine/Transient.World_29:PersistentLevel.BP_ARedGem_C_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2025.04.11-11.42.35:901][812]LogActor: Warning: BP_ARedGem_C /Engine/Transient.World_31:PersistentLevel.BP_ARedGem_C_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2025.04.11-11.42.35:902][812]LogActor: Warning: BP_ARedGem_C /Engine/Transient.World_30:PersistentLevel.BP_ARedGem_C_3 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2025.04.11-11.42.35:923][812]LogUObjectHash: Compacting FUObjectHashTables data took   1.15ms
+[2025.04.11-11.42.35:927][812]LogActor: Warning: BP_ARedGem_C /Engine/Transient.World_30:PersistentLevel.BP_ARedGem_C_4 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2025.04.11-11.42.36:563][844]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2025.04.11-11.42.36:601][844]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Items/BP_ARedGem" FILE="Z:/Year Three/Module4/Unreal/PetGameUE/PetGameUE/Content/Items/BP_ARedGem.uasset" SILENT=true
+[2025.04.11-11.42.36:606][844]LogSavePackage: Moving output files for package: /Game/Items/BP_ARedGem
+[2025.04.11-11.42.36:608][844]LogSavePackage: Moving 'Z:/Year Three/Module4/Unreal/PetGameUE/PetGameUE/Saved/BP_ARedGemBD95AC414049B0B4F724D9BFC68E592F.tmp' to 'Z:/Year Three/Module4/Unreal/PetGameUE/PetGameUE/Content/Items/BP_ARedGem.uasset'
+[2025.04.11-11.42.36:619][844]LogFileHelpers: InternalPromptForCheckoutAndSave took 56 ms (total: 3.02 sec)
+[2025.04.11-11.42.36:620][844]AssetCheck: New page: Asset Save: BP_ARedGem
+[2025.04.11-11.42.36:620][844]LogContentValidation: Display: Validating /Script/Engine.Blueprint /Game/Items/BP_ARedGem.BP_ARedGem
+[2025.04.11-11.42.47:929][525]BlueprintLog: New page: Compile BP_ABlueGem
+[2025.04.11-11.42.47:955][525]LogActor: Warning: BP_ABlueGem_C /Engine/Transient.World_11:PersistentLevel.BP_ABlueGem_C_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2025.04.11-11.42.47:955][525]LogActor: Warning: BP_ABlueGem_C /Engine/Transient.World_26:PersistentLevel.BP_ABlueGem_C_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2025.04.11-11.42.47:956][525]LogActor: Warning: BP_ABlueGem_C /Engine/Transient.World_10:PersistentLevel.BP_ABlueGem_C_2 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2025.04.11-11.42.47:956][525]LogActor: Warning: BP_ABlueGem_C /Game/TestLevel.TestLevel:PersistentLevel.BP_ABlueGem_C_1 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2025.04.11-11.42.47:990][525]LogUObjectHash: Compacting FUObjectHashTables data took   1.15ms
+[2025.04.11-11.42.47:994][525]LogActor: Warning: BP_ABlueGem_C /Engine/Transient.World_10:PersistentLevel.BP_ABlueGem_C_3 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2025.04.11-11.42.48:593][549]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2025.04.11-11.42.48:635][549]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Items/BP_ABlueGem" FILE="Z:/Year Three/Module4/Unreal/PetGameUE/PetGameUE/Content/Items/BP_ABlueGem.uasset" SILENT=true
+[2025.04.11-11.42.48:639][549]LogSavePackage: Moving output files for package: /Game/Items/BP_ABlueGem
+[2025.04.11-11.42.48:639][549]LogSavePackage: Moving 'Z:/Year Three/Module4/Unreal/PetGameUE/PetGameUE/Saved/BP_ABlueGem0638A5F74792E90BB1E8919B9A6B0887.tmp' to 'Z:/Year Three/Module4/Unreal/PetGameUE/PetGameUE/Content/Items/BP_ABlueGem.uasset'
+[2025.04.11-11.42.48:649][549]LogFileHelpers: InternalPromptForCheckoutAndSave took 55 ms (total: 3.07 sec)
+[2025.04.11-11.42.48:649][549]AssetCheck: New page: Asset Save: BP_ABlueGem
+[2025.04.11-11.42.48:649][549]LogContentValidation: Display: Validating /Script/Engine.Blueprint /Game/Items/BP_ABlueGem.BP_ABlueGem
+[2025.04.11-11.42.59:016][231]LogDebuggerCommands: Repeating last play command: Selected Viewport
+[2025.04.11-11.42.59:028][231]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2025.04.11-11.42.59:028][231]PIE: New page: PIE session: TestLevel (11 Apr 2025, 13:42:59)
+[2025.04.11-11.42.59:056][231]LogPlayLevel: Creating play world package: /Game/UEDPIE_0_TestLevel
+[2025.04.11-11.42.59:058][231]LogPlayLevel: PIE: StaticDuplicateObject took: (0.002117s)
+[2025.04.11-11.42.59:058][231]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/TestLevel.TestLevel to /Game/UEDPIE_0_TestLevel.TestLevel (0.002163s)
+[2025.04.11-11.42.59:072][231]LogUObjectHash: Compacting FUObjectHashTables data took   1.09ms
+[2025.04.11-11.42.59:075][231]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2025.04.11-11.42.59:075][231]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2025.04.11-11.42.59:076][231]LogAIModule: Creating AISystem for world TestLevel
+[2025.04.11-11.42.59:076][231]LogPlayLevel: PIE: World Init took: (0.001049s)
+[2025.04.11-11.42.59:076][231]LogAudio: Display: Creating Audio Device:                 Id: 16, Scope: Unique, Realtime: True
+[2025.04.11-11.42.59:076][231]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2025.04.11-11.42.59:076][231]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2025.04.11-11.42.59:076][231]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2025.04.11-11.42.59:076][231]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2025.04.11-11.42.59:076][231]LogAudioMixer: Display: 	Number of buffers to queue:			  1
+[2025.04.11-11.42.59:076][231]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2025.04.11-11.42.59:076][231]LogAudioMixer: Display: 	Number of Async Source Workers:		  4
+[2025.04.11-11.42.59:076][231]LogAudio: Display: AudioDevice MaxSources: 32
+[2025.04.11-11.42.59:077][231]LogAudio: Display: Audio Spatialization Plugin: None (built-in).
+[2025.04.11-11.42.59:077][231]LogAudio: Display: Audio Reverb Plugin: None (built-in).
+[2025.04.11-11.42.59:077][231]LogAudio: Display: Audio Occlusion Plugin: None (built-in).
+[2025.04.11-11.42.59:079][231]LogAudioMixer: Display: Initializing audio mixer using platform API: 'XAudio2'
+[2025.04.11-11.42.59:133][231]LogAudioMixer: Display: Using Audio Hardware Device SteelSeries Sonar - Gaming (SteelSeries Sonar Virtual Audio Device)
+[2025.04.11-11.42.59:133][231]LogAudioMixer: Display: Initializing Sound Submixes...
+[2025.04.11-11.42.59:133][231]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2025.04.11-11.42.59:133][231]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2025.04.11-11.42.59:134][231]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called. InstanceID=16
+[2025.04.11-11.42.59:134][231]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=8, Samples=8192, InstanceID=16
+[2025.04.11-11.42.59:136][231]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal(), InstanceID=16
+[2025.04.11-11.42.59:136][231]LogInit: FAudioDevice initialized with ID 16.
+[2025.04.11-11.42.59:136][231]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time. InstanceID=16
+[2025.04.11-11.42.59:136][231]LogAudio: Display: Audio Device (ID: 16) registered with world 'TestLevel'.
+[2025.04.11-11.42.59:136][231]LogAudioMixer: Initializing Audio Bus Subsystem for audio device with ID 16
+[2025.04.11-11.42.59:139][231]LogLoad: Game class is 'BP_PetGameModeBase_C'
+[2025.04.11-11.42.59:141][231]LogWorld: Bringing World /Game/UEDPIE_0_TestLevel.TestLevel up for play (max tick rate 0) at 2025.04.11-12.42.59
+[2025.04.11-11.42.59:141][231]LogWorld: Bringing up level for play took: 0.000866
+[2025.04.11-11.42.59:143][231]LogOnline: OSS: Created online subsystem instance for: :Context_48
+[2025.04.11-11.42.59:145][231]PIE: Server logged in
+[2025.04.11-11.42.59:145][231]PIE: Play in editor total start time 0.118 seconds.
+[2025.04.11-11.43.05:097][921]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2025.04.11-11.43.05:097][921]LogWorld: BeginTearingDown for /Game/UEDPIE_0_TestLevel
+[2025.04.11-11.43.05:097][921]LogWorld: UWorld::CleanupWorld for TestLevel, bSessionEnded=true, bCleanupResources=true
+[2025.04.11-11.43.05:097][921]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2025.04.11-11.43.05:102][921]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2025.04.11-11.43.05:107][921]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2025.04.11-11.43.05:121][921]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2025.04.11-11.43.05:122][921]LogAudioMixer: Deinitializing Audio Bus Subsystem for audio device with ID 16
+[2025.04.11-11.43.05:122][921]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=16
+[2025.04.11-11.43.05:123][921]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=16
+[2025.04.11-11.43.05:130][921]LogUObjectHash: Compacting FUObjectHashTables data took   1.16ms
+[2025.04.11-11.43.05:227][922]LogPlayLevel: Display: Destroying online subsystem :Context_48
+[2025.04.11-11.43.07:514][149]LogSlate: Vector cache flush requested. Reason: Large atlases out of space; 2/1 Textures; frames since last flush: 1095216797884
+[2025.04.11-11.43.07:514][149]LogSlate: Warning: Setting the threshold to trigger a flush to 2 non-atlased textures as there is a lot of font data being cached.
+[2025.04.11-11.43.08:406][239]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2025.04.11-11.43.08:407][239]PIE: New page: SIE session: TestLevel (11 Apr 2025, 13:43:08)
+[2025.04.11-11.43.08:445][239]LogPlayLevel: Creating play world package: /Game/UEDPIE_0_TestLevel
+[2025.04.11-11.43.08:447][239]LogPlayLevel: PIE: StaticDuplicateObject took: (0.002097s)
+[2025.04.11-11.43.08:447][239]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/TestLevel.TestLevel to /Game/UEDPIE_0_TestLevel.TestLevel (0.002142s)
+[2025.04.11-11.43.08:462][239]LogUObjectHash: Compacting FUObjectHashTables data took   1.08ms
+[2025.04.11-11.43.08:465][239]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2025.04.11-11.43.08:465][239]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2025.04.11-11.43.08:465][239]LogAIModule: Creating AISystem for world TestLevel
+[2025.04.11-11.43.08:466][239]LogPlayLevel: PIE: World Init took: (0.001018s)
+[2025.04.11-11.43.08:466][239]LogAudio: Display: Creating Audio Device:                 Id: 17, Scope: Unique, Realtime: True
+[2025.04.11-11.43.08:466][239]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2025.04.11-11.43.08:466][239]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2025.04.11-11.43.08:466][239]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2025.04.11-11.43.08:466][239]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2025.04.11-11.43.08:466][239]LogAudioMixer: Display: 	Number of buffers to queue:			  1
+[2025.04.11-11.43.08:466][239]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2025.04.11-11.43.08:466][239]LogAudioMixer: Display: 	Number of Async Source Workers:		  4
+[2025.04.11-11.43.08:466][239]LogAudio: Display: AudioDevice MaxSources: 32
+[2025.04.11-11.43.08:466][239]LogAudio: Display: Audio Spatialization Plugin: None (built-in).
+[2025.04.11-11.43.08:466][239]LogAudio: Display: Audio Reverb Plugin: None (built-in).
+[2025.04.11-11.43.08:466][239]LogAudio: Display: Audio Occlusion Plugin: None (built-in).
+[2025.04.11-11.43.08:469][239]LogAudioMixer: Display: Initializing audio mixer using platform API: 'XAudio2'
+[2025.04.11-11.43.08:522][239]LogAudioMixer: Display: Using Audio Hardware Device SteelSeries Sonar - Gaming (SteelSeries Sonar Virtual Audio Device)
+[2025.04.11-11.43.08:522][239]LogAudioMixer: Display: Initializing Sound Submixes...
+[2025.04.11-11.43.08:522][239]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2025.04.11-11.43.08:522][239]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2025.04.11-11.43.08:523][239]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called. InstanceID=17
+[2025.04.11-11.43.08:523][239]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=8, Samples=8192, InstanceID=17
+[2025.04.11-11.43.08:525][239]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal(), InstanceID=17
+[2025.04.11-11.43.08:525][239]LogInit: FAudioDevice initialized with ID 17.
+[2025.04.11-11.43.08:525][239]LogAudio: Display: Audio Device (ID: 17) registered with world 'TestLevel'.
+[2025.04.11-11.43.08:525][239]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time. InstanceID=17
+[2025.04.11-11.43.08:525][239]LogAudioMixer: Initializing Audio Bus Subsystem for audio device with ID 17
+[2025.04.11-11.43.08:528][239]LogLoad: Game class is 'BP_PetGameModeBase_C'
+[2025.04.11-11.43.08:529][239]LogWorld: Bringing World /Game/UEDPIE_0_TestLevel.TestLevel up for play (max tick rate 0) at 2025.04.11-12.43.08
+[2025.04.11-11.43.08:529][239]LogWorld: Bringing up level for play took: 0.000825
+[2025.04.11-11.43.08:531][239]LogOnline: OSS: Created online subsystem instance for: :Context_49
+[2025.04.11-11.43.08:532][239]PIE: Server logged in
+[2025.04.11-11.43.08:533][239]PIE: Play in editor total start time 0.126 seconds.
+[2025.04.11-11.43.34:140][454]Cmd: CAMERA ALIGN ACTIVEVIEWPORTONLY
+[2025.04.11-11.43.35:806][591]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2025.04.11-11.43.35:806][591]LogWorld: BeginTearingDown for /Game/UEDPIE_0_TestLevel
+[2025.04.11-11.43.35:807][591]LogWorld: UWorld::CleanupWorld for TestLevel, bSessionEnded=true, bCleanupResources=true
+[2025.04.11-11.43.35:807][591]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2025.04.11-11.43.35:812][591]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2025.04.11-11.43.35:817][591]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2025.04.11-11.43.35:832][591]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2025.04.11-11.43.35:832][591]LogAudioMixer: Deinitializing Audio Bus Subsystem for audio device with ID 17
+[2025.04.11-11.43.35:832][591]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=17
+[2025.04.11-11.43.35:834][591]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=17
+[2025.04.11-11.43.35:841][591]LogUObjectHash: Compacting FUObjectHashTables data took   1.13ms
+[2025.04.11-11.43.35:895][592]LogPlayLevel: Display: Destroying online subsystem :Context_49
+[2025.04.11-11.43.42:492][103]BlueprintLog: New page: Compile BP_AGreenGem
+[2025.04.11-11.43.42:518][103]LogActor: Warning: BP_AGreenGem_C /Engine/Transient.World_15:PersistentLevel.BP_AGreenGem_C_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2025.04.11-11.43.42:518][103]LogActor: Warning: BP_AGreenGem_C /Engine/Transient.World_27:PersistentLevel.BP_AGreenGem_C_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2025.04.11-11.43.42:518][103]LogActor: Warning: BP_AGreenGem_C /Engine/Transient.World_14:PersistentLevel.BP_AGreenGem_C_2 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2025.04.11-11.43.42:519][103]LogActor: Warning: BP_AGreenGem_C /Game/TestLevel.TestLevel:PersistentLevel.BP_AGreenGem_C_1 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2025.04.11-11.43.42:542][103]LogUObjectHash: Compacting FUObjectHashTables data took   1.16ms
+[2025.04.11-11.43.42:545][103]LogActor: Warning: BP_AGreenGem_C /Engine/Transient.World_14:PersistentLevel.BP_AGreenGem_C_3 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2025.04.11-11.43.43:049][122]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2025.04.11-11.43.43:091][122]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Items/BP_AGreenGem" FILE="Z:/Year Three/Module4/Unreal/PetGameUE/PetGameUE/Content/Items/BP_AGreenGem.uasset" SILENT=true
+[2025.04.11-11.43.43:096][122]LogSavePackage: Moving output files for package: /Game/Items/BP_AGreenGem
+[2025.04.11-11.43.43:098][122]LogSavePackage: Moving 'Z:/Year Three/Module4/Unreal/PetGameUE/PetGameUE/Saved/BP_AGreenGem5100EE324AB8BA3CFE63C5A9718FE591.tmp' to 'Z:/Year Three/Module4/Unreal/PetGameUE/PetGameUE/Content/Items/BP_AGreenGem.uasset'
+[2025.04.11-11.43.43:109][122]LogFileHelpers: InternalPromptForCheckoutAndSave took 60 ms (total: 3.13 sec)
+[2025.04.11-11.43.43:110][122]AssetCheck: New page: Asset Save: BP_AGreenGem
+[2025.04.11-11.43.43:110][122]LogContentValidation: Display: Validating /Script/Engine.Blueprint /Game/Items/BP_AGreenGem.BP_AGreenGem
+[2025.04.11-11.43.48:715][421]BlueprintLog: New page: Compile BP_ABlueGem
+[2025.04.11-11.43.48:742][421]LogActor: Warning: BP_ABlueGem_C /Engine/Transient.World_11:PersistentLevel.BP_ABlueGem_C_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2025.04.11-11.43.48:742][421]LogActor: Warning: BP_ABlueGem_C /Engine/Transient.World_26:PersistentLevel.BP_ABlueGem_C_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2025.04.11-11.43.48:743][421]LogActor: Warning: BP_ABlueGem_C /Game/TestLevel.TestLevel:PersistentLevel.BP_ABlueGem_C_1 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2025.04.11-11.43.48:744][421]LogActor: Warning: BP_ABlueGem_C /Engine/Transient.World_10:PersistentLevel.BP_ABlueGem_C_3 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2025.04.11-11.43.48:766][421]LogUObjectHash: Compacting FUObjectHashTables data took   1.14ms
+[2025.04.11-11.43.48:769][421]LogActor: Warning: BP_ABlueGem_C /Engine/Transient.World_10:PersistentLevel.BP_ABlueGem_C_4 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2025.04.11-11.43.49:741][472]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2025.04.11-11.43.49:787][472]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Items/BP_ABlueGem" FILE="Z:/Year Three/Module4/Unreal/PetGameUE/PetGameUE/Content/Items/BP_ABlueGem.uasset" SILENT=true
+[2025.04.11-11.43.49:793][472]LogSavePackage: Moving output files for package: /Game/Items/BP_ABlueGem
+[2025.04.11-11.43.49:796][472]LogSavePackage: Moving 'Z:/Year Three/Module4/Unreal/PetGameUE/PetGameUE/Saved/BP_ABlueGemECBE7C994F86B2FF11F938897599CFE2.tmp' to 'Z:/Year Three/Module4/Unreal/PetGameUE/PetGameUE/Content/Items/BP_ABlueGem.uasset'
+[2025.04.11-11.43.49:808][472]LogFileHelpers: InternalPromptForCheckoutAndSave took 66 ms (total: 3.20 sec)
+[2025.04.11-11.43.49:808][472]AssetCheck: New page: Asset Save: BP_ABlueGem
+[2025.04.11-11.43.49:808][472]LogContentValidation: Display: Validating /Script/Engine.Blueprint /Game/Items/BP_ABlueGem.BP_ABlueGem
+[2025.04.11-11.43.56:222][831]BlueprintLog: New page: Compile BP_ARedGem
+[2025.04.11-11.43.56:247][831]LogActor: Warning: BP_ARedGem_C /Game/TestLevel.TestLevel:PersistentLevel.BP_ARedGem_C_1 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2025.04.11-11.43.56:263][831]LogActor: Warning: BP_ARedGem_C /Engine/Transient.World_29:PersistentLevel.BP_ARedGem_C_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2025.04.11-11.43.56:263][831]LogActor: Warning: BP_ARedGem_C /Engine/Transient.World_31:PersistentLevel.BP_ARedGem_C_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2025.04.11-11.43.56:263][831]LogActor: Warning: BP_ARedGem_C /Engine/Transient.World_30:PersistentLevel.BP_ARedGem_C_4 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2025.04.11-11.43.56:284][831]LogUObjectHash: Compacting FUObjectHashTables data took   1.10ms
+[2025.04.11-11.43.56:287][831]LogActor: Warning: BP_ARedGem_C /Engine/Transient.World_30:PersistentLevel.BP_ARedGem_C_5 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2025.04.11-11.43.56:803][852]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2025.04.11-11.43.56:840][852]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Items/BP_ARedGem" FILE="Z:/Year Three/Module4/Unreal/PetGameUE/PetGameUE/Content/Items/BP_ARedGem.uasset" SILENT=true
+[2025.04.11-11.43.56:844][852]LogSavePackage: Moving output files for package: /Game/Items/BP_ARedGem
+[2025.04.11-11.43.56:858][852]LogSavePackage: Moving 'Z:/Year Three/Module4/Unreal/PetGameUE/PetGameUE/Saved/BP_ARedGem2C587BEC4CA65BA14D143F9537A79D19.tmp' to 'Z:/Year Three/Module4/Unreal/PetGameUE/PetGameUE/Content/Items/BP_ARedGem.uasset'
+[2025.04.11-11.43.56:868][852]LogFileHelpers: InternalPromptForCheckoutAndSave took 65 ms (total: 3.26 sec)
+[2025.04.11-11.43.56:869][852]AssetCheck: New page: Asset Save: BP_ARedGem
+[2025.04.11-11.43.56:869][852]LogContentValidation: Display: Validating /Script/Engine.Blueprint /Game/Items/BP_ARedGem.BP_ARedGem
+[2025.04.11-11.44.06:818][436]BlueprintLog: New page: Compile BP_AYellowGem
+[2025.04.11-11.44.06:844][436]LogActor: Warning: BP_AYellowGem_C /Engine/Transient.World_19:PersistentLevel.BP_AYellowGem_C_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2025.04.11-11.44.06:845][436]LogActor: Warning: BP_AYellowGem_C /Engine/Transient.World_32:PersistentLevel.BP_AYellowGem_C_0 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2025.04.11-11.44.06:845][436]LogActor: Warning: BP_AYellowGem_C /Engine/Transient.World_18:PersistentLevel.BP_AYellowGem_C_2 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2025.04.11-11.44.06:845][436]LogActor: Warning: BP_AYellowGem_C /Game/TestLevel.TestLevel:PersistentLevel.BP_AYellowGem_C_1 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2025.04.11-11.44.06:867][436]LogUObjectHash: Compacting FUObjectHashTables data took   1.10ms
+[2025.04.11-11.44.06:872][436]LogActor: Warning: BP_AYellowGem_C /Engine/Transient.World_18:PersistentLevel.BP_AYellowGem_C_3 has natively added scene component(s), but none of them were set as the actor's RootComponent - picking one arbitrarily
+[2025.04.11-11.44.07:289][453]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2025.04.11-11.44.07:335][453]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Items/BP_AYellowGem" FILE="Z:/Year Three/Module4/Unreal/PetGameUE/PetGameUE/Content/Items/BP_AYellowGem.uasset" SILENT=true
+[2025.04.11-11.44.07:340][453]LogSavePackage: Moving output files for package: /Game/Items/BP_AYellowGem
+[2025.04.11-11.44.07:341][453]LogSavePackage: Moving 'Z:/Year Three/Module4/Unreal/PetGameUE/PetGameUE/Saved/BP_AYellowGemE400B1BA4C9233A3E44341BED579343F.tmp' to 'Z:/Year Three/Module4/Unreal/PetGameUE/PetGameUE/Content/Items/BP_AYellowGem.uasset'
+[2025.04.11-11.44.07:351][453]LogFileHelpers: InternalPromptForCheckoutAndSave took 61 ms (total: 3.32 sec)
+[2025.04.11-11.44.07:352][453]AssetCheck: New page: Asset Save: BP_AYellowGem
+[2025.04.11-11.44.07:352][453]LogContentValidation: Display: Validating /Script/Engine.Blueprint /Game/Items/BP_AYellowGem.BP_AYellowGem
+[2025.04.11-11.44.10:565][749]LogDebuggerCommands: Repeating last play command: Simulate
+[2025.04.11-11.44.10:573][749]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2025.04.11-11.44.10:573][749]PIE: New page: SIE session: TestLevel (11 Apr 2025, 13:44:10)
+[2025.04.11-11.44.10:616][749]LogPlayLevel: Creating play world package: /Game/UEDPIE_0_TestLevel
+[2025.04.11-11.44.10:619][749]LogPlayLevel: PIE: StaticDuplicateObject took: (0.002075s)
+[2025.04.11-11.44.10:619][749]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/TestLevel.TestLevel to /Game/UEDPIE_0_TestLevel.TestLevel (0.002121s)
+[2025.04.11-11.44.10:633][749]LogUObjectHash: Compacting FUObjectHashTables data took   1.09ms
+[2025.04.11-11.44.10:637][749]LogWorldSubsystemInput: UEnhancedInputDeveloperSettings::bEnableWorldSubsystem is false, the world subsystem will not be created!
+[2025.04.11-11.44.10:637][749]LogChaos: FPhysicsSolverBase::AsyncDt:-1.000000
+[2025.04.11-11.44.10:638][749]LogAIModule: Creating AISystem for world TestLevel
+[2025.04.11-11.44.10:638][749]LogPlayLevel: PIE: World Init took: (0.001352s)
+[2025.04.11-11.44.10:638][749]LogAudio: Display: Creating Audio Device:                 Id: 18, Scope: Unique, Realtime: True
+[2025.04.11-11.44.10:638][749]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2025.04.11-11.44.10:638][749]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2025.04.11-11.44.10:638][749]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2025.04.11-11.44.10:638][749]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2025.04.11-11.44.10:638][749]LogAudioMixer: Display: 	Number of buffers to queue:			  1
+[2025.04.11-11.44.10:638][749]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2025.04.11-11.44.10:638][749]LogAudioMixer: Display: 	Number of Async Source Workers:		  4
+[2025.04.11-11.44.10:638][749]LogAudio: Display: AudioDevice MaxSources: 32
+[2025.04.11-11.44.10:639][749]LogAudio: Display: Audio Spatialization Plugin: None (built-in).
+[2025.04.11-11.44.10:639][749]LogAudio: Display: Audio Reverb Plugin: None (built-in).
+[2025.04.11-11.44.10:639][749]LogAudio: Display: Audio Occlusion Plugin: None (built-in).
+[2025.04.11-11.44.10:641][749]LogAudioMixer: Display: Initializing audio mixer using platform API: 'XAudio2'
+[2025.04.11-11.44.10:696][749]LogAudioMixer: Display: Using Audio Hardware Device SteelSeries Sonar - Gaming (SteelSeries Sonar Virtual Audio Device)
+[2025.04.11-11.44.10:696][749]LogAudioMixer: Display: Initializing Sound Submixes...
+[2025.04.11-11.44.10:696][749]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2025.04.11-11.44.10:696][749]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2025.04.11-11.44.10:698][749]LogAudioMixer: FMixerPlatformXAudio2::StartAudioStream() called. InstanceID=18
+[2025.04.11-11.44.10:698][749]LogAudioMixer: Display: Output buffers initialized: Frames=1024, Channels=8, Samples=8192, InstanceID=18
+[2025.04.11-11.44.10:699][749]LogAudioMixer: Display: Starting AudioMixerPlatformInterface::RunInternal(), InstanceID=18
+[2025.04.11-11.44.10:699][749]LogAudioMixer: Display: FMixerPlatformXAudio2::SubmitBuffer() called for the first time. InstanceID=18
+[2025.04.11-11.44.10:699][749]LogInit: FAudioDevice initialized with ID 18.
+[2025.04.11-11.44.10:699][749]LogAudio: Display: Audio Device (ID: 18) registered with world 'TestLevel'.
+[2025.04.11-11.44.10:699][749]LogAudioMixer: Initializing Audio Bus Subsystem for audio device with ID 18
+[2025.04.11-11.44.10:702][749]LogLoad: Game class is 'BP_PetGameModeBase_C'
+[2025.04.11-11.44.10:703][749]LogWorld: Bringing World /Game/UEDPIE_0_TestLevel.TestLevel up for play (max tick rate 0) at 2025.04.11-12.44.10
+[2025.04.11-11.44.10:703][749]LogWorld: Bringing up level for play took: 0.000827
+[2025.04.11-11.44.10:706][749]LogOnline: OSS: Created online subsystem instance for: :Context_50
+[2025.04.11-11.44.10:706][749]PIE: Server logged in
+[2025.04.11-11.44.10:707][749]PIE: Play in editor total start time 0.136 seconds.
+[2025.04.11-11.44.17:296][277]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2025.04.11-11.44.17:296][277]LogWorld: BeginTearingDown for /Game/UEDPIE_0_TestLevel
+[2025.04.11-11.44.17:298][277]LogWorld: UWorld::CleanupWorld for TestLevel, bSessionEnded=true, bCleanupResources=true
+[2025.04.11-11.44.17:298][277]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2025.04.11-11.44.17:302][277]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2025.04.11-11.44.17:308][277]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2025.04.11-11.44.17:320][277]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2025.04.11-11.44.17:321][277]LogAudioMixer: Deinitializing Audio Bus Subsystem for audio device with ID 18
+[2025.04.11-11.44.17:321][277]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=18
+[2025.04.11-11.44.17:323][277]LogAudioMixer: FMixerPlatformXAudio2::StopAudioStream() called. InstanceID=18
+[2025.04.11-11.44.17:330][277]LogUObjectHash: Compacting FUObjectHashTables data took   1.15ms
+[2025.04.11-11.44.17:385][278]LogPlayLevel: Display: Destroying online subsystem :Context_50
+[2025.04.11-11.44.20:064][567]LogUObjectHash: Compacting FUObjectHashTables data took   1.10ms
+[2025.04.11-11.44.20:068][567]LogFileHelpers: InternalPromptForCheckoutAndSave started...
+[2025.04.11-11.44.20:105][567]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/TestLevel" FILE="Z:/Year Three/Module4/Unreal/PetGameUE/PetGameUE/Content/TestLevel.umap" SILENT=true AUTOSAVING=false KEEPDIRTY=false
+[2025.04.11-11.44.20:146][567]LogUObjectHash: Compacting FUObjectHashTables data took   0.55ms
+[2025.04.11-11.44.20:158][567]LogSavePackage: Moving output files for package: /Game/TestLevel
+[2025.04.11-11.44.20:159][567]LogSavePackage: Moving 'Z:/Year Three/Module4/Unreal/PetGameUE/PetGameUE/Saved/TestLevelB2803FA440F621ADF5C31AA48C354456.tmp' to 'Z:/Year Three/Module4/Unreal/PetGameUE/PetGameUE/Content/TestLevel.umap'
+[2025.04.11-11.44.20:335][567]LogFileHelpers: Saving map 'TestLevel' took 0.230
+[2025.04.11-11.44.20:352][567]LogFileHelpers: InternalPromptForCheckoutAndSave took 283 ms (total: 3.61 sec)
+[2025.04.11-11.44.20:353][567]AssetCheck: New page: Asset Save: TestLevel
+[2025.04.11-11.44.20:353][567]LogContentValidation: Display: Validating /Script/Engine.World /Game/TestLevel.TestLevel

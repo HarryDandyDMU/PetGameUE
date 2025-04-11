@@ -1,12 +1,12 @@
 {
     "Version": "1.2",
     "Data": {
-        "Source": "z:\\year three\\module4\\learning\\inventory4\\petgameue\\source\\petgameue\\private\\agem.cpp",
+        "Source": "z:\\year three\\module4\\unreal\\petgameue\\petgameue\\source\\petgameue\\private\\agem.cpp",
         "ProvidedModule": "",
         "Includes": [
-            "z:\\year three\\module4\\learning\\inventory4\\petgameue\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\petgameue\\definitions.petgameue.h",
-            "z:\\year three\\module4\\learning\\inventory4\\petgameue\\intermediate\\build\\win64\\x64\\petgameueeditor\\development\\engine\\shareddefinitions.engine.cpp20.h",
-            "z:\\year three\\module4\\learning\\inventory4\\petgameue\\source\\petgameue\\public\\agem.h",
+            "z:\\year three\\module4\\unreal\\petgameue\\petgameue\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\petgameue\\definitions.petgameue.h",
+            "z:\\year three\\module4\\unreal\\petgameue\\petgameue\\intermediate\\build\\win64\\x64\\petgameueeditor\\development\\engine\\shareddefinitions.engine.cpp20.h",
+            "z:\\year three\\module4\\unreal\\petgameue\\petgameue\\source\\petgameue\\public\\agem.h",
             "e:\\epic\\ue_5.3\\engine\\source\\runtime\\core\\public\\coreminimal.h",
             "e:\\epic\\ue_5.3\\engine\\source\\runtime\\core\\public\\coretypes.h",
             "e:\\epic\\ue_5.3\\engine\\source\\runtime\\core\\public\\hal\\platform.h",
@@ -576,7 +576,7 @@
             "e:\\epic\\ue_5.3\\engine\\source\\runtime\\core\\public\\misc\\paths.h",
             "e:\\epic\\ue_5.3\\engine\\source\\runtime\\engine\\public\\worldpartition\\worldpartitionactordesctype.h",
             "e:\\epic\\ue_5.3\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\actor.generated.h",
-            "z:\\year three\\module4\\learning\\inventory4\\petgameue\\intermediate\\build\\win64\\unrealeditor\\inc\\petgameue\\uht\\agem.generated.h"
+            "z:\\year three\\module4\\unreal\\petgameue\\petgameue\\intermediate\\build\\win64\\unrealeditor\\inc\\petgameue\\uht\\agem.generated.h"
         ],
         "ImportedModules": [],
         "ImportedHeaderUnits": []

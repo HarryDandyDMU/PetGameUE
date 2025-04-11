@@ -5,6 +5,7 @@
 #include "GameFramework/Controller.h"
 #include "EnhancedInputComponent.h"
 #include "Kismet/KismetSystemLibrary.h"// should allow line trace
+#include "AGem.h"
 #include "EnhancedInputSubsystems.h"
 
 
@@ -145,10 +146,6 @@ void AMainCharacter::InitialiseTrace()
 	FVector End = (Start) + (CameraComponent->GetForwardVector() * Distance);//returns root add forward vector times by distance
 	//swap above for camera forward vector
 
-	
-
-	
-
 	//array of actors to ignore;
 	TArray<AActor*> ActorsToIgnore;
 
@@ -165,7 +162,13 @@ void AMainCharacter::InitialiseTrace()
 
 	if (Hit == true)
 	{
+		
 			GEngine->AddOnScreenDebugMessage(-1, 60.f, FColor::Emerald, FString::Printf(TEXT("Hit: %s"), *HitResult.GetActor()->GetName()));
+			if (HitResult.GetActor()->IsA(AAGem::StaticClass())) //if trace is a gem
+			{
+				GEngine->AddOnScreenDebugMessage(-1, 60.f, FColor::Magenta, FString::Printf(TEXT("Hit: %s"), *HitResult.GetActor()->GetName()));
+
+			}
 	}
 }
 
