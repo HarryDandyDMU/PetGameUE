@@ -1,12 +1,12 @@
 {
     "Version": "1.2",
     "Data": {
-        "Source": "z:\\year three\\module4\\learning\\inventory4\\petgameue\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\petgameue\\singlefile\\maincharacter.h",
+        "Source": "z:\\year three\\module4\\unreal\\petgameue\\petgameue\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\petgameue\\singlefile\\maincharacter.h",
         "ProvidedModule": "",
         "Includes": [
-            "z:\\year three\\module4\\learning\\inventory4\\petgameue\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\petgameue\\definitions.petgameue.h",
-            "z:\\year three\\module4\\learning\\inventory4\\petgameue\\intermediate\\build\\win64\\x64\\petgameueeditor\\development\\engine\\shareddefinitions.engine.cpp20.h",
-            "z:\\year three\\module4\\learning\\inventory4\\petgameue\\source\\petgameue\\public\\maincharacter.h",
+            "z:\\year three\\module4\\unreal\\petgameue\\petgameue\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\petgameue\\definitions.petgameue.h",
+            "z:\\year three\\module4\\unreal\\petgameue\\petgameue\\intermediate\\build\\win64\\x64\\petgameueeditor\\development\\engine\\shareddefinitions.engine.cpp20.h",
+            "z:\\year three\\module4\\unreal\\petgameue\\petgameue\\source\\petgameue\\public\\maincharacter.h",
             "e:\\epic\\ue_5.3\\engine\\source\\runtime\\core\\public\\coreminimal.h",
             "e:\\epic\\ue_5.3\\engine\\source\\runtime\\core\\public\\coretypes.h",
             "e:\\epic\\ue_5.3\\engine\\source\\runtime\\core\\public\\hal\\platform.h",
@@ -611,7 +611,7 @@
             "e:\\epic\\ue_5.3\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\character.generated.h",
             "e:\\epic\\ue_5.3\\engine\\plugins\\enhancedinput\\source\\enhancedinput\\public\\inputactionvalue.h",
             "e:\\epic\\ue_5.3\\engine\\plugins\\enhancedinput\\intermediate\\build\\win64\\unrealeditor\\inc\\enhancedinput\\uht\\inputactionvalue.generated.h",
-            "z:\\year three\\module4\\learning\\inventory4\\petgameue\\intermediate\\build\\win64\\unrealeditor\\inc\\petgameue\\uht\\maincharacter.generated.h"
+            "z:\\year three\\module4\\unreal\\petgameue\\petgameue\\intermediate\\build\\win64\\unrealeditor\\inc\\petgameue\\uht\\maincharacter.generated.h"
         ],
         "ImportedModules": [],
         "ImportedHeaderUnits": []

@@ -15,7 +15,7 @@ public:
 	// Sets default values for this actor's properties
 	AAGem();
 
-
+	
 	//GemSTaticMesh
 	UPROPERTY(VisibleDefaultsOnly, Category = "Components")
 	UStaticMeshComponent* GemMesh;

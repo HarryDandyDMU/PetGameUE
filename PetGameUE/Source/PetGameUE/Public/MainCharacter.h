@@ -67,7 +67,7 @@ public:
 	//runs in begin play to init trace
 	void InitialiseTrace();
 
-	//see item
+	//see item 
 	void Trace();
 
 

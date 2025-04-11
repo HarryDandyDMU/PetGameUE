@@ -4,7 +4,7 @@
 #include "MainCharacter.h"
 #include "GameFramework/Controller.h"
 #include "EnhancedInputComponent.h"
-#include "Kismet/KismetSystemLibrary.h"// should allow sphere trace
+#include "Kismet/KismetSystemLibrary.h"// should allow line trace
 #include "EnhancedInputSubsystems.h"
 
 
@@ -32,7 +32,7 @@ void AMainCharacter::BeginPlay()
 		}
 	}
 
-	InitialiseTrace();
+	
 
 	
 }
@@ -41,6 +41,8 @@ void AMainCharacter::BeginPlay()
 void AMainCharacter::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
+
+	InitialiseTrace();
 
 }
 
@@ -113,32 +115,30 @@ void AMainCharacter::Jumping()
 
 //trace
 
-void AMainCharacter::InitialiseTrace() //WRONG TRACE TYPE
+void AMainCharacter::InitialiseTrace() 
 {
 	//create start and end locations
 	const FVector Start = GetOwner()->GetActorLocation();//returns root location
 	const FVector End = (GetOwner()->GetActorLocation()) + (ForwardDirection * Distance);//returns root add forward vector times by distance
+	//swap above for GetActorForwardVector()
 
 	//array of actors to ignore;
 	TArray<AActor*> ActorsToIgnore;
 
-	//variable of hit returns array
-	TArray<FHitResult> HitArray;
+	//variable of hit return
+	FHitResult HitResult;
 
 	//add self to actors that need to be ignored
 	ActorsToIgnore.Add(this);
 
-	//sphere trace for multiple objects with bool
+	//line trace for multiple objects with bool
 	//uses camera channel and complex collision is true
 	//Green for trace and red for hit and final float is 60secs
-	const bool Hit = UKismetSystemLibrary::SphereTraceMulti(GetWorld(), Start, End, Radius, UEngineTypes::ConvertToTraceType(ECC_Camera), true, ActorsToIgnore, EDrawDebugTrace::ForDuration, HitArray, true, FLinearColor::Green, FLinearColor::Red, 60.f);
+	const bool Hit = UKismetSystemLibrary::LineTraceSingle(this, Start, End, UEngineTypes::ConvertToTraceType(ECC_Camera), true, ActorsToIgnore, EDrawDebugTrace::ForDuration, HitResult, true, FLinearColor::Green, FLinearColor::Red, 60.f);
 
 	if (Hit == true)
 	{
-		for (const FHitResult HitResult : HitArray)//for each hit result in array
-		{
 			GEngine->AddOnScreenDebugMessage(-1, 60.f, FColor::Emerald, FString::Printf(TEXT("Hit: %s"), *HitResult.GetActor()->GetName()));
-		}
 	}
 }
 

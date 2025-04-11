@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "0fxvxuRY5rU=",
+  "dgSpecHash": "0cVaXI0CMKY=",
   "success": true,
-  "projectFilePath": "Z:\\Year Three\\Module4\\Learning\\Inventory4\\PetGameUE\\Intermediate\\Build\\BuildRulesProjects\\PetGameUEModuleRules\\PetGameUEModuleRules.csproj",
+  "projectFilePath": "Z:\\Year Three\\Module4\\Unreal\\PetGameUE\\PetGameUE\\Intermediate\\Build\\BuildRulesProjects\\PetGameUEModuleRules\\PetGameUEModuleRules.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\hchy1\\.nuget\\packages\\blake3\\0.5.1\\blake3.0.5.1.nupkg.sha512",
     "C:\\Users\\hchy1\\.nuget\\packages\\humanizer.core\\2.2.0\\humanizer.core.2.2.0.nupkg.sha512",
