@@ -10,8 +10,11 @@ AAGem::AAGem()
 	PrimaryActorTick.bCanEverTick = true;
 
 
-	GemMesh = CreateDefaultSubobject <UStaticMeshComponent>(TEXT("GemMesh"));
+	GemMesh = CreateDefaultSubobject <UStaticMeshComponent>(TEXT("GemMesh")); //create the mesh
 	check(GemMesh != nullptr);
+
+	Tags.Add(FName(GemType));
+
 
 }
 

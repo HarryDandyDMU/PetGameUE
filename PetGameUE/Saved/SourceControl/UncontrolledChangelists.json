@@ -17,7 +17,9 @@
 				"Z:/Year Three/Module4/Unreal/PetGameUE/PetGameUE/Content/Items/M_SimpleGem_Blue.uasset",
 				"Z:/Year Three/Module4/Unreal/PetGameUE/PetGameUE/Content/Items/M_SimpleGem_Green.uasset",
 				"Z:/Year Three/Module4/Unreal/PetGameUE/PetGameUE/Content/Items/M_SimpleGem_Yellow.uasset",
-				"Z:/Year Three/Module4/Unreal/PetGameUE/PetGameUE/Content/Items/BP_ARedGem.uasset"
+				"Z:/Year Three/Module4/Unreal/PetGameUE/PetGameUE/Content/Items/BP_ARedGem.uasset",
+				"Z:/Year Three/Module4/Unreal/PetGameUE/PetGameUE/Content/Inputs/IA_Interact.uasset",
+				"Z:/Year Three/Module4/Unreal/PetGameUE/PetGameUE/Content/Inputs/IMC_PlayerCharacter.uasset"
 			]
 		}
 	]

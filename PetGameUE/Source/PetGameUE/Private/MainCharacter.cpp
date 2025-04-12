@@ -15,6 +15,9 @@ AMainCharacter::AMainCharacter()
  	// Set this character to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
 
+	//set stack size
+	StackSize = 20;
+
 	//initialise the camera
 	CameraComponent = CreateDefaultSubobject<UCameraComponent>(TEXT("Camera"));
 	check(CameraComponent != nullptr);
@@ -79,18 +82,26 @@ void AMainCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputCompo
 	if (UEnhancedInputComponent* EnhancedInputComponent = CastChecked<UEnhancedInputComponent>(PlayerInputComponent))
 	{
 
-		//Jumping
+		//Jump
 		EnhancedInputComponent->BindAction(JumpAction, ETriggerEvent::Triggered, this, &AMainCharacter::Jumping);
 
-		//Moving
+		//Move
 		EnhancedInputComponent->BindAction(MoveAction, ETriggerEvent::Triggered, this, &AMainCharacter::Move);
 
-		//Looking
+		//Look
 		EnhancedInputComponent->BindAction(LookAction, ETriggerEvent::Triggered, this, &AMainCharacter::Look);
+
+		//Looking
+		EnhancedInputComponent->BindAction(InteractAction, ETriggerEvent::Triggered, this, &AMainCharacter::Interact);
 
 	}
 
 
+}
+
+void AMainCharacter::Interact()
+{
+	AddToInventory();//Checks if it can be added and does it
 }
 
 void AMainCharacter::Move(const FInputActionValue& Value)
@@ -149,8 +160,6 @@ void AMainCharacter::InitialiseTrace()
 	//array of actors to ignore;
 	TArray<AActor*> ActorsToIgnore;
 
-	//variable of hit return
-	FHitResult HitResult;
 
 	//add self to actors that need to be ignored
 	ActorsToIgnore.Add(this);
@@ -158,7 +167,7 @@ void AMainCharacter::InitialiseTrace()
 	//line trace for multiple objects with bool
 	//uses camera channel and complex collision is true
 	//Green for trace and red for hit and final float is 60secs
-	const bool Hit = UKismetSystemLibrary::LineTraceSingle(this, Start, End, UEngineTypes::ConvertToTraceType(ECC_Camera), true, ActorsToIgnore, EDrawDebugTrace::ForDuration, HitResult, true, FLinearColor::Green, FLinearColor::Red, 60.f);
+	Hit = UKismetSystemLibrary::LineTraceSingle(this, Start, End, UEngineTypes::ConvertToTraceType(ECC_Camera), true, ActorsToIgnore, EDrawDebugTrace::ForDuration, HitResult, true, FLinearColor::Green, FLinearColor::Red, 60.f);
 
 	if (Hit == true)
 	{
@@ -166,7 +175,7 @@ void AMainCharacter::InitialiseTrace()
 			//GEngine->AddOnScreenDebugMessage(-1, 60.f, FColor::Emerald, FString::Printf(TEXT("Hit: %s"), *HitResult.GetActor()->GetName()));
 			if (HitResult.GetActor()->IsA(AAGem::StaticClass())) //if trace is a gem
 			{
-				GEngine->AddOnScreenDebugMessage(-1, 60.f, FColor::Magenta, FString::Printf(TEXT("Hit: %s"), *HitResult.GetActor()->GetName()));
+				//GEngine->AddOnScreenDebugMessage(-1, 60.f, FColor::Magenta, FString::Printf(TEXT("Hit: %s"), *HitResult.GetActor()->GetName()));
 
 			}
 	}
@@ -174,9 +183,23 @@ void AMainCharacter::InitialiseTrace()
 
 void AMainCharacter::AddToInventory()
 {
-	//make hit result public or at least a class variables
+	if (HitResult.GetActor()->IsA(AAGem::StaticClass())) //if trace is a gem
+	{
 
-	//do the gem check above
+		if(HitResult.GetActor()->ActorHasTag(FName ("Red"))) //if tag is red
+		{
+			GEngine->AddOnScreenDebugMessage(-1, 60.f, FColor::Orange, FString::Printf(TEXT("PICKUP")));
+
+		}
+
+
+		/*switch (true)
+		{
+		default:
+			break;
+		}*/
+	}
+
 
 	//get max stack size
 
@@ -184,6 +207,6 @@ void AMainCharacter::AddToInventory()
 
 	//add one to gem type if it's under max stack size
 
-	//destroy the hit result
+	//destroy the hit result 
 }
 

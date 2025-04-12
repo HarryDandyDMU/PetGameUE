@@ -57,11 +57,16 @@ public:
 	class UInputAction* LookAction;
 
 	//setup input action for pickup F key with bool type
+	//ia interact
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Input")
+	class UInputAction* InteractAction;
 
+	//interact action
+	void Interact();
 
 	//move
 	void Move(const FInputActionValue& Value);
-
+	 
 	//look
 	void Look(const FInputActionValue& Value);
 
@@ -79,6 +84,27 @@ public:
 
 	UPROPERTY(VisibleAnywhere, Category = "Movement")
 	FVector ForwardDirection;//used in the trace aswell as movement
+
+	bool Hit; //whether the ray hits
+
+	FHitResult HitResult; //variable of hit return
+
+	//inventory stacks
+
+	FString GemType;
+
+	int StackSize;//max stack size
+
+	int RedStack;//red gem count
+
+	int GreenStack; //green gem count
+
+	int BlueStack;//blue gem stack
+
+	int YellowStack;//yellow gem stack
+
+
+
 
 	//runs in begin play to init trace
 	void InitialiseTrace();

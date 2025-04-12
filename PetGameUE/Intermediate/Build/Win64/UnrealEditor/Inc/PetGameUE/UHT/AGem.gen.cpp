@@ -36,7 +36,7 @@ void EmptyLinkFunctionForGeneratedCodeAGem() {}
 #if WITH_METADATA
 		static const UECodeGen_Private::FMetaDataPairParam NewProp_GemType_MetaData[];
 #endif
-		static const UECodeGen_Private::FStrPropertyParams NewProp_GemType;
+		static const UECodeGen_Private::FNamePropertyParams NewProp_GemType;
 		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UECodeGen_Private::FClassParams ClassParams;
@@ -70,15 +70,15 @@ void EmptyLinkFunctionForGeneratedCodeAGem() {}
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AAGem_Statics::NewProp_GemType_MetaData[] = {
 		{ "Category", "Gem" },
 #if !UE_BUILD_SHIPPING
-		{ "Comment", "// string of type\n" },
+		{ "Comment", "// Text of type\n" },
 #endif
 		{ "ModuleRelativePath", "Public/AGem.h" },
 #if !UE_BUILD_SHIPPING
-		{ "ToolTip", "string of type" },
+		{ "ToolTip", "Text of type" },
 #endif
 	};
 #endif
-	const UECodeGen_Private::FStrPropertyParams Z_Construct_UClass_AAGem_Statics::NewProp_GemType = { "GemType", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AAGem, GemType), METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_AAGem_Statics::NewProp_GemType_MetaData), Z_Construct_UClass_AAGem_Statics::NewProp_GemType_MetaData) };
+	const UECodeGen_Private::FNamePropertyParams Z_Construct_UClass_AAGem_Statics::NewProp_GemType = { "GemType", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Name, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AAGem, GemType), METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_AAGem_Statics::NewProp_GemType_MetaData), Z_Construct_UClass_AAGem_Statics::NewProp_GemType_MetaData) };
 	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AAGem_Statics::PropPointers[] = {
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AAGem_Statics::NewProp_GemMesh,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AAGem_Statics::NewProp_GemType,
@@ -121,9 +121,9 @@ void EmptyLinkFunctionForGeneratedCodeAGem() {}
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
 	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_PetGameUE_Source_PetGameUE_Public_AGem_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_AAGem, AAGem::StaticClass, TEXT("AAGem"), &Z_Registration_Info_UClass_AAGem, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AAGem), 3279071066U) },
+		{ Z_Construct_UClass_AAGem, AAGem::StaticClass, TEXT("AAGem"), &Z_Registration_Info_UClass_AAGem, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AAGem), 1940669596U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_PetGameUE_Source_PetGameUE_Public_AGem_h_100420059(TEXT("/Script/PetGameUE"),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_PetGameUE_Source_PetGameUE_Public_AGem_h_3457695104(TEXT("/Script/PetGameUE"),
 		Z_CompiledInDeferFile_FID_PetGameUE_Source_PetGameUE_Public_AGem_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_PetGameUE_Source_PetGameUE_Public_AGem_h_Statics::ClassInfo),
 		nullptr, 0,
 		nullptr, 0);

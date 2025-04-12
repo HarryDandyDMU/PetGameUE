@@ -20,9 +20,9 @@ public:
 	UPROPERTY(VisibleDefaultsOnly, Category = "Components")
 	UStaticMeshComponent* GemMesh;
 
-	// string of type
+	// Text of type
 	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = "Gem")
-	FString GemType;
+	FName GemType;
 
 
 protected:
