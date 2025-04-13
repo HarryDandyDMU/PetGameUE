@@ -68,9 +68,6 @@ void AMainCharacter::BeginPlay()
 void AMainCharacter::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
-
-	InitialiseTrace();
-
 }
 
 // Called to bind functionality to input
@@ -169,36 +166,43 @@ void AMainCharacter::InitialiseTrace()
 	//Green for trace and red for hit and final float is 60secs
 	Hit = UKismetSystemLibrary::LineTraceSingle(this, Start, End, UEngineTypes::ConvertToTraceType(ECC_Camera), true, ActorsToIgnore, EDrawDebugTrace::ForDuration, HitResult, true, FLinearColor::Green, FLinearColor::Red, 60.f);
 
-	if (Hit == true)
-	{
-		
-			//GEngine->AddOnScreenDebugMessage(-1, 60.f, FColor::Emerald, FString::Printf(TEXT("Hit: %s"), *HitResult.GetActor()->GetName()));
-			if (HitResult.GetActor()->IsA(AAGem::StaticClass())) //if trace is a gem
-			{
-				//GEngine->AddOnScreenDebugMessage(-1, 60.f, FColor::Magenta, FString::Printf(TEXT("Hit: %s"), *HitResult.GetActor()->GetName()));
-
-			}
-	}
+	
 }
 
 void AMainCharacter::AddToInventory()
 {
-	if (HitResult.GetActor()->IsA(AAGem::StaticClass())) //if trace is a gem
+
+	InitialiseTrace();
+
+	if (Hit == true)
 	{
 
-		if(HitResult.GetActor()->ActorHasTag(FName ("Red"))) //if tag is red
+		//GEngine->AddOnScreenDebugMessage(-1, 60.f, FColor::Emerald, FString::Printf(TEXT("Hit: %s"), *HitResult.GetActor()->GetName()));
+		if (HitResult.GetActor()->IsA(AAGem::StaticClass())) //if trace is a gem
 		{
-			GEngine->AddOnScreenDebugMessage(-1, 60.f, FColor::Orange, FString::Printf(TEXT("PICKUP")));
+			GEngine->AddOnScreenDebugMessage(-1, 60.f, FColor::Magenta, FString::Printf(TEXT("Hit: %s"), *HitResult.GetActor()->GetName()));
 
 		}
-
-
-		/*switch (true)
-		{
-		default:
-			break;
-		}*/
 	}
+
+
+
+	//if (HitResult.GetActor()->IsA(AAGem::StaticClass())) //if trace is a gem
+	//{
+
+	//	if(HitResult.GetActor()->ActorHasTag(FName ("Red"))) //if tag is red
+	//	{
+	//		GEngine->AddOnScreenDebugMessage(-1, 60.f, FColor::Orange, FString::Printf(TEXT("PICKUP")));
+
+	//	}
+
+
+	//	/*switch (true)
+	//	{
+	//	default:
+	//		break;
+	//	}*/
+	//}
 
 
 	//get max stack size
