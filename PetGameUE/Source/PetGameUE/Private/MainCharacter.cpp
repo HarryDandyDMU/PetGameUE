@@ -182,6 +182,10 @@ void AMainCharacter::AddToInventory()
 		{
 			GEngine->AddOnScreenDebugMessage(-1, 60.f, FColor::Magenta, FString::Printf(TEXT("Hit: %s"), *HitResult.GetActor()->GetName()));
 
+			if (HitResult.GetActor()->GetName() == "BP_ARedGem_C_1") //NEED TO SET NAME IN CONSTRUCTOR OF GEM SO IT'S NOT INSTANCED
+			{
+				GEngine->AddOnScreenDebugMessage(-1, 60.f, FColor::Magenta, FString::Printf(TEXT("PICKUP")));
+			}
 		}
 	}
 
