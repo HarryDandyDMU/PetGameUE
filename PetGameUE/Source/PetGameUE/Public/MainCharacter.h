@@ -7,6 +7,7 @@
 #include "InputActionValue.h"
 #include "Camera/CameraComponent.h"//include for camera
 #include "Components/CapsuleComponent.h" //included for capulse
+#include "AGem.h" //included for gems
 #include "MainCharacter.generated.h"
 
 
@@ -36,6 +37,9 @@ public:
 
 	UPROPERTY(VisibleAnywhere, Category = "Components") //fps cam
 		UCameraComponent* CameraComponent;
+
+	UPROPERTY(EditDefaultsOnly, Category = "Inventory") //location for items to drop relative to char
+	USceneComponent* DropLocation;
 
 protected:
 	// Called when the game starts or when spawned
@@ -124,6 +128,14 @@ public:
 
 	//add item to inventory
 	void AddToInventory();
+
+	//simple drop function
+	UFUNCTION(BlueprintCallable, Category = "Inventory")
+	AActor* DropItem();
+
+	//bp children of gem
+	UPROPERTY(BlueprintReadWrite, Category = "Inventory")
+	TSubclassOf<AAGem> GemToDrop;
 
 
 

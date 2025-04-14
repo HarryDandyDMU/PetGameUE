@@ -12,6 +12,7 @@ AAGem::AAGem()
 
 	GemMesh = CreateDefaultSubobject <UStaticMeshComponent>(TEXT("GemMesh")); //create the mesh
 	check(GemMesh != nullptr);
+	SetRootComponent(GemMesh);
 
 	Tags.Add(FName(GemType));
 

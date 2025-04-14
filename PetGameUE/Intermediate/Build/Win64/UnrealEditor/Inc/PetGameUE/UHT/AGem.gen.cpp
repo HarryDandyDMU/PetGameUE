@@ -70,11 +70,11 @@ void EmptyLinkFunctionForGeneratedCodeAGem() {}
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AAGem_Statics::NewProp_GemType_MetaData[] = {
 		{ "Category", "Gem" },
 #if !UE_BUILD_SHIPPING
-		{ "Comment", "// Text of type\n" },
+		{ "Comment", "// Text of type //won't build if deleted\n" },
 #endif
 		{ "ModuleRelativePath", "Public/AGem.h" },
 #if !UE_BUILD_SHIPPING
-		{ "ToolTip", "Text of type" },
+		{ "ToolTip", "Text of type won't build if deleted" },
 #endif
 	};
 #endif
@@ -121,9 +121,9 @@ void EmptyLinkFunctionForGeneratedCodeAGem() {}
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
 	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_PetGameUE_Source_PetGameUE_Public_AGem_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_AAGem, AAGem::StaticClass, TEXT("AAGem"), &Z_Registration_Info_UClass_AAGem, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AAGem), 1940669596U) },
+		{ Z_Construct_UClass_AAGem, AAGem::StaticClass, TEXT("AAGem"), &Z_Registration_Info_UClass_AAGem, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AAGem), 733192784U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_PetGameUE_Source_PetGameUE_Public_AGem_h_3457695104(TEXT("/Script/PetGameUE"),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_PetGameUE_Source_PetGameUE_Public_AGem_h_243206584(TEXT("/Script/PetGameUE"),
 		Z_CompiledInDeferFile_FID_PetGameUE_Source_PetGameUE_Public_AGem_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_PetGameUE_Source_PetGameUE_Public_AGem_h_Statics::ClassInfo),
 		nullptr, 0,
 		nullptr, 0);

@@ -5,7 +5,6 @@
 #include "GameFramework/Controller.h"
 #include "EnhancedInputComponent.h"
 #include "Kismet/KismetSystemLibrary.h"// should allow line trace
-#include "AGem.h"
 #include "EnhancedInputSubsystems.h"
 
 
@@ -40,6 +39,10 @@ AMainCharacter::AMainCharacter()
 
 	//attach mesh to camera cause it's first person
 	MainCharacterMesh->SetupAttachment(CameraComponent);
+
+	//Create Drop Location
+	DropLocation = CreateDefaultSubobject<USceneComponent>(TEXT("DropLocation"));
+	DropLocation->SetupAttachment(MainCharacterMesh);//relative to char mesh
 
 
 }
@@ -240,5 +243,15 @@ void AMainCharacter::AddToInventory()
 			OnInventoryUpdated.Broadcast(); //uupdate inventory
 		}
 	}
+}
+
+AActor* AMainCharacter::DropItem()
+{
+	FActorSpawnParameters SpawnParams;
+	SpawnParams.Instigator = this;
+
+	AActor* ItemToDrop = GetWorld()->SpawnActor<AAGem>(GemToDrop, DropLocation->GetComponentLocation(), FRotator::ZeroRotator, SpawnParams); //no rotation and worldspace component location
+
+	return ItemToDrop;
 }
 

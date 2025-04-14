@@ -20,7 +20,8 @@ public:
 	UPROPERTY(VisibleDefaultsOnly, Category = "Components")
 	UStaticMeshComponent* GemMesh;
 
-	// Text of type
+	// Text of type //won't build if deleted
+
 	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = "Gem")
 	FName GemType;
 
