@@ -9,6 +9,10 @@
 #include "Components/CapsuleComponent.h" //included for capulse
 #include "MainCharacter.generated.h"
 
+
+//broadcast to ui
+DECLARE_DYNAMIC_MULTICAST_DELEGATE(FInventoryUpdated);
+
 UCLASS()
 class PETGAMEUE_API AMainCharacter : public ACharacter
 {
@@ -17,6 +21,10 @@ class PETGAMEUE_API AMainCharacter : public ACharacter
 public:
 	// Sets default values for this character's properties
 	AMainCharacter();
+	
+	//delegate for ui#
+	UPROPERTY(BlueprintAssignable, Category = "Inventory")
+	FInventoryUpdated OnInventoryUpdated;
 
 
 	//ITEMS THAT MAKE UP THE CHARACTER
@@ -93,17 +101,22 @@ public:
 
 	FString GemType;
 
+	UPROPERTY(BlueprintReadOnly, Category = "Inventory")
 	int StackSize;//max stack size
 
+	UPROPERTY(BlueprintReadOnly, Category = "Inventory")
 	int RedStack;//red gem count
 
+	UPROPERTY(BlueprintReadOnly, Category = "Inventory")
 	int GreenStack; //green gem count
 
+	UPROPERTY(BlueprintReadOnly, Category = "Inventory")
 	int BlueStack;//blue gem stack
 
+	UPROPERTY(BlueprintReadOnly, Category = "Inventory")
 	int YellowStack;//yellow gem stack
 
-
+	
 
 
 	//runs in begin play to init trace

@@ -17,8 +17,41 @@ void EmptyLinkFunctionForGeneratedCodeMainCharacter() {}
 	ENHANCEDINPUT_API UClass* Z_Construct_UClass_UInputMappingContext_NoRegister();
 	PETGAMEUE_API UClass* Z_Construct_UClass_AMainCharacter();
 	PETGAMEUE_API UClass* Z_Construct_UClass_AMainCharacter_NoRegister();
+	PETGAMEUE_API UFunction* Z_Construct_UDelegateFunction_PetGameUE_InventoryUpdated__DelegateSignature();
 	UPackage* Z_Construct_UPackage__Script_PetGameUE();
 // End Cross Module References
+	struct Z_Construct_UDelegateFunction_PetGameUE_InventoryUpdated__DelegateSignature_Statics
+	{
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UECodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UDelegateFunction_PetGameUE_InventoryUpdated__DelegateSignature_Statics::Function_MetaDataParams[] = {
+#if !UE_BUILD_SHIPPING
+		{ "Comment", "//broadcast to ui\n" },
+#endif
+		{ "ModuleRelativePath", "Public/MainCharacter.h" },
+#if !UE_BUILD_SHIPPING
+		{ "ToolTip", "broadcast to ui" },
+#endif
+	};
+#endif
+	const UECodeGen_Private::FFunctionParams Z_Construct_UDelegateFunction_PetGameUE_InventoryUpdated__DelegateSignature_Statics::FuncParams = { (UObject*(*)())Z_Construct_UPackage__Script_PetGameUE, nullptr, "InventoryUpdated__DelegateSignature", nullptr, nullptr, nullptr, 0, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00130000, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_PetGameUE_InventoryUpdated__DelegateSignature_Statics::Function_MetaDataParams), Z_Construct_UDelegateFunction_PetGameUE_InventoryUpdated__DelegateSignature_Statics::Function_MetaDataParams) };
+	UFunction* Z_Construct_UDelegateFunction_PetGameUE_InventoryUpdated__DelegateSignature()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UDelegateFunction_PetGameUE_InventoryUpdated__DelegateSignature_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+void FInventoryUpdated_DelegateWrapper(const FMulticastScriptDelegate& InventoryUpdated)
+{
+	InventoryUpdated.ProcessMulticastDelegate<UObject>(NULL);
+}
 	void AMainCharacter::StaticRegisterNativesAMainCharacter()
 	{
 	}
@@ -33,6 +66,10 @@ void EmptyLinkFunctionForGeneratedCodeMainCharacter() {}
 #if WITH_METADATA
 		static const UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
 #endif
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_OnInventoryUpdated_MetaData[];
+#endif
+		static const UECodeGen_Private::FMulticastDelegatePropertyParams NewProp_OnInventoryUpdated;
 #if WITH_METADATA
 		static const UECodeGen_Private::FMetaDataPairParam NewProp_MainCharacterMesh_MetaData[];
 #endif
@@ -73,6 +110,26 @@ void EmptyLinkFunctionForGeneratedCodeMainCharacter() {}
 		static const UECodeGen_Private::FMetaDataPairParam NewProp_ForwardDirection_MetaData[];
 #endif
 		static const UECodeGen_Private::FStructPropertyParams NewProp_ForwardDirection;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_StackSize_MetaData[];
+#endif
+		static const UECodeGen_Private::FIntPropertyParams NewProp_StackSize;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_RedStack_MetaData[];
+#endif
+		static const UECodeGen_Private::FIntPropertyParams NewProp_RedStack;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_GreenStack_MetaData[];
+#endif
+		static const UECodeGen_Private::FIntPropertyParams NewProp_GreenStack;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_BlueStack_MetaData[];
+#endif
+		static const UECodeGen_Private::FIntPropertyParams NewProp_BlueStack;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_YellowStack_MetaData[];
+#endif
+		static const UECodeGen_Private::FIntPropertyParams NewProp_YellowStack;
 		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UECodeGen_Private::FClassParams ClassParams;
@@ -89,6 +146,19 @@ void EmptyLinkFunctionForGeneratedCodeMainCharacter() {}
 		{ "ModuleRelativePath", "Public/MainCharacter.h" },
 	};
 #endif
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AMainCharacter_Statics::NewProp_OnInventoryUpdated_MetaData[] = {
+		{ "Category", "Inventory" },
+#if !UE_BUILD_SHIPPING
+		{ "Comment", "//delegate for ui#\n" },
+#endif
+		{ "ModuleRelativePath", "Public/MainCharacter.h" },
+#if !UE_BUILD_SHIPPING
+		{ "ToolTip", "delegate for ui#" },
+#endif
+	};
+#endif
+	const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_AMainCharacter_Statics::NewProp_OnInventoryUpdated = { "OnInventoryUpdated", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AMainCharacter, OnInventoryUpdated), Z_Construct_UDelegateFunction_PetGameUE_InventoryUpdated__DelegateSignature, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_AMainCharacter_Statics::NewProp_OnInventoryUpdated_MetaData), Z_Construct_UClass_AMainCharacter_Statics::NewProp_OnInventoryUpdated_MetaData) }; // 2096984892
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AMainCharacter_Statics::NewProp_MainCharacterMesh_MetaData[] = {
 		{ "Category", "Components" },
@@ -221,7 +291,67 @@ void EmptyLinkFunctionForGeneratedCodeMainCharacter() {}
 	};
 #endif
 	const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_AMainCharacter_Statics::NewProp_ForwardDirection = { "ForwardDirection", nullptr, (EPropertyFlags)0x0010000000020001, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AMainCharacter, ForwardDirection), Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_AMainCharacter_Statics::NewProp_ForwardDirection_MetaData), Z_Construct_UClass_AMainCharacter_Statics::NewProp_ForwardDirection_MetaData) };
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AMainCharacter_Statics::NewProp_StackSize_MetaData[] = {
+		{ "Category", "Inventory" },
+		{ "ModuleRelativePath", "Public/MainCharacter.h" },
+	};
+#endif
+	const UECodeGen_Private::FIntPropertyParams Z_Construct_UClass_AMainCharacter_Statics::NewProp_StackSize = { "StackSize", nullptr, (EPropertyFlags)0x0010000000000014, UECodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AMainCharacter, StackSize), METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_AMainCharacter_Statics::NewProp_StackSize_MetaData), Z_Construct_UClass_AMainCharacter_Statics::NewProp_StackSize_MetaData) };
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AMainCharacter_Statics::NewProp_RedStack_MetaData[] = {
+		{ "Category", "Inventory" },
+#if !UE_BUILD_SHIPPING
+		{ "Comment", "//max stack size\n" },
+#endif
+		{ "ModuleRelativePath", "Public/MainCharacter.h" },
+#if !UE_BUILD_SHIPPING
+		{ "ToolTip", "max stack size" },
+#endif
+	};
+#endif
+	const UECodeGen_Private::FIntPropertyParams Z_Construct_UClass_AMainCharacter_Statics::NewProp_RedStack = { "RedStack", nullptr, (EPropertyFlags)0x0010000000000014, UECodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AMainCharacter, RedStack), METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_AMainCharacter_Statics::NewProp_RedStack_MetaData), Z_Construct_UClass_AMainCharacter_Statics::NewProp_RedStack_MetaData) };
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AMainCharacter_Statics::NewProp_GreenStack_MetaData[] = {
+		{ "Category", "Inventory" },
+#if !UE_BUILD_SHIPPING
+		{ "Comment", "//red gem count\n" },
+#endif
+		{ "ModuleRelativePath", "Public/MainCharacter.h" },
+#if !UE_BUILD_SHIPPING
+		{ "ToolTip", "red gem count" },
+#endif
+	};
+#endif
+	const UECodeGen_Private::FIntPropertyParams Z_Construct_UClass_AMainCharacter_Statics::NewProp_GreenStack = { "GreenStack", nullptr, (EPropertyFlags)0x0010000000000014, UECodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AMainCharacter, GreenStack), METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_AMainCharacter_Statics::NewProp_GreenStack_MetaData), Z_Construct_UClass_AMainCharacter_Statics::NewProp_GreenStack_MetaData) };
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AMainCharacter_Statics::NewProp_BlueStack_MetaData[] = {
+		{ "Category", "Inventory" },
+#if !UE_BUILD_SHIPPING
+		{ "Comment", "//green gem count\n" },
+#endif
+		{ "ModuleRelativePath", "Public/MainCharacter.h" },
+#if !UE_BUILD_SHIPPING
+		{ "ToolTip", "green gem count" },
+#endif
+	};
+#endif
+	const UECodeGen_Private::FIntPropertyParams Z_Construct_UClass_AMainCharacter_Statics::NewProp_BlueStack = { "BlueStack", nullptr, (EPropertyFlags)0x0010000000000014, UECodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AMainCharacter, BlueStack), METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_AMainCharacter_Statics::NewProp_BlueStack_MetaData), Z_Construct_UClass_AMainCharacter_Statics::NewProp_BlueStack_MetaData) };
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AMainCharacter_Statics::NewProp_YellowStack_MetaData[] = {
+		{ "Category", "Inventory" },
+#if !UE_BUILD_SHIPPING
+		{ "Comment", "//blue gem stack\n" },
+#endif
+		{ "ModuleRelativePath", "Public/MainCharacter.h" },
+#if !UE_BUILD_SHIPPING
+		{ "ToolTip", "blue gem stack" },
+#endif
+	};
+#endif
+	const UECodeGen_Private::FIntPropertyParams Z_Construct_UClass_AMainCharacter_Statics::NewProp_YellowStack = { "YellowStack", nullptr, (EPropertyFlags)0x0010000000000014, UECodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AMainCharacter, YellowStack), METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_AMainCharacter_Statics::NewProp_YellowStack_MetaData), Z_Construct_UClass_AMainCharacter_Statics::NewProp_YellowStack_MetaData) };
 	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AMainCharacter_Statics::PropPointers[] = {
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AMainCharacter_Statics::NewProp_OnInventoryUpdated,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AMainCharacter_Statics::NewProp_MainCharacterMesh,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AMainCharacter_Statics::NewProp_CameraComponent,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AMainCharacter_Statics::NewProp_DefaultMappingContext,
@@ -232,6 +362,11 @@ void EmptyLinkFunctionForGeneratedCodeMainCharacter() {}
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AMainCharacter_Statics::NewProp_Radius,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AMainCharacter_Statics::NewProp_Distance,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AMainCharacter_Statics::NewProp_ForwardDirection,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AMainCharacter_Statics::NewProp_StackSize,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AMainCharacter_Statics::NewProp_RedStack,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AMainCharacter_Statics::NewProp_GreenStack,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AMainCharacter_Statics::NewProp_BlueStack,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AMainCharacter_Statics::NewProp_YellowStack,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_AMainCharacter_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<AMainCharacter>::IsAbstract,
@@ -271,9 +406,9 @@ void EmptyLinkFunctionForGeneratedCodeMainCharacter() {}
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
 	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_PetGameUE_Source_PetGameUE_Public_MainCharacter_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_AMainCharacter, AMainCharacter::StaticClass, TEXT("AMainCharacter"), &Z_Registration_Info_UClass_AMainCharacter, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AMainCharacter), 3236423604U) },
+		{ Z_Construct_UClass_AMainCharacter, AMainCharacter::StaticClass, TEXT("AMainCharacter"), &Z_Registration_Info_UClass_AMainCharacter, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AMainCharacter), 880608189U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_PetGameUE_Source_PetGameUE_Public_MainCharacter_h_4198576162(TEXT("/Script/PetGameUE"),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_PetGameUE_Source_PetGameUE_Public_MainCharacter_h_654196688(TEXT("/Script/PetGameUE"),
 		Z_CompiledInDeferFile_FID_PetGameUE_Source_PetGameUE_Public_MainCharacter_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_PetGameUE_Source_PetGameUE_Public_MainCharacter_h_Statics::ClassInfo),
 		nullptr, 0,
 		nullptr, 0);

@@ -18,6 +18,11 @@ AMainCharacter::AMainCharacter()
 	//set stack size
 	StackSize = 20;
 
+	RedStack = 0;
+	GreenStack = 0;
+	BlueStack = 0;
+	YellowStack = 0;
+
 	//initialise the camera
 	CameraComponent = CreateDefaultSubobject<UCameraComponent>(TEXT("Camera"));
 	check(CameraComponent != nullptr);
@@ -184,48 +189,56 @@ void AMainCharacter::AddToInventory()
 			{
 				//GEngine->AddOnScreenDebugMessage(-1, 60.f, FColor::Magenta, FString::Printf(TEXT("PICKUP Red")));
 				HitResult.GetActor()->Destroy();
+				if (BlueStack < StackSize)
+				{
+					BlueStack++;
+					//GEngine->AddOnScreenDebugMessage(-1, 60.f, FColor::Magenta, FString::Printf(TEXT("BLUE: %s"), BlueStack));
+
+					//OnInventoryUpdated.Broadcast();
+				}
 			}
 			else if (HitResult.GetActor()->ActorHasTag(FName(TEXT("Red"))))
 			{
 				HitResult.GetActor()->Destroy();
+				if (RedStack < StackSize)
+				{
+					RedStack++;
+					//OnInventoryUpdated.Broadcast();
+				}
+				else
+				{
+					//Respawn Gem
+				}
 			}
 			else if (HitResult.GetActor()->ActorHasTag(FName(TEXT("Yellow"))))
 			{
 				HitResult.GetActor()->Destroy();
+				if (YellowStack < StackSize)
+				{
+					YellowStack++;
+					//OnInventoryUpdated.Broadcast();
+				}
+				else
+				{
+					//Respawn Gem
+				}
 			}
 			else if (HitResult.GetActor()->ActorHasTag(FName(TEXT("Green"))))
 			{
 				HitResult.GetActor()->Destroy();
+				if (GreenStack < StackSize)
+				{
+					GreenStack++;
+					//OnInventoryUpdated.Broadcast();
+				}
+				else
+				{
+					//Respawn Gem
+				}
 			}
+
+			OnInventoryUpdated.Broadcast(); //uupdate inventory
 		}
 	}
-
-
-
-	//if (HitResult.GetActor()->IsA(AAGem::StaticClass())) //if trace is a gem
-	//{
-
-	//	if(HitResult.GetActor()->ActorHasTag(FName ("Red"))) //if tag is red
-	//	{
-	//		GEngine->AddOnScreenDebugMessage(-1, 60.f, FColor::Orange, FString::Printf(TEXT("PICKUP")));
-
-	//	}
-
-
-	//	/*switch (true)
-	//	{
-	//	default:
-	//		break;
-	//	}*/
-	//}
-
-
-	//get max stack size
-
-	//get gem type
-
-	//add one to gem type if it's under max stack size
-
-	//destroy the hit result 
 }
 
