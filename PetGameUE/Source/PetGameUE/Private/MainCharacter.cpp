@@ -98,6 +98,7 @@ void AMainCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputCompo
 
 void AMainCharacter::Interact()
 {
+	InitialiseTrace();//runs trace
 	AddToInventory();//Checks if it can be added and does it
 }
 
@@ -171,20 +172,30 @@ void AMainCharacter::InitialiseTrace()
 
 void AMainCharacter::AddToInventory()
 {
-
-	InitialiseTrace();
-
 	if (Hit == true)
 	{
 
 		//GEngine->AddOnScreenDebugMessage(-1, 60.f, FColor::Emerald, FString::Printf(TEXT("Hit: %s"), *HitResult.GetActor()->GetName()));
 		if (HitResult.GetActor()->IsA(AAGem::StaticClass())) //if trace is a gem
 		{
-			GEngine->AddOnScreenDebugMessage(-1, 60.f, FColor::Magenta, FString::Printf(TEXT("Hit: %s"), *HitResult.GetActor()->GetName()));
+			//GEngine->AddOnScreenDebugMessage(-1, 60.f, FColor::Magenta, FString::Printf(TEXT("Hit: %s"), *HitResult.GetActor()->GetName()));
 
-			if (HitResult.GetActor()->GetName() == "BP_ARedGem_C_1") //NEED TO SET NAME IN CONSTRUCTOR OF GEM SO IT'S NOT INSTANCED
+			if (HitResult.GetActor()->ActorHasTag(FName(TEXT("Blue")))) //NEED TO SET NAME IN CONSTRUCTOR OF GEM SO IT'S NOT INSTANCED
 			{
-				GEngine->AddOnScreenDebugMessage(-1, 60.f, FColor::Magenta, FString::Printf(TEXT("PICKUP")));
+				//GEngine->AddOnScreenDebugMessage(-1, 60.f, FColor::Magenta, FString::Printf(TEXT("PICKUP Red")));
+				HitResult.GetActor()->Destroy();
+			}
+			else if (HitResult.GetActor()->ActorHasTag(FName(TEXT("Red"))))
+			{
+				HitResult.GetActor()->Destroy();
+			}
+			else if (HitResult.GetActor()->ActorHasTag(FName(TEXT("Yellow"))))
+			{
+				HitResult.GetActor()->Destroy();
+			}
+			else if (HitResult.GetActor()->ActorHasTag(FName(TEXT("Green"))))
+			{
+				HitResult.GetActor()->Destroy();
 			}
 		}
 	}
