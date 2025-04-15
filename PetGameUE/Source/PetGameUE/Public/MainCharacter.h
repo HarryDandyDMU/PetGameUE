@@ -73,6 +73,11 @@ public:
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Input")
 	class UInputAction* InteractAction;
 
+	//input action for openclose inventory
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Input")
+	class UInputAction* Inventory;
+
+
 	//interact action
 	void Interact();
 

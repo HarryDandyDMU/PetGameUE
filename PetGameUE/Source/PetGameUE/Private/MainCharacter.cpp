@@ -4,7 +4,7 @@
 #include "MainCharacter.h"
 #include "GameFramework/Controller.h"
 #include "EnhancedInputComponent.h"
-#include "Kismet/KismetSystemLibrary.h"// should allow line trace
+#include "Kismet/KismetSystemLibrary.h"// should allow line traceI
 #include "EnhancedInputSubsystems.h"
 
 
@@ -249,8 +249,58 @@ AActor* AMainCharacter::DropItem()
 {
 	FActorSpawnParameters SpawnParams;
 	SpawnParams.Instigator = this;
-
+	//check gem to drop and -- the stack and then 
+	
 	AActor* ItemToDrop = GetWorld()->SpawnActor<AAGem>(GemToDrop, DropLocation->GetComponentLocation(), FRotator::ZeroRotator, SpawnParams); //no rotation and worldspace component location
+
+	if (ItemToDrop->ActorHasTag(FName(TEXT("Green")))) //checks stack size and removes if 0 or under (NEED TO LOOK INTO A WAY IT SPAWNS EARLIER)
+	{
+		if (GreenStack > 0) 
+		{
+			--GreenStack;
+		}
+		else
+		{
+			ItemToDrop->Destroy();
+		}
+	}
+	else if (ItemToDrop->ActorHasTag(FName(TEXT("Red"))))
+	{
+		if (RedStack > 0)
+		{
+			--RedStack;
+		}
+		else
+		{
+			ItemToDrop->Destroy();
+		}
+	}
+	else if (ItemToDrop->ActorHasTag(FName(TEXT("Yellow"))))
+	{
+		if (YellowStack > 0)
+		{
+			--YellowStack;
+		}
+		else
+		{
+			ItemToDrop->Destroy();
+		}
+	}
+	else if (ItemToDrop->ActorHasTag(FName(TEXT("Blue"))))
+	{
+		if (BlueStack > 0)
+		{
+			--BlueStack;
+		}
+		else
+		{
+			ItemToDrop->Destroy();
+		}
+	}
+	
+
+
+	OnInventoryUpdated.Broadcast(); //uupdate inventory
 
 	return ItemToDrop;
 }
