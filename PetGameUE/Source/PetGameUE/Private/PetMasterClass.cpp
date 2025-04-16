@@ -2,7 +2,7 @@
 
 
 #include "PetMasterClass.h"
-
+//delete this class
 // Sets default values
 APetMasterClass::APetMasterClass()
 {

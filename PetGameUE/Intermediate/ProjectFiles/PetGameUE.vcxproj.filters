@@ -51,6 +51,9 @@
     <ClCompile Include="..\..\Source\PetGameUE\Private\PetGameModeBase.cpp">
       <Filter>Source\PetGameUE\Private</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\Source\PetGameUE\Private\PetMaster.cpp">
+      <Filter>Source\PetGameUE\Private</Filter>
+    </ClCompile>
     <ClCompile Include="..\..\Source\PetGameUE\Private\PetMasterClass.cpp">
       <Filter>Source\PetGameUE\Private</Filter>
     </ClCompile>
@@ -64,6 +67,9 @@
       <Filter>Source\PetGameUE\Public</Filter>
     </ClInclude>
     <ClInclude Include="..\..\Source\PetGameUE\Public\PetGameModeBase.h">
+      <Filter>Source\PetGameUE\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\PetGameUE\Public\PetMaster.h">
       <Filter>Source\PetGameUE\Public</Filter>
     </ClInclude>
     <ClInclude Include="..\..\Source\PetGameUE\Public\PetMasterClass.h">
