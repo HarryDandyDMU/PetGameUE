@@ -1,13 +1,13 @@
 {
     "Version": "1.2",
     "Data": {
-        "Source": "z:\\year three\\module4\\learning\\inventory4\\petgameue\\source\\petgameue\\private\\agem.cpp",
+        "Source": "z:\\year three\\module4\\unreal\\petgameue\\petgameue\\source\\petgameue\\private\\agem.cpp",
         "ProvidedModule": "",
-        "PCH": "z:\\year three\\module4\\learning\\inventory4\\petgameue\\intermediate\\build\\win64\\x64\\petgameueeditor\\development\\engine\\sharedpch.engine.cpp20.h.pch",
+        "PCH": "z:\\year three\\module4\\unreal\\petgameue\\petgameue\\intermediate\\build\\win64\\x64\\petgameueeditor\\development\\unrealed\\sharedpch.unrealed.cpp20.h.pch",
         "Includes": [
-            "z:\\year three\\module4\\learning\\inventory4\\petgameue\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\petgameue\\definitions.petgameue.h",
-            "z:\\year three\\module4\\learning\\inventory4\\petgameue\\source\\petgameue\\public\\agem.h",
-            "z:\\year three\\module4\\learning\\inventory4\\petgameue\\intermediate\\build\\win64\\unrealeditor\\inc\\petgameue\\uht\\agem.generated.h"
+            "z:\\year three\\module4\\unreal\\petgameue\\petgameue\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\petgameue\\definitions.petgameue.h",
+            "z:\\year three\\module4\\unreal\\petgameue\\petgameue\\source\\petgameue\\public\\agem.h",
+            "z:\\year three\\module4\\unreal\\petgameue\\petgameue\\intermediate\\build\\win64\\unrealeditor\\inc\\petgameue\\uht\\agem.generated.h"
         ],
         "ImportedModules": [],
         "ImportedHeaderUnits": []

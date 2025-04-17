@@ -1,17 +1,17 @@
 {
     "Version": "1.2",
     "Data": {
-        "Source": "z:\\year three\\module4\\learning\\inventory4\\petgameue\\source\\petgameue\\private\\petgamemodebase.cpp",
+        "Source": "z:\\year three\\module4\\unreal\\petgameue\\petgameue\\source\\petgameue\\private\\petgamemodebase.cpp",
         "ProvidedModule": "",
-        "PCH": "z:\\year three\\module4\\learning\\inventory4\\petgameue\\intermediate\\build\\win64\\x64\\petgameueeditor\\development\\engine\\sharedpch.engine.cpp20.h.pch",
+        "PCH": "z:\\year three\\module4\\unreal\\petgameue\\petgameue\\intermediate\\build\\win64\\x64\\petgameueeditor\\development\\unrealed\\sharedpch.unrealed.cpp20.h.pch",
         "Includes": [
-            "z:\\year three\\module4\\learning\\inventory4\\petgameue\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\petgameue\\definitions.petgameue.h",
-            "z:\\year three\\module4\\learning\\inventory4\\petgameue\\source\\petgameue\\public\\petgamemodebase.h",
+            "z:\\year three\\module4\\unreal\\petgameue\\petgameue\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\petgameue\\definitions.petgameue.h",
+            "z:\\year three\\module4\\unreal\\petgameue\\petgameue\\source\\petgameue\\public\\petgamemodebase.h",
             "e:\\epic\\ue_5.3\\engine\\source\\runtime\\engine\\classes\\gameframework\\gamemodebase.h",
             "e:\\epic\\ue_5.3\\engine\\source\\runtime\\engine\\classes\\engine\\serverstatreplicator.h",
             "e:\\epic\\ue_5.3\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\serverstatreplicator.generated.h",
             "e:\\epic\\ue_5.3\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\gamemodebase.generated.h",
-            "z:\\year three\\module4\\learning\\inventory4\\petgameue\\intermediate\\build\\win64\\unrealeditor\\inc\\petgameue\\uht\\petgamemodebase.generated.h"
+            "z:\\year three\\module4\\unreal\\petgameue\\petgameue\\intermediate\\build\\win64\\unrealeditor\\inc\\petgameue\\uht\\petgamemodebase.generated.h"
         ],
         "ImportedModules": [],
         "ImportedHeaderUnits": []

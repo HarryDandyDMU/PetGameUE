@@ -49,10 +49,10 @@ void APetMaster::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent
 
 void APetMaster::Morph()
 {
-	PetMeshAdult->SetMorphTarget(BashfulMorph, NFBashful, true);
-	PetMeshAdult->SetMorphTarget(SeriousMorph, NFSerious, true);
-	PetMeshAdult->SetMorphTarget(CalmMorph, PFCalm, true);
-	PetMeshAdult->SetMorphTarget(JoyfulMorph, PFJoyful, true); //only one not working ? error in imporT?
+	PetMeshAdult->SetMorphTarget(BashfulMorph, NFBashful, false);
+	PetMeshAdult->SetMorphTarget(SeriousMorph, NFSerious, false);
+	PetMeshAdult->SetMorphTarget(CalmMorph, PFCalm, false);
+	PetMeshAdult->SetMorphTarget(JoyfulMorph, PFJoyful, false); 
 
 }
 

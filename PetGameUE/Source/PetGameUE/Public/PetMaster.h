@@ -60,7 +60,7 @@ public:
 	FName BashfulMorph = TEXT("PetDefaultTestMorphBashFul");
 	FName CalmMorph = TEXT("PetDefaultTestMorphCalm");
 	FName SeriousMorph = TEXT("PetDefaultTestMorphSerious");
-	FName JoyfulMorph = TEXT("PetDefaultTestMorphJoyful");
+	FName JoyfulMorph = TEXT("PetDefaultTestMorphJoy");
 
 	//bool to remove zero weight?
 
