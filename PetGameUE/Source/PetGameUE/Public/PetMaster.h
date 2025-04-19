@@ -23,7 +23,7 @@ public:
 	// Sets default values for this character's properties
 	APetMaster();
 
-	//variables for stats for all pets
+	//variables for stats for all pets make private later w/ get set functions that are clamped 0-1
 	// NF = NEGATIVE FLOAT (BAD TRAIT)
 	// PF = POSITIVE FLOAT (POSITIVE TRAIT)
 	UPROPERTY(EditAnywhere, Category = "Mood")
@@ -48,6 +48,14 @@ public:
 	UPROPERTY(BlueprintReadOnly, VisibleAnywhere, Category = "Mesh")
 	USkeletalMeshComponent* PetMeshAdult;
 
+	//include skeletal mesh component
+	UPROPERTY(BlueprintReadOnly, VisibleAnywhere, Category = "Mesh")
+	USkeletalMeshComponent* PetMeshBaby;
+
+	//include skeletal mesh component
+	UPROPERTY(BlueprintReadOnly, VisibleAnywhere, Category = "Mesh")
+	USkeletalMeshComponent* PetMeshElder;
+
 	//scene root
 	UPROPERTY(BlueprintReadOnly, VisibleAnywhere, Category = "Mesh")
 	USceneComponent* DefaultSceneRoot;
@@ -65,10 +73,19 @@ public:
 	//bool to remove zero weight?
 
 
+	//timer handle
+	FTimerHandle EvolutionTimer;
+
+	//timer length
+	UPROPERTY(EditDefaultsOnly, Category = "Timer")
+	float EvolutionTime = 10.f;
+
 
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
+
+	
 
 public:	
 	// Called every frame
@@ -76,6 +93,13 @@ public:
 
 	// Called to bind functionality to input
 	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
+
+	UFUNCTION(BlueprintCallable)
+	void Evolve();
+
+	void EvolveTimer();
+
+private:
 
 	void Morph();
 

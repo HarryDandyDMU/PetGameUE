@@ -1,0 +1,14 @@
+{
+	"version": 1,
+	"changelists": [
+		{
+			"guid": "00000000000000000000000000000000",
+			"description": "Default Uncontrolled Changelist",
+			"files": [
+				"Z:/Year Three/Module4/Unreal/PetGameUE/PetGameUE/Content/Items/BP_AYellowGem.uasset",
+				"Z:/Year Three/Module4/Unreal/PetGameUE/PetGameUE/Content/TestLevel.umap",
+				"Z:/Year Three/Module4/Unreal/PetGameUE/PetGameUE/Content/Pets/BP_Species1.uasset"
+			]
+		}
+	]
+}

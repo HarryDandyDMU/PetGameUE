@@ -14,13 +14,20 @@ APetMaster::APetMaster()
 	//setup scene root
 	DefaultSceneRoot = CreateDefaultSubobject<USceneComponent>(TEXT("SceneComponent")); //used for spawning based off location
 
-	//Petmesh
-	PetMeshAdult = CreateDefaultSubobject<USkeletalMeshComponent>(TEXT("SkelMeshComponent"));
-	PetMeshAdult->SetCollisionProfileName(TEXT("Pet"));
-
-	//CapsuleComp = GetCapsuleComponent();
+	//Petmesh adult
+	PetMeshAdult = CreateDefaultSubobject<USkeletalMeshComponent>(TEXT("AdultSkelMeshComponent"));
 
 	PetMeshAdult->SetupAttachment(RootComponent);
+
+	//Petmesh baby
+	PetMeshBaby = CreateDefaultSubobject<USkeletalMeshComponent>(TEXT("BabySkelMeshComponent"));
+
+	PetMeshBaby->SetupAttachment(RootComponent);
+
+	//Petmesh Elder
+	PetMeshElder = CreateDefaultSubobject<USkeletalMeshComponent>(TEXT("ElderSkelMeshComponent"));
+
+	PetMeshElder->SetupAttachment(RootComponent);
 
 }
 
@@ -28,6 +35,18 @@ APetMaster::APetMaster()
 void APetMaster::BeginPlay()
 {
 	Super::BeginPlay();
+
+	//remove all meshes
+	PetMeshAdult->SetVisibility(false);
+	PetMeshBaby->SetVisibility(false);
+	PetMeshElder->SetVisibility(false);
+
+
+	Evolve(); //sets to default evolution
+
+	EvolveTimer();//starts timer for evolution
+
+
 	
 }
 
@@ -45,6 +64,54 @@ void APetMaster::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent
 {
 	Super::SetupPlayerInputComponent(PlayerInputComponent);
 
+}
+
+void APetMaster::Evolve()
+{
+	////set next evolution
+	//if (CurrentEvolution == EEvolution::Baby)
+	//{
+	//	CurrentEvolution = EEvolution::Adult;
+	//}
+
+	////if adult become elder
+	//if (CurrentEvolution == EEvolution::Adult)
+	//{
+	//	CurrentEvolution = EEvolution::Elder;
+	//}
+
+	
+
+	//change model
+	switch (CurrentEvolution)
+	{
+	case EEvolution::Baby:
+		//show baby mesh
+			PetMeshBaby->SetVisibility(true);
+		//hide other meshes
+			PetMeshAdult->SetVisibility(false);
+			PetMeshElder->SetVisibility(false);
+		break;
+	case EEvolution::Adult:
+		//show adult mesh
+			PetMeshAdult->SetVisibility(true);
+			//hide other meshes
+			PetMeshBaby->SetVisibility(false);
+			PetMeshElder->SetVisibility(false);
+		break;
+	case EEvolution::Elder:
+		//show elder mesh
+			PetMeshElder->SetVisibility(true);
+			//hide other meshes
+			PetMeshAdult->SetVisibility(false);
+			PetMeshBaby->SetVisibility(false);
+		break;
+	}
+}
+
+void APetMaster::EvolveTimer()
+{
+	GetWorld()->GetTimerManager().SetTimer(EvolutionTimer, this, &APetMaster::Evolve, EvolutionTime, true, -1.f); //run evolve every 5 seconds
 }
 
 void APetMaster::Morph()
