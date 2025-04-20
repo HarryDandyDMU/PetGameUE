@@ -150,11 +150,6 @@ void EmptyLinkFunctionForGeneratedCodePetMaster() {}
 		static const UECodeGen_Private::FMetaDataPairParam NewProp_CurrentEvolution_MetaData[];
 #endif
 		static const UECodeGen_Private::FEnumPropertyParams NewProp_CurrentEvolution;
-		static const UECodeGen_Private::FBytePropertyParams NewProp_DefaultEvolution_Underlying;
-#if WITH_METADATA
-		static const UECodeGen_Private::FMetaDataPairParam NewProp_DefaultEvolution_MetaData[];
-#endif
-		static const UECodeGen_Private::FEnumPropertyParams NewProp_DefaultEvolution;
 #if WITH_METADATA
 		static const UECodeGen_Private::FMetaDataPairParam NewProp_PetMeshAdult_MetaData[];
 #endif
@@ -172,9 +167,34 @@ void EmptyLinkFunctionForGeneratedCodePetMaster() {}
 #endif
 		static const UECodeGen_Private::FObjectPropertyParams NewProp_DefaultSceneRoot;
 #if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_BabyTime_MetaData[];
+#endif
+		static const UECodeGen_Private::FFloatPropertyParams NewProp_BabyTime;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_AdultTime_MetaData[];
+#endif
+		static const UECodeGen_Private::FFloatPropertyParams NewProp_AdultTime;
+#if WITH_METADATA
 		static const UECodeGen_Private::FMetaDataPairParam NewProp_EvolutionTime_MetaData[];
 #endif
 		static const UECodeGen_Private::FFloatPropertyParams NewProp_EvolutionTime;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_FoodDistance_MetaData[];
+#endif
+		static const UECodeGen_Private::FFloatPropertyParams NewProp_FoodDistance;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_Hit_MetaData[];
+#endif
+		static void NewProp_Hit_SetBit(void* Obj);
+		static const UECodeGen_Private::FBoolPropertyParams NewProp_Hit;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_MaxFood_MetaData[];
+#endif
+		static const UECodeGen_Private::FInt16PropertyParams NewProp_MaxFood;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_CurrentFood_MetaData[];
+#endif
+		static const UECodeGen_Private::FInt16PropertyParams NewProp_CurrentFood;
 		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UECodeGen_Private::FClassParams ClassParams;
@@ -260,15 +280,7 @@ void EmptyLinkFunctionForGeneratedCodePetMaster() {}
 #endif
 	};
 #endif
-	const UECodeGen_Private::FEnumPropertyParams Z_Construct_UClass_APetMaster_Statics::NewProp_CurrentEvolution = { "CurrentEvolution", nullptr, (EPropertyFlags)0x0010000000020001, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(APetMaster, CurrentEvolution), Z_Construct_UEnum_PetGameUE_EEvolution, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_APetMaster_Statics::NewProp_CurrentEvolution_MetaData), Z_Construct_UClass_APetMaster_Statics::NewProp_CurrentEvolution_MetaData) }; // 1680861448
-	const UECodeGen_Private::FBytePropertyParams Z_Construct_UClass_APetMaster_Statics::NewProp_DefaultEvolution_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, nullptr, METADATA_PARAMS(0, nullptr) };
-#if WITH_METADATA
-	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_APetMaster_Statics::NewProp_DefaultEvolution_MetaData[] = {
-		{ "Category", "Evolution" },
-		{ "ModuleRelativePath", "Public/PetMaster.h" },
-	};
-#endif
-	const UECodeGen_Private::FEnumPropertyParams Z_Construct_UClass_APetMaster_Statics::NewProp_DefaultEvolution = { "DefaultEvolution", nullptr, (EPropertyFlags)0x0010000000000001, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(APetMaster, DefaultEvolution), Z_Construct_UEnum_PetGameUE_EEvolution, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_APetMaster_Statics::NewProp_DefaultEvolution_MetaData), Z_Construct_UClass_APetMaster_Statics::NewProp_DefaultEvolution_MetaData) }; // 1680861448
+	const UECodeGen_Private::FEnumPropertyParams Z_Construct_UClass_APetMaster_Statics::NewProp_CurrentEvolution = { "CurrentEvolution", nullptr, (EPropertyFlags)0x0010000000000001, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(APetMaster, CurrentEvolution), Z_Construct_UEnum_PetGameUE_EEvolution, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_APetMaster_Statics::NewProp_CurrentEvolution_MetaData), Z_Construct_UClass_APetMaster_Statics::NewProp_CurrentEvolution_MetaData) }; // 1680861448
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_APetMaster_Statics::NewProp_PetMeshAdult_MetaData[] = {
 		{ "Category", "Mesh" },
@@ -326,6 +338,32 @@ void EmptyLinkFunctionForGeneratedCodePetMaster() {}
 #endif
 	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_APetMaster_Statics::NewProp_DefaultSceneRoot = { "DefaultSceneRoot", nullptr, (EPropertyFlags)0x00100000000a001d, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(APetMaster, DefaultSceneRoot), Z_Construct_UClass_USceneComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_APetMaster_Statics::NewProp_DefaultSceneRoot_MetaData), Z_Construct_UClass_APetMaster_Statics::NewProp_DefaultSceneRoot_MetaData) };
 #if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_APetMaster_Statics::NewProp_BabyTime_MetaData[] = {
+		{ "Category", "Timer" },
+#if !UE_BUILD_SHIPPING
+		{ "Comment", "//age time length\n" },
+#endif
+		{ "ModuleRelativePath", "Public/PetMaster.h" },
+#if !UE_BUILD_SHIPPING
+		{ "ToolTip", "age time length" },
+#endif
+	};
+#endif
+	const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_APetMaster_Statics::NewProp_BabyTime = { "BabyTime", nullptr, (EPropertyFlags)0x0010000000010001, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(APetMaster, BabyTime), METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_APetMaster_Statics::NewProp_BabyTime_MetaData), Z_Construct_UClass_APetMaster_Statics::NewProp_BabyTime_MetaData) };
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_APetMaster_Statics::NewProp_AdultTime_MetaData[] = {
+		{ "Category", "Timer" },
+#if !UE_BUILD_SHIPPING
+		{ "Comment", "//2 mins\n" },
+#endif
+		{ "ModuleRelativePath", "Public/PetMaster.h" },
+#if !UE_BUILD_SHIPPING
+		{ "ToolTip", "2 mins" },
+#endif
+	};
+#endif
+	const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_APetMaster_Statics::NewProp_AdultTime = { "AdultTime", nullptr, (EPropertyFlags)0x0010000000010001, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(APetMaster, AdultTime), METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_APetMaster_Statics::NewProp_AdultTime_MetaData), Z_Construct_UClass_APetMaster_Statics::NewProp_AdultTime_MetaData) };
+#if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_APetMaster_Statics::NewProp_EvolutionTime_MetaData[] = {
 		{ "Category", "Timer" },
 #if !UE_BUILD_SHIPPING
@@ -338,6 +376,56 @@ void EmptyLinkFunctionForGeneratedCodePetMaster() {}
 	};
 #endif
 	const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_APetMaster_Statics::NewProp_EvolutionTime = { "EvolutionTime", nullptr, (EPropertyFlags)0x0010000000010001, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(APetMaster, EvolutionTime), METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_APetMaster_Statics::NewProp_EvolutionTime_MetaData), Z_Construct_UClass_APetMaster_Statics::NewProp_EvolutionTime_MetaData) };
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_APetMaster_Statics::NewProp_FoodDistance_MetaData[] = {
+		{ "Category", "Eat" },
+#if !UE_BUILD_SHIPPING
+		{ "Comment", "//function to ray trace food infront of pet\n" },
+#endif
+		{ "ModuleRelativePath", "Public/PetMaster.h" },
+#if !UE_BUILD_SHIPPING
+		{ "ToolTip", "function to ray trace food infront of pet" },
+#endif
+	};
+#endif
+	const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_APetMaster_Statics::NewProp_FoodDistance = { "FoodDistance", nullptr, (EPropertyFlags)0x0040000000020001, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(APetMaster, FoodDistance), METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_APetMaster_Statics::NewProp_FoodDistance_MetaData), Z_Construct_UClass_APetMaster_Statics::NewProp_FoodDistance_MetaData) };
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_APetMaster_Statics::NewProp_Hit_MetaData[] = {
+		{ "Category", "Eat" },
+#if !UE_BUILD_SHIPPING
+		{ "Comment", "//distance to food check\n" },
+#endif
+		{ "ModuleRelativePath", "Public/PetMaster.h" },
+#if !UE_BUILD_SHIPPING
+		{ "ToolTip", "distance to food check" },
+#endif
+	};
+#endif
+	void Z_Construct_UClass_APetMaster_Statics::NewProp_Hit_SetBit(void* Obj)
+	{
+		((APetMaster*)Obj)->Hit = 1;
+	}
+	const UECodeGen_Private::FBoolPropertyParams Z_Construct_UClass_APetMaster_Statics::NewProp_Hit = { "Hit", nullptr, (EPropertyFlags)0x0040000000020001, UECodeGen_Private::EPropertyGenFlags::Bool | UECodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, sizeof(bool), sizeof(APetMaster), &Z_Construct_UClass_APetMaster_Statics::NewProp_Hit_SetBit, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_APetMaster_Statics::NewProp_Hit_MetaData), Z_Construct_UClass_APetMaster_Statics::NewProp_Hit_MetaData) };
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_APetMaster_Statics::NewProp_MaxFood_MetaData[] = {
+		{ "Category", "Eat" },
+#if !UE_BUILD_SHIPPING
+		{ "Comment", "//if hit anything\n" },
+#endif
+		{ "ModuleRelativePath", "Public/PetMaster.h" },
+#if !UE_BUILD_SHIPPING
+		{ "ToolTip", "if hit anything" },
+#endif
+	};
+#endif
+	const UECodeGen_Private::FInt16PropertyParams Z_Construct_UClass_APetMaster_Statics::NewProp_MaxFood = { "MaxFood", nullptr, (EPropertyFlags)0x0040000000020001, UECodeGen_Private::EPropertyGenFlags::Int16, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(APetMaster, MaxFood), METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_APetMaster_Statics::NewProp_MaxFood_MetaData), Z_Construct_UClass_APetMaster_Statics::NewProp_MaxFood_MetaData) };
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_APetMaster_Statics::NewProp_CurrentFood_MetaData[] = {
+		{ "Category", "Eat" },
+		{ "ModuleRelativePath", "Public/PetMaster.h" },
+	};
+#endif
+	const UECodeGen_Private::FInt16PropertyParams Z_Construct_UClass_APetMaster_Statics::NewProp_CurrentFood = { "CurrentFood", nullptr, (EPropertyFlags)0x0040000000020001, UECodeGen_Private::EPropertyGenFlags::Int16, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(APetMaster, CurrentFood), METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_APetMaster_Statics::NewProp_CurrentFood_MetaData), Z_Construct_UClass_APetMaster_Statics::NewProp_CurrentFood_MetaData) };
 	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_APetMaster_Statics::PropPointers[] = {
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_APetMaster_Statics::NewProp_PFJoyful,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_APetMaster_Statics::NewProp_NFSerious,
@@ -345,13 +433,17 @@ void EmptyLinkFunctionForGeneratedCodePetMaster() {}
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_APetMaster_Statics::NewProp_NFBashful,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_APetMaster_Statics::NewProp_CurrentEvolution_Underlying,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_APetMaster_Statics::NewProp_CurrentEvolution,
-		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_APetMaster_Statics::NewProp_DefaultEvolution_Underlying,
-		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_APetMaster_Statics::NewProp_DefaultEvolution,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_APetMaster_Statics::NewProp_PetMeshAdult,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_APetMaster_Statics::NewProp_PetMeshBaby,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_APetMaster_Statics::NewProp_PetMeshElder,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_APetMaster_Statics::NewProp_DefaultSceneRoot,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_APetMaster_Statics::NewProp_BabyTime,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_APetMaster_Statics::NewProp_AdultTime,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_APetMaster_Statics::NewProp_EvolutionTime,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_APetMaster_Statics::NewProp_FoodDistance,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_APetMaster_Statics::NewProp_Hit,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_APetMaster_Statics::NewProp_MaxFood,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_APetMaster_Statics::NewProp_CurrentFood,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_APetMaster_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<APetMaster>::IsAbstract,
@@ -395,9 +487,9 @@ void EmptyLinkFunctionForGeneratedCodePetMaster() {}
 		{ EEvolution_StaticEnum, TEXT("EEvolution"), &Z_Registration_Info_UEnum_EEvolution, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 1680861448U) },
 	};
 	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_PetGameUE_Source_PetGameUE_Public_PetMaster_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_APetMaster, APetMaster::StaticClass, TEXT("APetMaster"), &Z_Registration_Info_UClass_APetMaster, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(APetMaster), 1958013223U) },
+		{ Z_Construct_UClass_APetMaster, APetMaster::StaticClass, TEXT("APetMaster"), &Z_Registration_Info_UClass_APetMaster, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(APetMaster), 3822928597U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_PetGameUE_Source_PetGameUE_Public_PetMaster_h_3217971071(TEXT("/Script/PetGameUE"),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_PetGameUE_Source_PetGameUE_Public_PetMaster_h_3474543430(TEXT("/Script/PetGameUE"),
 		Z_CompiledInDeferFile_FID_PetGameUE_Source_PetGameUE_Public_PetMaster_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_PetGameUE_Source_PetGameUE_Public_PetMaster_h_Statics::ClassInfo),
 		nullptr, 0,
 		Z_CompiledInDeferFile_FID_PetGameUE_Source_PetGameUE_Public_PetMaster_h_Statics::EnumInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_PetGameUE_Source_PetGameUE_Public_PetMaster_h_Statics::EnumInfo));

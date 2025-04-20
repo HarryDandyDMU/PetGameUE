@@ -195,7 +195,7 @@ void AMainCharacter::AddToInventory()
 				if (BlueStack < StackSize)
 				{
 					BlueStack++;
-					//GEngine->AddOnScreenDebugMessage(-1, 60.f, FColor::Magenta, FString::Printf(TEXT("BLUE: %s"), BlueStack));
+					
 
 					//OnInventoryUpdated.Broadcast();
 				}

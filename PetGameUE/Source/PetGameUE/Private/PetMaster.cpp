@@ -2,14 +2,14 @@
 
 
 #include "PetMaster.h"
+#include "Kismet/KismetSystemLibrary.h"// should allow line traceI
+
 
 // Sets default values
 APetMaster::APetMaster()
 {
  	// Set this character to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
-
-	CurrentEvolution = DefaultEvolution;
 
 	//setup scene root
 	DefaultSceneRoot = CreateDefaultSubobject<USceneComponent>(TEXT("SceneComponent")); //used for spawning based off location
@@ -46,6 +46,16 @@ void APetMaster::BeginPlay()
 
 	EvolveTimer();//starts timer for evolution
 
+	if (CurrentEvolution == EEvolution::Baby) //if you're baby on begin play
+	{
+		GetWorld()->GetTimerManager().SetTimer(AgeTimer, this, &APetMaster::Age, BabyTime, false, -1.f); //Start baby timer to adult
+	}
+	else if (CurrentEvolution == EEvolution::Adult)//else if you're an adult
+	{
+		GetWorld()->GetTimerManager().SetTimer(AgeTimer, this, &APetMaster::Age, AdultTime, false, -1.f); //Starts timer to age up to Elder
+
+	}
+
 
 	
 }
@@ -68,19 +78,6 @@ void APetMaster::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent
 
 void APetMaster::Evolve()
 {
-	////set next evolution
-	//if (CurrentEvolution == EEvolution::Baby)
-	//{
-	//	CurrentEvolution = EEvolution::Adult;
-	//}
-
-	////if adult become elder
-	//if (CurrentEvolution == EEvolution::Adult)
-	//{
-	//	CurrentEvolution = EEvolution::Elder;
-	//}
-
-	
 
 	//change model
 	switch (CurrentEvolution)
@@ -91,6 +88,8 @@ void APetMaster::Evolve()
 		//hide other meshes
 			PetMeshAdult->SetVisibility(false);
 			PetMeshElder->SetVisibility(false);
+			GEngine->AddOnScreenDebugMessage(-1, 60.f, FColor::Cyan, FString::Printf(TEXT("EvolveBaby")));
+
 		break;
 	case EEvolution::Adult:
 		//show adult mesh
@@ -98,6 +97,7 @@ void APetMaster::Evolve()
 			//hide other meshes
 			PetMeshBaby->SetVisibility(false);
 			PetMeshElder->SetVisibility(false);
+			GEngine->AddOnScreenDebugMessage(-1, 60.f, FColor::Cyan, FString::Printf(TEXT("EvolveAdult")));
 		break;
 	case EEvolution::Elder:
 		//show elder mesh
@@ -105,6 +105,8 @@ void APetMaster::Evolve()
 			//hide other meshes
 			PetMeshAdult->SetVisibility(false);
 			PetMeshBaby->SetVisibility(false);
+			GEngine->AddOnScreenDebugMessage(-1, 60.f, FColor::Cyan, FString::Printf(TEXT("EvolveElder")));
+
 		break;
 	}
 }
@@ -114,12 +116,54 @@ void APetMaster::EvolveTimer()
 	GetWorld()->GetTimerManager().SetTimer(EvolutionTimer, this, &APetMaster::Evolve, EvolutionTime, true, -1.f); //run evolve every 5 seconds
 }
 
+void APetMaster::Age()
+{
+	switch (CurrentEvolution)
+	{
+	case EEvolution::Baby:
+		GetWorld()->GetTimerManager().SetTimer(AgeTimer, this, &APetMaster::Age, AdultTime, false, -1.f); //Starts timer to age up to adult
+		CurrentEvolution = EEvolution::Adult;//sets it to adult
+		GEngine->AddOnScreenDebugMessage(-1, 60.f, FColor::Magenta, FString::Printf(TEXT("Become Adult Age")));
+		break;
+	case EEvolution::Adult:
+		CurrentEvolution = EEvolution::Elder;//sets it to Elder after timer above runs
+		GEngine->AddOnScreenDebugMessage(-1, 60.f, FColor::Magenta, FString::Printf(TEXT("Become Elder Age")));
+		break;
+	case EEvolution::Elder:
+		GEngine->AddOnScreenDebugMessage(-1, 60.f, FColor::Magenta, FString::Printf(TEXT("Elder Done Age")));
+		break;
+	default:
+		break;
+	}
+}
+
 void APetMaster::Morph()
 {
 	PetMeshAdult->SetMorphTarget(BashfulMorph, NFBashful, false);
 	PetMeshAdult->SetMorphTarget(SeriousMorph, NFSerious, false);
 	PetMeshAdult->SetMorphTarget(CalmMorph, PFCalm, false);
 	PetMeshAdult->SetMorphTarget(JoyfulMorph, PFJoyful, false); 
+
+}
+
+void APetMaster::Eat()
+{
+	//create start and end locations
+	FVector Start = RootComponent->GetComponentLocation();//returns root location
+	FVector End = (Start)+(RootComponent->GetForwardVector() * FoodDistance);//returns root add forward vector times by FoodDistance
+
+	//array of actors to ignore;
+	TArray<AActor*> ActorsToIgnore;
+
+
+	//add self to actors that need to be ignored
+	ActorsToIgnore.Add(this);
+
+	//line trace for multiple objects with bool
+	//uses camera channel and complex collision is true
+	//Green for trace and red for hit and final float is 60secs
+	Hit = UKismetSystemLibrary::LineTraceSingle(this, Start, End, UEngineTypes::ConvertToTraceType(ECC_Camera), true, ActorsToIgnore, EDrawDebugTrace::ForDuration, HitResult, true, FLinearColor::Green, FLinearColor::Red, 60.f);
+
 
 }
 

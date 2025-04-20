@@ -38,11 +38,8 @@ public:
 	UPROPERTY(EditAnywhere, Category = "Mood")
 	float NFBashful; //0-1f used to Dicatate the blend shapes
 
-	UPROPERTY(VisibleAnywhere, Category = "Evolution")
-	EEvolution CurrentEvolution;
-
 	UPROPERTY(EditAnywhere, Category = "Evolution")
-	EEvolution DefaultEvolution;
+	EEvolution CurrentEvolution;
 
 	//include skeletal mesh component
 	UPROPERTY(BlueprintReadOnly, VisibleAnywhere, Category = "Mesh")
@@ -76,6 +73,15 @@ public:
 	//timer handle
 	FTimerHandle EvolutionTimer;
 
+	//Agetimer
+	FTimerHandle AgeTimer;
+
+	//age time length
+	UPROPERTY(EditDefaultsOnly, Category = "Timer")
+	float BabyTime = 120.f;//2 mins
+	UPROPERTY(EditDefaultsOnly, Category = "Timer")
+	float AdultTime = 600.f;//10 mins
+
 	//timer length
 	UPROPERTY(EditDefaultsOnly, Category = "Timer")
 	float EvolutionTime = 10.f;
@@ -99,8 +105,23 @@ public:
 
 	void EvolveTimer();
 
+	void Age();
+
 private:
 
 	void Morph();
 
+	void Eat();//function to ray trace food infront of pet
+
+	UPROPERTY(VisibleAnywhere, Category = "Eat")
+	float FoodDistance = 50.f;//distance to food check
+
+	UPROPERTY(VisibleAnywhere, Category = "Eat")
+	bool Hit;//if hit anything
+
+	UPROPERTY(VisibleAnywhere, Category = "Eat")
+	int16 MaxFood = 100;
+
+	UPROPERTY(VisibleAnywhere, Category = "Eat")
+	int16 CurrentFood = 0;
 };
