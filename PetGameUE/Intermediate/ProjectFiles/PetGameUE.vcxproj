@@ -121,6 +121,11 @@
       <AdditionalOptions>$(ClCompile_AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <ClInclude Include="..\..\Source\PetGameUE\PetGameUE.h"/>
+    <ClCompile Include="..\..\Source\PetGameUE\Private\AEgg.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles)</ForcedIncludeFiles>
+      <AdditionalOptions>$(ClCompile_AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
     <ClCompile Include="..\..\Source\PetGameUE\Private\AGem.cpp">
       <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles)</ForcedIncludeFiles>
@@ -141,6 +146,7 @@
       <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles)</ForcedIncludeFiles>
       <AdditionalOptions>$(ClCompile_AdditionalOptions)</AdditionalOptions>
     </ClCompile>
+    <ClInclude Include="..\..\Source\PetGameUE\Public\AEgg.h"/>
     <ClInclude Include="..\..\Source\PetGameUE\Public\AGem.h"/>
     <ClInclude Include="..\..\Source\PetGameUE\Public\MainCharacter.h"/>
     <ClInclude Include="..\..\Source\PetGameUE\Public\PetGameModeBase.h"/>

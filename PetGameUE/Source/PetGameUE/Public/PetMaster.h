@@ -119,6 +119,8 @@ private:
 	UPROPERTY(VisibleAnywhere, Category = "Eat")
 	bool Hit;//if hit anything
 
+	FHitResult HitResult; //variable of hit return
+
 	UPROPERTY(VisibleAnywhere, Category = "Eat")
 	int16 MaxFood = 100;
 
