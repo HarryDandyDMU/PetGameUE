@@ -36,7 +36,7 @@ public:
 	//camera
 
 	UPROPERTY(VisibleAnywhere, Category = "Components") //fps cam
-		UCameraComponent* CameraComponent;
+	UCameraComponent* CameraComponent;
 
 	UPROPERTY(EditDefaultsOnly, Category = "Inventory") //location for items to drop relative to char
 	USceneComponent* DropLocation;

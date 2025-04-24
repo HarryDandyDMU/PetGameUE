@@ -9,9 +9,13 @@
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 void EmptyLinkFunctionForGeneratedCodeAEgg() {}
 // Cross Module References
+	COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
 	ENGINE_API UClass* Z_Construct_UClass_AActor();
+	ENGINE_API UClass* Z_Construct_UClass_USceneComponent_NoRegister();
+	ENGINE_API UClass* Z_Construct_UClass_UStaticMeshComponent_NoRegister();
 	PETGAMEUE_API UClass* Z_Construct_UClass_AAEgg();
 	PETGAMEUE_API UClass* Z_Construct_UClass_AAEgg_NoRegister();
+	PETGAMEUE_API UClass* Z_Construct_UClass_APetMaster_NoRegister();
 	UPackage* Z_Construct_UPackage__Script_PetGameUE();
 // End Cross Module References
 	void AAEgg::StaticRegisterNativesAAEgg()
@@ -28,6 +32,19 @@ void EmptyLinkFunctionForGeneratedCodeAEgg() {}
 #if WITH_METADATA
 		static const UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
 #endif
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_EggMesh_MetaData[];
+#endif
+		static const UECodeGen_Private::FObjectPropertyParams NewProp_EggMesh;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_PetToSpawn_MetaData[];
+#endif
+		static const UECodeGen_Private::FClassPropertyParams NewProp_PetToSpawn;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_DropLocation_MetaData[];
+#endif
+		static const UECodeGen_Private::FObjectPropertyParams NewProp_DropLocation;
+		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UECodeGen_Private::FClassParams ClassParams;
 	};
@@ -42,6 +59,46 @@ void EmptyLinkFunctionForGeneratedCodeAEgg() {}
 		{ "ModuleRelativePath", "Public/AEgg.h" },
 	};
 #endif
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AAEgg_Statics::NewProp_EggMesh_MetaData[] = {
+		{ "Category", "EggMesh" },
+#if !UE_BUILD_SHIPPING
+		{ "Comment", "//egg Mesh\n" },
+#endif
+		{ "EditInline", "true" },
+		{ "ModuleRelativePath", "Public/AEgg.h" },
+#if !UE_BUILD_SHIPPING
+		{ "ToolTip", "egg Mesh" },
+#endif
+	};
+#endif
+	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AAEgg_Statics::NewProp_EggMesh = { "EggMesh", nullptr, (EPropertyFlags)0x00100000000b0009, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AAEgg, EggMesh), Z_Construct_UClass_UStaticMeshComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_AAEgg_Statics::NewProp_EggMesh_MetaData), Z_Construct_UClass_AAEgg_Statics::NewProp_EggMesh_MetaData) };
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AAEgg_Statics::NewProp_PetToSpawn_MetaData[] = {
+		{ "Category", "Species" },
+#if !UE_BUILD_SHIPPING
+		{ "Comment", "//bp children of Species\n" },
+#endif
+		{ "ModuleRelativePath", "Public/AEgg.h" },
+#if !UE_BUILD_SHIPPING
+		{ "ToolTip", "bp children of Species" },
+#endif
+	};
+#endif
+	const UECodeGen_Private::FClassPropertyParams Z_Construct_UClass_AAEgg_Statics::NewProp_PetToSpawn = { "PetToSpawn", nullptr, (EPropertyFlags)0x0014000000010001, UECodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AAEgg, PetToSpawn), Z_Construct_UClass_UClass, Z_Construct_UClass_APetMaster_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_AAEgg_Statics::NewProp_PetToSpawn_MetaData), Z_Construct_UClass_AAEgg_Statics::NewProp_PetToSpawn_MetaData) };
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AAEgg_Statics::NewProp_DropLocation_MetaData[] = {
+		{ "Category", "SpawnLoc" },
+		{ "EditInline", "true" },
+		{ "ModuleRelativePath", "Public/AEgg.h" },
+	};
+#endif
+	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AAEgg_Statics::NewProp_DropLocation = { "DropLocation", nullptr, (EPropertyFlags)0x0010000000090009, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AAEgg, DropLocation), Z_Construct_UClass_USceneComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_AAEgg_Statics::NewProp_DropLocation_MetaData), Z_Construct_UClass_AAEgg_Statics::NewProp_DropLocation_MetaData) };
+	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AAEgg_Statics::PropPointers[] = {
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AAEgg_Statics::NewProp_EggMesh,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AAEgg_Statics::NewProp_PetToSpawn,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AAEgg_Statics::NewProp_DropLocation,
+	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_AAEgg_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<AAEgg>::IsAbstract,
 	};
@@ -51,15 +108,16 @@ void EmptyLinkFunctionForGeneratedCodeAEgg() {}
 		&StaticCppClassTypeInfo,
 		DependentSingletons,
 		nullptr,
-		nullptr,
+		Z_Construct_UClass_AAEgg_Statics::PropPointers,
 		nullptr,
 		UE_ARRAY_COUNT(DependentSingletons),
 		0,
-		0,
+		UE_ARRAY_COUNT(Z_Construct_UClass_AAEgg_Statics::PropPointers),
 		0,
 		0x009000A4u,
 		METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_AAEgg_Statics::Class_MetaDataParams), Z_Construct_UClass_AAEgg_Statics::Class_MetaDataParams)
 	};
+	static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_AAEgg_Statics::PropPointers) < 2048);
 	UClass* Z_Construct_UClass_AAEgg()
 	{
 		if (!Z_Registration_Info_UClass_AAEgg.OuterSingleton)
@@ -79,9 +137,9 @@ void EmptyLinkFunctionForGeneratedCodeAEgg() {}
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
 	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_PetGameUE_Source_PetGameUE_Public_AEgg_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_AAEgg, AAEgg::StaticClass, TEXT("AAEgg"), &Z_Registration_Info_UClass_AAEgg, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AAEgg), 54810317U) },
+		{ Z_Construct_UClass_AAEgg, AAEgg::StaticClass, TEXT("AAEgg"), &Z_Registration_Info_UClass_AAEgg, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AAEgg), 2161469165U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_PetGameUE_Source_PetGameUE_Public_AEgg_h_4008495015(TEXT("/Script/PetGameUE"),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_PetGameUE_Source_PetGameUE_Public_AEgg_h_866574217(TEXT("/Script/PetGameUE"),
 		Z_CompiledInDeferFile_FID_PetGameUE_Source_PetGameUE_Public_AEgg_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_PetGameUE_Source_PetGameUE_Public_AEgg_h_Statics::ClassInfo),
 		nullptr, 0,
 		nullptr, 0);

@@ -5,7 +5,28 @@
 			"guid": "00000000000000000000000000000000",
 			"description": "Default Uncontrolled Changelist",
 			"files": [
-				"Z:/Year Three/Module4/Unreal/PetGameUE/PetGameUE/Content/TestLevel.umap"
+				"Z:/Year Three/Module4/Unreal/PetGameUE/PetGameUE/Content/Items/BP_Egg.uasset",
+				"Z:/Year Three/Module4/Unreal/PetGameUE/PetGameUE/Content/Items/Gems/BP_ABlueGem.uasset",
+				"Z:/Year Three/Module4/Unreal/PetGameUE/PetGameUE/Content/Items/BP_ABlueGem.uasset",
+				"Z:/Year Three/Module4/Unreal/PetGameUE/PetGameUE/Content/Items/Gems/BP_AGreenGem.uasset",
+				"Z:/Year Three/Module4/Unreal/PetGameUE/PetGameUE/Content/Items/BP_AGreenGem.uasset",
+				"Z:/Year Three/Module4/Unreal/PetGameUE/PetGameUE/Content/Items/Gems/BP_ARedGem.uasset",
+				"Z:/Year Three/Module4/Unreal/PetGameUE/PetGameUE/Content/Items/BP_ARedGem.uasset",
+				"Z:/Year Three/Module4/Unreal/PetGameUE/PetGameUE/Content/Items/Gems/BP_AYellowGem.uasset",
+				"Z:/Year Three/Module4/Unreal/PetGameUE/PetGameUE/Content/Items/BP_AYellowGem.uasset",
+				"Z:/Year Three/Module4/Unreal/PetGameUE/PetGameUE/Content/Items/Gems/M_SimpleGem.uasset",
+				"Z:/Year Three/Module4/Unreal/PetGameUE/PetGameUE/Content/Items/Gems/M_SimpleGem_Blue.uasset",
+				"Z:/Year Three/Module4/Unreal/PetGameUE/PetGameUE/Content/Items/Gems/M_SimpleGem_Green.uasset",
+				"Z:/Year Three/Module4/Unreal/PetGameUE/PetGameUE/Content/Items/Gems/M_SimpleGem_Red.uasset",
+				"Z:/Year Three/Module4/Unreal/PetGameUE/PetGameUE/Content/Items/Gems/M_SimpleGem_Yellow.uasset",
+				"Z:/Year Three/Module4/Unreal/PetGameUE/PetGameUE/Content/Items/M_SimpleGem_Yellow.uasset",
+				"Z:/Year Three/Module4/Unreal/PetGameUE/PetGameUE/Content/Items/M_SimpleGem_Red.uasset",
+				"Z:/Year Three/Module4/Unreal/PetGameUE/PetGameUE/Content/Items/M_SimpleGem_Green.uasset",
+				"Z:/Year Three/Module4/Unreal/PetGameUE/PetGameUE/Content/Items/M_SimpleGem_Blue.uasset",
+				"Z:/Year Three/Module4/Unreal/PetGameUE/PetGameUE/Content/Items/M_SimpleGem.uasset",
+				"Z:/Year Three/Module4/Unreal/PetGameUE/PetGameUE/Content/Items/Eggs/BP_Species1Egg.uasset",
+				"Z:/Year Three/Module4/Unreal/PetGameUE/PetGameUE/Content/TestLevel.umap",
+				"Z:/Year Three/Module4/Unreal/PetGameUE/PetGameUE/Content/Pets/BP_Species1.uasset"
 			]
 		}
 	]

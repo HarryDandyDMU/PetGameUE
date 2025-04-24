@@ -89,8 +89,8 @@ void APetMaster::Evolve()
 			PetMeshAdult->SetVisibility(false);
 			PetMeshElder->SetVisibility(false);
 			GEngine->AddOnScreenDebugMessage(-1, 60.f, FColor::Cyan, FString::Printf(TEXT("EvolveBaby")));
-
 		break;
+
 	case EEvolution::Adult:
 		//show adult mesh
 			PetMeshAdult->SetVisibility(true);
@@ -99,6 +99,7 @@ void APetMaster::Evolve()
 			PetMeshElder->SetVisibility(false);
 			GEngine->AddOnScreenDebugMessage(-1, 60.f, FColor::Cyan, FString::Printf(TEXT("EvolveAdult")));
 		break;
+
 	case EEvolution::Elder:
 		//show elder mesh
 			PetMeshElder->SetVisibility(true);
@@ -106,8 +107,8 @@ void APetMaster::Evolve()
 			PetMeshAdult->SetVisibility(false);
 			PetMeshBaby->SetVisibility(false);
 			GEngine->AddOnScreenDebugMessage(-1, 60.f, FColor::Cyan, FString::Printf(TEXT("EvolveElder")));
-
 		break;
+
 	}
 }
 
