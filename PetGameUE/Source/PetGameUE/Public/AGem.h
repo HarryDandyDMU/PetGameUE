@@ -4,6 +4,7 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/Actor.h"
+#include "Perception/AIPerceptionStimuliSourceComponent.h"// so pets can see them
 #include "AGem.generated.h"
 
 UCLASS()
@@ -24,6 +25,10 @@ public:
 
 	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = "Gem")
 	FName GemType;
+
+	//Stimuli Source
+	UPROPERTY(BlueprintReadOnly, VisibleAnywhere, Category = "Components")
+	UAIPerceptionStimuliSourceComponent* StimuliSource;
 
 
 protected:

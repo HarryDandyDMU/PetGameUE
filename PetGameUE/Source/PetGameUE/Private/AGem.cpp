@@ -2,6 +2,7 @@
 
 
 #include "AGem.h"
+#include "Perception/AISense_Sight.h"//included for sight sense
 
 // Sets default values
 AAGem::AAGem()
@@ -15,6 +16,10 @@ AAGem::AAGem()
 	SetRootComponent(GemMesh);
 
 	Tags.Add(FName(GemType));
+
+	//Setup Source
+	StimuliSource = CreateDefaultSubobject<UAIPerceptionStimuliSourceComponent>(TEXT("Stimuli Source Component"));
+	StimuliSource->RegisterForSense(TSubclassOf<UAISense_Sight>());
 
 
 }
