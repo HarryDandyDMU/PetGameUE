@@ -25,6 +25,8 @@
 				"Z:/Year Three/Module4/Unreal/PetGameUE/PetGameUE/Content/Pets/AI/BB_PetAI.uasset",
 				"Z:/Year Three/Module4/Unreal/PetGameUE/PetGameUE/Content/UserInterface/WB_Inventory.uasset",
 				"Z:/Year Three/Module4/Unreal/PetGameUE/PetGameUE/Content/Pets/AI/BT_PetAI.uasset",
+				"Z:/Year Three/Module4/Unreal/PetGameUE/PetGameUE/Content/Pets/AI/Tasks/BTTask_RandRoam.uasset",
+				"Z:/Year Three/Module4/Unreal/PetGameUE/PetGameUE/Content/Pets/AI/Tasks/BTTask_GreetPlayer.uasset",
 				"Z:/Year Three/Module4/Unreal/PetGameUE/PetGameUE/Content/Items/BP_Egg.uasset",
 				"Z:/Year Three/Module4/Unreal/PetGameUE/PetGameUE/Content/Items/M_SimpleGem_Yellow.uasset",
 				"Z:/Year Three/Module4/Unreal/PetGameUE/PetGameUE/Content/Items/M_SimpleGem_Red.uasset",

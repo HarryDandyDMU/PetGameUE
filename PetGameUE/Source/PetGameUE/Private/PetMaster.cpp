@@ -2,6 +2,9 @@
 
 
 #include "PetMaster.h"
+#include "AGem.h"//to check if food
+#include "Blueprint/AIBlueprintHelperLibrary.h"
+#include "BehaviorTree/BlackboardComponent.h"//to get bb
 #include "Kismet/KismetSystemLibrary.h"// should allow line traceI
 
 
@@ -46,6 +49,9 @@ void APetMaster::BeginPlay()
 
 	EvolveTimer();//starts timer for evolution
 
+	HungerTimer();//function that starts hunger countdown
+
+
 	if (CurrentEvolution == EEvolution::Baby) //if you're baby on begin play
 	{
 		GetWorld()->GetTimerManager().SetTimer(AgeTimer, this, &APetMaster::Age, BabyTime, false, -1.f); //Start baby timer to adult
@@ -66,6 +72,8 @@ void APetMaster::Tick(float DeltaTime)
 	Super::Tick(DeltaTime);
 
 	Morph();// might need to make it less intensive
+
+	Eat();//if hungry in functino
 
 }
 
@@ -138,33 +146,131 @@ void APetMaster::Age()
 	}
 }
 
+void APetMaster::HungerTimer()
+{
+	GetWorld()->GetTimerManager().SetTimer(HungerTimeHandle, this, &APetMaster::Hungry, HungerTime, false, -1.f); //Starts timer to hungry
+
+}
+
+void APetMaster::Hungry()
+{
+	//sets pet to hungry
+	IsHungry = true;//dictates eat function on tick
+
+	GEngine->AddOnScreenDebugMessage(-1, 60.f, FColor::Emerald, FString::Printf(TEXT("HUNGRY")));
+
+
+	//need to set bb value here too
+	//uses bp helper lib to get this blackboard then sat value with name ISHungry to is hunry
+	UAIBlueprintHelperLibrary::GetBlackboard(this)->SetValueAsBool(TEXT("IsHungry"), IsHungry); 
+
+}
+
+float APetMaster::ClampBashful()
+{
+	return FMath::Clamp(NFBashful, 0.f, 1.f);
+}
+
+float APetMaster::ClampJoyful()
+{
+	return FMath::Clamp(PFJoyful, 0.f, 1.f);
+}
+
+float APetMaster::ClampSerious()
+{
+	return FMath::Clamp(NFSerious, 0.f, 1.f);
+}
+
+float APetMaster::ClampCalm()
+{
+	return FMath::Clamp(PFCalm, 0.f, 1.f);
+}
+
 void APetMaster::Morph()
 {
+	ClampBashful();
+	ClampCalm();
+	ClampJoyful();
+	ClampSerious();
+
 	PetMeshAdult->SetMorphTarget(BashfulMorph, NFBashful, false);
 	PetMeshAdult->SetMorphTarget(SeriousMorph, NFSerious, false);
 	PetMeshAdult->SetMorphTarget(CalmMorph, PFCalm, false);
 	PetMeshAdult->SetMorphTarget(JoyfulMorph, PFJoyful, false); 
-
 }
 
 void APetMaster::Eat()
 {
-	//create start and end locations
-	FVector Start = RootComponent->GetComponentLocation();//returns root location
-	FVector End = (Start)+(RootComponent->GetForwardVector() * FoodDistance);//returns root add forward vector times by FoodDistance
+	if (IsHungry == true)
+	{
 
-	//array of actors to ignore;
-	TArray<AActor*> ActorsToIgnore;
+		//create start and end locations
+		FVector Start = RootComponent->GetComponentLocation();//returns root location
+		FVector End = (Start)+(RootComponent->GetForwardVector() * FoodDistance);//returns root add forward vector times by FoodDistance
+
+		//array of actors to ignore;
+		TArray<AActor*> ActorsToIgnore;
 
 
-	//add self to actors that need to be ignored
-	ActorsToIgnore.Add(this);
+		//add self to actors that need to be ignored
+		ActorsToIgnore.Add(this);
 
-	//line trace for multiple objects with bool
-	//uses camera channel and complex collision is true
-	//Green for trace and red for hit and final float is 60secs
-	Hit = UKismetSystemLibrary::LineTraceSingle(this, Start, End, UEngineTypes::ConvertToTraceType(ECC_Camera), true, ActorsToIgnore, EDrawDebugTrace::ForDuration, HitResult, true, FLinearColor::Green, FLinearColor::Red, 60.f);
+		//line trace for multiple objects with bool
+		//uses camera channel and complex collision is true
+		//Green for trace and red for hit and final float is 60secs
+		Hit = UKismetSystemLibrary::LineTraceSingle(this, Start, End, UEngineTypes::ConvertToTraceType(ECC_Visibility), true, ActorsToIgnore, EDrawDebugTrace::ForDuration, HitResult, true, FLinearColor::Green, FLinearColor::Red, 60.f);
 
+		if (Hit == true)
+		{
+			GEngine->AddOnScreenDebugMessage(-1, 60.f, FColor::Emerald, FString::Printf(TEXT("Hit: %s"), *HitResult.GetActor()->GetName()));
+
+			if (HitResult.GetActor()->IsA(AAGem::StaticClass())) //if hungry scan and if hit is food
+			{
+				if (HitResult.GetActor()->ActorHasTag(FName(TEXT("Green")))) //if actor is food type
+				{
+					PFJoyful += .1f;
+					HitResult.GetActor()->Destroy();
+					IsHungry = false;//SET BACK TO NOT HUNGRY
+					UAIBlueprintHelperLibrary::GetBlackboard(this)->SetValueAsBool(TEXT("IsHungry"), IsHungry);
+					GEngine->AddOnScreenDebugMessage(-1, 60.f, FColor::Emerald, FString::Printf(TEXT("EATEN")));
+					HungerTimer();//restart timer
+
+				}
+				else if (HitResult.GetActor()->ActorHasTag(FName(TEXT("Red"))))
+				{
+					NFSerious += .1f;
+					HitResult.GetActor()->Destroy();
+					IsHungry = false;
+					UAIBlueprintHelperLibrary::GetBlackboard(this)->SetValueAsBool(TEXT("IsHungry"), IsHungry);
+					GEngine->AddOnScreenDebugMessage(-1, 60.f, FColor::Emerald, FString::Printf(TEXT("EATEN")));
+					HungerTimer();//restart timer
+
+
+				}
+				else if (HitResult.GetActor()->ActorHasTag(FName(TEXT("Yellow"))))
+				{
+					NFBashful += .1f;
+					HitResult.GetActor()->Destroy();
+					IsHungry = false;
+					UAIBlueprintHelperLibrary::GetBlackboard(this)->SetValueAsBool(TEXT("IsHungry"), IsHungry);
+					GEngine->AddOnScreenDebugMessage(-1, 60.f, FColor::Emerald, FString::Printf(TEXT("EATEN")));
+					HungerTimer();//restart timer
+
+				}
+				else if (HitResult.GetActor()->ActorHasTag(FName(TEXT("Blue"))))
+				{
+					PFCalm += .1f;
+					HitResult.GetActor()->Destroy();
+					IsHungry = false;
+					UAIBlueprintHelperLibrary::GetBlackboard(this)->SetValueAsBool(TEXT("IsHungry"), IsHungry);
+					GEngine->AddOnScreenDebugMessage(-1, 60.f, FColor::Emerald, FString::Printf(TEXT("EATEN")));
+					HungerTimer();//restart timer
+
+
+				}
+			}
+		}
+	}
 
 }
 

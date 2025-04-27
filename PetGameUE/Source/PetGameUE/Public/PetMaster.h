@@ -80,7 +80,7 @@ public:
 	UPROPERTY(EditDefaultsOnly, Category = "Timer")
 	float BabyTime = 120.f;//2 mins
 	UPROPERTY(EditDefaultsOnly, Category = "Timer")
-	float AdultTime = 600.f;//10 mins
+	float AdultTime = 1200.f;//20 mins
 
 	//timer length
 	UPROPERTY(EditDefaultsOnly, Category = "Timer")
@@ -107,8 +107,26 @@ public:
 
 	void Age();
 
-private:
+	void HungerTimer();
 
+	void Hungry();
+
+	UPROPERTY(VisibleAnywhere, Category = "Eat")
+	bool IsHungry = false;//set to false
+
+	//Agetimer
+	FTimerHandle HungerTimeHandle;
+
+	UPROPERTY(EditDefaultsOnly, Category = "Timer")
+	float HungerTime = 60.f;//1 mins
+
+	float ClampBashful(); //for some reason has to be returned
+	float ClampJoyful();
+	float ClampSerious();
+	float ClampCalm();
+
+
+private:
 	void Morph();
 
 	void Eat();//function to ray trace food infront of pet
@@ -126,4 +144,6 @@ private:
 
 	UPROPERTY(VisibleAnywhere, Category = "Eat")
 	int16 CurrentFood = 0;
+
+
 };
