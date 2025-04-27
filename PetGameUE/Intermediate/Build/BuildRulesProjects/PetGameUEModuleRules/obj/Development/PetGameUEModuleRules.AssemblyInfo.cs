@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PetGameUEModuleRules")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Development")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+02633596d56a54999ac40ca25143a41c9a8a8e6b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+360ca13f6ae86d7e3b44c31579aac93c96be2b8b")]
 [assembly: System.Reflection.AssemblyProductAttribute("PetGameUEModuleRules")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PetGameUEModuleRules")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

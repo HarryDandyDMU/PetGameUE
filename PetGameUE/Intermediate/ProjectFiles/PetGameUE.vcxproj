@@ -131,6 +131,11 @@
       <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles)</ForcedIncludeFiles>
       <AdditionalOptions>$(ClCompile_AdditionalOptions)</AdditionalOptions>
     </ClCompile>
+    <ClCompile Include="..\..\Source\PetGameUE\Private\ARubbleMaster.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles)</ForcedIncludeFiles>
+      <AdditionalOptions>$(ClCompile_AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
     <ClCompile Include="..\..\Source\PetGameUE\Private\BTAIPetController.cpp">
       <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles)</ForcedIncludeFiles>
@@ -153,6 +158,7 @@
     </ClCompile>
     <ClInclude Include="..\..\Source\PetGameUE\Public\AEgg.h"/>
     <ClInclude Include="..\..\Source\PetGameUE\Public\AGem.h"/>
+    <ClInclude Include="..\..\Source\PetGameUE\Public\ARubbleMaster.h"/>
     <ClInclude Include="..\..\Source\PetGameUE\Public\BTAIPetController.h"/>
     <ClInclude Include="..\..\Source\PetGameUE\Public\MainCharacter.h"/>
     <ClInclude Include="..\..\Source\PetGameUE\Public\PetGameModeBase.h"/>

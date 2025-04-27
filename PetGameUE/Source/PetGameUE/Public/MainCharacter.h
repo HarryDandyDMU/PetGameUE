@@ -8,6 +8,7 @@
 #include "Camera/CameraComponent.h"//include for camera
 #include "Components/CapsuleComponent.h" //included for capulse
 #include "AGem.h" //included for gems
+#include "ARubbleMaster.h"//included for mining rubble
 #include "MainCharacter.generated.h"
 
 
@@ -131,8 +132,9 @@ public:
 	//runs in begin play to init trace
 	void InitialiseTrace();
 
-	//add item to inventory
+	//add to inv or break rocks
 	void AddToInventory();
+
 
 	//simple drop function
 	UFUNCTION(BlueprintCallable, Category = "Inventory")

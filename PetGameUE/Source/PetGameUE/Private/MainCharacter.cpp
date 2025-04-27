@@ -107,7 +107,8 @@ void AMainCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputCompo
 void AMainCharacter::Interact()
 {
 	InitialiseTrace();//runs trace
-	AddToInventory();//Checks if it can be added and does it
+	AddToInventory();//Checks if it can be added and does it or breaks rocks
+
 }
 
 void AMainCharacter::Move(const FInputActionValue& Value)
@@ -186,7 +187,6 @@ void AMainCharacter::AddToInventory()
 		//GEngine->AddOnScreenDebugMessage(-1, 60.f, FColor::Emerald, FString::Printf(TEXT("Hit: %s"), *HitResult.GetActor()->GetName()));
 		if (HitResult.GetActor()->IsA(AAGem::StaticClass())) //if trace is a gem
 		{
-			//GEngine->AddOnScreenDebugMessage(-1, 60.f, FColor::Magenta, FString::Printf(TEXT("Hit: %s"), *HitResult.GetActor()->GetName()));
 
 			if (HitResult.GetActor()->ActorHasTag(FName(TEXT("Blue")))) //NEED TO SET NAME IN CONSTRUCTOR OF GEM SO IT'S NOT INSTANCED
 			{
@@ -242,8 +242,20 @@ void AMainCharacter::AddToInventory()
 
 			OnInventoryUpdated.Broadcast(); //uupdate inventory
 		}
+		else if (HitResult.GetActor()->IsA(AARubbleMaster::StaticClass())) //if trace is a rubble and not a gem
+		{
+			GEngine->AddOnScreenDebugMessage(-1, 60.f, FColor::Magenta, FString::Printf(TEXT("Hit: %s"), *HitResult.GetActor()->GetName()));
+
+			if (AARubbleMaster* Rubble = Cast<AARubbleMaster>(HitResult.GetActor())) //if you can cast to the actor
+			{
+				GEngine->AddOnScreenDebugMessage(-1, 60.f, FColor::Magenta, FString::Printf(TEXT("Hit: %s"), *HitResult.GetActor()->GetName()));
+
+				Rubble->Break();
+			}
+		}
 	}
 }
+
 
 AActor* AMainCharacter::DropItem()
 {
