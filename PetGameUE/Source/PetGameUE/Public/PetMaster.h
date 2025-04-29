@@ -38,6 +38,9 @@ public:
 	UPROPERTY(EditAnywhere, Category = "Mood")
 	float NFBashful; //0-1f used to Dicatate the blend shapes
 
+	UPROPERTY(EditAnywhere, Category = "Species")
+	FName SpeciesType;
+
 	UPROPERTY(EditAnywhere, Category = "Evolution")
 	EEvolution CurrentEvolution;
 
