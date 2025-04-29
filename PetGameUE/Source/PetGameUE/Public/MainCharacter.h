@@ -144,9 +144,12 @@ public:
 	UPROPERTY(BlueprintReadWrite, Category = "Inventory")
 	TSubclassOf<AAGem> GemToDrop;
 
+private:
+	UFUNCTION(BlueprintCallable, Category = "Save")
+	void SaveGame();
 
-
-
+	UFUNCTION(BlueprintCallable, Category = "Save")
+	void LoadGame();
 
 
 };

@@ -4,6 +4,8 @@
 #include "MainCharacter.h"
 #include "GameFramework/Controller.h"
 #include "EnhancedInputComponent.h"
+#include "SaveGameClass.h"//included for saves
+#include <Kismet/GameplayStatics.h>//included for saves
 #include "Kismet/KismetSystemLibrary.h"// should allow line traceI
 #include "EnhancedInputSubsystems.h"
 
@@ -315,5 +317,39 @@ AActor* AMainCharacter::DropItem()
 	OnInventoryUpdated.Broadcast(); //uupdate inventory
 
 	return ItemToDrop;
+}
+
+void AMainCharacter::SaveGame()
+{
+	//make save game instance and if it's true
+	if (USaveGameClass* CurrentSaveInstance = Cast<USaveGameClass>(UGameplayStatics::CreateSaveGameObject(USaveGameClass::StaticClass())))
+	{
+		//add player location
+		CurrentSaveInstance->PlayerLocation = this->GetActorLocation();//get player location add to save
+
+		//do the saving iff the save works
+		if (UGameplayStatics::SaveGameToSlot(CurrentSaveInstance, CurrentSaveInstance->SaveName, CurrentSaveInstance->UserIndex))//change these to variables based off ui later
+		//do the saving iff the save works
+		{
+			GEngine->AddOnScreenDebugMessage(-1, 60.f, FColor::Black, FString::Printf(TEXT("SAVED GAME")));
+
+		}
+	}
+}
+
+void AMainCharacter::LoadGame()
+{
+	//get save game instance and if it's true
+	if (USaveGameClass* CurrentSaveInstance = Cast<USaveGameClass>(UGameplayStatics::CreateSaveGameObject(USaveGameClass::StaticClass())))
+	{
+		//open the slot into the instance 
+		CurrentSaveInstance = Cast<USaveGameClass>(UGameplayStatics::LoadGameFromSlot(CurrentSaveInstance->SaveName, CurrentSaveInstance->UserIndex));
+		// if true
+		if (CurrentSaveInstance != nullptr)//change these to variables based off ui later
+		{
+			this->SetActorLocation(CurrentSaveInstance->PlayerLocation);//load player location from save
+			GEngine->AddOnScreenDebugMessage(-1, 60.f, FColor::White, FString::Printf(TEXT("LOADED GAME")));
+		}
+	}
 }
 

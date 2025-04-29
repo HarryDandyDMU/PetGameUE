@@ -24,6 +24,8 @@ PETGAMEUE_API void FInventoryUpdated_DelegateWrapper(const FMulticastScriptDeleg
 #define FID_PetGameUE_Source_PetGameUE_Public_MainCharacter_h_21_EDITOR_ONLY_SPARSE_DATA_PROPERTY_ACCESSORS
 #define FID_PetGameUE_Source_PetGameUE_Public_MainCharacter_h_21_RPC_WRAPPERS_NO_PURE_DECLS \
  \
+	DECLARE_FUNCTION(execLoadGame); \
+	DECLARE_FUNCTION(execSaveGame); \
 	DECLARE_FUNCTION(execDropItem);
 
 
