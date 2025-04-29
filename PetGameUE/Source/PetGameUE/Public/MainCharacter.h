@@ -150,6 +150,4 @@ private:
 
 	UFUNCTION(BlueprintCallable, Category = "Save")
 	void LoadGame();
-
-
 };

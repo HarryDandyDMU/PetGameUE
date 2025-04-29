@@ -321,11 +321,27 @@ AActor* AMainCharacter::DropItem()
 
 void AMainCharacter::SaveGame()
 {
+	//SEE ABOUT ASYNC CHANGES TO LOWER LOAD
+	// SEE ABOUT CASTING TO GAME MODE AND RUNNING FUNCTION IN GAME MODE RATHER THAN CHARACTER
 	//make save game instance and if it's true
 	if (USaveGameClass* CurrentSaveInstance = Cast<USaveGameClass>(UGameplayStatics::CreateSaveGameObject(USaveGameClass::StaticClass())))
 	{
 		//add player location
 		CurrentSaveInstance->PlayerLocation = this->GetActorLocation();//get player location add to save
+
+		//add player inventory
+		CurrentSaveInstance->BlueStack = this->BlueStack;
+		CurrentSaveInstance->RedStack = this->RedStack;
+		CurrentSaveInstance->YellowStack = this->YellowStack;
+		CurrentSaveInstance->GreenStack = this->GreenStack;
+		//update ui for inventory
+		OnInventoryUpdated.Broadcast();
+
+		//save gem struct
+
+		
+		//save pet struct
+
 
 		//do the saving iff the save works
 		if (UGameplayStatics::SaveGameToSlot(CurrentSaveInstance, CurrentSaveInstance->SaveName, CurrentSaveInstance->UserIndex))//change these to variables based off ui later
@@ -347,7 +363,26 @@ void AMainCharacter::LoadGame()
 		// if true
 		if (CurrentSaveInstance != nullptr)//change these to variables based off ui later
 		{
+			//load player location
 			this->SetActorLocation(CurrentSaveInstance->PlayerLocation);//load player location from save
+
+			//load player inventory
+			this->BlueStack = CurrentSaveInstance->BlueStack;
+			this->GreenStack = CurrentSaveInstance->GreenStack;
+			this->YellowStack = CurrentSaveInstance->YellowStack;
+			this->RedStack = CurrentSaveInstance->RedStack;
+			//update ui for inventory
+			OnInventoryUpdated.Broadcast();
+
+			//destory all gems
+			
+			//load gem struct
+
+			//Destory all pets
+
+			//load pet struct
+
+
 			GEngine->AddOnScreenDebugMessage(-1, 60.f, FColor::White, FString::Printf(TEXT("LOADED GAME")));
 		}
 	}
