@@ -76,10 +76,13 @@ void EmptyLinkFunctionForGeneratedCodeSaveGameClass() {}
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_USaveGameClass_Statics::Class_MetaDataParams[] = {
 #if !UE_BUILD_SHIPPING
-		{ "Comment", "/**\n * \n */" },
+		{ "Comment", "/**\n * \n *///\n//USTRUCT(BlueprintType)\n//struct FEggStruct\n//{\n//\x09GENERATED_BODY()\n//\x09UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = \"Egg\")\n//\x09""FName EggType;\n//\n//\x09UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = \"Egg\")\n//\x09""FVector EggLocation;\n//\n//};\n//\n//USTRUCT(BlueprintType)\n//struct FSpeciesStruct\n//{\n//\x09GENERATED_BODY()\n//\x09UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = \"Species\")\n//\x09""FName SpeciesType;\n//\n//\x09UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = \"Species\")\n//\x09""FVector Location;\n//\n//\x09UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = \"Species\")\n//\x09""EEvolution CurrentEvolution;\n//\n//\x09UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = \"Morph\")\n//\x09""float MorphJBashful;\n//\n//\x09UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = \"Morph\")\n//\x09""float MorphJoyful;\n//\n//\x09UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = \"Morph\")\n//\x09""float MorphSerious;\n//\n//\x09UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = \"Morph\")\n//\x09""float MorphCalm;\n//\n//};\n" },
 #endif
 		{ "IncludePath", "SaveGameClass.h" },
 		{ "ModuleRelativePath", "Public/SaveGameClass.h" },
+#if !UE_BUILD_SHIPPING
+		{ "ToolTip", "//\n//USTRUCT(BlueprintType)\n//struct FEggStruct\n//{\n//     GENERATED_BODY()\n//     UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = \"Egg\")\n//     FName EggType;\n//\n//     UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = \"Egg\")\n//     FVector EggLocation;\n//\n//};\n//\n//USTRUCT(BlueprintType)\n//struct FSpeciesStruct\n//{\n//     GENERATED_BODY()\n//     UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = \"Species\")\n//     FName SpeciesType;\n//\n//     UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = \"Species\")\n//     FVector Location;\n//\n//     UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = \"Species\")\n//     EEvolution CurrentEvolution;\n//\n//     UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = \"Morph\")\n//     float MorphJBashful;\n//\n//     UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = \"Morph\")\n//     float MorphJoyful;\n//\n//     UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = \"Morph\")\n//     float MorphSerious;\n//\n//     UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = \"Morph\")\n//     float MorphCalm;\n//\n//};" },
+#endif
 	};
 #endif
 #if WITH_METADATA
@@ -212,9 +215,9 @@ void EmptyLinkFunctionForGeneratedCodeSaveGameClass() {}
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
 	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_PetGameUE_Source_PetGameUE_Public_SaveGameClass_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_USaveGameClass, USaveGameClass::StaticClass, TEXT("USaveGameClass"), &Z_Registration_Info_UClass_USaveGameClass, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(USaveGameClass), 747885241U) },
+		{ Z_Construct_UClass_USaveGameClass, USaveGameClass::StaticClass, TEXT("USaveGameClass"), &Z_Registration_Info_UClass_USaveGameClass, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(USaveGameClass), 1153471437U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_PetGameUE_Source_PetGameUE_Public_SaveGameClass_h_2516296754(TEXT("/Script/PetGameUE"),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_PetGameUE_Source_PetGameUE_Public_SaveGameClass_h_2078024241(TEXT("/Script/PetGameUE"),
 		Z_CompiledInDeferFile_FID_PetGameUE_Source_PetGameUE_Public_SaveGameClass_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_PetGameUE_Source_PetGameUE_Public_SaveGameClass_h_Statics::ClassInfo),
 		nullptr, 0,
 		nullptr, 0);

@@ -54,6 +54,12 @@
     <ClCompile Include="..\..\Source\PetGameUE\Private\BTAIPetController.cpp">
       <Filter>Source\PetGameUE\Private</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\Source\PetGameUE\Private\FGemStruct.cpp">
+      <Filter>Source\PetGameUE\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\PetGameUE\Private\GemStruct.cpp">
+      <Filter>Source\PetGameUE\Private</Filter>
+    </ClCompile>
     <ClCompile Include="..\..\Source\PetGameUE\Private\MainCharacter.cpp">
       <Filter>Source\PetGameUE\Private</Filter>
     </ClCompile>
@@ -81,6 +87,12 @@
     <ClInclude Include="..\..\Source\PetGameUE\Public\BTAIPetController.h">
       <Filter>Source\PetGameUE\Public</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\Source\PetGameUE\Public\FGemStruct.h">
+      <Filter>Source\PetGameUE\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\PetGameUE\Public\GemStruct.h">
+      <Filter>Source\PetGameUE\Public</Filter>
+    </ClInclude>
     <ClInclude Include="..\..\Source\PetGameUE\Public\MainCharacter.h">
       <Filter>Source\PetGameUE\Public</Filter>
     </ClInclude>
@@ -93,5 +105,6 @@
     <ClInclude Include="..\..\Source\PetGameUE\Public\SaveGameClass.h">
       <Filter>Source\PetGameUE\Public</Filter>
     </ClInclude>
+    <None Include="cpp.hint" />
   </ItemGroup>
 </Project>

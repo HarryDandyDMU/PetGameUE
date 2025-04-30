@@ -8,6 +8,7 @@
 #include "Camera/CameraComponent.h"//include for camera
 #include "Components/CapsuleComponent.h" //included for capulse
 #include "AGem.h" //included for gems
+#include "FGemStruct.h"//gem struct
 #include "ARubbleMaster.h"//included for mining rubble
 #include "MainCharacter.generated.h"
 
@@ -145,9 +146,18 @@ public:
 	TSubclassOf<AAGem> GemToDrop;
 
 private:
+
+	//MOVING TO GAME MODE BASE
 	UFUNCTION(BlueprintCallable, Category = "Save")
 	void SaveGame();
 
 	UFUNCTION(BlueprintCallable, Category = "Save")
 	void LoadGame();
+
+	//save gem drops
+	//Ref to bps
+	TSubclassOf<AAGem> RedGem;
+	TSubclassOf<AAGem> BlueGem;
+	TSubclassOf<AAGem> YellowGem;
+	TSubclassOf<AAGem> GreenGem;
 };

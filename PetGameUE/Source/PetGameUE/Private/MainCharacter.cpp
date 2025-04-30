@@ -6,7 +6,10 @@
 #include "EnhancedInputComponent.h"
 #include "SaveGameClass.h"//included for saves
 #include <Kismet/GameplayStatics.h>//included for saves
+#include "PetGameModeBase.h"//included for struct save
 #include "Kismet/KismetSystemLibrary.h"// should allow line traceI
+#include "Kismet/GameplayStatics.h"
+#include "EngineUtils.h" //allows tactoriterator
 #include "EnhancedInputSubsystems.h"
 
 
@@ -338,7 +341,21 @@ void AMainCharacter::SaveGame()
 		OnInventoryUpdated.Broadcast();
 
 		//save gem struct
+		//if can cast to game mode
+		if (APetGameModeBase* CurrentGameMode = Cast<APetGameModeBase>(GetWorld()->GetAuthGameMode()))
+		{
 
+			//get array of struct of all gems
+			TArray<FGemStruct> GemStruct = CurrentGameMode->GetGemsStruct();
+			GEngine->AddOnScreenDebugMessage(-1, 60.f, FColor::Black, FString::Printf(TEXT("SAVED")));
+
+			//for each add to save arrays //THIS ISN'T RUNNING
+			for (FGemStruct Gem : GemStruct) 
+			{
+
+				CurrentSaveInstance->Gems.Add(Gem);
+			}
+		}
 		
 		//save pet struct
 
@@ -353,6 +370,7 @@ void AMainCharacter::SaveGame()
 	}
 }
 
+//CONSIDER MOVING TO GAMEMODE BASE
 void AMainCharacter::LoadGame()
 {
 	//get save game instance and if it's true
@@ -375,8 +393,45 @@ void AMainCharacter::LoadGame()
 			OnInventoryUpdated.Broadcast();
 
 			//destory all gems
-			
+			for (TActorIterator<AAGem> Iterator(GetWorld()); Iterator; ++Iterator)
+			{
+				Iterator->Destroy();//remove all agems on load
+			}
+
 			//load gem struct
+			FVector CurrentSpawnLocation;//to hold current spawn location
+			FName CurrentSpawnType; //to hold current spawn type
+
+			TArray<FGemStruct> LoadGems = CurrentSaveInstance->Gems;
+
+			//for each add to save arrays
+			for (/*const*/ FGemStruct Gem : LoadGems)
+			{
+				FActorSpawnParameters SpawnParams;
+				//check gem to drop and -- the stack and then 
+				
+				if (Gem.GemType == FName(TEXT("Blue")))
+				{
+					GetWorld()->SpawnActor<AAGem>(BlueGem, Gem.GemLocation, FRotator::ZeroRotator, SpawnParams); //no rotation and wsaved location
+					
+
+				}
+				else if (Gem.GemType == FName(TEXT("Yellow")))
+				{
+					GetWorld()->SpawnActor<AAGem>(YellowGem, Gem.GemLocation, FRotator::ZeroRotator, SpawnParams); //no rotation and wsaved location
+				
+				}
+				else if (Gem.GemType == FName(TEXT("Red")))
+				{
+					GetWorld()->SpawnActor<AAGem>(RedGem, Gem.GemLocation, FRotator::ZeroRotator, SpawnParams); //no rotation and wsaved location
+				
+				}
+				else if (Gem.GemType == FName(TEXT("Green")))
+				{
+					GetWorld()->SpawnActor<AAGem>(GreenGem, Gem.GemLocation, FRotator::ZeroRotator, SpawnParams); //no rotation and wsaved location
+				
+				}
+			}
 
 			//Destory all pets
 
