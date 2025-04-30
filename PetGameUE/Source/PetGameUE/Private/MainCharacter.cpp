@@ -4,8 +4,6 @@
 #include "MainCharacter.h"
 #include "GameFramework/Controller.h"
 #include "EnhancedInputComponent.h"
-#include "SaveGameClass.h"//included for saves
-#include <Kismet/GameplayStatics.h>//included for saves
 #include "PetGameModeBase.h"//included for struct save
 #include "Kismet/KismetSystemLibrary.h"// should allow line traceI
 #include "Kismet/GameplayStatics.h"
@@ -324,122 +322,20 @@ AActor* AMainCharacter::DropItem()
 
 void AMainCharacter::SaveGame()
 {
-	//SEE ABOUT ASYNC CHANGES TO LOWER LOAD
-	// SEE ABOUT CASTING TO GAME MODE AND RUNNING FUNCTION IN GAME MODE RATHER THAN CHARACTER
-	//make save game instance and if it's true
-	if (USaveGameClass* CurrentSaveInstance = Cast<USaveGameClass>(UGameplayStatics::CreateSaveGameObject(USaveGameClass::StaticClass())))
+
+	if (APetGameModeBase* CurrentGameMode = Cast<APetGameModeBase>(GetWorld()->GetAuthGameMode()))
 	{
-		//add player location
-		CurrentSaveInstance->PlayerLocation = this->GetActorLocation();//get player location add to save
-
-		//add player inventory
-		CurrentSaveInstance->BlueStack = this->BlueStack;
-		CurrentSaveInstance->RedStack = this->RedStack;
-		CurrentSaveInstance->YellowStack = this->YellowStack;
-		CurrentSaveInstance->GreenStack = this->GreenStack;
-		//update ui for inventory
-		OnInventoryUpdated.Broadcast();
-
-		//save gem struct
-		//if can cast to game mode
-		if (APetGameModeBase* CurrentGameMode = Cast<APetGameModeBase>(GetWorld()->GetAuthGameMode()))
-		{
-
-			//get array of struct of all gems
-			TArray<FGemStruct> GemStruct = CurrentGameMode->GetGemsStruct();
-			GEngine->AddOnScreenDebugMessage(-1, 60.f, FColor::Black, FString::Printf(TEXT("SAVED")));
-
-			//for each add to save arrays //THIS ISN'T RUNNING
-			for (FGemStruct Gem : GemStruct) 
-			{
-
-				CurrentSaveInstance->Gems.Add(Gem);
-			}
-		}
-		
-		//save pet struct
-
-
-		//do the saving iff the save works
-		if (UGameplayStatics::SaveGameToSlot(CurrentSaveInstance, CurrentSaveInstance->SaveName, CurrentSaveInstance->UserIndex))//change these to variables based off ui later
-		//do the saving iff the save works
-		{
-			GEngine->AddOnScreenDebugMessage(-1, 60.f, FColor::Black, FString::Printf(TEXT("SAVED GAME")));
-
-		}
+		CurrentGameMode->ActorIterator();//run actor iterator
+		CurrentGameMode->SaveGame();
 	}
 }
 
-//CONSIDER MOVING TO GAMEMODE BASE
+
 void AMainCharacter::LoadGame()
 {
-	//get save game instance and if it's true
-	if (USaveGameClass* CurrentSaveInstance = Cast<USaveGameClass>(UGameplayStatics::CreateSaveGameObject(USaveGameClass::StaticClass())))
+	if (APetGameModeBase* CurrentGameMode = Cast<APetGameModeBase>(GetWorld()->GetAuthGameMode()))
 	{
-		//open the slot into the instance 
-		CurrentSaveInstance = Cast<USaveGameClass>(UGameplayStatics::LoadGameFromSlot(CurrentSaveInstance->SaveName, CurrentSaveInstance->UserIndex));
-		// if true
-		if (CurrentSaveInstance != nullptr)//change these to variables based off ui later
-		{
-			//load player location
-			this->SetActorLocation(CurrentSaveInstance->PlayerLocation);//load player location from save
-
-			//load player inventory
-			this->BlueStack = CurrentSaveInstance->BlueStack;
-			this->GreenStack = CurrentSaveInstance->GreenStack;
-			this->YellowStack = CurrentSaveInstance->YellowStack;
-			this->RedStack = CurrentSaveInstance->RedStack;
-			//update ui for inventory
-			OnInventoryUpdated.Broadcast();
-
-			//destory all gems
-			for (TActorIterator<AAGem> Iterator(GetWorld()); Iterator; ++Iterator)
-			{
-				Iterator->Destroy();//remove all agems on load
-			}
-
-			//load gem struct
-			FVector CurrentSpawnLocation;//to hold current spawn location
-			FName CurrentSpawnType; //to hold current spawn type
-
-			TArray<FGemStruct> LoadGems = CurrentSaveInstance->Gems;
-
-			//for each add to save arrays
-			for (/*const*/ FGemStruct Gem : LoadGems)
-			{
-				FActorSpawnParameters SpawnParams;
-				//check gem to drop and -- the stack and then 
-				
-				if (Gem.GemType == FName(TEXT("Blue")))
-				{
-					GetWorld()->SpawnActor<AAGem>(BlueGem, Gem.GemLocation, FRotator::ZeroRotator, SpawnParams); //no rotation and wsaved location
-					
-
-				}
-				else if (Gem.GemType == FName(TEXT("Yellow")))
-				{
-					GetWorld()->SpawnActor<AAGem>(YellowGem, Gem.GemLocation, FRotator::ZeroRotator, SpawnParams); //no rotation and wsaved location
-				
-				}
-				else if (Gem.GemType == FName(TEXT("Red")))
-				{
-					GetWorld()->SpawnActor<AAGem>(RedGem, Gem.GemLocation, FRotator::ZeroRotator, SpawnParams); //no rotation and wsaved location
-				
-				}
-				else if (Gem.GemType == FName(TEXT("Green")))
-				{
-					GetWorld()->SpawnActor<AAGem>(GreenGem, Gem.GemLocation, FRotator::ZeroRotator, SpawnParams); //no rotation and wsaved location
-				
-				}
-			}
-
-			//Destory all pets
-
-			//load pet struct
-
-
-			GEngine->AddOnScreenDebugMessage(-1, 60.f, FColor::White, FString::Printf(TEXT("LOADED GAME")));
-		}
+		CurrentGameMode->LoadGame();
 	}
 }
 

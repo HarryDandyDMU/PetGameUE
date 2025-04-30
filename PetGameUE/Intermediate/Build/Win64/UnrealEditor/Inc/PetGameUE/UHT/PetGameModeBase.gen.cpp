@@ -9,8 +9,10 @@
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 void EmptyLinkFunctionForGeneratedCodePetGameModeBase() {}
 // Cross Module References
+	COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
 	COREUOBJECT_API UScriptStruct* Z_Construct_UScriptStruct_FVector();
 	ENGINE_API UClass* Z_Construct_UClass_AGameModeBase();
+	PETGAMEUE_API UClass* Z_Construct_UClass_AAGem_NoRegister();
 	PETGAMEUE_API UClass* Z_Construct_UClass_APetGameModeBase();
 	PETGAMEUE_API UClass* Z_Construct_UClass_APetGameModeBase_NoRegister();
 	PETGAMEUE_API UEnum* Z_Construct_UEnum_PetGameUE_EEvolution();
@@ -258,6 +260,23 @@ template<> PETGAMEUE_API UScriptStruct* StaticStruct<FSpeciesStruct>()
 #if WITH_METADATA
 		static const UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
 #endif
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_RedGem_MetaData[];
+#endif
+		static const UECodeGen_Private::FClassPropertyParams NewProp_RedGem;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_BlueGem_MetaData[];
+#endif
+		static const UECodeGen_Private::FClassPropertyParams NewProp_BlueGem;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_YellowGem_MetaData[];
+#endif
+		static const UECodeGen_Private::FClassPropertyParams NewProp_YellowGem;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_GreenGem_MetaData[];
+#endif
+		static const UECodeGen_Private::FClassPropertyParams NewProp_GreenGem;
+		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UECodeGen_Private::FClassParams ClassParams;
 	};
@@ -274,6 +293,46 @@ template<> PETGAMEUE_API UScriptStruct* StaticStruct<FSpeciesStruct>()
 		{ "ShowCategories", "Input|MouseInput Input|TouchInput" },
 	};
 #endif
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_APetGameModeBase_Statics::NewProp_RedGem_MetaData[] = {
+		{ "Category", "Gems" },
+#if !UE_BUILD_SHIPPING
+		{ "Comment", "//save variables\n" },
+#endif
+		{ "ModuleRelativePath", "Public/PetGameModeBase.h" },
+#if !UE_BUILD_SHIPPING
+		{ "ToolTip", "save variables" },
+#endif
+	};
+#endif
+	const UECodeGen_Private::FClassPropertyParams Z_Construct_UClass_APetGameModeBase_Statics::NewProp_RedGem = { "RedGem", nullptr, (EPropertyFlags)0x0014000000010001, UECodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(APetGameModeBase, RedGem), Z_Construct_UClass_UClass, Z_Construct_UClass_AAGem_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_APetGameModeBase_Statics::NewProp_RedGem_MetaData), Z_Construct_UClass_APetGameModeBase_Statics::NewProp_RedGem_MetaData) };
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_APetGameModeBase_Statics::NewProp_BlueGem_MetaData[] = {
+		{ "Category", "Gems" },
+		{ "ModuleRelativePath", "Public/PetGameModeBase.h" },
+	};
+#endif
+	const UECodeGen_Private::FClassPropertyParams Z_Construct_UClass_APetGameModeBase_Statics::NewProp_BlueGem = { "BlueGem", nullptr, (EPropertyFlags)0x0014000000010001, UECodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(APetGameModeBase, BlueGem), Z_Construct_UClass_UClass, Z_Construct_UClass_AAGem_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_APetGameModeBase_Statics::NewProp_BlueGem_MetaData), Z_Construct_UClass_APetGameModeBase_Statics::NewProp_BlueGem_MetaData) };
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_APetGameModeBase_Statics::NewProp_YellowGem_MetaData[] = {
+		{ "Category", "Gems" },
+		{ "ModuleRelativePath", "Public/PetGameModeBase.h" },
+	};
+#endif
+	const UECodeGen_Private::FClassPropertyParams Z_Construct_UClass_APetGameModeBase_Statics::NewProp_YellowGem = { "YellowGem", nullptr, (EPropertyFlags)0x0014000000010001, UECodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(APetGameModeBase, YellowGem), Z_Construct_UClass_UClass, Z_Construct_UClass_AAGem_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_APetGameModeBase_Statics::NewProp_YellowGem_MetaData), Z_Construct_UClass_APetGameModeBase_Statics::NewProp_YellowGem_MetaData) };
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_APetGameModeBase_Statics::NewProp_GreenGem_MetaData[] = {
+		{ "Category", "Gems" },
+		{ "ModuleRelativePath", "Public/PetGameModeBase.h" },
+	};
+#endif
+	const UECodeGen_Private::FClassPropertyParams Z_Construct_UClass_APetGameModeBase_Statics::NewProp_GreenGem = { "GreenGem", nullptr, (EPropertyFlags)0x0014000000010001, UECodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(APetGameModeBase, GreenGem), Z_Construct_UClass_UClass, Z_Construct_UClass_AAGem_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_APetGameModeBase_Statics::NewProp_GreenGem_MetaData), Z_Construct_UClass_APetGameModeBase_Statics::NewProp_GreenGem_MetaData) };
+	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_APetGameModeBase_Statics::PropPointers[] = {
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_APetGameModeBase_Statics::NewProp_RedGem,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_APetGameModeBase_Statics::NewProp_BlueGem,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_APetGameModeBase_Statics::NewProp_YellowGem,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_APetGameModeBase_Statics::NewProp_GreenGem,
+	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_APetGameModeBase_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<APetGameModeBase>::IsAbstract,
 	};
@@ -283,15 +342,16 @@ template<> PETGAMEUE_API UScriptStruct* StaticStruct<FSpeciesStruct>()
 		&StaticCppClassTypeInfo,
 		DependentSingletons,
 		nullptr,
-		nullptr,
+		Z_Construct_UClass_APetGameModeBase_Statics::PropPointers,
 		nullptr,
 		UE_ARRAY_COUNT(DependentSingletons),
 		0,
-		0,
+		UE_ARRAY_COUNT(Z_Construct_UClass_APetGameModeBase_Statics::PropPointers),
 		0,
 		0x009002ACu,
 		METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_APetGameModeBase_Statics::Class_MetaDataParams), Z_Construct_UClass_APetGameModeBase_Statics::Class_MetaDataParams)
 	};
+	static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_APetGameModeBase_Statics::PropPointers) < 2048);
 	UClass* Z_Construct_UClass_APetGameModeBase()
 	{
 		if (!Z_Registration_Info_UClass_APetGameModeBase.OuterSingleton)
@@ -316,9 +376,9 @@ template<> PETGAMEUE_API UScriptStruct* StaticStruct<FSpeciesStruct>()
 		{ FSpeciesStruct::StaticStruct, Z_Construct_UScriptStruct_FSpeciesStruct_Statics::NewStructOps, TEXT("SpeciesStruct"), &Z_Registration_Info_UScriptStruct_SpeciesStruct, CONSTRUCT_RELOAD_VERSION_INFO(FStructReloadVersionInfo, sizeof(FSpeciesStruct), 482216384U) },
 	};
 	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_PetGameUE_Source_PetGameUE_Public_PetGameModeBase_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_APetGameModeBase, APetGameModeBase::StaticClass, TEXT("APetGameModeBase"), &Z_Registration_Info_UClass_APetGameModeBase, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(APetGameModeBase), 2172117934U) },
+		{ Z_Construct_UClass_APetGameModeBase, APetGameModeBase::StaticClass, TEXT("APetGameModeBase"), &Z_Registration_Info_UClass_APetGameModeBase, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(APetGameModeBase), 669350853U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_PetGameUE_Source_PetGameUE_Public_PetGameModeBase_h_1974731827(TEXT("/Script/PetGameUE"),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_PetGameUE_Source_PetGameUE_Public_PetGameModeBase_h_1397614360(TEXT("/Script/PetGameUE"),
 		Z_CompiledInDeferFile_FID_PetGameUE_Source_PetGameUE_Public_PetGameModeBase_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_PetGameUE_Source_PetGameUE_Public_PetGameModeBase_h_Statics::ClassInfo),
 		Z_CompiledInDeferFile_FID_PetGameUE_Source_PetGameUE_Public_PetGameModeBase_h_Statics::ScriptStructInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_PetGameUE_Source_PetGameUE_Public_PetGameModeBase_h_Statics::ScriptStructInfo),
 		nullptr, 0);

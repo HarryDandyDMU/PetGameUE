@@ -161,7 +161,13 @@ void FInventoryUpdated_DelegateWrapper(const FMulticastScriptDelegate& Inventory
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_AMainCharacter_SaveGame_Statics::Function_MetaDataParams[] = {
 		{ "Category", "Save" },
+#if !UE_BUILD_SHIPPING
+		{ "Comment", "//MOVING TO GAME MODE BASE\n" },
+#endif
 		{ "ModuleRelativePath", "Public/MainCharacter.h" },
+#if !UE_BUILD_SHIPPING
+		{ "ToolTip", "MOVING TO GAME MODE BASE" },
+#endif
 	};
 #endif
 	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_AMainCharacter_SaveGame_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_AMainCharacter, nullptr, "SaveGame", nullptr, nullptr, nullptr, 0, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04040401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_AMainCharacter_SaveGame_Statics::Function_MetaDataParams), Z_Construct_UFunction_AMainCharacter_SaveGame_Statics::Function_MetaDataParams) };
@@ -274,7 +280,7 @@ void FInventoryUpdated_DelegateWrapper(const FMulticastScriptDelegate& Inventory
 	const FClassFunctionLinkInfo Z_Construct_UClass_AMainCharacter_Statics::FuncInfo[] = {
 		{ &Z_Construct_UFunction_AMainCharacter_DropItem, "DropItem" }, // 216229626
 		{ &Z_Construct_UFunction_AMainCharacter_LoadGame, "LoadGame" }, // 900032540
-		{ &Z_Construct_UFunction_AMainCharacter_SaveGame, "SaveGame" }, // 1636004954
+		{ &Z_Construct_UFunction_AMainCharacter_SaveGame, "SaveGame" }, // 3139037386
 	};
 	static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_AMainCharacter_Statics::FuncInfo) < 2048);
 #if WITH_METADATA
@@ -587,9 +593,9 @@ void FInventoryUpdated_DelegateWrapper(const FMulticastScriptDelegate& Inventory
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
 	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_PetGameUE_Source_PetGameUE_Public_MainCharacter_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_AMainCharacter, AMainCharacter::StaticClass, TEXT("AMainCharacter"), &Z_Registration_Info_UClass_AMainCharacter, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AMainCharacter), 2291745591U) },
+		{ Z_Construct_UClass_AMainCharacter, AMainCharacter::StaticClass, TEXT("AMainCharacter"), &Z_Registration_Info_UClass_AMainCharacter, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AMainCharacter), 1759738910U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_PetGameUE_Source_PetGameUE_Public_MainCharacter_h_2982440688(TEXT("/Script/PetGameUE"),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_PetGameUE_Source_PetGameUE_Public_MainCharacter_h_3812620771(TEXT("/Script/PetGameUE"),
 		Z_CompiledInDeferFile_FID_PetGameUE_Source_PetGameUE_Public_MainCharacter_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_PetGameUE_Source_PetGameUE_Public_MainCharacter_h_Statics::ClassInfo),
 		nullptr, 0,
 		nullptr, 0);

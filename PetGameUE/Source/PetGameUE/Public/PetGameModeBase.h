@@ -6,6 +6,7 @@
 #include "AGem.h"//gem actor
 #include "PetMaster.h"//pets class
 #include "AEgg.h"//egg class
+#include "MainCharacter.h"//main char class
 #include "FGemStruct.h"//gem struct
 #include "GameFramework/GameModeBase.h"
 #include "PetGameModeBase.generated.h"
@@ -86,5 +87,25 @@ public:
 	TArray<APetMaster*> PetsFromIt; //array of pets from iterator
 
 	TArray<AAEgg*> EggsFromIt; //array of eggs from iterator
+
+	void SaveGame();
+
+	void LoadGame();
+
+	//save variables
+
+	UPROPERTY(EditDefaultsOnly, Category = "Gems")
+	TSubclassOf<AAGem> RedGem;
+
+	UPROPERTY(EditDefaultsOnly, Category = "Gems")
+	TSubclassOf<AAGem> BlueGem;
+
+	UPROPERTY(EditDefaultsOnly, Category = "Gems")
+	TSubclassOf<AAGem> YellowGem;
+
+	UPROPERTY(EditDefaultsOnly, Category = "Gems")
+	TSubclassOf<AAGem> GreenGem;
+
+	TArray<FGemStruct> LoadGems;
 
 };
