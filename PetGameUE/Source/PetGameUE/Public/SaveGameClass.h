@@ -81,7 +81,10 @@ public:
 	int RedStack;
 
 	//gems
-	TArray<FGemStruct> Gems;
+	TArray<FGemStruct> Gems;//can't get structs to iterate or load
+
+	TMap<int32, FName> GemTypeMap; //dictionary of gem types
+	TMap<int32, FVector> GemLocationMap;//Dictionary of gem locations
 
 	//Pets
 	UPROPERTY(VisibleAnywhere, Category = "PetInstances")

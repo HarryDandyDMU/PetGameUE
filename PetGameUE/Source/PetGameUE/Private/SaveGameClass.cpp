@@ -13,5 +13,6 @@ USaveGameClass::USaveGameClass()
 	GreenStack = 0;
 	RedStack = 0;
 	YellowStack = 0;
+	Gems;
 
 }

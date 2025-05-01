@@ -101,20 +101,37 @@ void APetGameModeBase::SaveGame()
 		//save gem struct
 		//if can cast to game mode
 		//get array of struct of all gems
+
+
+
+
+
 		TArray<FGemStruct> GemStruct = this->GetGemsStruct();
 
-		for (FGemStruct Gem : GemStruct) 
+		for (int i = 0; i < GemStruct.Num(); i++)
 		{
 			GEngine->AddOnScreenDebugMessage(-1, 60.f, FColor::Black, FString::Printf(TEXT("SAVED")));
-			CurrentSaveInstance->Gems.Add(Gem);
+			CurrentSaveInstance->GemTypeMap.Add(i, GemStruct[i].GemType);
+			CurrentSaveInstance->GemLocationMap.Add(i, GemStruct[i].GemLocation);
 		}
+
+		/*for (FGemStruct Gem : GemStruct) 
+		{
+			GEngine->AddOnScreenDebugMessage(-1, 60.f, FColor::Black, FString::Printf(TEXT("SAVED")));
+			CurrentSaveInstance->GemTypeMap.Append(,Gem.GemType);
+			if (!CurrentSaveInstance->Gems.IsEmpty())
+			{
+				GEngine->AddOnScreenDebugMessage(-1, 60.f, FColor::Black, FString::Printf(TEXT("pUT INTO SAVE ARRAY")));
+
+			}
+		}*/
 
 		
 		//save pet struct
 
 
 		//do the saving iff the save works
-		if (UGameplayStatics::SaveGameToSlot(CurrentSaveInstance, CurrentSaveInstance->SaveName, CurrentSaveInstance->UserIndex))//change these to variables based off ui later
+		if (UGameplayStatics::SaveGameToSlot(CurrentSaveInstance, TEXT("SaveSlotTest"),0))//change these to variables based off ui later
 		//do the saving iff the save works
 		{
 			GEngine->AddOnScreenDebugMessage(-1, 60.f, FColor::Black, FString::Printf(TEXT("SAVED GAME")));
@@ -133,6 +150,7 @@ void APetGameModeBase::LoadGame()
 		// if true
 		if (LoadedSaveInstance != nullptr)//change these to variables based off ui later 
 		{
+
 
 			if (AMainCharacter* Player = Cast<AMainCharacter>(UGameplayStatics::GetPlayerCharacter(World, 0))) //if you cast to player
 			{
@@ -158,39 +176,42 @@ void APetGameModeBase::LoadGame()
 				//load gem struct
 				FVector CurrentSpawnLocation;//to hold current spawn location
 				FName CurrentSpawnType; //to hold current spawn type
-
-				LoadGems = LoadedSaveInstance->Gems;
 				
-				
-				for (FGemStruct Gem : LoadedSaveInstance->Gems) //NOT RUNNING
+				if (LoadedSaveInstance->GemTypeMap.IsEmpty())
 				{
-					FActorSpawnParameters SpawnParams;
-					//check gem to drop and -- the stack and then 
-					GEngine->AddOnScreenDebugMessage(-1, 60.f, FColor::Black, FString::Printf(TEXT("Loaded")));
+					GEngine->AddOnScreenDebugMessage(-1, 60.f, FColor::Black, FString::Printf(TEXT("LoadedArray is empty")));
 
-
-					if (Gem.GemType == FName(TEXT("Blue")))
-					{
-						World->SpawnActor<AAGem>(BlueGem, Gem.GemLocation, FRotator::ZeroRotator, SpawnParams); //no rotation and wsaved location
-
-
-					}
-					else if (Gem.GemType == FName(TEXT("Yellow")))
-					{
-						World->SpawnActor<AAGem>(YellowGem, Gem.GemLocation, FRotator::ZeroRotator, SpawnParams); //no rotation and wsaved location
-
-					}
-					else if (Gem.GemType == FName(TEXT("Red")))
-					{
-						World->SpawnActor<AAGem>(RedGem, Gem.GemLocation, FRotator::ZeroRotator, SpawnParams); //no rotation and wsaved location
-
-					}
-					else if (Gem.GemType == FName(TEXT("Green")))
-					{
-						World->SpawnActor<AAGem>(GreenGem, Gem.GemLocation, FRotator::ZeroRotator, SpawnParams); //no rotation and wsaved location
-
-					}
 				}
+				
+				//for (FGemStruct Gem : LoadedSaveInstance->Gems) //NOT RUNNING
+				//{
+				//	FActorSpawnParameters SpawnParams;
+				//	//check gem to drop and -- the stack and then 
+				//	GEngine->AddOnScreenDebugMessage(-1, 60.f, FColor::Black, FString::Printf(TEXT("Loaded")));
+
+
+				//	if (Gem.GemType == FName(TEXT("Blue")))
+				//	{
+				//		World->SpawnActor<AAGem>(BlueGem, Gem.GemLocation, FRotator::ZeroRotator, SpawnParams); //no rotation and wsaved location
+
+
+				//	}
+				//	else if (Gem.GemType == FName(TEXT("Yellow")))
+				//	{
+				//		World->SpawnActor<AAGem>(YellowGem, Gem.GemLocation, FRotator::ZeroRotator, SpawnParams); //no rotation and wsaved location
+
+				//	}
+				//	else if (Gem.GemType == FName(TEXT("Red")))
+				//	{
+				//		World->SpawnActor<AAGem>(RedGem, Gem.GemLocation, FRotator::ZeroRotator, SpawnParams); //no rotation and wsaved location
+
+				//	}
+				//	else if (Gem.GemType == FName(TEXT("Green")))
+				//	{
+				//		World->SpawnActor<AAGem>(GreenGem, Gem.GemLocation, FRotator::ZeroRotator, SpawnParams); //no rotation and wsaved location
+
+				//	}
+				//}
 
 				//Destory all pets
 
