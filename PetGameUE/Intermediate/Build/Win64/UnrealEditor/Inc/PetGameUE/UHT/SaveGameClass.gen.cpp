@@ -10,6 +10,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 void EmptyLinkFunctionForGeneratedCodeSaveGameClass() {}
 // Cross Module References
 	COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
+	COREUOBJECT_API UScriptStruct* Z_Construct_UScriptStruct_FVector();
 	COREUOBJECT_API UScriptStruct* Z_Construct_UScriptStruct_FVector3d();
 	ENGINE_API UClass* Z_Construct_UClass_USaveGame();
 	PETGAMEUE_API UClass* Z_Construct_UClass_APetMaster_NoRegister();
@@ -59,6 +60,18 @@ void EmptyLinkFunctionForGeneratedCodeSaveGameClass() {}
 		static const UECodeGen_Private::FMetaDataPairParam NewProp_RedStack_MetaData[];
 #endif
 		static const UECodeGen_Private::FIntPropertyParams NewProp_RedStack;
+		static const UECodeGen_Private::FNamePropertyParams NewProp_GemTypeMap_ValueProp;
+		static const UECodeGen_Private::FIntPropertyParams NewProp_GemTypeMap_Key_KeyProp;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_GemTypeMap_MetaData[];
+#endif
+		static const UECodeGen_Private::FMapPropertyParams NewProp_GemTypeMap;
+		static const UECodeGen_Private::FStructPropertyParams NewProp_GemLocationMap_ValueProp;
+		static const UECodeGen_Private::FIntPropertyParams NewProp_GemLocationMap_Key_KeyProp;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_GemLocationMap_MetaData[];
+#endif
+		static const UECodeGen_Private::FMapPropertyParams NewProp_GemLocationMap;
 		static const UECodeGen_Private::FClassPropertyParams NewProp_PetInstances_Inner;
 #if WITH_METADATA
 		static const UECodeGen_Private::FMetaDataPairParam NewProp_PetInstances_MetaData[];
@@ -152,6 +165,36 @@ void EmptyLinkFunctionForGeneratedCodeSaveGameClass() {}
 	};
 #endif
 	const UECodeGen_Private::FIntPropertyParams Z_Construct_UClass_USaveGameClass_Statics::NewProp_RedStack = { "RedStack", nullptr, (EPropertyFlags)0x0010000000020001, UECodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(USaveGameClass, RedStack), METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_USaveGameClass_Statics::NewProp_RedStack_MetaData), Z_Construct_UClass_USaveGameClass_Statics::NewProp_RedStack_MetaData) };
+	const UECodeGen_Private::FNamePropertyParams Z_Construct_UClass_USaveGameClass_Statics::NewProp_GemTypeMap_ValueProp = { "GemTypeMap", nullptr, (EPropertyFlags)0x0000000000020001, UECodeGen_Private::EPropertyGenFlags::Name, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 1, METADATA_PARAMS(0, nullptr) };
+	const UECodeGen_Private::FIntPropertyParams Z_Construct_UClass_USaveGameClass_Statics::NewProp_GemTypeMap_Key_KeyProp = { "GemTypeMap_Key", nullptr, (EPropertyFlags)0x0000000000020001, UECodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, METADATA_PARAMS(0, nullptr) };
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_USaveGameClass_Statics::NewProp_GemTypeMap_MetaData[] = {
+		{ "Category", "Gems" },
+#if !UE_BUILD_SHIPPING
+		{ "Comment", "//can't get structs to iterate or load\n" },
+#endif
+		{ "ModuleRelativePath", "Public/SaveGameClass.h" },
+#if !UE_BUILD_SHIPPING
+		{ "ToolTip", "can't get structs to iterate or load" },
+#endif
+	};
+#endif
+	const UECodeGen_Private::FMapPropertyParams Z_Construct_UClass_USaveGameClass_Statics::NewProp_GemTypeMap = { "GemTypeMap", nullptr, (EPropertyFlags)0x0010000000020001, UECodeGen_Private::EPropertyGenFlags::Map, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(USaveGameClass, GemTypeMap), EMapPropertyFlags::None, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_USaveGameClass_Statics::NewProp_GemTypeMap_MetaData), Z_Construct_UClass_USaveGameClass_Statics::NewProp_GemTypeMap_MetaData) };
+	const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_USaveGameClass_Statics::NewProp_GemLocationMap_ValueProp = { "GemLocationMap", nullptr, (EPropertyFlags)0x0000000000020001, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 1, Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(0, nullptr) };
+	const UECodeGen_Private::FIntPropertyParams Z_Construct_UClass_USaveGameClass_Statics::NewProp_GemLocationMap_Key_KeyProp = { "GemLocationMap_Key", nullptr, (EPropertyFlags)0x0000000000020001, UECodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, METADATA_PARAMS(0, nullptr) };
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_USaveGameClass_Statics::NewProp_GemLocationMap_MetaData[] = {
+		{ "Category", "Gems" },
+#if !UE_BUILD_SHIPPING
+		{ "Comment", "//dictionary of gem types\n" },
+#endif
+		{ "ModuleRelativePath", "Public/SaveGameClass.h" },
+#if !UE_BUILD_SHIPPING
+		{ "ToolTip", "dictionary of gem types" },
+#endif
+	};
+#endif
+	const UECodeGen_Private::FMapPropertyParams Z_Construct_UClass_USaveGameClass_Statics::NewProp_GemLocationMap = { "GemLocationMap", nullptr, (EPropertyFlags)0x0010000000020001, UECodeGen_Private::EPropertyGenFlags::Map, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(USaveGameClass, GemLocationMap), EMapPropertyFlags::None, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_USaveGameClass_Statics::NewProp_GemLocationMap_MetaData), Z_Construct_UClass_USaveGameClass_Statics::NewProp_GemLocationMap_MetaData) };
 	const UECodeGen_Private::FClassPropertyParams Z_Construct_UClass_USaveGameClass_Statics::NewProp_PetInstances_Inner = { "PetInstances", nullptr, (EPropertyFlags)0x0004000000020000, UECodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, Z_Construct_UClass_UClass, Z_Construct_UClass_APetMaster_NoRegister, METADATA_PARAMS(0, nullptr) };
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_USaveGameClass_Statics::NewProp_PetInstances_MetaData[] = {
@@ -174,6 +217,12 @@ void EmptyLinkFunctionForGeneratedCodeSaveGameClass() {}
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_USaveGameClass_Statics::NewProp_GreenStack,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_USaveGameClass_Statics::NewProp_YellowStack,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_USaveGameClass_Statics::NewProp_RedStack,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_USaveGameClass_Statics::NewProp_GemTypeMap_ValueProp,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_USaveGameClass_Statics::NewProp_GemTypeMap_Key_KeyProp,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_USaveGameClass_Statics::NewProp_GemTypeMap,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_USaveGameClass_Statics::NewProp_GemLocationMap_ValueProp,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_USaveGameClass_Statics::NewProp_GemLocationMap_Key_KeyProp,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_USaveGameClass_Statics::NewProp_GemLocationMap,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_USaveGameClass_Statics::NewProp_PetInstances_Inner,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_USaveGameClass_Statics::NewProp_PetInstances,
 	};
@@ -215,9 +264,9 @@ void EmptyLinkFunctionForGeneratedCodeSaveGameClass() {}
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
 	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_PetGameUE_Source_PetGameUE_Public_SaveGameClass_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_USaveGameClass, USaveGameClass::StaticClass, TEXT("USaveGameClass"), &Z_Registration_Info_UClass_USaveGameClass, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(USaveGameClass), 1153471437U) },
+		{ Z_Construct_UClass_USaveGameClass, USaveGameClass::StaticClass, TEXT("USaveGameClass"), &Z_Registration_Info_UClass_USaveGameClass, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(USaveGameClass), 2670855312U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_PetGameUE_Source_PetGameUE_Public_SaveGameClass_h_2078024241(TEXT("/Script/PetGameUE"),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_PetGameUE_Source_PetGameUE_Public_SaveGameClass_h_14321956(TEXT("/Script/PetGameUE"),
 		Z_CompiledInDeferFile_FID_PetGameUE_Source_PetGameUE_Public_SaveGameClass_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_PetGameUE_Source_PetGameUE_Public_SaveGameClass_h_Statics::ClassInfo),
 		nullptr, 0,
 		nullptr, 0);

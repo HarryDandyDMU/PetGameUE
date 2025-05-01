@@ -14,20 +14,6 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define PETGAMEUE_PetGameModeBase_generated_h
 
-#define FID_PetGameUE_Source_PetGameUE_Public_PetGameModeBase_h_22_GENERATED_BODY \
-	friend struct Z_Construct_UScriptStruct_FEggStruct_Statics; \
-	PETGAMEUE_API static class UScriptStruct* StaticStruct();
-
-
-template<> PETGAMEUE_API UScriptStruct* StaticStruct<struct FEggStruct>();
-
-#define FID_PetGameUE_Source_PetGameUE_Public_PetGameModeBase_h_34_GENERATED_BODY \
-	friend struct Z_Construct_UScriptStruct_FSpeciesStruct_Statics; \
-	PETGAMEUE_API static class UScriptStruct* StaticStruct();
-
-
-template<> PETGAMEUE_API UScriptStruct* StaticStruct<struct FSpeciesStruct>();
-
 #define FID_PetGameUE_Source_PetGameUE_Public_PetGameModeBase_h_61_SPARSE_DATA
 #define FID_PetGameUE_Source_PetGameUE_Public_PetGameModeBase_h_61_SPARSE_DATA_PROPERTY_ACCESSORS
 #define FID_PetGameUE_Source_PetGameUE_Public_PetGameModeBase_h_61_EDITOR_ONLY_SPARSE_DATA_PROPERTY_ACCESSORS

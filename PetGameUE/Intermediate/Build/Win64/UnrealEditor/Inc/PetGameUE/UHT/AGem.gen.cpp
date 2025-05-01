@@ -83,7 +83,7 @@ void EmptyLinkFunctionForGeneratedCodeAGem() {}
 #endif
 	};
 #endif
-	const UECodeGen_Private::FNamePropertyParams Z_Construct_UClass_AAGem_Statics::NewProp_GemType = { "GemType", nullptr, (EPropertyFlags)0x0010000000000005, UECodeGen_Private::EPropertyGenFlags::Name, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AAGem, GemType), METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_AAGem_Statics::NewProp_GemType_MetaData), Z_Construct_UClass_AAGem_Statics::NewProp_GemType_MetaData) };
+	const UECodeGen_Private::FNamePropertyParams Z_Construct_UClass_AAGem_Statics::NewProp_GemType = { "GemType", nullptr, (EPropertyFlags)0x0010000000010005, UECodeGen_Private::EPropertyGenFlags::Name, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AAGem, GemType), METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_AAGem_Statics::NewProp_GemType_MetaData), Z_Construct_UClass_AAGem_Statics::NewProp_GemType_MetaData) };
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AAGem_Statics::NewProp_StimuliSource_MetaData[] = {
 		{ "Category", "Components" },
@@ -141,9 +141,9 @@ void EmptyLinkFunctionForGeneratedCodeAGem() {}
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
 	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_PetGameUE_Source_PetGameUE_Public_AGem_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_AAGem, AAGem::StaticClass, TEXT("AAGem"), &Z_Registration_Info_UClass_AAGem, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AAGem), 3785315031U) },
+		{ Z_Construct_UClass_AAGem, AAGem::StaticClass, TEXT("AAGem"), &Z_Registration_Info_UClass_AAGem, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AAGem), 1929864802U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_PetGameUE_Source_PetGameUE_Public_AGem_h_3027592442(TEXT("/Script/PetGameUE"),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_PetGameUE_Source_PetGameUE_Public_AGem_h_105241738(TEXT("/Script/PetGameUE"),
 		Z_CompiledInDeferFile_FID_PetGameUE_Source_PetGameUE_Public_AGem_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_PetGameUE_Source_PetGameUE_Public_AGem_h_Statics::ClassInfo),
 		nullptr, 0,
 		nullptr, 0);

@@ -16,44 +16,44 @@
  */
 
 
-USTRUCT(BlueprintType)
-struct FEggStruct
-{
-	GENERATED_BODY()
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Egg")
-	FName EggType;
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Egg")
-	FVector EggLocation;
-
-};
-
-USTRUCT(BlueprintType)
-struct FSpeciesStruct
-{
-	GENERATED_BODY()
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Species")
-	FName SpeciesType;
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Species")
-	FVector Location;
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Species")
-	EEvolution CurrentEvolution;
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Morph")
-	float MorphJBashful;
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Morph")
-	float MorphJoyful;
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Morph")
-	float MorphSerious;
-
-	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Morph")
-	float MorphCalm;
-
-};
+//USTRUCT(BlueprintType)
+//struct FEggStruct
+//{
+//	GENERATED_BODY()
+//	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Egg")
+//	FName EggType;
+//
+//	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Egg")
+//	FVector EggLocation;
+//
+//};
+//
+//USTRUCT(BlueprintType)
+//struct FSpeciesStruct
+//{
+//	GENERATED_BODY()
+//	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Species")
+//	FName SpeciesType;
+//
+//	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Species")
+//	FVector Location;
+//
+//	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Species")
+//	EEvolution CurrentEvolution;
+//
+//	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Morph")
+//	float MorphJBashful;
+//
+//	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Morph")
+//	float MorphJoyful;
+//
+//	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Morph")
+//	float MorphSerious;
+//
+//	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Morph")
+//	float MorphCalm;
+//
+//};
 
 UCLASS()
 class PETGAMEUE_API APetGameModeBase : public AGameModeBase
@@ -64,21 +64,9 @@ public:
 
 	APetGameModeBase(); //constructor
 
-	//struct containing all gems to be saved
-	FGemStruct CurrentGem;
-
-	TArray<FGemStruct> GemList; //array of structs of gems save stats
-
-	//CAN'T BE UFUNCTION
-	TArray<FGemStruct> GetGemsStruct();//function returning gem struct array
-
-	//CAN'T BE UFUNCTION
-	TArray<FGemStruct> GetEggsStruct();//function returning gem struct array
-
-	//CAN'T BE UFUNCTION
-	TArray<FGemStruct> GetSpeciesStruct();//function returning gem struct array
-
 	UWorld* World;//used to store world when gamemode inits
+
+
 
 	void ActorIterator(); //function to contain actor iteration
 
@@ -106,6 +94,25 @@ public:
 	UPROPERTY(EditDefaultsOnly, Category = "Gems")
 	TSubclassOf<AAGem> GreenGem;
 
-	TArray<FGemStruct> LoadGems;
+	TMap<int32, FName> GemTypeMapGM; //dictionary of gem types
+	TMap<int32, FVector> GemLocationMapGM;//Dictionary of gem locations
+
+	//LEGACY VARIABLES
+	////struct containing all gems to be saved
+	//FGemStruct CurrentGem;
+
+	//TArray<FGemStruct> GemList; //array of structs of gems save stats
+
+	////CAN'T BE UFUNCTION
+	//TArray<FGemStruct> GetGemsStruct();//function returning gem struct array
+
+	////CAN'T BE UFUNCTION
+	//TArray<FGemStruct> GetEggsStruct();//function returning gem struct array
+
+	////CAN'T BE UFUNCTION
+	//TArray<FGemStruct> GetSpeciesStruct();//function returning gem struct array
+
+
+	//TArray<FGemStruct> LoadGems;
 
 };

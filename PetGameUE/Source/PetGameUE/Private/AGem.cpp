@@ -24,6 +24,11 @@ AAGem::AAGem()
 
 }
 
+FName AAGem::GetGemType()
+{
+	return FName(GemType);
+}
+
 // Called when the game starts or when spawned
 void AAGem::BeginPlay()
 {

@@ -23,12 +23,14 @@ public:
 
 	// Text of type //won't build if deleted
 
-	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = "Gem")
+	UPROPERTY(BlueprintReadWrite, EditDefaultsOnly, Category = "Gem")
 	FName GemType;
 
 	//Stimuli Source
 	UPROPERTY(BlueprintReadOnly, VisibleAnywhere, Category = "Components")
 	UAIPerceptionStimuliSourceComponent* StimuliSource;
+
+	FName GetGemType();//function to get gemtype for save
 
 
 protected:

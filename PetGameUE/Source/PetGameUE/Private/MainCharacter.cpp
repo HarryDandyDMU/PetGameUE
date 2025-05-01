@@ -325,7 +325,6 @@ void AMainCharacter::SaveGame()
 
 	if (APetGameModeBase* CurrentGameMode = Cast<APetGameModeBase>(GetWorld()->GetAuthGameMode()))
 	{
-		CurrentGameMode->ActorIterator();//run actor iterator
 		CurrentGameMode->SaveGame();
 	}
 }
