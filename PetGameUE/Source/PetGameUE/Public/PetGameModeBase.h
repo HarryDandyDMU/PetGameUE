@@ -66,22 +66,14 @@ public:
 
 	UWorld* World;//used to store world when gamemode inits
 
-
-
 	void ActorIterator(); //function to contain actor iteration
-
-	TArray<AAGem*> GemsFromIt; //array of Gems from iterator
-
-	TArray<APetMaster*> PetsFromIt; //array of pets from iterator
-
-	TArray<AAEgg*> EggsFromIt; //array of eggs from iterator
 
 	void SaveGame();
 
 	void LoadGame();
 
 	//save variables
-
+	//GEMS
 	UPROPERTY(EditDefaultsOnly, Category = "Gems")
 	TSubclassOf<AAGem> RedGem;
 
@@ -97,22 +89,14 @@ public:
 	TMap<int32, FName> GemTypeMapGM; //dictionary of gem types
 	TMap<int32, FVector> GemLocationMapGM;//Dictionary of gem locations
 
-	//LEGACY VARIABLES
-	////struct containing all gems to be saved
-	//FGemStruct CurrentGem;
-
-	//TArray<FGemStruct> GemList; //array of structs of gems save stats
-
-	////CAN'T BE UFUNCTION
-	//TArray<FGemStruct> GetGemsStruct();//function returning gem struct array
-
-	////CAN'T BE UFUNCTION
-	//TArray<FGemStruct> GetEggsStruct();//function returning gem struct array
-
-	////CAN'T BE UFUNCTION
-	//TArray<FGemStruct> GetSpeciesStruct();//function returning gem struct array
+	//EGGS
+	UPROPERTY(EditDefaultsOnly, Category = "Eggs")
+	TSubclassOf<AAEgg> Species1Egg;
 
 
-	//TArray<FGemStruct> LoadGems;
+	TMap<int32, float> EggHatchTimeGM;//Dictionary of Egg hatch timer amounts
+	TMap<int32, TSubclassOf<APetMaster>> PetToSpawnGM; //dictionary of bps of pets to spawn
+	TMap<int32, FName> SpeciesTypeGM;//Dictionary of type of egg to decide which bp to instantiate
+	TMap<int32, FVector> EggLocationMapGM;//Dictionary of egg locations
 
 };

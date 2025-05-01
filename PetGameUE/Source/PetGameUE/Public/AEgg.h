@@ -28,16 +28,20 @@ public:
 	UPROPERTY(EditDefaultsOnly, Category = "SpawnLoc") 
 	USceneComponent* DropLocation;
 
+	UPROPERTY(EditAnywhere, Category = "Timer")
+	FTimerHandle HatchTimer;
 
-	
+	UPROPERTY(EditAnywhere, Category = "Timer")
+	float HatchTime;
+
+	UPROPERTY(EditAnywhere, Category = "Species")
+	FName SpeciesType;
 
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
 
 public:	
-	// Called every frame
-	virtual void Tick(float DeltaTime) override;
 
 	void Hatch();
 

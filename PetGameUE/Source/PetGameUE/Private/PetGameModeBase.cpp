@@ -36,14 +36,37 @@ void APetGameModeBase::ActorIterator()
 		it++;
 	}
 
-	it = 0;
+	it = 0; //set index to 0
+
+	//empty egg arrays
+	EggHatchTimeGM.Empty();
+	PetToSpawnGM.Empty();
+	SpeciesTypeGM.Empty();
+	EggLocationMapGM.Empty();
+
 	//EGGS
 	for (TActorIterator<AAEgg> Iterator(World); Iterator; ++Iterator)
 	{
 		//get the actor from iterator pointer
 		AAEgg* Actor = *Iterator;
 
-		EggsFromIt.Add(Actor);//add a pointer to that actor to the array
+		FString Temp = Actor->GetFName().ToString();
+		GEngine->AddOnScreenDebugMessage(-1, 60.f, FColor::White, Temp);
+
+		//sort out time left in egg
+		float originaltime = Actor->HatchTime;
+		float elapsedtime = Actor->GetWorldTimerManager().GetTimerElapsed(Actor->HatchTimer);
+
+		float timeleft = originaltime - elapsedtime;
+
+		//append to dict of hatch timer amounts
+		EggHatchTimeGM.Add(it, elapsedtime); //add leftover time for load
+		PetToSpawnGM.Add(it, Actor->PetToSpawn);//add pet to spawn
+		SpeciesTypeGM.Add(it, Actor->SpeciesType);//add iteration species type for bp spawn
+		EggLocationMapGM.Add(it, Actor->GetActorLocation());//add location
+		
+
+		it++;
 	}
 
 	it = 0;
@@ -53,7 +76,7 @@ void APetGameModeBase::ActorIterator()
 		//get the actor from iterator pointer
 		APetMaster* Actor = *Iterator;
 
-		PetsFromIt.Add(Actor);//add a pointer to that actor to the array
+		
 
 	}
 }
@@ -81,20 +104,23 @@ void APetGameModeBase::SaveGame()
 	{
 		GEngine->AddOnScreenDebugMessage(-1, 60.f, FColor::White, FString::Printf(TEXT("Save Valid")));
 
-		//save the type and location of each gem
+		////save the type and location of each gem
 		for (int i = 0; i < GemLocationMapGM.Num(); i++) //for every location obtained (location and type will always be equal)
 		{
 			CurrentSaveInstance->GemLocationMap.Add(i, GemLocationMapGM[i]); //transfer to save dictionary
 			CurrentSaveInstance->GemTypeMap.Add(i, GemTypeMapGM[i]); //transfer to save dictionary of type
-
-			FString Loc = CurrentSaveInstance->GemLocationMap[i].ToString();
-			FString Type = CurrentSaveInstance->GemTypeMap[i].ToString();
-
-			GEngine->AddOnScreenDebugMessage(-1, 60.f, FColor::Emerald, Loc);
-			GEngine->AddOnScreenDebugMessage(-1, 60.f, FColor::Emerald, Type);
 		}
 
-		//don't think this works
+		//save the type and Species and timer of each egg
+		for (int i = 0; i < EggLocationMapGM.Num(); i++) //for every location obtained (location and type will always be equal)
+		{
+			CurrentSaveInstance->EggLocationMap.Add(i, EggLocationMapGM[i]); //transfer to save dictionary
+			CurrentSaveInstance->EggHatchTime.Add(i, EggHatchTimeGM[i]); //transfer to save dictionary of type
+			CurrentSaveInstance->PetToSpawn.Add(i, PetToSpawnGM[i]); //transfer to save dictionary
+			CurrentSaveInstance->SpeciesType.Add(i, SpeciesTypeGM[i]); //transfer to save dictionary of type
+		}
+
+
 		//RUN THE SAVE (Swap for variables)
 		UGameplayStatics::SaveGameToSlot(CurrentSaveInstance, TEXT("Slot1"), 0);
 	}
@@ -115,6 +141,12 @@ void APetGameModeBase::LoadGame()
 		GEngine->AddOnScreenDebugMessage(-1, 60.f, FColor::White, FString::Printf(TEXT("Load Valid")));
 
 		int32 max = CurrentLoadInstance->GemTypeMap.Num();
+
+		//DESTROY GEMS
+		for (TActorIterator<AAGem> Iterator(World); Iterator; ++Iterator)
+		{
+			Iterator->Destroy();//remove all agems on load
+		}
 
 		//LOAD GEMS
 		for (int i = 0; i < max; i++)//for the amount of types saved
@@ -148,194 +180,42 @@ void APetGameModeBase::LoadGame()
 				World->SpawnActor<AAGem>(GreenGem, CurrentLoc, FRotator::ZeroRotator, SpawnParams); //no rotation and wsaved location
 			
 			}
-
-			//LOAD SPECIES
-
-
-			//LOAD EGGS
 		}
+
+		max = CurrentLoadInstance->EggLocationMap.Num(); //SET TO MAX NUM OF EGGS
+
+		//DESTROY EGGS
+		for (TActorIterator<AAEgg> Iterator(World); Iterator; ++Iterator)
+		{
+			Iterator->Destroy();//remove all eGGS on load
+		}
+
+		//LOAD EGGS
+		for (int i = 0; i < max; i++)//for the amount of types saved
+		{
+			FActorSpawnParameters SpawnParams;
+			//check gem to drop and -- the stack and then 
+			GEngine->AddOnScreenDebugMessage(-1, 60.f, FColor::Black, FString::Printf(TEXT("Loaded egg")));
+
+			FName CurrentType = CurrentLoadInstance->SpeciesType[i];
+			FVector CurrentLoc = CurrentLoadInstance->EggLocationMap[i];
+			TSubclassOf<APetMaster> CurrentPetToSpawn = CurrentLoadInstance->PetToSpawn[i];
+			float CurrentTime = CurrentLoadInstance->EggHatchTime[i];
+
+
+			if (CurrentType == FName(TEXT("Species1")))
+			{//not working
+				AAEgg* SpawnedEgg = World->SpawnActor<AAEgg>(Species1Egg, CurrentLoc, FRotator::ZeroRotator, SpawnParams); //no rotation and saved location
+				SpawnedEgg->HatchTime = CurrentTime;
+				SpawnedEgg->PetToSpawn = CurrentPetToSpawn;
+				SpawnedEgg = nullptr;
+
+			}
+			else if (CurrentType == FName(TEXT("Yellow"))) //swap with other species
+			{
+
+			}
+		}
+	}
 }
-}
 
-
-
-
-//LEGACY CODE
-//TArray<FGemStruct> APetGameModeBase::GetGemsStruct()
-//{
-//	GemList.Empty();//clear the gemlist before filling
-//
-//	//foreach gem in level log their type and location into the struct
-//	for (AAGem* Gem : GemsFromIt)//for each actor in gems from iterator
-//	{
-//		//set data for struct
-//		CurrentGem.GemType = Gem->GemType;
-//		CurrentGem.GemLocation = Gem->GetActorLocation();
-//		//.add is intensive to re allocate array size
-//		GemList.Add(CurrentGem);//add current gem to gem list after setting data
-//	}
-//
-//	GemsFromIt.Empty();//empty the array to stop repeats
-//
-//	return TArray<FGemStruct>(GemList);
-//}
-//
-//TArray<FGemStruct> APetGameModeBase::GetEggsStruct()
-//{
-//
-//	return TArray<FGemStruct>();
-//}
-//
-//TArray<FGemStruct> APetGameModeBase::GetSpeciesStruct()
-//{
-//
-//	return TArray<FGemStruct>();
-//}
-
-
-//void APetGameModeBase::SaveGame()
-//{
-//	//SEE ABOUT ASYNC CHANGES TO LOWER LOAD
-//	//make save game instance and if it's true
-//	if (USaveGameClass* CurrentSaveInstance = Cast<USaveGameClass>(UGameplayStatics::CreateSaveGameObject(USaveGameClass::StaticClass())))
-//	{
-//		if (AMainCharacter* Player =  Cast<AMainCharacter>(UGameplayStatics::GetPlayerCharacter(World,0))) //if you cast to player
-//		{
-//
-//			GEngine->AddOnScreenDebugMessage(-1, 60.f, FColor::White, FString::Printf(TEXT("Player saved GAME")));
-//
-//			//add player location
-//			CurrentSaveInstance->PlayerLocation = Player->GetActorLocation();//get player location add to save
-//
-//			//add player inventory
-//			CurrentSaveInstance->BlueStack = Player->BlueStack;
-//			CurrentSaveInstance->RedStack = Player->RedStack;
-//			CurrentSaveInstance->YellowStack = Player->YellowStack;
-//			CurrentSaveInstance->GreenStack = Player->GreenStack;
-//			//update ui for inventory
-//			Player->OnInventoryUpdated.Broadcast();
-//		}
-//
-//		//save gem struct
-//		//if can cast to game mode
-//		//get array of struct of all gems
-//
-//
-//
-//
-//
-//		TArray<FGemStruct> GemStruct = this->GetGemsStruct();
-//
-//		for (int i = 0; i < GemStruct.Num(); i++)
-//		{
-//			GEngine->AddOnScreenDebugMessage(-1, 60.f, FColor::Black, FString::Printf(TEXT("SAVED")));
-//			CurrentSaveInstance->GemTypeMap.Add(i, GemStruct[i].GemType);
-//			CurrentSaveInstance->GemLocationMap.Add(i, GemStruct[i].GemLocation);
-//		}
-//
-//		/*for (FGemStruct Gem : GemStruct) 
-//		{
-//			GEngine->AddOnScreenDebugMessage(-1, 60.f, FColor::Black, FString::Printf(TEXT("SAVED")));
-//			CurrentSaveInstance->GemTypeMap.Append(,Gem.GemType);
-//			if (!CurrentSaveInstance->Gems.IsEmpty())
-//			{
-//				GEngine->AddOnScreenDebugMessage(-1, 60.f, FColor::Black, FString::Printf(TEXT("pUT INTO SAVE ARRAY")));
-//
-//			}
-//		}*/
-//
-//		
-//		//save pet struct
-//
-//
-//		//do the saving iff the save works
-//		if (UGameplayStatics::SaveGameToSlot(CurrentSaveInstance, TEXT("SaveSlotTest"),0))//change these to variables based off ui later
-//		//do the saving iff the save works
-//		{
-//			GEngine->AddOnScreenDebugMessage(-1, 60.f, FColor::Black, FString::Printf(TEXT("SAVED GAME")));
-//
-//		}
-//	}
-//}
-//
-//void APetGameModeBase::LoadGame()
-//{
-//
-//		//get loaded game instance and if it's true
-//	if (USaveGameClass* LoadedSaveInstance = Cast<USaveGameClass>(UGameplayStatics::LoadGameFromSlot(TEXT("SaveSlotTest"),0)))
-//	{
-//		
-//		// if true
-//		if (LoadedSaveInstance != nullptr)//change these to variables based off ui later 
-//		{
-//
-//
-//			if (AMainCharacter* Player = Cast<AMainCharacter>(UGameplayStatics::GetPlayerCharacter(World, 0))) //if you cast to player
-//			{
-//				GEngine->AddOnScreenDebugMessage(-1, 60.f, FColor::White, FString::Printf(TEXT("Player Loaded GAME")));
-//
-//				//load player location
-//				Player->SetActorLocation(LoadedSaveInstance->PlayerLocation);//load player location from save
-//
-//				//load player inventory
-//				Player->BlueStack = LoadedSaveInstance->BlueStack;
-//				Player->GreenStack = LoadedSaveInstance->GreenStack;
-//				Player->YellowStack = LoadedSaveInstance->YellowStack;
-//				Player->RedStack = LoadedSaveInstance->RedStack;
-//				//update ui for inventory
-//				Player->OnInventoryUpdated.Broadcast();
-//			}
-//				//destory all gems
-//				for (TActorIterator<AAGem> Iterator(World); Iterator; ++Iterator)
-//				{
-//					Iterator->Destroy();//remove all agems on load
-//				}
-//
-//				//load gem struct
-//				FVector CurrentSpawnLocation;//to hold current spawn location
-//				FName CurrentSpawnType; //to hold current spawn type
-//				
-//				if (LoadedSaveInstance->GemTypeMap.IsEmpty())
-//				{
-//					GEngine->AddOnScreenDebugMessage(-1, 60.f, FColor::Black, FString::Printf(TEXT("LoadedArray is empty")));
-//
-//				}
-//				
-//				//for (FGemStruct Gem : LoadedSaveInstance->Gems) //NOT RUNNING
-//				//{
-//				//	FActorSpawnParameters SpawnParams;
-//				//	//check gem to drop and -- the stack and then 
-//				//	GEngine->AddOnScreenDebugMessage(-1, 60.f, FColor::Black, FString::Printf(TEXT("Loaded")));
-//
-//
-//				//	if (Gem.GemType == FName(TEXT("Blue")))
-//				//	{
-//				//		World->SpawnActor<AAGem>(BlueGem, Gem.GemLocation, FRotator::ZeroRotator, SpawnParams); //no rotation and wsaved location
-//
-//
-//				//	}
-//				//	else if (Gem.GemType == FName(TEXT("Yellow")))
-//				//	{
-//				//		World->SpawnActor<AAGem>(YellowGem, Gem.GemLocation, FRotator::ZeroRotator, SpawnParams); //no rotation and wsaved location
-//
-//				//	}
-//				//	else if (Gem.GemType == FName(TEXT("Red")))
-//				//	{
-//				//		World->SpawnActor<AAGem>(RedGem, Gem.GemLocation, FRotator::ZeroRotator, SpawnParams); //no rotation and wsaved location
-//
-//				//	}
-//				//	else if (Gem.GemType == FName(TEXT("Green")))
-//				//	{
-//				//		World->SpawnActor<AAGem>(GreenGem, Gem.GemLocation, FRotator::ZeroRotator, SpawnParams); //no rotation and wsaved location
-//
-//				//	}
-//				//}
-//
-//				//Destory all pets
-//
-//				//load pet struct
-//
-//
-//			}
-//		}
-//	}

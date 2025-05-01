@@ -12,46 +12,6 @@
  * 
  */
 
-//
-//USTRUCT(BlueprintType)
-//struct FEggStruct
-//{
-//	GENERATED_BODY()
-//	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Egg")
-//	FName EggType;
-//
-//	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Egg")
-//	FVector EggLocation;
-//
-//};
-//
-//USTRUCT(BlueprintType)
-//struct FSpeciesStruct
-//{
-//	GENERATED_BODY()
-//	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Species")
-//	FName SpeciesType;
-//
-//	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Species")
-//	FVector Location;
-//
-//	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Species")
-//	EEvolution CurrentEvolution;
-//
-//	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Morph")
-//	float MorphJBashful;
-//
-//	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Morph")
-//	float MorphJoyful;
-//
-//	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Morph")
-//	float MorphSerious;
-//
-//	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Morph")
-//	float MorphCalm;
-//
-//};
-
 UCLASS()
 class PETGAMEUE_API USaveGameClass : public USaveGame
 {
@@ -80,18 +40,26 @@ public:
 	UPROPERTY(VisibleAnywhere, Category = "SavePlayer")
 	int RedStack;
 
-	//gems
-	UPROPERTY(VisibleAnywhere, Category = "Gems")
-	TArray<FGemStruct> Gems;//can't get structs to iterate or load
-
+	//Gems
 	UPROPERTY(VisibleAnywhere, Category = "Gems")
 	TMap<int32, FName> GemTypeMap; //dictionary of gem types
 	UPROPERTY(VisibleAnywhere, Category = "Gems")
 	TMap<int32, FVector> GemLocationMap;//Dictionary of gem locations
 
-	//Pets
-	UPROPERTY(VisibleAnywhere, Category = "PetInstances")
-	TArray<TSubclassOf<APetMaster>> PetInstances;//array of all pet instances hopefully
+	//Eggs
+	UPROPERTY(VisibleAnywhere, Category = "Eggs")
+	TMap<int32, float> EggHatchTime;//Dictionary of Egg hatch timer amounts
+
+	UPROPERTY(VisibleAnywhere, Category = "Eggs")
+	TMap<int32, TSubclassOf<APetMaster>> PetToSpawn; //dictionary of bps of pets to spawn
+
+	UPROPERTY(VisibleAnywhere, Category = "Eggs")
+	TMap<int32, FName> SpeciesType;//Dictionary of type of egg to decide which bp to instantiate
+
+	UPROPERTY(VisibleAnywhere, Category = "Eggs")
+	TMap<int32, FVector> EggLocationMap;//Dictionary of gem locations
+
+
 
 	USaveGameClass(); //constructor
 

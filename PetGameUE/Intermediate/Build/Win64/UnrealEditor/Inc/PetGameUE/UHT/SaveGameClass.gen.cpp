@@ -72,11 +72,30 @@ void EmptyLinkFunctionForGeneratedCodeSaveGameClass() {}
 		static const UECodeGen_Private::FMetaDataPairParam NewProp_GemLocationMap_MetaData[];
 #endif
 		static const UECodeGen_Private::FMapPropertyParams NewProp_GemLocationMap;
-		static const UECodeGen_Private::FClassPropertyParams NewProp_PetInstances_Inner;
+		static const UECodeGen_Private::FFloatPropertyParams NewProp_EggHatchTime_ValueProp;
+		static const UECodeGen_Private::FIntPropertyParams NewProp_EggHatchTime_Key_KeyProp;
 #if WITH_METADATA
-		static const UECodeGen_Private::FMetaDataPairParam NewProp_PetInstances_MetaData[];
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_EggHatchTime_MetaData[];
 #endif
-		static const UECodeGen_Private::FArrayPropertyParams NewProp_PetInstances;
+		static const UECodeGen_Private::FMapPropertyParams NewProp_EggHatchTime;
+		static const UECodeGen_Private::FClassPropertyParams NewProp_PetToSpawn_ValueProp;
+		static const UECodeGen_Private::FIntPropertyParams NewProp_PetToSpawn_Key_KeyProp;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_PetToSpawn_MetaData[];
+#endif
+		static const UECodeGen_Private::FMapPropertyParams NewProp_PetToSpawn;
+		static const UECodeGen_Private::FNamePropertyParams NewProp_SpeciesType_ValueProp;
+		static const UECodeGen_Private::FIntPropertyParams NewProp_SpeciesType_Key_KeyProp;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_SpeciesType_MetaData[];
+#endif
+		static const UECodeGen_Private::FMapPropertyParams NewProp_SpeciesType;
+		static const UECodeGen_Private::FStructPropertyParams NewProp_EggLocationMap_ValueProp;
+		static const UECodeGen_Private::FIntPropertyParams NewProp_EggLocationMap_Key_KeyProp;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_EggLocationMap_MetaData[];
+#endif
+		static const UECodeGen_Private::FMapPropertyParams NewProp_EggLocationMap;
 		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UECodeGen_Private::FClassParams ClassParams;
@@ -89,13 +108,10 @@ void EmptyLinkFunctionForGeneratedCodeSaveGameClass() {}
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_USaveGameClass_Statics::Class_MetaDataParams[] = {
 #if !UE_BUILD_SHIPPING
-		{ "Comment", "/**\n * \n *///\n//USTRUCT(BlueprintType)\n//struct FEggStruct\n//{\n//\x09GENERATED_BODY()\n//\x09UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = \"Egg\")\n//\x09""FName EggType;\n//\n//\x09UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = \"Egg\")\n//\x09""FVector EggLocation;\n//\n//};\n//\n//USTRUCT(BlueprintType)\n//struct FSpeciesStruct\n//{\n//\x09GENERATED_BODY()\n//\x09UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = \"Species\")\n//\x09""FName SpeciesType;\n//\n//\x09UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = \"Species\")\n//\x09""FVector Location;\n//\n//\x09UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = \"Species\")\n//\x09""EEvolution CurrentEvolution;\n//\n//\x09UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = \"Morph\")\n//\x09""float MorphJBashful;\n//\n//\x09UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = \"Morph\")\n//\x09""float MorphJoyful;\n//\n//\x09UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = \"Morph\")\n//\x09""float MorphSerious;\n//\n//\x09UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = \"Morph\")\n//\x09""float MorphCalm;\n//\n//};\n" },
+		{ "Comment", "/**\n * \n */" },
 #endif
 		{ "IncludePath", "SaveGameClass.h" },
 		{ "ModuleRelativePath", "Public/SaveGameClass.h" },
-#if !UE_BUILD_SHIPPING
-		{ "ToolTip", "//\n//USTRUCT(BlueprintType)\n//struct FEggStruct\n//{\n//     GENERATED_BODY()\n//     UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = \"Egg\")\n//     FName EggType;\n//\n//     UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = \"Egg\")\n//     FVector EggLocation;\n//\n//};\n//\n//USTRUCT(BlueprintType)\n//struct FSpeciesStruct\n//{\n//     GENERATED_BODY()\n//     UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = \"Species\")\n//     FName SpeciesType;\n//\n//     UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = \"Species\")\n//     FVector Location;\n//\n//     UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = \"Species\")\n//     EEvolution CurrentEvolution;\n//\n//     UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = \"Morph\")\n//     float MorphJBashful;\n//\n//     UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = \"Morph\")\n//     float MorphJoyful;\n//\n//     UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = \"Morph\")\n//     float MorphSerious;\n//\n//     UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = \"Morph\")\n//     float MorphCalm;\n//\n//};" },
-#endif
 	};
 #endif
 #if WITH_METADATA
@@ -171,11 +187,11 @@ void EmptyLinkFunctionForGeneratedCodeSaveGameClass() {}
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_USaveGameClass_Statics::NewProp_GemTypeMap_MetaData[] = {
 		{ "Category", "Gems" },
 #if !UE_BUILD_SHIPPING
-		{ "Comment", "//can't get structs to iterate or load\n" },
+		{ "Comment", "//Gems\n" },
 #endif
 		{ "ModuleRelativePath", "Public/SaveGameClass.h" },
 #if !UE_BUILD_SHIPPING
-		{ "ToolTip", "can't get structs to iterate or load" },
+		{ "ToolTip", "Gems" },
 #endif
 	};
 #endif
@@ -195,20 +211,66 @@ void EmptyLinkFunctionForGeneratedCodeSaveGameClass() {}
 	};
 #endif
 	const UECodeGen_Private::FMapPropertyParams Z_Construct_UClass_USaveGameClass_Statics::NewProp_GemLocationMap = { "GemLocationMap", nullptr, (EPropertyFlags)0x0010000000020001, UECodeGen_Private::EPropertyGenFlags::Map, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(USaveGameClass, GemLocationMap), EMapPropertyFlags::None, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_USaveGameClass_Statics::NewProp_GemLocationMap_MetaData), Z_Construct_UClass_USaveGameClass_Statics::NewProp_GemLocationMap_MetaData) };
-	const UECodeGen_Private::FClassPropertyParams Z_Construct_UClass_USaveGameClass_Statics::NewProp_PetInstances_Inner = { "PetInstances", nullptr, (EPropertyFlags)0x0004000000020000, UECodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, Z_Construct_UClass_UClass, Z_Construct_UClass_APetMaster_NoRegister, METADATA_PARAMS(0, nullptr) };
+	const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_USaveGameClass_Statics::NewProp_EggHatchTime_ValueProp = { "EggHatchTime", nullptr, (EPropertyFlags)0x0000000000020001, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 1, METADATA_PARAMS(0, nullptr) };
+	const UECodeGen_Private::FIntPropertyParams Z_Construct_UClass_USaveGameClass_Statics::NewProp_EggHatchTime_Key_KeyProp = { "EggHatchTime_Key", nullptr, (EPropertyFlags)0x0000000000020001, UECodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, METADATA_PARAMS(0, nullptr) };
 #if WITH_METADATA
-	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_USaveGameClass_Statics::NewProp_PetInstances_MetaData[] = {
-		{ "Category", "PetInstances" },
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_USaveGameClass_Statics::NewProp_EggHatchTime_MetaData[] = {
+		{ "Category", "Eggs" },
 #if !UE_BUILD_SHIPPING
-		{ "Comment", "//Pets\n" },
+		{ "Comment", "//Eggs\n" },
 #endif
 		{ "ModuleRelativePath", "Public/SaveGameClass.h" },
 #if !UE_BUILD_SHIPPING
-		{ "ToolTip", "Pets" },
+		{ "ToolTip", "Eggs" },
 #endif
 	};
 #endif
-	const UECodeGen_Private::FArrayPropertyParams Z_Construct_UClass_USaveGameClass_Statics::NewProp_PetInstances = { "PetInstances", nullptr, (EPropertyFlags)0x0014000000020001, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(USaveGameClass, PetInstances), EArrayPropertyFlags::None, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_USaveGameClass_Statics::NewProp_PetInstances_MetaData), Z_Construct_UClass_USaveGameClass_Statics::NewProp_PetInstances_MetaData) };
+	const UECodeGen_Private::FMapPropertyParams Z_Construct_UClass_USaveGameClass_Statics::NewProp_EggHatchTime = { "EggHatchTime", nullptr, (EPropertyFlags)0x0010000000020001, UECodeGen_Private::EPropertyGenFlags::Map, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(USaveGameClass, EggHatchTime), EMapPropertyFlags::None, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_USaveGameClass_Statics::NewProp_EggHatchTime_MetaData), Z_Construct_UClass_USaveGameClass_Statics::NewProp_EggHatchTime_MetaData) };
+	const UECodeGen_Private::FClassPropertyParams Z_Construct_UClass_USaveGameClass_Statics::NewProp_PetToSpawn_ValueProp = { "PetToSpawn", nullptr, (EPropertyFlags)0x0004000000020001, UECodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 1, Z_Construct_UClass_UClass, Z_Construct_UClass_APetMaster_NoRegister, METADATA_PARAMS(0, nullptr) };
+	const UECodeGen_Private::FIntPropertyParams Z_Construct_UClass_USaveGameClass_Statics::NewProp_PetToSpawn_Key_KeyProp = { "PetToSpawn_Key", nullptr, (EPropertyFlags)0x0000000000020001, UECodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, METADATA_PARAMS(0, nullptr) };
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_USaveGameClass_Statics::NewProp_PetToSpawn_MetaData[] = {
+		{ "Category", "Eggs" },
+#if !UE_BUILD_SHIPPING
+		{ "Comment", "//Dictionary of Egg hatch timer amounts\n" },
+#endif
+		{ "ModuleRelativePath", "Public/SaveGameClass.h" },
+#if !UE_BUILD_SHIPPING
+		{ "ToolTip", "Dictionary of Egg hatch timer amounts" },
+#endif
+	};
+#endif
+	const UECodeGen_Private::FMapPropertyParams Z_Construct_UClass_USaveGameClass_Statics::NewProp_PetToSpawn = { "PetToSpawn", nullptr, (EPropertyFlags)0x0014000000020001, UECodeGen_Private::EPropertyGenFlags::Map, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(USaveGameClass, PetToSpawn), EMapPropertyFlags::None, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_USaveGameClass_Statics::NewProp_PetToSpawn_MetaData), Z_Construct_UClass_USaveGameClass_Statics::NewProp_PetToSpawn_MetaData) };
+	const UECodeGen_Private::FNamePropertyParams Z_Construct_UClass_USaveGameClass_Statics::NewProp_SpeciesType_ValueProp = { "SpeciesType", nullptr, (EPropertyFlags)0x0000000000020001, UECodeGen_Private::EPropertyGenFlags::Name, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 1, METADATA_PARAMS(0, nullptr) };
+	const UECodeGen_Private::FIntPropertyParams Z_Construct_UClass_USaveGameClass_Statics::NewProp_SpeciesType_Key_KeyProp = { "SpeciesType_Key", nullptr, (EPropertyFlags)0x0000000000020001, UECodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, METADATA_PARAMS(0, nullptr) };
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_USaveGameClass_Statics::NewProp_SpeciesType_MetaData[] = {
+		{ "Category", "Eggs" },
+#if !UE_BUILD_SHIPPING
+		{ "Comment", "//dictionary of bps of pets to spawn\n" },
+#endif
+		{ "ModuleRelativePath", "Public/SaveGameClass.h" },
+#if !UE_BUILD_SHIPPING
+		{ "ToolTip", "dictionary of bps of pets to spawn" },
+#endif
+	};
+#endif
+	const UECodeGen_Private::FMapPropertyParams Z_Construct_UClass_USaveGameClass_Statics::NewProp_SpeciesType = { "SpeciesType", nullptr, (EPropertyFlags)0x0010000000020001, UECodeGen_Private::EPropertyGenFlags::Map, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(USaveGameClass, SpeciesType), EMapPropertyFlags::None, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_USaveGameClass_Statics::NewProp_SpeciesType_MetaData), Z_Construct_UClass_USaveGameClass_Statics::NewProp_SpeciesType_MetaData) };
+	const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_USaveGameClass_Statics::NewProp_EggLocationMap_ValueProp = { "EggLocationMap", nullptr, (EPropertyFlags)0x0000000000020001, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 1, Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(0, nullptr) };
+	const UECodeGen_Private::FIntPropertyParams Z_Construct_UClass_USaveGameClass_Statics::NewProp_EggLocationMap_Key_KeyProp = { "EggLocationMap_Key", nullptr, (EPropertyFlags)0x0000000000020001, UECodeGen_Private::EPropertyGenFlags::Int, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, METADATA_PARAMS(0, nullptr) };
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_USaveGameClass_Statics::NewProp_EggLocationMap_MetaData[] = {
+		{ "Category", "Eggs" },
+#if !UE_BUILD_SHIPPING
+		{ "Comment", "//Dictionary of type of egg to decide which bp to instantiate\n" },
+#endif
+		{ "ModuleRelativePath", "Public/SaveGameClass.h" },
+#if !UE_BUILD_SHIPPING
+		{ "ToolTip", "Dictionary of type of egg to decide which bp to instantiate" },
+#endif
+	};
+#endif
+	const UECodeGen_Private::FMapPropertyParams Z_Construct_UClass_USaveGameClass_Statics::NewProp_EggLocationMap = { "EggLocationMap", nullptr, (EPropertyFlags)0x0010000000020001, UECodeGen_Private::EPropertyGenFlags::Map, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(USaveGameClass, EggLocationMap), EMapPropertyFlags::None, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_USaveGameClass_Statics::NewProp_EggLocationMap_MetaData), Z_Construct_UClass_USaveGameClass_Statics::NewProp_EggLocationMap_MetaData) };
 	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_USaveGameClass_Statics::PropPointers[] = {
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_USaveGameClass_Statics::NewProp_SaveName,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_USaveGameClass_Statics::NewProp_UserIndex,
@@ -223,8 +285,18 @@ void EmptyLinkFunctionForGeneratedCodeSaveGameClass() {}
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_USaveGameClass_Statics::NewProp_GemLocationMap_ValueProp,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_USaveGameClass_Statics::NewProp_GemLocationMap_Key_KeyProp,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_USaveGameClass_Statics::NewProp_GemLocationMap,
-		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_USaveGameClass_Statics::NewProp_PetInstances_Inner,
-		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_USaveGameClass_Statics::NewProp_PetInstances,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_USaveGameClass_Statics::NewProp_EggHatchTime_ValueProp,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_USaveGameClass_Statics::NewProp_EggHatchTime_Key_KeyProp,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_USaveGameClass_Statics::NewProp_EggHatchTime,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_USaveGameClass_Statics::NewProp_PetToSpawn_ValueProp,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_USaveGameClass_Statics::NewProp_PetToSpawn_Key_KeyProp,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_USaveGameClass_Statics::NewProp_PetToSpawn,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_USaveGameClass_Statics::NewProp_SpeciesType_ValueProp,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_USaveGameClass_Statics::NewProp_SpeciesType_Key_KeyProp,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_USaveGameClass_Statics::NewProp_SpeciesType,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_USaveGameClass_Statics::NewProp_EggLocationMap_ValueProp,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_USaveGameClass_Statics::NewProp_EggLocationMap_Key_KeyProp,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_USaveGameClass_Statics::NewProp_EggLocationMap,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_USaveGameClass_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<USaveGameClass>::IsAbstract,
@@ -264,9 +336,9 @@ void EmptyLinkFunctionForGeneratedCodeSaveGameClass() {}
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
 	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_PetGameUE_Source_PetGameUE_Public_SaveGameClass_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_USaveGameClass, USaveGameClass::StaticClass, TEXT("USaveGameClass"), &Z_Registration_Info_UClass_USaveGameClass, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(USaveGameClass), 2670855312U) },
+		{ Z_Construct_UClass_USaveGameClass, USaveGameClass::StaticClass, TEXT("USaveGameClass"), &Z_Registration_Info_UClass_USaveGameClass, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(USaveGameClass), 2027016638U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_PetGameUE_Source_PetGameUE_Public_SaveGameClass_h_14321956(TEXT("/Script/PetGameUE"),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_PetGameUE_Source_PetGameUE_Public_SaveGameClass_h_868088558(TEXT("/Script/PetGameUE"),
 		Z_CompiledInDeferFile_FID_PetGameUE_Source_PetGameUE_Public_SaveGameClass_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_PetGameUE_Source_PetGameUE_Public_SaveGameClass_h_Statics::ClassInfo),
 		nullptr, 0,
 		nullptr, 0);

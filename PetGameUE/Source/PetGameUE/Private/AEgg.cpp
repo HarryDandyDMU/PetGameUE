@@ -27,19 +27,13 @@ void AAEgg::BeginPlay()
 	Super::BeginPlay();
 
 	
-
-	Hatch();
+	//start hatching
+	GetWorld()->GetTimerManager().SetTimer(HatchTimer, this, &AAEgg::Hatch, HatchTime, false, -1.f); //Start baby timer to adult
 
 
 	
 }
 
-// Called every frame
-void AAEgg::Tick(float DeltaTime)
-{
-	Super::Tick(DeltaTime);
-
-}
 
 void AAEgg::Hatch()
 {
