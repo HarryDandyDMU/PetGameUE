@@ -105,6 +105,5 @@
     <ClInclude Include="..\..\Source\PetGameUE\Public\SaveGameClass.h">
       <Filter>Source\PetGameUE\Public</Filter>
     </ClInclude>
-    <None Include="cpp.hint" />
   </ItemGroup>
 </Project>

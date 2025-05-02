@@ -103,6 +103,11 @@ void AMainCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputCompo
 		//Looking
 		EnhancedInputComponent->BindAction(InteractAction, ETriggerEvent::Triggered, this, &AMainCharacter::Interact);
 
+		//Save
+		EnhancedInputComponent->BindAction(Save, ETriggerEvent::Triggered, this, &AMainCharacter::SaveGame);
+
+		//Load
+		EnhancedInputComponent->BindAction(Load, ETriggerEvent::Triggered, this, &AMainCharacter::LoadGame);
 	}
 
 
