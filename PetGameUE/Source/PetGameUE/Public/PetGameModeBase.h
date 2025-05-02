@@ -32,26 +32,7 @@
 //struct FSpeciesStruct
 //{
 //	GENERATED_BODY()
-//	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Species")
-//	FName SpeciesType;
-//
-//	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Species")
-//	FVector Location;
-//
-//	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Species")
-//	EEvolution CurrentEvolution;
-//
-//	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Morph")
-//	float MorphJBashful;
-//
-//	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Morph")
-//	float MorphJoyful;
-//
-//	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Morph")
-//	float MorphSerious;
-//
-//	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Morph")
-//	float MorphCalm;
+//	
 //
 //};
 
@@ -61,6 +42,8 @@ class PETGAMEUE_API APetGameModeBase : public AGameModeBase
 	GENERATED_BODY()
 
 public:
+
+	
 
 	APetGameModeBase(); //constructor
 
@@ -98,5 +81,22 @@ public:
 	TMap<int32, TSubclassOf<APetMaster>> PetToSpawnGM; //dictionary of bps of pets to spawn
 	TMap<int32, FName> SpeciesTypeGM;//Dictionary of type of egg to decide which bp to instantiate
 	TMap<int32, FVector> EggLocationMapGM;//Dictionary of egg locations
+
+
+	//SPECIES
+
+	UPROPERTY(EditDefaultsOnly, Category = "Species")
+	TSubclassOf<APetMaster> Species1Pet;
+
+
+	TMap <int32, FName> PetSpeciesTypeGM;
+	TMap <int32, FVector> PetLocationGM;
+	TMap <int32, EEvolution> CurrentEvolutionGM;
+	TMap <int32, float> MorphBashfulGM;
+	TMap <int32, float> MorphJoyfulGM;
+	TMap <int32, float> MorphSeriousGM;
+	TMap <int32, float> MorphCalmGM;
+
+
 
 };

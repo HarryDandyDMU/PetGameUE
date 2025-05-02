@@ -129,8 +129,9 @@ public:
 	float ClampCalm();
 
 
+	void Morph(); //public so can be used on load
+
 private:
-	void Morph();
 
 	void Eat();//function to ray trace food infront of pet
 

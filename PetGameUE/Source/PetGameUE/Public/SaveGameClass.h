@@ -59,6 +59,27 @@ public:
 	UPROPERTY(VisibleAnywhere, Category = "Eggs")
 	TMap<int32, FVector> EggLocationMap;//Dictionary of gem locations
 
+	//SPECIES
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Pet")
+	TMap <int32, FName> PetSpeciesType;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Pet")
+	TMap <int32, FVector> PetLocation;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Pet")
+	TMap <int32, EEvolution> CurrentEvolution;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Morph")
+	TMap <int32, float> MorphBashful;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Morph")
+	TMap <int32, float> MorphJoyful;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Morph")
+	TMap <int32, float> MorphSerious;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Morph")
+	TMap <int32, float> MorphCalm;
 
 
 	USaveGameClass(); //constructor

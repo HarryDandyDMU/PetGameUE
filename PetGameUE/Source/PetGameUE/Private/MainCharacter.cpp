@@ -66,6 +66,7 @@ void AMainCharacter::BeginPlay()
 		}
 	}
 
+	SaveGame(); //save on game load to prevent false file crash
 
 	MainCharacterMesh->bCastDynamicShadow = false; //stops weird floating shadows
 	MainCharacterMesh->CastShadow = false;

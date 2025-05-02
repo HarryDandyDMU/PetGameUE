@@ -76,8 +76,22 @@ void APetGameModeBase::ActorIterator()
 		//get the actor from iterator pointer
 		APetMaster* Actor = *Iterator;
 
-		
+		FString Temp = Actor->GetFName().ToString();
+		GEngine->AddOnScreenDebugMessage(-1, 60.f, FColor::White, Temp);
 
+		MorphBashfulGM.Add(it, Actor->NFBashful);//add morph for bashful
+		MorphCalmGM.Add(it, Actor->PFCalm);//add morph for calm
+		MorphJoyfulGM.Add(it, Actor->PFJoyful);//add morph for joyful
+		MorphSeriousGM.Add(it, Actor->NFSerious);//add morph for serious
+
+		CurrentEvolutionGM.Add(it, Actor->CurrentEvolution);//add current evolution
+
+		PetLocationGM.Add(it, Actor->GetActorLocation());// add current location
+
+		PetSpeciesTypeGM.Add(it, Actor->SpeciesType); //species type
+
+		
+		it++;
 	}
 }
 
@@ -118,6 +132,18 @@ void APetGameModeBase::SaveGame()
 			CurrentSaveInstance->EggHatchTime.Add(i, EggHatchTimeGM[i]); //transfer to save dictionary of type
 			CurrentSaveInstance->PetToSpawn.Add(i, PetToSpawnGM[i]); //transfer to save dictionary
 			CurrentSaveInstance->SpeciesType.Add(i, SpeciesTypeGM[i]); //transfer to save dictionary of type
+		}
+
+		for (int i = 0; i < PetSpeciesTypeGM.Num(); i++)
+		{
+			CurrentSaveInstance->MorphCalm.Add(i, MorphCalmGM[i]);
+			CurrentSaveInstance->MorphBashful.Add(i, MorphBashfulGM[i]);
+			CurrentSaveInstance->MorphJoyful.Add(i, MorphJoyfulGM[i]);
+			CurrentSaveInstance->MorphSerious.Add(i, MorphSeriousGM[i]);
+
+			CurrentSaveInstance->CurrentEvolution.Add(i, CurrentEvolutionGM[i]);
+			CurrentSaveInstance->PetLocation.Add(i, PetLocationGM[i]);
+			CurrentSaveInstance->PetSpeciesType.Add(i, PetSpeciesTypeGM[i]);
 		}
 
 
@@ -204,18 +230,61 @@ void APetGameModeBase::LoadGame()
 
 
 			if (CurrentType == FName(TEXT("Species1")))
-			{//not working
+			{
 				AAEgg* SpawnedEgg = World->SpawnActor<AAEgg>(Species1Egg, CurrentLoc, FRotator::ZeroRotator, SpawnParams); //no rotation and saved location
 				SpawnedEgg->HatchTime = CurrentTime;
 				SpawnedEgg->PetToSpawn = CurrentPetToSpawn;
-				SpawnedEgg = nullptr;
 
 			}
-			else if (CurrentType == FName(TEXT("Yellow"))) //swap with other species
+			else if (CurrentType == FName(TEXT("Species2"))) //swap with other species
 			{
 
 			}
 		}
+
+		max = CurrentLoadInstance->PetLocation.Num(); //SET TO MAX NUM OF SPECIES
+
+
+		//DESTROY SPECIES
+		for (TActorIterator<APetMaster> Iterator(World); Iterator; ++Iterator)
+		{
+			Iterator->Destroy();//remove all Pets on load
+		}
+		//LOAD SPECIES
+		for (int i = 0; i < max; i++)
+		{
+			GEngine->AddOnScreenDebugMessage(-1, 60.f, FColor::Black, FString::Printf(TEXT("Loaded Pet")));
+
+			FActorSpawnParameters SpawnParams;
+
+			//load all needed stats
+
+			FName CurrentType = CurrentLoadInstance->PetSpeciesType[i];
+			FVector CurrentLoc = CurrentLoadInstance->PetLocation[i];
+			EEvolution CurrentEvolution = CurrentLoadInstance->CurrentEvolution[i];
+
+			float MorphSerious = CurrentLoadInstance->MorphSerious[i];
+			float MorphCalm = CurrentLoadInstance->MorphCalm[i];
+			float MorphJoyful = CurrentLoadInstance->MorphJoyful[i];
+			float MorphBashful = CurrentLoadInstance->MorphBashful[i];
+
+			//respawn it
+
+			if (CurrentType == FName(TEXT("Species1")))
+			{
+				APetMaster* SpawnedPet = World->SpawnActor<APetMaster>(Species1Pet, CurrentLoc, FRotator::ZeroRotator, SpawnParams); //no rotation and saved location
+				SpawnedPet->CurrentEvolution = CurrentEvolution;
+				SpawnedPet->NFBashful = MorphBashful;
+				SpawnedPet->NFSerious = MorphSerious;
+
+				SpawnedPet->PFCalm = MorphCalm;
+				SpawnedPet->PFJoyful = MorphJoyful;
+
+				SpawnedPet->Morph();
+				SpawnedPet->Evolve();
+			}
+		}
 	}
 }
+
 
