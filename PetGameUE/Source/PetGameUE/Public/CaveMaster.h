@@ -35,18 +35,19 @@ public:
 	UFUNCTION()
 	void OnBeginOverlapBox(UPrimitiveComponent* OverlappedComp, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult);
 
+
+	UFUNCTION()
+	void OnBeginOverlapBoxExit(UPrimitiveComponent* OverlappedComp, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult);
+
+
 	UPROPERTY(EditAnywhere, Category = "CaveLocations")
 	TArray<FVector> SpawnLocations;// array of rubble locations in the map
 
 	UPROPERTY(EditAnywhere, Category = "Rubble")
 	TSubclassOf<AARubbleMaster> RubbleToSpawn; //var of bp of rubble to spawn in cave on entry or exit
-protected:
-	// Called when the game starts or when spawned
-	virtual void BeginPlay() override;
 
-public:
-	// Called every frame
-	virtual void Tick(float DeltaTime) override;
+
+
 
 private:
 
@@ -56,7 +57,7 @@ private:
 
 	bool bShouldISpawn; // bool used to coin flip spawns
 
-	//bool bCaveReset = false;
+	bool bCaveReset = false;
 
 	void CaveSpawn();
 

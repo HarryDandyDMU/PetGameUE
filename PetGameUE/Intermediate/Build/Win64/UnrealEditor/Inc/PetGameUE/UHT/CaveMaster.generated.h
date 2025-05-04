@@ -22,6 +22,7 @@ struct FHitResult;
 #define FID_PetGameUE_Source_PetGameUE_Public_CaveMaster_h_17_EDITOR_ONLY_SPARSE_DATA_PROPERTY_ACCESSORS
 #define FID_PetGameUE_Source_PetGameUE_Public_CaveMaster_h_17_RPC_WRAPPERS_NO_PURE_DECLS \
  \
+	DECLARE_FUNCTION(execOnBeginOverlapBoxExit); \
 	DECLARE_FUNCTION(execOnBeginOverlapBox);
 
 
