@@ -15,27 +15,6 @@
  * 
  */
 
-
-//USTRUCT(BlueprintType)
-//struct FEggStruct
-//{
-//	GENERATED_BODY()
-//	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Egg")
-//	FName EggType;
-//
-//	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Egg")
-//	FVector EggLocation;
-//
-//};
-//
-//USTRUCT(BlueprintType)
-//struct FSpeciesStruct
-//{
-//	GENERATED_BODY()
-//	
-//
-//};
-
 UCLASS()
 class PETGAMEUE_API APetGameModeBase : public AGameModeBase
 {

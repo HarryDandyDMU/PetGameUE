@@ -54,6 +54,9 @@
     <ClCompile Include="..\..\Source\PetGameUE\Private\BTAIPetController.cpp">
       <Filter>Source\PetGameUE\Private</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\Source\PetGameUE\Private\CaveMaster.cpp">
+      <Filter>Source\PetGameUE\Private</Filter>
+    </ClCompile>
     <ClCompile Include="..\..\Source\PetGameUE\Private\FGemStruct.cpp">
       <Filter>Source\PetGameUE\Private</Filter>
     </ClCompile>
@@ -85,6 +88,9 @@
       <Filter>Source\PetGameUE\Public</Filter>
     </ClInclude>
     <ClInclude Include="..\..\Source\PetGameUE\Public\BTAIPetController.h">
+      <Filter>Source\PetGameUE\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\PetGameUE\Public\CaveMaster.h">
       <Filter>Source\PetGameUE\Public</Filter>
     </ClInclude>
     <ClInclude Include="..\..\Source\PetGameUE\Public\FGemStruct.h">
