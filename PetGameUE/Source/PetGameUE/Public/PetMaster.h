@@ -79,6 +79,9 @@ public:
 	//Agetimer
 	FTimerHandle AgeTimer;
 
+	//Ragdoll Timer
+	FTimerHandle RagdollTime;
+
 	//age time length
 	UPROPERTY(EditDefaultsOnly, Category = "Timer")
 	float BabyTime = 120.f;//2 mins
@@ -88,6 +91,10 @@ public:
 	//timer length
 	UPROPERTY(EditDefaultsOnly, Category = "Timer")
 	float EvolutionTime = 10.f;
+
+
+	UPROPERTY(EditDefaultsOnly, Category = "Timer")
+	float RagdollTimeAmount = 8.f;
 
 
 protected:
@@ -131,6 +138,15 @@ public:
 
 	void Morph(); //public so can be used on load
 
+	UFUNCTION()
+	void RagdollTimer();
+
+
+
+	UFUNCTION()
+	void RagdollReset();
+
+
 private:
 
 	void Eat();//function to ray trace food infront of pet
@@ -149,5 +165,6 @@ private:
 	UPROPERTY(VisibleAnywhere, Category = "Eat")
 	int16 CurrentFood = 0;
 
+	
 
 };

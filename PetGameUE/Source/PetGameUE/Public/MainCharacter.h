@@ -79,13 +79,21 @@ public:
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Input")
 	class UInputAction* Inventory;
 
-	//input action for openclose inventory
+	//input action for save
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Input")
 	class UInputAction* Save;
 
-	//input action for openclose inventory
+	//input action for load
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Input")
 	class UInputAction* Load;
+
+	//input action for pet
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Input")
+	class UInputAction* PetAction;
+
+	//input action for kick
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Input")
+	class UInputAction* KickAction;
 
 
 	//interact action
@@ -100,6 +108,13 @@ public:
 	//jump
 	void Jumping();
 
+	//pet
+	void Pet();
+
+	//kick
+	void Kick();
+
+	float KickDistance = 100.f;
 
 	//item detection tracing
 	

@@ -108,6 +108,12 @@ void AMainCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputCompo
 
 		//Load
 		EnhancedInputComponent->BindAction(Load, ETriggerEvent::Triggered, this, &AMainCharacter::LoadGame);
+
+		//Pet
+		EnhancedInputComponent->BindAction(PetAction, ETriggerEvent::Completed, this, &AMainCharacter::Pet);//should fire on release
+
+		//Kick
+		EnhancedInputComponent->BindAction(KickAction, ETriggerEvent::Completed, this, &AMainCharacter::Kick);//should fire on release
 	}
 
 
@@ -161,6 +167,68 @@ void AMainCharacter::Look(const FInputActionValue& Value)
 void AMainCharacter::Jumping()
 {
 	Jump();
+}
+
+void AMainCharacter::Pet()
+{
+	InitialiseTrace();
+	//fire a ray
+	GEngine->AddOnScreenDebugMessage(-1, 60.f, FColor::Green, FString::Printf(TEXT("PAT PAT")));
+
+	//if it hits a pet
+	if (Hit)
+	{
+		//get the pet
+		if (APetMaster* PetInFront = Cast<APetMaster>(HitResult.GetActor()))//if it casts to the pet there
+		{
+			//reduce all PF by 0.1
+			PetInFront->NFBashful += (-0.1f);
+			PetInFront->NFSerious += (-0.1f);
+			PetInFront->NFBashful = PetInFront->ClampBashful();
+			PetInFront->NFSerious = PetInFront->ClampSerious();//clamp just in case
+
+			//play happy animation in pet
+
+
+			//play happy noise in pet
+		}
+	}
+}
+
+void AMainCharacter::Kick()
+{
+	InitialiseTrace();
+	//fire a ray
+	GEngine->AddOnScreenDebugMessage(-1, 60.f, FColor::Red, FString::Printf(TEXT("Fwaaaa")));
+
+
+	//if it hits a pet
+	if (Hit)
+	{
+		//get the pet
+		if (APetMaster* PetInFront = Cast<APetMaster>(HitResult.GetActor()))//if it casts to the pet there
+		{
+			//reduce all PF by 0.1
+			PetInFront->PFCalm += (-0.1f);
+			PetInFront->PFJoyful += (-0.1f);
+			PetInFront->PFCalm = PetInFront->ClampCalm();
+			PetInFront->PFJoyful = PetInFront->ClampJoyful();//clamp just in case
+
+			//Ragdoll the pet
+			PetInFront->PetMeshAdult->SetCollisionProfileName(TEXT("Ragdoll"));//set collsion
+			PetInFront->PetMeshAdult->SetSimulatePhysics(true);//sim physics
+			PetInFront->PetMeshAdult->WakeRigidBody();//wake it
+
+			//play wheeee noise in pet
+
+
+			//Impulse the pet in player forward vector
+			PetInFront->PetMeshAdult->AddImpulse(CameraComponent->GetForwardVector() * KickDistance, NAME_None, true);
+
+			//include something in pets to stop them rag dolling
+			PetInFront->RagdollTimer();
+		}
+	}
 }
 
 

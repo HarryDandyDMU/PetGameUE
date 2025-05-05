@@ -135,8 +135,21 @@ void APetMaster::Age()
 		GEngine->AddOnScreenDebugMessage(-1, 60.f, FColor::Magenta, FString::Printf(TEXT("Become Adult Age")));
 		break;
 	case EEvolution::Adult:
-		CurrentEvolution = EEvolution::Elder;//sets it to Elder after timer above runs
-		GEngine->AddOnScreenDebugMessage(-1, 60.f, FColor::Magenta, FString::Printf(TEXT("Become Elder Age")));
+		//if any mood is at 1 else reset timer
+		if (NFBashful == 1 ||
+			NFSerious == 1 ||
+			PFCalm == 1 ||
+			PFJoyful == 1)
+		{
+			GEngine->AddOnScreenDebugMessage(-1, 60.f, FColor::Magenta, FString::Printf(TEXT("Become Elder Age")));
+			CurrentEvolution = EEvolution::Elder;//sets it to Elder after timer above runs
+		}
+		else
+		{
+			GEngine->AddOnScreenDebugMessage(-1, 60.f, FColor::Magenta, FString::Printf(TEXT("Redo Elder Age")));
+			//redo timer
+			GetWorld()->GetTimerManager().SetTimer(AgeTimer, this, &APetMaster::Age, AdultTime, false, -1.f); //Starts timer to age up to adult
+		}
 		break;
 	case EEvolution::Elder:
 		GEngine->AddOnScreenDebugMessage(-1, 60.f, FColor::Magenta, FString::Printf(TEXT("Elder Done Age")));
@@ -272,5 +285,18 @@ void APetMaster::Eat()
 		}
 	}
 
+}
+
+void APetMaster::RagdollReset()
+{
+	PetMeshAdult->SetSimulatePhysics(false);//turn off ragdoll
+	PetMeshAdult->SetCollisionProfileName(TEXT("CharacterMesh"));//set collision
+	PetMeshAdult->AttachToComponent(GetRootComponent(), FAttachmentTransformRules::SnapToTargetNotIncludingScale);//go back to capulse
+	PetMeshAdult->SetRelativeLocationAndRotation(FVector(0, 0, 0), FRotator(0, 0, 0));//transforms from bp
+}
+
+void APetMaster::RagdollTimer()
+{
+	GetWorld()->GetTimerManager().SetTimer(RagdollTime, this, &APetMaster::RagdollReset, RagdollTimeAmount, false, -1.f);
 }
 
