@@ -6,12 +6,18 @@
 
 #include "UObject/GeneratedCppIncludes.h"
 #include "PetGameUE/Public/PetMaster.h"
+#include "../../Source/Runtime/Engine/Classes/Engine/HitResult.h"
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 void EmptyLinkFunctionForGeneratedCodePetMaster() {}
 // Cross Module References
+	COREUOBJECT_API UScriptStruct* Z_Construct_UScriptStruct_FVector();
+	ENGINE_API UClass* Z_Construct_UClass_AActor_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_ACharacter();
+	ENGINE_API UClass* Z_Construct_UClass_UCapsuleComponent_NoRegister();
+	ENGINE_API UClass* Z_Construct_UClass_UPrimitiveComponent_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_USceneComponent_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_USkeletalMeshComponent_NoRegister();
+	ENGINE_API UScriptStruct* Z_Construct_UScriptStruct_FHitResult();
 	PETGAMEUE_API UClass* Z_Construct_UClass_APetMaster();
 	PETGAMEUE_API UClass* Z_Construct_UClass_APetMaster_NoRegister();
 	PETGAMEUE_API UEnum* Z_Construct_UEnum_PetGameUE_EEvolution();
@@ -101,11 +107,24 @@ void EmptyLinkFunctionForGeneratedCodePetMaster() {}
 		P_THIS->Evolve();
 		P_NATIVE_END;
 	}
+	DEFINE_FUNCTION(APetMaster::execOnCapsuleHit)
+	{
+		P_GET_OBJECT(UPrimitiveComponent,Z_Param_HitComponent);
+		P_GET_OBJECT(AActor,Z_Param_OtherActor);
+		P_GET_OBJECT(UPrimitiveComponent,Z_Param_OtherComp);
+		P_GET_STRUCT(FVector,Z_Param_NormalImpulse);
+		P_GET_STRUCT_REF(FHitResult,Z_Param_Out_HitBump);
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		P_THIS->OnCapsuleHit(Z_Param_HitComponent,Z_Param_OtherActor,Z_Param_OtherComp,Z_Param_NormalImpulse,Z_Param_Out_HitBump);
+		P_NATIVE_END;
+	}
 	void APetMaster::StaticRegisterNativesAPetMaster()
 	{
 		UClass* Class = APetMaster::StaticClass();
 		static const FNameNativePtrPair Funcs[] = {
 			{ "Evolve", &APetMaster::execEvolve },
+			{ "OnCapsuleHit", &APetMaster::execOnCapsuleHit },
 			{ "RagdollReset", &APetMaster::execRagdollReset },
 			{ "RagdollTimer", &APetMaster::execRagdollTimer },
 		};
@@ -130,6 +149,86 @@ void EmptyLinkFunctionForGeneratedCodePetMaster() {}
 		if (!ReturnFunction)
 		{
 			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_APetMaster_Evolve_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_APetMaster_OnCapsuleHit_Statics
+	{
+		struct PetMaster_eventOnCapsuleHit_Parms
+		{
+			UPrimitiveComponent* HitComponent;
+			AActor* OtherActor;
+			UPrimitiveComponent* OtherComp;
+			FVector NormalImpulse;
+			FHitResult HitBump;
+		};
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_HitComponent_MetaData[];
+#endif
+		static const UECodeGen_Private::FObjectPropertyParams NewProp_HitComponent;
+		static const UECodeGen_Private::FObjectPropertyParams NewProp_OtherActor;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_OtherComp_MetaData[];
+#endif
+		static const UECodeGen_Private::FObjectPropertyParams NewProp_OtherComp;
+		static const UECodeGen_Private::FStructPropertyParams NewProp_NormalImpulse;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_HitBump_MetaData[];
+#endif
+		static const UECodeGen_Private::FStructPropertyParams NewProp_HitBump;
+		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UECodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_APetMaster_OnCapsuleHit_Statics::NewProp_HitComponent_MetaData[] = {
+		{ "EditInline", "true" },
+	};
+#endif
+	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_APetMaster_OnCapsuleHit_Statics::NewProp_HitComponent = { "HitComponent", nullptr, (EPropertyFlags)0x0010000000080080, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(PetMaster_eventOnCapsuleHit_Parms, HitComponent), Z_Construct_UClass_UPrimitiveComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_APetMaster_OnCapsuleHit_Statics::NewProp_HitComponent_MetaData), Z_Construct_UFunction_APetMaster_OnCapsuleHit_Statics::NewProp_HitComponent_MetaData) };
+	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_APetMaster_OnCapsuleHit_Statics::NewProp_OtherActor = { "OtherActor", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(PetMaster_eventOnCapsuleHit_Parms, OtherActor), Z_Construct_UClass_AActor_NoRegister, METADATA_PARAMS(0, nullptr) };
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_APetMaster_OnCapsuleHit_Statics::NewProp_OtherComp_MetaData[] = {
+		{ "EditInline", "true" },
+	};
+#endif
+	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_APetMaster_OnCapsuleHit_Statics::NewProp_OtherComp = { "OtherComp", nullptr, (EPropertyFlags)0x0010000000080080, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(PetMaster_eventOnCapsuleHit_Parms, OtherComp), Z_Construct_UClass_UPrimitiveComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_APetMaster_OnCapsuleHit_Statics::NewProp_OtherComp_MetaData), Z_Construct_UFunction_APetMaster_OnCapsuleHit_Statics::NewProp_OtherComp_MetaData) };
+	const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_APetMaster_OnCapsuleHit_Statics::NewProp_NormalImpulse = { "NormalImpulse", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(PetMaster_eventOnCapsuleHit_Parms, NormalImpulse), Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(0, nullptr) };
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_APetMaster_OnCapsuleHit_Statics::NewProp_HitBump_MetaData[] = {
+		{ "NativeConst", "" },
+	};
+#endif
+	const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_APetMaster_OnCapsuleHit_Statics::NewProp_HitBump = { "HitBump", nullptr, (EPropertyFlags)0x0010008008000182, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(PetMaster_eventOnCapsuleHit_Parms, HitBump), Z_Construct_UScriptStruct_FHitResult, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_APetMaster_OnCapsuleHit_Statics::NewProp_HitBump_MetaData), Z_Construct_UFunction_APetMaster_OnCapsuleHit_Statics::NewProp_HitBump_MetaData) }; // 1891709922
+	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_APetMaster_OnCapsuleHit_Statics::PropPointers[] = {
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_APetMaster_OnCapsuleHit_Statics::NewProp_HitComponent,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_APetMaster_OnCapsuleHit_Statics::NewProp_OtherActor,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_APetMaster_OnCapsuleHit_Statics::NewProp_OtherComp,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_APetMaster_OnCapsuleHit_Statics::NewProp_NormalImpulse,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_APetMaster_OnCapsuleHit_Statics::NewProp_HitBump,
+	};
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_APetMaster_OnCapsuleHit_Statics::Function_MetaDataParams[] = {
+#if !UE_BUILD_SHIPPING
+		{ "Comment", "//When it hits the Player\n" },
+#endif
+		{ "ModuleRelativePath", "Public/PetMaster.h" },
+#if !UE_BUILD_SHIPPING
+		{ "ToolTip", "When it hits the Player" },
+#endif
+	};
+#endif
+	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_APetMaster_OnCapsuleHit_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_APetMaster, nullptr, "OnCapsuleHit", nullptr, nullptr, Z_Construct_UFunction_APetMaster_OnCapsuleHit_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_APetMaster_OnCapsuleHit_Statics::PropPointers), sizeof(Z_Construct_UFunction_APetMaster_OnCapsuleHit_Statics::PetMaster_eventOnCapsuleHit_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00C20401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_APetMaster_OnCapsuleHit_Statics::Function_MetaDataParams), Z_Construct_UFunction_APetMaster_OnCapsuleHit_Statics::Function_MetaDataParams) };
+	static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_APetMaster_OnCapsuleHit_Statics::PropPointers) < 2048);
+	static_assert(sizeof(Z_Construct_UFunction_APetMaster_OnCapsuleHit_Statics::PetMaster_eventOnCapsuleHit_Parms) < MAX_uint16);
+	UFunction* Z_Construct_UFunction_APetMaster_OnCapsuleHit()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_APetMaster_OnCapsuleHit_Statics::FuncParams);
 		}
 		return ReturnFunction;
 	}
@@ -221,6 +320,10 @@ void EmptyLinkFunctionForGeneratedCodePetMaster() {}
 #endif
 		static const UECodeGen_Private::FEnumPropertyParams NewProp_CurrentEvolution;
 #if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_CapsuleComp_MetaData[];
+#endif
+		static const UECodeGen_Private::FObjectPropertyParams NewProp_CapsuleComp;
+#if WITH_METADATA
 		static const UECodeGen_Private::FMetaDataPairParam NewProp_PetMeshAdult_MetaData[];
 #endif
 		static const UECodeGen_Private::FObjectPropertyParams NewProp_PetMeshAdult;
@@ -289,6 +392,7 @@ void EmptyLinkFunctionForGeneratedCodePetMaster() {}
 	static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_APetMaster_Statics::DependentSingletons) < 16);
 	const FClassFunctionLinkInfo Z_Construct_UClass_APetMaster_Statics::FuncInfo[] = {
 		{ &Z_Construct_UFunction_APetMaster_Evolve, "Evolve" }, // 2670839419
+		{ &Z_Construct_UFunction_APetMaster_OnCapsuleHit, "OnCapsuleHit" }, // 1991250931
 		{ &Z_Construct_UFunction_APetMaster_RagdollReset, "RagdollReset" }, // 3266554457
 		{ &Z_Construct_UFunction_APetMaster_RagdollTimer, "RagdollTimer" }, // 2702248243
 	};
@@ -373,6 +477,20 @@ void EmptyLinkFunctionForGeneratedCodePetMaster() {}
 	};
 #endif
 	const UECodeGen_Private::FEnumPropertyParams Z_Construct_UClass_APetMaster_Statics::NewProp_CurrentEvolution = { "CurrentEvolution", nullptr, (EPropertyFlags)0x0010000000000001, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(APetMaster, CurrentEvolution), Z_Construct_UEnum_PetGameUE_EEvolution, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_APetMaster_Statics::NewProp_CurrentEvolution_MetaData), Z_Construct_UClass_APetMaster_Statics::NewProp_CurrentEvolution_MetaData) }; // 1680861448
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_APetMaster_Statics::NewProp_CapsuleComp_MetaData[] = {
+		{ "Category", "Capsule" },
+#if !UE_BUILD_SHIPPING
+		{ "Comment", "//capsule \n" },
+#endif
+		{ "EditInline", "true" },
+		{ "ModuleRelativePath", "Public/PetMaster.h" },
+#if !UE_BUILD_SHIPPING
+		{ "ToolTip", "capsule" },
+#endif
+	};
+#endif
+	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_APetMaster_Statics::NewProp_CapsuleComp = { "CapsuleComp", nullptr, (EPropertyFlags)0x00100000000b000d, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(APetMaster, CapsuleComp), Z_Construct_UClass_UCapsuleComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_APetMaster_Statics::NewProp_CapsuleComp_MetaData), Z_Construct_UClass_APetMaster_Statics::NewProp_CapsuleComp_MetaData) };
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_APetMaster_Statics::NewProp_PetMeshAdult_MetaData[] = {
 		{ "Category", "Mesh" },
@@ -551,6 +669,7 @@ void EmptyLinkFunctionForGeneratedCodePetMaster() {}
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_APetMaster_Statics::NewProp_SpeciesType,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_APetMaster_Statics::NewProp_CurrentEvolution_Underlying,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_APetMaster_Statics::NewProp_CurrentEvolution,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_APetMaster_Statics::NewProp_CapsuleComp,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_APetMaster_Statics::NewProp_PetMeshAdult,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_APetMaster_Statics::NewProp_PetMeshBaby,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_APetMaster_Statics::NewProp_PetMeshElder,
@@ -608,9 +727,9 @@ void EmptyLinkFunctionForGeneratedCodePetMaster() {}
 		{ EEvolution_StaticEnum, TEXT("EEvolution"), &Z_Registration_Info_UEnum_EEvolution, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 1680861448U) },
 	};
 	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_PetGameUE_Source_PetGameUE_Public_PetMaster_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_APetMaster, APetMaster::StaticClass, TEXT("APetMaster"), &Z_Registration_Info_UClass_APetMaster, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(APetMaster), 333656545U) },
+		{ Z_Construct_UClass_APetMaster, APetMaster::StaticClass, TEXT("APetMaster"), &Z_Registration_Info_UClass_APetMaster, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(APetMaster), 2838383332U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_PetGameUE_Source_PetGameUE_Public_PetMaster_h_3669240614(TEXT("/Script/PetGameUE"),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_PetGameUE_Source_PetGameUE_Public_PetMaster_h_4250078435(TEXT("/Script/PetGameUE"),
 		Z_CompiledInDeferFile_FID_PetGameUE_Source_PetGameUE_Public_PetMaster_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_PetGameUE_Source_PetGameUE_Public_PetMaster_h_Statics::ClassInfo),
 		nullptr, 0,
 		Z_CompiledInDeferFile_FID_PetGameUE_Source_PetGameUE_Public_PetMaster_h_Statics::EnumInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_PetGameUE_Source_PetGameUE_Public_PetMaster_h_Statics::EnumInfo));

@@ -5,6 +5,8 @@
 #include "AGem.h"//to check if food
 #include "Blueprint/AIBlueprintHelperLibrary.h"
 #include "BehaviorTree/BlackboardComponent.h"//to get bb
+#include "Kismet/GameplayStatics.h"
+#include "GameFramework/CharacterMovementComponent.h"
 #include "Kismet/KismetSystemLibrary.h"// should allow line traceI
 
 
@@ -32,6 +34,44 @@ APetMaster::APetMaster()
 
 	PetMeshElder->SetupAttachment(RootComponent);
 
+	CapsuleComp = GetCapsuleComponent();//get default capsule comp#
+	CapsuleComp->SetCollisionProfileName(TEXT("PetCollision"));
+	CapsuleComp->BodyInstance.SetInstanceNotifyRBCollision(true); //Enable Hit 
+	CapsuleComp->SetSimulatePhysics(true);//SHOULD ALLOW KNOCKING OTHER OUT OF THE WAY
+
+	CapsuleComp->OnComponentHit.AddDynamic(this, &APetMaster::OnCapsuleHit);//bind hit to this
+
+
+}
+
+void APetMaster::OnCapsuleHit(UPrimitiveComponent* HitComponent, AActor* OtherActor, UPrimitiveComponent* OtherComp, FVector NormalImpulse, const FHitResult& HitBump)
+{
+	//BUMP CODE TO PUSH THINGS AWAY
+	
+
+	TArray<UStaticMeshComponent*> MeshComps; //for staticMeshObjects
+	TArray<UCapsuleComponent*> CapComp;//For char with capsules
+
+	OtherActor->GetComponents(MeshComps);//get components of static meshes and fill array
+	OtherActor->GetComponents(CapComp);//get any capsule comps
+
+	if (MeshComps.Num() > 0) //if there are mesh comps
+	{
+		for (UStaticMeshComponent* MeshCP : MeshComps) //for each
+		{
+			FVector OtherForward = HitBump.ImpactNormal;
+			MeshCP->AddImpulse(-OtherForward * 1000, NAME_None, true);
+		}
+	}
+
+	if (CapComp.Num() > 0) //if there are capsules comps
+	{
+		for (UCapsuleComponent* Capsule : CapComp) //for each
+		{
+			FVector OtherForward = HitBump.ImpactNormal;
+			Capsule->AddImpulse(-OtherForward * 1000, NAME_None, true);
+		}
+	}
 }
 
 // Called when the game starts or when spawned

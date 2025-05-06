@@ -4,6 +4,8 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/Character.h"
+
+#include "Components/CapsuleComponent.h"//added for capsule
 #include "PetMaster.generated.h"
 
 //states of evolution to dictate models 
@@ -44,6 +46,14 @@ public:
 	UPROPERTY(EditAnywhere, Category = "Evolution")
 	EEvolution CurrentEvolution;
 
+		//capsule 
+	UPROPERTY(BlueprintReadWrite, VisibleDefaultsOnly, Category = "Capsule")
+	UCapsuleComponent* CapsuleComp;
+
+	//When it hits the Player
+	UFUNCTION()
+	void OnCapsuleHit(UPrimitiveComponent* HitComponent, AActor* OtherActor, UPrimitiveComponent* OtherComp, FVector NormalImpulse, const FHitResult& HitBump);
+
 	//include skeletal mesh component
 	UPROPERTY(BlueprintReadOnly, VisibleAnywhere, Category = "Mesh")
 	USkeletalMeshComponent* PetMeshAdult;
@@ -60,9 +70,7 @@ public:
 	UPROPERTY(BlueprintReadOnly, VisibleAnywhere, Category = "Mesh")
 	USceneComponent* DefaultSceneRoot;
 
-	////capsule for hitbox
-	//UPROPERTY(BlueprintReadOnly, VisibleDefaultsOnly, Category = "Capsule")
-	//UCapsuleComponent* CapsuleComp;
+
 
 	//fname for morph target CHANGE TO ADULT WHEN MESH DONE
 	FName BashfulMorph = TEXT("PetDefaultTestMorphBashFul");
@@ -145,6 +153,9 @@ public:
 
 	UFUNCTION()
 	void RagdollReset();
+
+
+
 
 
 private:
