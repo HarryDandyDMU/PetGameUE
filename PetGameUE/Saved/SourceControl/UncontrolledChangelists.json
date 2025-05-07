@@ -7,7 +7,10 @@
 			"files": [
 				"Z:/Year Three/Module4/Unreal/PetGameUE/PetGameUE/Content/Pets/AI/BT_PetAI.uasset",
 				"Z:/Year Three/Module4/Unreal/PetGameUE/PetGameUE/Content/Items/Gems/BP_AYellowGem.uasset",
-				"Z:/Year Three/Module4/Unreal/PetGameUE/PetGameUE/Content/Levels/MainMenu.umap"
+				"Z:/Year Three/Module4/Unreal/PetGameUE/PetGameUE/Content/Levels/MainMenu.umap",
+				"Z:/Year Three/Module4/Unreal/PetGameUE/PetGameUE/Content/Inputs/IA_Grab.uasset",
+				"Z:/Year Three/Module4/Unreal/PetGameUE/PetGameUE/Content/Inputs/IMC_PlayerCharacter.uasset",
+				"Z:/Year Three/Module4/Unreal/PetGameUE/PetGameUE/Content/BP_PlayerCharacter.uasset"
 			]
 		}
 	]

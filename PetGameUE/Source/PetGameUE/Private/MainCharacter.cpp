@@ -47,6 +47,9 @@ AMainCharacter::AMainCharacter()
 	DropLocation = CreateDefaultSubobject<USceneComponent>(TEXT("DropLocation"));
 	DropLocation->SetupAttachment(MainCharacterMesh);//relative to char mesh
 
+	//create physics handle
+	PhysicsHandle = CreateDefaultSubobject<UPhysicsHandleComponent>(TEXT("PhysicsHandle"));
+	check(PhysicsHandle != nullptr);
 
 }
 
@@ -80,6 +83,12 @@ void AMainCharacter::BeginPlay()
 void AMainCharacter::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
+
+	if (bIsGrabbed == true)
+	{
+		//set location to end of line trace
+		PhysicsHandle->SetTargetLocation(End);
+	}
 }
 
 // Called to bind functionality to input
@@ -114,9 +123,37 @@ void AMainCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputCompo
 
 		//Kick
 		EnhancedInputComponent->BindAction(KickAction, ETriggerEvent::Completed, this, &AMainCharacter::Kick);//should fire on release
+
+		//Grab
+		EnhancedInputComponent->BindAction(GrabAction, ETriggerEvent::Triggered, this, &AMainCharacter::Grab);
+
+		EnhancedInputComponent->BindAction(GrabAction, ETriggerEvent::Completed,this, &AMainCharacter::Grab);
 	}
 
 
+}
+
+void AMainCharacter::Grab() 
+{
+	InitialiseTrace();
+	if (Hit)
+	{
+		if (HitResult.GetActor()->IsA(AAEgg::StaticClass())) //if trace is a Egg
+		{
+			PhysicsHandle->GrabComponentAtLocationWithRotation(HitResult.GetComponent(), NAME_None, HitResult.GetActor()->GetActorLocation(), HitResult.GetActor()->GetActorRotation());
+			bIsGrabbed = true;
+		}
+	}
+
+}
+
+void AMainCharacter::Released()
+{
+	if (bIsGrabbed == true)
+	{
+		PhysicsHandle->ReleaseComponent();
+		bIsGrabbed = false;
+	}
 }
 
 void AMainCharacter::Interact()
@@ -237,8 +274,8 @@ void AMainCharacter::Kick()
 void AMainCharacter::InitialiseTrace() 
 {
 	//create start and end locations
-	FVector Start = CameraComponent->GetComponentLocation();//returns rcamera root location
-	FVector End = (Start) + (CameraComponent->GetForwardVector() * Distance);//returns root add forward vector times by distance
+	Start = CameraComponent->GetComponentLocation();//returns rcamera root location
+	End = (Start) + (CameraComponent->GetForwardVector() * Distance);//returns root add forward vector times by distance
 	//swap above for camera forward vector
 
 	//array of actors to ignore;

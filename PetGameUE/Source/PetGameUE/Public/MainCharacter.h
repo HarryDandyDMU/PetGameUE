@@ -7,6 +7,7 @@
 #include "InputActionValue.h"
 #include "Camera/CameraComponent.h"//include for camera
 #include "Components/CapsuleComponent.h" //included for capulse
+#include <PhysicsEngine/PhysicsHandleComponent.h>//for grab
 #include "AGem.h" //included for gems
 #include "FGemStruct.h"//gem struct
 #include "ARubbleMaster.h"//included for mining rubble
@@ -42,6 +43,9 @@ public:
 
 	UPROPERTY(EditDefaultsOnly, Category = "Inventory") //location for items to drop relative to char
 	USceneComponent* DropLocation;
+
+	UPROPERTY(EditDefaultsOnly, Category = "Components")
+	UPhysicsHandleComponent* PhysicsHandle;
 
 protected:
 	// Called when the game starts or when spawned
@@ -95,6 +99,21 @@ public:
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Input")
 	class UInputAction* KickAction;
 
+	//input action for Grab
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Input")
+	class UInputAction* GrabAction;
+
+	//used to grab/drag eggs and pets
+	void Grab();
+
+	void Released();
+
+	bool bIsGrabbed;
+
+	//used for line trace and grab
+	FVector Start;
+
+	FVector End;
 
 	//interact action
 	void Interact();
@@ -117,12 +136,9 @@ public:
 	float KickDistance = 100.f;
 
 	//item detection tracing
-	
-	UPROPERTY(EditAnywhere, Category = "Detection Tracing")
-	float Radius = 300.f;//easy default sphere range
 
 	UPROPERTY(EditAnywhere, Category = "Detection Tracing")
-	float Distance = 500.f;//easy distance to end point
+	float Distance = 300.f;//easy distance to end point
 
 	UPROPERTY(VisibleAnywhere, Category = "Movement")
 	FVector ForwardDirection;//used in the trace aswell as movement
