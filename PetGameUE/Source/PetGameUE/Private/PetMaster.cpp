@@ -37,7 +37,7 @@ APetMaster::APetMaster()
 	CapsuleComp = GetCapsuleComponent();//get default capsule comp#
 	CapsuleComp->SetCollisionProfileName(TEXT("PetCollision"));
 	CapsuleComp->BodyInstance.SetInstanceNotifyRBCollision(true); //Enable Hit 
-	CapsuleComp->SetSimulatePhysics(true);//SHOULD ALLOW KNOCKING OTHER OUT OF THE WAY
+	//CapsuleComp->SetSimulatePhysics(true);//SHOULD ALLOW KNOCKING OTHER OUT OF THE WAY (causes it to fall through floor)
 
 	CapsuleComp->OnComponentHit.AddDynamic(this, &APetMaster::OnCapsuleHit);//bind hit to this
 

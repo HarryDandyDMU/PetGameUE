@@ -58,6 +58,14 @@ void EmptyLinkFunctionForGeneratedCodeAEgg() {}
 		static const UECodeGen_Private::FMetaDataPairParam NewProp_SpeciesType_MetaData[];
 #endif
 		static const UECodeGen_Private::FNamePropertyParams NewProp_SpeciesType;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_IncubatorCheck_MetaData[];
+#endif
+		static const UECodeGen_Private::FStructPropertyParams NewProp_IncubatorCheck;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_IncubatorTime_MetaData[];
+#endif
+		static const UECodeGen_Private::FFloatPropertyParams NewProp_IncubatorTime;
 		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UECodeGen_Private::FClassParams ClassParams;
@@ -121,7 +129,7 @@ void EmptyLinkFunctionForGeneratedCodeAEgg() {}
 		{ "ModuleRelativePath", "Public/AEgg.h" },
 	};
 #endif
-	const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AAEgg_Statics::NewProp_HatchTime = { "HatchTime", nullptr, (EPropertyFlags)0x0010000000000001, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AAEgg, HatchTime), METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_AAEgg_Statics::NewProp_HatchTime_MetaData), Z_Construct_UClass_AAEgg_Statics::NewProp_HatchTime_MetaData) };
+	const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AAEgg_Statics::NewProp_HatchTime = { "HatchTime", nullptr, (EPropertyFlags)0x0010000000010001, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AAEgg, HatchTime), METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_AAEgg_Statics::NewProp_HatchTime_MetaData), Z_Construct_UClass_AAEgg_Statics::NewProp_HatchTime_MetaData) };
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AAEgg_Statics::NewProp_SpeciesType_MetaData[] = {
 		{ "Category", "Species" },
@@ -129,6 +137,20 @@ void EmptyLinkFunctionForGeneratedCodeAEgg() {}
 	};
 #endif
 	const UECodeGen_Private::FNamePropertyParams Z_Construct_UClass_AAEgg_Statics::NewProp_SpeciesType = { "SpeciesType", nullptr, (EPropertyFlags)0x0010000000000001, UECodeGen_Private::EPropertyGenFlags::Name, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AAEgg, SpeciesType), METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_AAEgg_Statics::NewProp_SpeciesType_MetaData), Z_Construct_UClass_AAEgg_Statics::NewProp_SpeciesType_MetaData) };
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AAEgg_Statics::NewProp_IncubatorCheck_MetaData[] = {
+		{ "Category", "Timer" },
+		{ "ModuleRelativePath", "Public/AEgg.h" },
+	};
+#endif
+	const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_AAEgg_Statics::NewProp_IncubatorCheck = { "IncubatorCheck", nullptr, (EPropertyFlags)0x0010000000010001, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AAEgg, IncubatorCheck), Z_Construct_UScriptStruct_FTimerHandle, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_AAEgg_Statics::NewProp_IncubatorCheck_MetaData), Z_Construct_UClass_AAEgg_Statics::NewProp_IncubatorCheck_MetaData) }; // 3999327403
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AAEgg_Statics::NewProp_IncubatorTime_MetaData[] = {
+		{ "Category", "Timer" },
+		{ "ModuleRelativePath", "Public/AEgg.h" },
+	};
+#endif
+	const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_AAEgg_Statics::NewProp_IncubatorTime = { "IncubatorTime", nullptr, (EPropertyFlags)0x0010000000010001, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AAEgg, IncubatorTime), METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_AAEgg_Statics::NewProp_IncubatorTime_MetaData), Z_Construct_UClass_AAEgg_Statics::NewProp_IncubatorTime_MetaData) };
 	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AAEgg_Statics::PropPointers[] = {
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AAEgg_Statics::NewProp_EggMesh,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AAEgg_Statics::NewProp_PetToSpawn,
@@ -136,6 +158,8 @@ void EmptyLinkFunctionForGeneratedCodeAEgg() {}
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AAEgg_Statics::NewProp_HatchTimer,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AAEgg_Statics::NewProp_HatchTime,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AAEgg_Statics::NewProp_SpeciesType,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AAEgg_Statics::NewProp_IncubatorCheck,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AAEgg_Statics::NewProp_IncubatorTime,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_AAEgg_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<AAEgg>::IsAbstract,
@@ -175,9 +199,9 @@ void EmptyLinkFunctionForGeneratedCodeAEgg() {}
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
 	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_PetGameUE_Source_PetGameUE_Public_AEgg_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_AAEgg, AAEgg::StaticClass, TEXT("AAEgg"), &Z_Registration_Info_UClass_AAEgg, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AAEgg), 3811937225U) },
+		{ Z_Construct_UClass_AAEgg, AAEgg::StaticClass, TEXT("AAEgg"), &Z_Registration_Info_UClass_AAEgg, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AAEgg), 1192515981U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_PetGameUE_Source_PetGameUE_Public_AEgg_h_512353209(TEXT("/Script/PetGameUE"),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_PetGameUE_Source_PetGameUE_Public_AEgg_h_3323402198(TEXT("/Script/PetGameUE"),
 		Z_CompiledInDeferFile_FID_PetGameUE_Source_PetGameUE_Public_AEgg_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_PetGameUE_Source_PetGameUE_Public_AEgg_h_Statics::ClassInfo),
 		nullptr, 0,
 		nullptr, 0);

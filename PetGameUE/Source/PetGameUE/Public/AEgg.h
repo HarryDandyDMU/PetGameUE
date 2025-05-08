@@ -4,6 +4,7 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/Actor.h"
+#include "AIncubator.h"
 #include "PetMaster.h"// included to spawn baby
 #include "AEgg.generated.h"
 
@@ -31,19 +32,28 @@ public:
 	UPROPERTY(EditAnywhere, Category = "Timer")
 	FTimerHandle HatchTimer;
 
-	UPROPERTY(EditAnywhere, Category = "Timer")
+	UPROPERTY(EditDefaultsOnly, Category = "Timer")
 	float HatchTime;
 
 	UPROPERTY(EditAnywhere, Category = "Species")
 	FName SpeciesType;
 
+	UPROPERTY(EditDefaultsOnly, Category = "Timer")
+	FTimerHandle IncubatorCheck;
+
+	UPROPERTY(EditDefaultsOnly, Category = "Timer")
+	float IncubatorTime;
+
+
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
 
-public:	
+public:
 
 	void Hatch();
 
-	bool DetectIncubator();
+	void DetectIncubator();
+
+	float Radius = 100.f;
 };

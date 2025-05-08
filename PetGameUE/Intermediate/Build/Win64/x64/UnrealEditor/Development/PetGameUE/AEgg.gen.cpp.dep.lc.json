@@ -7,6 +7,8 @@
         "Includes": [
             "z:\\year three\\module4\\unreal\\petgameue\\petgameue\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\petgameue\\definitions.petgameue.h",
             "z:\\year three\\module4\\unreal\\petgameue\\petgameue\\source\\petgameue\\public\\aegg.h",
+            "z:\\year three\\module4\\unreal\\petgameue\\petgameue\\source\\petgameue\\public\\aincubator.h",
+            "z:\\year three\\module4\\unreal\\petgameue\\petgameue\\intermediate\\build\\win64\\unrealeditor\\inc\\petgameue\\uht\\aincubator.generated.h",
             "z:\\year three\\module4\\unreal\\petgameue\\petgameue\\source\\petgameue\\public\\petmaster.h",
             "e:\\epic\\ue_5.3\\engine\\source\\runtime\\engine\\classes\\gameframework\\character.h",
             "e:\\epic\\ue_5.3\\engine\\source\\runtime\\engine\\classes\\gameframework\\charactermovementreplication.h",

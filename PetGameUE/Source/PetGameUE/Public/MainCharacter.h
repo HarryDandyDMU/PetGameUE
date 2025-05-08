@@ -110,11 +110,6 @@ public:
 
 	bool bIsGrabbed;
 
-	//used for line trace and grab
-	FVector Start;
-
-	FVector End;
-
 	//interact action
 	void Interact();
 

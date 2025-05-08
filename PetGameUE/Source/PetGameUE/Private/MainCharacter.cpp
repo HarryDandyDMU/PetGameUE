@@ -87,7 +87,7 @@ void AMainCharacter::Tick(float DeltaTime)
 	if (bIsGrabbed == true)
 	{
 		//set location to end of line trace
-		PhysicsHandle->SetTargetLocation(End);
+		PhysicsHandle->SetTargetLocation((CameraComponent->GetComponentLocation())+(CameraComponent->GetForwardVector() * Distance));
 	}
 }
 
@@ -127,7 +127,7 @@ void AMainCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputCompo
 		//Grab
 		EnhancedInputComponent->BindAction(GrabAction, ETriggerEvent::Triggered, this, &AMainCharacter::Grab);
 
-		EnhancedInputComponent->BindAction(GrabAction, ETriggerEvent::Completed,this, &AMainCharacter::Grab);
+		EnhancedInputComponent->BindAction(GrabAction, ETriggerEvent::Completed,this, &AMainCharacter::Released);
 	}
 
 
@@ -274,8 +274,8 @@ void AMainCharacter::Kick()
 void AMainCharacter::InitialiseTrace() 
 {
 	//create start and end locations
-	Start = CameraComponent->GetComponentLocation();//returns rcamera root location
-	End = (Start) + (CameraComponent->GetForwardVector() * Distance);//returns root add forward vector times by distance
+	FVector Start = CameraComponent->GetComponentLocation();//returns rcamera root location
+	FVector End = (Start) + (CameraComponent->GetForwardVector() * Distance);//returns root add forward vector times by distance
 	//swap above for camera forward vector
 
 	//array of actors to ignore;

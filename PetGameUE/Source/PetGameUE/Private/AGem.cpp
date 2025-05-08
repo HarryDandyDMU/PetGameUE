@@ -29,17 +29,5 @@ FName AAGem::GetGemType()
 	return FName(GemType);
 }
 
-// Called when the game starts or when spawned
-void AAGem::BeginPlay()
-{
-	Super::BeginPlay();
-	
-}
 
-// Called every frame
-void AAGem::Tick(float DeltaTime)
-{
-	Super::Tick(DeltaTime);
-
-}
 
