@@ -21,13 +21,13 @@ void EmptyLinkFunctionForGeneratedCodePetGameUE_init() {}
 				SingletonFuncArray,
 				UE_ARRAY_COUNT(SingletonFuncArray),
 				PKG_CompiledIn | 0x00000000,
-				0x9A73C03A,
-				0x50782947,
+				0xC3E1DB43,
+				0x7A8DC6EA,
 				METADATA_PARAMS(0, nullptr)
 			};
 			UECodeGen_Private::ConstructUPackage(Z_Registration_Info_UPackage__Script_PetGameUE.OuterSingleton, PackageParams);
 		}
 		return Z_Registration_Info_UPackage__Script_PetGameUE.OuterSingleton;
 	}
-	static FRegisterCompiledInInfo Z_CompiledInDeferPackage_UPackage__Script_PetGameUE(Z_Construct_UPackage__Script_PetGameUE, TEXT("/Script/PetGameUE"), Z_Registration_Info_UPackage__Script_PetGameUE, CONSTRUCT_RELOAD_VERSION_INFO(FPackageReloadVersionInfo, 0x9A73C03A, 0x50782947));
+	static FRegisterCompiledInInfo Z_CompiledInDeferPackage_UPackage__Script_PetGameUE(Z_Construct_UPackage__Script_PetGameUE, TEXT("/Script/PetGameUE"), Z_Registration_Info_UPackage__Script_PetGameUE, CONSTRUCT_RELOAD_VERSION_INFO(FPackageReloadVersionInfo, 0xC3E1DB43, 0x7A8DC6EA));
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
