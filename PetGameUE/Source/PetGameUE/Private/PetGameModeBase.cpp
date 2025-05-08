@@ -45,10 +45,10 @@ void APetGameModeBase::ActorIterator()
 	EggLocationMapGM.Empty();
 
 	//EGGS
-	for (TActorIterator<AAEgg> Iterator(World); Iterator; ++Iterator)
+	for (TActorIterator<AAUpdatedEgg> Iterator(World); Iterator; ++Iterator)
 	{
 		//get the actor from iterator pointer
-		AAEgg* Actor = *Iterator;
+		AAUpdatedEgg* Actor = *Iterator;
 
 		FString Temp = Actor->GetFName().ToString();
 		GEngine->AddOnScreenDebugMessage(-1, 60.f, FColor::White, Temp);
@@ -211,7 +211,7 @@ void APetGameModeBase::LoadGame()
 		max = CurrentLoadInstance->EggLocationMap.Num(); //SET TO MAX NUM OF EGGS
 
 		//DESTROY EGGS
-		for (TActorIterator<AAEgg> Iterator(World); Iterator; ++Iterator)
+		for (TActorIterator<AAUpdatedEgg> Iterator(World); Iterator; ++Iterator)
 		{
 			Iterator->Destroy();//remove all eGGS on load
 		}
@@ -231,7 +231,7 @@ void APetGameModeBase::LoadGame()
 
 			if (CurrentType == FName(TEXT("Species1")))
 			{
-				AAEgg* SpawnedEgg = World->SpawnActor<AAEgg>(Species1Egg, CurrentLoc, FRotator::ZeroRotator, SpawnParams); //no rotation and saved location
+				AAUpdatedEgg* SpawnedEgg = World->SpawnActor<AAUpdatedEgg>(Species1Egg, CurrentLoc, FRotator::ZeroRotator, SpawnParams); //no rotation and saved location
 				SpawnedEgg->HatchTime = CurrentTime;
 				SpawnedEgg->PetToSpawn = CurrentPetToSpawn;
 

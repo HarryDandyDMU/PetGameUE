@@ -11,8 +11,8 @@ void EmptyLinkFunctionForGeneratedCodePetGameModeBase() {}
 // Cross Module References
 	COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
 	ENGINE_API UClass* Z_Construct_UClass_AGameModeBase();
-	PETGAMEUE_API UClass* Z_Construct_UClass_AAEgg_NoRegister();
 	PETGAMEUE_API UClass* Z_Construct_UClass_AAGem_NoRegister();
+	PETGAMEUE_API UClass* Z_Construct_UClass_AAUpdatedEgg_NoRegister();
 	PETGAMEUE_API UClass* Z_Construct_UClass_APetGameModeBase();
 	PETGAMEUE_API UClass* Z_Construct_UClass_APetGameModeBase_NoRegister();
 	PETGAMEUE_API UClass* Z_Construct_UClass_APetMaster_NoRegister();
@@ -122,7 +122,7 @@ void EmptyLinkFunctionForGeneratedCodePetGameModeBase() {}
 #endif
 	};
 #endif
-	const UECodeGen_Private::FClassPropertyParams Z_Construct_UClass_APetGameModeBase_Statics::NewProp_Species1Egg = { "Species1Egg", nullptr, (EPropertyFlags)0x0014000000010001, UECodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(APetGameModeBase, Species1Egg), Z_Construct_UClass_UClass, Z_Construct_UClass_AAEgg_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_APetGameModeBase_Statics::NewProp_Species1Egg_MetaData), Z_Construct_UClass_APetGameModeBase_Statics::NewProp_Species1Egg_MetaData) };
+	const UECodeGen_Private::FClassPropertyParams Z_Construct_UClass_APetGameModeBase_Statics::NewProp_Species1Egg = { "Species1Egg", nullptr, (EPropertyFlags)0x0014000000010001, UECodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(APetGameModeBase, Species1Egg), Z_Construct_UClass_UClass, Z_Construct_UClass_AAUpdatedEgg_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_APetGameModeBase_Statics::NewProp_Species1Egg_MetaData), Z_Construct_UClass_APetGameModeBase_Statics::NewProp_Species1Egg_MetaData) };
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_APetGameModeBase_Statics::NewProp_Species1Pet_MetaData[] = {
 		{ "Category", "Species" },
@@ -182,9 +182,9 @@ void EmptyLinkFunctionForGeneratedCodePetGameModeBase() {}
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
 	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_PetGameUE_Source_PetGameUE_Public_PetGameModeBase_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_APetGameModeBase, APetGameModeBase::StaticClass, TEXT("APetGameModeBase"), &Z_Registration_Info_UClass_APetGameModeBase, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(APetGameModeBase), 2986144147U) },
+		{ Z_Construct_UClass_APetGameModeBase, APetGameModeBase::StaticClass, TEXT("APetGameModeBase"), &Z_Registration_Info_UClass_APetGameModeBase, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(APetGameModeBase), 3560416872U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_PetGameUE_Source_PetGameUE_Public_PetGameModeBase_h_2143263917(TEXT("/Script/PetGameUE"),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_PetGameUE_Source_PetGameUE_Public_PetGameModeBase_h_2678388725(TEXT("/Script/PetGameUE"),
 		Z_CompiledInDeferFile_FID_PetGameUE_Source_PetGameUE_Public_PetGameModeBase_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_PetGameUE_Source_PetGameUE_Public_PetGameModeBase_h_Statics::ClassInfo),
 		nullptr, 0,
 		nullptr, 0);

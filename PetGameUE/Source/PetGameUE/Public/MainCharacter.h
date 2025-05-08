@@ -8,7 +8,7 @@
 #include "Camera/CameraComponent.h"//include for camera
 #include "Components/CapsuleComponent.h" //included for capulse
 #include <PhysicsEngine/PhysicsHandleComponent.h>//for grab
-#include "AGem.h" //included for gems
+#include "AUpdatedEgg.h"
 #include "FGemStruct.h"//gem struct
 #include "ARubbleMaster.h"//included for mining rubble
 #include "MainCharacter.generated.h"

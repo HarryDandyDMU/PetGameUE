@@ -138,7 +138,7 @@ void AMainCharacter::Grab()
 	InitialiseTrace();
 	if (Hit)
 	{
-		if (HitResult.GetActor()->IsA(AAEgg::StaticClass())) //if trace is a Egg
+		if (HitResult.GetActor()->IsA(AAUpdatedEgg::StaticClass())) //if trace is a Egg
 		{
 			PhysicsHandle->GrabComponentAtLocationWithRotation(HitResult.GetComponent(), NAME_None, HitResult.GetActor()->GetActorLocation(), HitResult.GetActor()->GetActorRotation());
 			bIsGrabbed = true;

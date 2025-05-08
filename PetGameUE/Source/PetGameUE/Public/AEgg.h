@@ -38,11 +38,11 @@ public:
 	UPROPERTY(EditAnywhere, Category = "Species")
 	FName SpeciesType;
 
-	UPROPERTY(EditDefaultsOnly, Category = "Timer")
-	FTimerHandle IncubatorCheck;
+	//UPROPERTY(EditDefaultsOnly, Category = "Timer")
+	//FTimerHandle IncubatorCheck;
 
-	UPROPERTY(EditDefaultsOnly, Category = "Timer")
-	float IncubatorTime;
+	//UPROPERTY(EditDefaultsOnly, Category = "Timer")
+	//float IncubatorTime;
 
 
 protected:
@@ -50,10 +50,13 @@ protected:
 	virtual void BeginPlay() override;
 
 public:
+	// Called every frame
+	virtual void Tick(float DeltaTime) override;
+
 
 	void Hatch();
 
-	void DetectIncubator();
+	//void DetectIncubator();
 
-	float Radius = 100.f;
+	//float Radius = 100.f;
 };

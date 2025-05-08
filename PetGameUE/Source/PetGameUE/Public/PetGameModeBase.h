@@ -5,7 +5,7 @@
 #include "CoreMinimal.h"
 #include "AGem.h"//gem actor
 #include "PetMaster.h"//pets class
-#include "AEgg.h"//egg class
+#include "AUpdatedEgg.h"//egg class
 #include "MainCharacter.h"//main char class
 #include "FGemStruct.h"//gem struct
 #include "GameFramework/GameModeBase.h"
@@ -53,7 +53,7 @@ public:
 
 	//EGGS
 	UPROPERTY(EditDefaultsOnly, Category = "Eggs")
-	TSubclassOf<AAEgg> Species1Egg;
+	TSubclassOf<AAUpdatedEgg> Species1Egg;
 
 
 	TMap<int32, float> EggHatchTimeGM;//Dictionary of Egg hatch timer amounts

@@ -141,6 +141,11 @@
       <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles)</ForcedIncludeFiles>
       <AdditionalOptions>$(ClCompile_AdditionalOptions)</AdditionalOptions>
     </ClCompile>
+    <ClCompile Include="..\..\Source\PetGameUE\Private\AUpdatedEgg.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles)</ForcedIncludeFiles>
+      <AdditionalOptions>$(ClCompile_AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
     <ClCompile Include="..\..\Source\PetGameUE\Private\BTAIPetController.cpp">
       <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles)</ForcedIncludeFiles>
@@ -185,6 +190,7 @@
     <ClInclude Include="..\..\Source\PetGameUE\Public\AGem.h"/>
     <ClInclude Include="..\..\Source\PetGameUE\Public\AIncubator.h"/>
     <ClInclude Include="..\..\Source\PetGameUE\Public\ARubbleMaster.h"/>
+    <ClInclude Include="..\..\Source\PetGameUE\Public\AUpdatedEgg.h"/>
     <ClInclude Include="..\..\Source\PetGameUE\Public\BTAIPetController.h"/>
     <ClInclude Include="..\..\Source\PetGameUE\Public\CaveMaster.h"/>
     <ClInclude Include="..\..\Source\PetGameUE\Public\FGemStruct.h"/>

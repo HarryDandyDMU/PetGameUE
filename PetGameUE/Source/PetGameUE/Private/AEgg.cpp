@@ -1,8 +1,8 @@
 // Fill out your copyright notice in the Description page of Project Settings.
 
 
-#include "Kismet/KismetSystemLibrary.h"
 #include "AEgg.h"
+
 
 // Sets default values
 AAEgg::AAEgg()
@@ -25,11 +25,17 @@ AAEgg::AAEgg()
 
 void AAEgg::BeginPlay()
 {
-	//check incubator every 10 seconds
-	GetWorld()->GetTimerManager().SetTimer(IncubatorCheck, this, &AAEgg::DetectIncubator, IncubatorTime, true, -1.f); 
+	
+	GetWorld()->GetTimerManager().SetTimer(HatchTimer, this, &AAEgg::Hatch, HatchTime, false, -1.f); 
+
 
 }
 
+
+void AAEgg::Tick(float DeltaTime)
+{
+	//DetectIncubator();
+}
 
 void AAEgg::Hatch()
 {
@@ -38,41 +44,43 @@ void AAEgg::Hatch()
 	AActor* SpeciesToDrop = GetWorld()->SpawnActor<APetMaster>(PetToSpawn, DropLocation->GetComponentLocation(), FRotator::ZeroRotator, SpawnParams); //no rotation and worldspace component location
 
 	Destroy();
-
-
 }
 
-void AAEgg::DetectIncubator()
-{
-	FVector Start = GetActorLocation();
-	FVector End = GetActorLocation();
-
-	TArray<AActor*> ActorsToIgnore;
-
-	TArray<FHitResult> HitArray;
-
-	bool Hit;
-
-	Hit = UKismetSystemLibrary::SphereTraceMulti(GetWorld(), Start, End, Radius, UEngineTypes::ConvertToTraceType(ECC_Camera), false, ActorsToIgnore, EDrawDebugTrace::ForDuration, HitArray, true, FLinearColor::Green, FLinearColor::Red, 60.f);
-
-	if (Hit)
-	{
-		for(const FHitResult ThingHit : HitArray)
-		{
-			if (ThingHit.GetActor()->IsA((AAIncubator::StaticClass())))
-			{
-				////start hatching
-				//GetWorld()->GetTimerManager().SetTimer(HatchTimer, this, &AAEgg::Hatch, HatchTime, false, -1.f); 
-				Hatch();
-
-				//Stop Incubator Check
-				GetWorld()->GetTimerManager().ClearTimer(IncubatorCheck);
-			}
-		}
-	}
-
-
-	
-
-}
+//void AAUpdatedEgg::DetectIncubator()
+//{
+//	FVector Start = GetActorLocation();
+//	FVector End = GetActorLocation();
+//
+//	TArray<AActor*> ActorsToIgnore;
+//
+//	TArray<FHitResult> HitArray;
+//
+//	bool Hit;
+//
+//	Hit = UKismetSystemLibrary::SphereTraceMulti(GetWorld(), Start, End, Radius, UEngineTypes::ConvertToTraceType(ECC_Camera), false, ActorsToIgnore, EDrawDebugTrace::ForDuration, HitArray, true, FLinearColor::Green, FLinearColor::Red, 60.f);
+//
+//
+//
+//	if (Hit == true)
+//	{
+//		for(const FHitResult ThingHit : HitArray)
+//		{
+//			if (ThingHit.GetActor()->IsA((AAIncubator::StaticClass())))
+//			{
+//				////start hatching
+//				//GetWorld()->GetTimerManager().SetTimer(HatchTimer, this, &AAUpdatedEgg::Hatch, HatchTime, false, -1.f); 
+//				Hatch();
+//
+//
+//				//Stop Incubator Check
+//				//GetWorld()->GetTimerManager().ClearTimer(IncubatorCheck);
+//
+//			}
+//		}
+//	}
+//
+//
+//	
+//
+//}
 
