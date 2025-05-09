@@ -121,11 +121,6 @@
       <AdditionalOptions>$(ClCompile_AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <ClInclude Include="..\..\Source\PetGameUE\PetGameUE.h"/>
-    <ClCompile Include="..\..\Source\PetGameUE\Private\AEgg.cpp">
-      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles)</ForcedIncludeFiles>
-      <AdditionalOptions>$(ClCompile_AdditionalOptions)</AdditionalOptions>
-    </ClCompile>
     <ClCompile Include="..\..\Source\PetGameUE\Private\AGem.cpp">
       <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles)</ForcedIncludeFiles>
@@ -152,6 +147,11 @@
       <AdditionalOptions>$(ClCompile_AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <ClCompile Include="..\..\Source\PetGameUE\Private\CaveMaster.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles)</ForcedIncludeFiles>
+      <AdditionalOptions>$(ClCompile_AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\PetGameUE\Private\DayNightCycle.cpp">
       <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles)</ForcedIncludeFiles>
       <AdditionalOptions>$(ClCompile_AdditionalOptions)</AdditionalOptions>
@@ -186,13 +186,13 @@
       <ForcedIncludeFiles>$(ClCompile_ForcedIncludeFiles)</ForcedIncludeFiles>
       <AdditionalOptions>$(ClCompile_AdditionalOptions)</AdditionalOptions>
     </ClCompile>
-    <ClInclude Include="..\..\Source\PetGameUE\Public\AEgg.h"/>
     <ClInclude Include="..\..\Source\PetGameUE\Public\AGem.h"/>
     <ClInclude Include="..\..\Source\PetGameUE\Public\AIncubator.h"/>
     <ClInclude Include="..\..\Source\PetGameUE\Public\ARubbleMaster.h"/>
     <ClInclude Include="..\..\Source\PetGameUE\Public\AUpdatedEgg.h"/>
     <ClInclude Include="..\..\Source\PetGameUE\Public\BTAIPetController.h"/>
     <ClInclude Include="..\..\Source\PetGameUE\Public\CaveMaster.h"/>
+    <ClInclude Include="..\..\Source\PetGameUE\Public\DayNightCycle.h"/>
     <ClInclude Include="..\..\Source\PetGameUE\Public\FGemStruct.h"/>
     <ClInclude Include="..\..\Source\PetGameUE\Public\GemStruct.h"/>
     <ClInclude Include="..\..\Source\PetGameUE\Public\MainCharacter.h"/>

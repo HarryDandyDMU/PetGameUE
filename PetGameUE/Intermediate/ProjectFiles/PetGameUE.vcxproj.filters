@@ -42,9 +42,6 @@
     <Filter Include="Source\PetGameUE\Private">
       <UniqueIdentifier>{B1840729-A067-3ECA-935D-6AABE1EE9CE7}</UniqueIdentifier>
     </Filter>
-    <ClCompile Include="..\..\Source\PetGameUE\Private\AEgg.cpp">
-      <Filter>Source\PetGameUE\Private</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\Source\PetGameUE\Private\AGem.cpp">
       <Filter>Source\PetGameUE\Private</Filter>
     </ClCompile>
@@ -61,6 +58,9 @@
       <Filter>Source\PetGameUE\Private</Filter>
     </ClCompile>
     <ClCompile Include="..\..\Source\PetGameUE\Private\CaveMaster.cpp">
+      <Filter>Source\PetGameUE\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\PetGameUE\Private\DayNightCycle.cpp">
       <Filter>Source\PetGameUE\Private</Filter>
     </ClCompile>
     <ClCompile Include="..\..\Source\PetGameUE\Private\FGemStruct.cpp">
@@ -84,9 +84,6 @@
     <Filter Include="Source\PetGameUE\Public">
       <UniqueIdentifier>{0E79E863-F160-3C06-BCF5-1891E471A3DF}</UniqueIdentifier>
     </Filter>
-    <ClInclude Include="..\..\Source\PetGameUE\Public\AEgg.h">
-      <Filter>Source\PetGameUE\Public</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\Source\PetGameUE\Public\AGem.h">
       <Filter>Source\PetGameUE\Public</Filter>
     </ClInclude>
@@ -103,6 +100,9 @@
       <Filter>Source\PetGameUE\Public</Filter>
     </ClInclude>
     <ClInclude Include="..\..\Source\PetGameUE\Public\CaveMaster.h">
+      <Filter>Source\PetGameUE\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\PetGameUE\Public\DayNightCycle.h">
       <Filter>Source\PetGameUE\Public</Filter>
     </ClInclude>
     <ClInclude Include="..\..\Source\PetGameUE\Public\FGemStruct.h">

@@ -8,7 +8,11 @@
 				"Z:/Year Three/Module4/Unreal/PetGameUE/PetGameUE/Content/TestLevel.umap",
 				"Z:/Year Three/Module4/Unreal/PetGameUE/PetGameUE/Content/Items/Eggs/BP_Species1Egg.uasset",
 				"Z:/Year Three/Module4/Unreal/PetGameUE/PetGameUE/Content/Items/Eggs/BP_UpdatedEgg.uasset",
-				"Z:/Year Three/Module4/Unreal/PetGameUE/PetGameUE/Content/BP_PetGameModeBase.uasset"
+				"Z:/Year Three/Module4/Unreal/PetGameUE/PetGameUE/Content/BP_PetGameModeBase.uasset",
+				"Z:/Year Three/Module4/Unreal/PetGameUE/PetGameUE/Content/BP_PlayerCharacter.uasset",
+				"Z:/Year Three/Module4/Unreal/PetGameUE/PetGameUE/Content/Levels/SunController/BP_DayNightCycle.uasset",
+				"Z:/Year Three/Module4/Unreal/PetGameUE/PetGameUE/Content/Levels/SunController/Curves/Curve_SunRotation_Vector.uasset",
+				"Z:/Year Three/Module4/Unreal/PetGameUE/PetGameUE/Content/Levels/SunController/Curves/Curve_SunProgression_Float.uasset"
 			]
 		}
 	]
