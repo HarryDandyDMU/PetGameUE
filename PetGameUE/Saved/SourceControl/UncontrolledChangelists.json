@@ -12,7 +12,24 @@
 				"Z:/Year Three/Module4/Unreal/PetGameUE/PetGameUE/Content/BP_PlayerCharacter.uasset",
 				"Z:/Year Three/Module4/Unreal/PetGameUE/PetGameUE/Content/Levels/SunController/BP_DayNightCycle.uasset",
 				"Z:/Year Three/Module4/Unreal/PetGameUE/PetGameUE/Content/Levels/SunController/Curves/Curve_SunRotation_Vector.uasset",
-				"Z:/Year Three/Module4/Unreal/PetGameUE/PetGameUE/Content/Levels/SunController/Curves/Curve_SunProgression_Float.uasset"
+				"Z:/Year Three/Module4/Unreal/PetGameUE/PetGameUE/Content/Levels/SunController/Curves/Curve_SunProgression_Float.uasset",
+				"Z:/Year Three/Module4/Unreal/PetGameUE/PetGameUE/Content/Meshes/SkeletalMesh/000-007Adult1Morph.uasset",
+				"Z:/Year Three/Module4/Unreal/PetGameUE/PetGameUE/Content/Meshes/SkeletalMesh/standardSurface1.uasset",
+				"Z:/Year Three/Module4/Unreal/PetGameUE/PetGameUE/Content/Meshes/SkeletalMesh/000-007Adult1Morph_Skeleton.uasset",
+				"Z:/Year Three/Module4/Unreal/PetGameUE/PetGameUE/Content/Meshes/SkeletalMesh/000-007Adult1Morph_PhysicsAsset.uasset",
+				"Z:/Year Three/Module4/Unreal/PetGameUE/PetGameUE/Content/Meshes/SkeletalMesh/Pets/000-007Adult1Morph.uasset",
+				"Z:/Year Three/Module4/Unreal/PetGameUE/PetGameUE/Content/Meshes/SkeletalMesh/Pets/000-007Adult1Morph_PhysicsAsset.uasset",
+				"Z:/Year Three/Module4/Unreal/PetGameUE/PetGameUE/Content/Meshes/SkeletalMesh/Pets/000-007Adult1Morph_Skeleton.uasset",
+				"Z:/Year Three/Module4/Unreal/PetGameUE/PetGameUE/Content/Meshes/SkeletalMesh/Pets/standardSurface1.uasset",
+				"Z:/Year Three/Module4/Unreal/PetGameUE/PetGameUE/Content/Meshes/SkeletalMesh/Pets/Species1/000-007Adult1Morph.uasset",
+				"Z:/Year Three/Module4/Unreal/PetGameUE/PetGameUE/Content/Meshes/SkeletalMesh/Pets/Species1/000-007Adult1Morph_PhysicsAsset.uasset",
+				"Z:/Year Three/Module4/Unreal/PetGameUE/PetGameUE/Content/Meshes/SkeletalMesh/Pets/Species1/000-007Adult1Morph_Skeleton.uasset",
+				"Z:/Year Three/Module4/Unreal/PetGameUE/PetGameUE/Content/Meshes/SkeletalMesh/Pets/Species1/standardSurface1.uasset",
+				"Z:/Year Three/Module4/Unreal/PetGameUE/PetGameUE/Content/Meshes/SkeletalMesh/Pets/Species1/Adult/000-007Adult1Morph.uasset",
+				"Z:/Year Three/Module4/Unreal/PetGameUE/PetGameUE/Content/Meshes/SkeletalMesh/Pets/Species1/Adult/000-007Adult1Morph_PhysicsAsset.uasset",
+				"Z:/Year Three/Module4/Unreal/PetGameUE/PetGameUE/Content/Meshes/SkeletalMesh/Pets/Species1/Adult/000-007Adult1Morph_Skeleton.uasset",
+				"Z:/Year Three/Module4/Unreal/PetGameUE/PetGameUE/Content/Meshes/SkeletalMesh/Pets/Species1/Adult/standardSurface1.uasset",
+				"Z:/Year Three/Module4/Unreal/PetGameUE/PetGameUE/Content/Pets/BP_Species1.uasset"
 			]
 		}
 	]

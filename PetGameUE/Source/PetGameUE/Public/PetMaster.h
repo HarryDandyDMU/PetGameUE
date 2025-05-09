@@ -73,10 +73,10 @@ public:
 
 
 	//fname for morph target CHANGE TO ADULT WHEN MESH DONE
-	FName BashfulMorph = TEXT("PetDefaultTestMorphBashFul");
-	FName CalmMorph = TEXT("PetDefaultTestMorphCalm");
-	FName SeriousMorph = TEXT("PetDefaultTestMorphSerious");
-	FName JoyfulMorph = TEXT("PetDefaultTestMorphJoy");
+	FName BashfulMorph = TEXT("Adult1Bashful");
+	FName CalmMorph = TEXT("Adult1Calm");
+	FName SeriousMorph = TEXT("Adult1Joyful");
+	FName JoyfulMorph = TEXT("Adult1Serious");
 
 	//bool to remove zero weight?
 
@@ -163,7 +163,7 @@ private:
 	void Eat();//function to ray trace food infront of pet
 
 	UPROPERTY(VisibleAnywhere, Category = "Eat")
-	float FoodDistance = 50.f;//distance to food check
+	float FoodDistance = 100.f;//distance to food check
 
 	UPROPERTY(VisibleAnywhere, Category = "Eat")
 	bool Hit;//if hit anything
