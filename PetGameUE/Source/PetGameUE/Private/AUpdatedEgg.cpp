@@ -51,25 +51,24 @@ void AAUpdatedEgg::DetectIncubator()
 
 	TArray<AActor*> ActorsToIgnore;
 
-	TArray<FHitResult> HitArray;
+	TArray<FHitResult> EggHitArray;
 
 	bool Hit;
 
-	Hit = UKismetSystemLibrary::SphereTraceMulti(GetWorld(), Start, End, Radius, UEngineTypes::ConvertToTraceType(ECC_Camera), false, ActorsToIgnore, EDrawDebugTrace::ForDuration, HitArray, true, FLinearColor::Green, FLinearColor::Red, 60.f);
+	Hit = UKismetSystemLibrary::SphereTraceMulti(GetWorld(), Start, End, Radius, UEngineTypes::ConvertToTraceType(ECC_Camera), false, ActorsToIgnore, EDrawDebugTrace::ForDuration, EggHitArray, true, FLinearColor::Green, FLinearColor::Red, 60.f);
 
 
 
 	if (Hit == true)
 	{
-		for(const FHitResult& ThingHit : HitArray)
+		for(const FHitResult& ThingHit : EggHitArray)
 		{
 			//causing crashes (possibly too intensive)
-			if (ThingHit.GetActor()->GetClass() == AAUpdatedEgg::StaticClass())
+			if (ThingHit.GetActor()->IsA(AAUpdatedEgg::StaticClass()))
 			{
 				////start hatching
 				//GetWorld()->GetTimerManager().SetTimer(HatchTimer, this, &AAUpdatedEgg::Hatch, HatchTime, false, -1.f); 
 				Hatch();
-				Hit = false;
 
 				//Stop Incubator Check
 				//GetWorld()->GetTimerManager().ClearTimer(IncubatorCheck);
