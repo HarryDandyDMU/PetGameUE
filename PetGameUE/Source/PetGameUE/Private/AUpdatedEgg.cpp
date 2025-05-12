@@ -61,14 +61,14 @@ void AAUpdatedEgg::DetectIncubator()
 
 	if (Hit == true)
 	{
-		for(const FHitResult ThingHit : HitArray)
+		for(const FHitResult& ThingHit : HitArray)
 		{
 			if (ThingHit.GetActor()->IsA((AAIncubator::StaticClass())))
 			{
 				////start hatching
 				//GetWorld()->GetTimerManager().SetTimer(HatchTimer, this, &AAUpdatedEgg::Hatch, HatchTime, false, -1.f); 
 				Hatch();
-
+				Hit = false;
 
 				//Stop Incubator Check
 				//GetWorld()->GetTimerManager().ClearTimer(IncubatorCheck);
@@ -76,9 +76,6 @@ void AAUpdatedEgg::DetectIncubator()
 			}
 		}
 	}
-
-
-	
 
 }
 

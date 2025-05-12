@@ -24,8 +24,8 @@ public:
 	UPROPERTY(VisibleAnywhere, Category = "Day")
 	float DayDonePercentage;//0/1 float that'll be clamped
 
-	UPROPERTY(VisibleAnywhere, Category = "Day")
-	float DayLength = 10.f;//day length in seconds
+	UPROPERTY(EditDefaultsOnly, Category = "Day")
+	float DayLength = 600.f;//day length in seconds
 
 	UPROPERTY(VisibleAnywhere, Category = "Day")
 	float ModulusDay;//holds modulus
