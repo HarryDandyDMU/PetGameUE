@@ -63,7 +63,8 @@ void AAUpdatedEgg::DetectIncubator()
 	{
 		for(const FHitResult& ThingHit : HitArray)
 		{
-			if (ThingHit.GetActor()->IsA((AAIncubator::StaticClass())))
+			//causing crashes (possibly too intensive)
+			if (ThingHit.GetActor()->GetClass() == AAUpdatedEgg::StaticClass())
 			{
 				////start hatching
 				//GetWorld()->GetTimerManager().SetTimer(HatchTimer, this, &AAUpdatedEgg::Hatch, HatchTime, false, -1.f); 
