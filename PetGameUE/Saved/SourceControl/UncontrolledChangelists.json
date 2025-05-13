@@ -5,9 +5,10 @@
 			"guid": "00000000000000000000000000000000",
 			"description": "Default Uncontrolled Changelist",
 			"files": [
-				"Z:/Year Three/Module4/Unreal/PetGameUE/PetGameUE/Content/UserInterface/MainMenu/WB_MainMenu.uasset",
-				"Z:/Year Three/Module4/Unreal/PetGameUE/PetGameUE/Content/Levels/DefaultMap/DefaultMap.umap",
-				"Z:/Year Three/Module4/Unreal/PetGameUE/PetGameUE/Content/Props/BPs/BP_Incubator.uasset"
+				"Z:/Year Three/Module4/Unreal/PetGameUE/PetGameUE/Content/Items/Eggs/BP_UpdatedEggSpecies1.uasset",
+				"Z:/Year Three/Module4/Unreal/PetGameUE/PetGameUE/Content/Items/Eggs/BP_UpdatedEgg.uasset",
+				"Z:/Year Three/Module4/Unreal/PetGameUE/PetGameUE/Content/BP_PetGameModeBase.uasset",
+				"Z:/Year Three/Module4/Unreal/PetGameUE/PetGameUE/Content/Levels/DefaultMap/DefaultMap.umap"
 			]
 		}
 	]
