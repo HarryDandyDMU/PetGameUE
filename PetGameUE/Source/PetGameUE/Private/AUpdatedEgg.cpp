@@ -24,7 +24,7 @@ void AAUpdatedEgg::BeginPlay()
 {
 	Super::BeginPlay();
 	
-	//GetWorld()->GetTimerManager().SetTimer(HatchTimer, this, &AAUpdatedEgg::DetectIncubator, HatchTime, true, -1.f);
+	GetWorld()->GetTimerManager().SetTimer(HatchTimer, this, &AAUpdatedEgg::DetectIncubator, HatchTime, true, -1.f);
 
 }
 
@@ -44,38 +44,38 @@ void AAUpdatedEgg::Hatch()
 	Destroy();
 }
 
-//void AAUpdatedEgg::DetectIncubator()
-//{
-//	FVector Start = GetActorLocation();
-//	FVector End = GetActorLocation();
-//
-//	TArray<AActor*> ActorsToIgnore;
-//
-//	TArray<FHitResult> EggHitArray;
-//
-//	bool Hit;
-//
-//	Hit = UKismetSystemLibrary::SphereTraceMulti(GetWorld(), Start, End, Radius, UEngineTypes::ConvertToTraceType(ECC_Camera), false, ActorsToIgnore, EDrawDebugTrace::ForDuration, EggHitArray, true, FLinearColor::Green, FLinearColor::Red, 60.f);
-//
-//
-//
-//	if (Hit == true)
-//	{
-//		for(const FHitResult& ThingHit : EggHitArray)
-//		{
-//			//causing crashes (possibly too intensive)
-//			if (ThingHit.GetActor()->ActorHasTag(FName(TEXT("Incubator"))))
-//			{
-//				////start hatching
-//				//GetWorld()->GetTimerManager().SetTimer(HatchTimer, this, &AAUpdatedEgg::Hatch, HatchTime, false, -1.f); 
-//				Hatch();
-//
-//				//Stop Incubator Check
-//				//GetWorld()->GetTimerManager().ClearTimer(IncubatorCheck);
-//
-//			}
-//		}
-//	}
-//
-//}
+void AAUpdatedEgg::DetectIncubator()
+{
+	FVector Start = GetActorLocation();
+	FVector End = GetActorLocation();
+
+	TArray<AActor*> ActorsToIgnore;
+
+	TArray<FHitResult> EggHitArray;
+
+	bool Hit;
+
+	Hit = UKismetSystemLibrary::SphereTraceMulti(GetWorld(), Start, End, Radius, UEngineTypes::ConvertToTraceType(ECC_Camera), false, ActorsToIgnore, EDrawDebugTrace::ForDuration, EggHitArray, true, FLinearColor::Green, FLinearColor::Red, 60.f);
+
+
+
+	if (Hit == true)
+	{
+		for(const FHitResult& ThingHit : EggHitArray)
+		{
+			//causing crashes (possibly too intensive)
+			if (ThingHit.GetActor()->IsA(AAUpdatedEgg::StaticClass()))
+			{
+				////start hatching
+				//GetWorld()->GetTimerManager().SetTimer(HatchTimer, this, &AAUpdatedEgg::Hatch, HatchTime, false, -1.f); 
+				Hatch();
+
+				//Stop Incubator Check
+				//GetWorld()->GetTimerManager().ClearTimer(IncubatorCheck);
+
+			}
+		}
+	}
+
+}
 
