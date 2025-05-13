@@ -1,0 +1,36 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "z:\\year three\\module4\\unreal\\petgameue\\petgameue\\source\\petgameue\\private\\arubblemaster.cpp",
+        "ProvidedModule": "",
+        "PCH": "z:\\year three\\module4\\unreal\\petgameue\\petgameue\\intermediate\\build\\win64\\x64\\petgameue\\development\\engine\\sharedpch.engine.cpp20.h.pch",
+        "Includes": [
+            "z:\\year three\\module4\\unreal\\petgameue\\petgameue\\intermediate\\build\\win64\\x64\\unrealgame\\development\\petgameue\\definitions.petgameue.h",
+            "z:\\year three\\module4\\unreal\\petgameue\\petgameue\\source\\petgameue\\public\\arubblemaster.h",
+            "z:\\year three\\module4\\unreal\\petgameue\\petgameue\\source\\petgameue\\public\\agem.h",
+            "e:\\epic\\ue_5.3\\engine\\source\\runtime\\aimodule\\classes\\perception\\aiperceptionstimulisourcecomponent.h",
+            "e:\\epic\\ue_5.3\\engine\\source\\runtime\\aimodule\\classes\\perception\\aisense.h",
+            "e:\\epic\\ue_5.3\\engine\\source\\runtime\\aimodule\\classes\\perception\\aiperceptiontypes.h",
+            "e:\\epic\\ue_5.3\\engine\\source\\runtime\\aimodule\\classes\\aitypes.h",
+            "e:\\epic\\ue_5.3\\engine\\source\\runtime\\navigationsystem\\public\\navfilters\\navigationqueryfilter.h",
+            "e:\\epic\\ue_5.3\\engine\\source\\runtime\\navigationsystem\\public\\navareas\\navarea.h",
+            "e:\\epic\\ue_5.3\\engine\\source\\runtime\\engine\\classes\\ai\\navigation\\navareabase.h",
+            "e:\\epic\\ue_5.3\\engine\\intermediate\\build\\win64\\unrealgame\\inc\\engine\\uht\\navareabase.generated.h",
+            "e:\\epic\\ue_5.3\\engine\\intermediate\\build\\win64\\unrealgame\\inc\\navigationsystem\\uht\\navarea.generated.h",
+            "e:\\epic\\ue_5.3\\engine\\intermediate\\build\\win64\\unrealgame\\inc\\navigationsystem\\uht\\navigationqueryfilter.generated.h",
+            "e:\\epic\\ue_5.3\\engine\\source\\runtime\\navigationsystem\\public\\navigationsystemtypes.h",
+            "e:\\epic\\ue_5.3\\engine\\source\\runtime\\engine\\classes\\ai\\navigationsystemconfig.h",
+            "e:\\epic\\ue_5.3\\engine\\intermediate\\build\\win64\\unrealgame\\inc\\engine\\uht\\navigationsystemconfig.generated.h",
+            "e:\\epic\\ue_5.3\\engine\\intermediate\\build\\win64\\unrealgame\\inc\\aimodule\\uht\\aitypes.generated.h",
+            "e:\\epic\\ue_5.3\\engine\\source\\runtime\\aimodule\\classes\\genericteamagentinterface.h",
+            "e:\\epic\\ue_5.3\\engine\\intermediate\\build\\win64\\unrealgame\\inc\\aimodule\\uht\\genericteamagentinterface.generated.h",
+            "e:\\epic\\ue_5.3\\engine\\intermediate\\build\\win64\\unrealgame\\inc\\aimodule\\uht\\aiperceptiontypes.generated.h",
+            "e:\\epic\\ue_5.3\\engine\\intermediate\\build\\win64\\unrealgame\\inc\\aimodule\\uht\\aisense.generated.h",
+            "e:\\epic\\ue_5.3\\engine\\intermediate\\build\\win64\\unrealgame\\inc\\aimodule\\uht\\aiperceptionstimulisourcecomponent.generated.h",
+            "z:\\year three\\module4\\unreal\\petgameue\\petgameue\\intermediate\\build\\win64\\unrealgame\\inc\\petgameue\\uht\\agem.generated.h",
+            "z:\\year three\\module4\\unreal\\petgameue\\petgameue\\intermediate\\build\\win64\\unrealgame\\inc\\petgameue\\uht\\arubblemaster.generated.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}
