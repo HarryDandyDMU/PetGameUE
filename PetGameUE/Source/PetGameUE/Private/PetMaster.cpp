@@ -16,6 +16,13 @@ APetMaster::APetMaster()
  	// Set this character to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
 
+	CapsuleComp = GetCapsuleComponent();//get default capsule comp#
+	CapsuleComp->SetCollisionProfileName(TEXT("PetCollision"));
+	CapsuleComp->BodyInstance.SetInstanceNotifyRBCollision(true); //Enable Hit 
+	//CapsuleComp->SetSimulatePhysics(true);//SHOULD ALLOW KNOCKING OTHER OUT OF THE WAY (causes it to fall through floor)
+	SetRootComponent(CapsuleComp);
+
+
 	//setup scene root
 	DefaultSceneRoot = CreateDefaultSubobject<USceneComponent>(TEXT("SceneComponent")); //used for spawning based off location
 
@@ -34,10 +41,6 @@ APetMaster::APetMaster()
 
 	PetMeshElder->SetupAttachment(RootComponent);
 
-	CapsuleComp = GetCapsuleComponent();//get default capsule comp#
-	CapsuleComp->SetCollisionProfileName(TEXT("PetCollision"));
-	CapsuleComp->BodyInstance.SetInstanceNotifyRBCollision(true); //Enable Hit 
-	//CapsuleComp->SetSimulatePhysics(true);//SHOULD ALLOW KNOCKING OTHER OUT OF THE WAY (causes it to fall through floor)
 
 	CapsuleComp->OnComponentHit.AddDynamic(this, &APetMaster::OnCapsuleHit);//bind hit to this
 

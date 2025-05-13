@@ -63,17 +63,24 @@ void AAUpdatedEgg::DetectIncubator()
 	{
 		for(const FHitResult& ThingHit : EggHitArray)
 		{
-			//causing crashes (possibly too intensive)
-			if (ThingHit.GetActor()->IsA(AAUpdatedEgg::StaticClass()))
+			if (AAIncubator* Incubator = Cast<AAIncubator>(ThingHit.GetActor()))
 			{
-				////start hatching
-				//GetWorld()->GetTimerManager().SetTimer(HatchTimer, this, &AAUpdatedEgg::Hatch, HatchTime, false, -1.f); 
+				Incubator = nullptr;
 				Hatch();
-
-				//Stop Incubator Check
-				//GetWorld()->GetTimerManager().ClearTimer(IncubatorCheck);
-
 			}
+
+
+			////causing crashes (possibly too intensive)
+			//if (ThingHit.GetActor()->IsA(AAIncubator::StaticClass()))
+			//{
+			//	////start hatching
+			//	//GetWorld()->GetTimerManager().SetTimer(HatchTimer, this, &AAUpdatedEgg::Hatch, HatchTime, false, -1.f); 
+			//	Hatch();
+
+			//	//Stop Incubator Check
+			//	//GetWorld()->GetTimerManager().ClearTimer(IncubatorCheck);
+
+			//}
 		}
 	}
 
