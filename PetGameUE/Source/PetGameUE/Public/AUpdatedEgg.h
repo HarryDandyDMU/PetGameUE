@@ -5,7 +5,7 @@
 #include "CoreMinimal.h"
 #include "GameFramework/Actor.h"
 #include "PetMaster.h"
-#include "AIncubator.h"
+//#include "AIncubator.h"
 #include "Kismet/KismetSystemLibrary.h"
 #include "AUpdatedEgg.generated.h"
 

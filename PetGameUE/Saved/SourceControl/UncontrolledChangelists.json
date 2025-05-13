@@ -6,7 +6,8 @@
 			"description": "Default Uncontrolled Changelist",
 			"files": [
 				"Z:/Year Three/Module4/Unreal/PetGameUE/PetGameUE/Content/UserInterface/MainMenu/WB_MainMenu.uasset",
-				"Z:/Year Three/Module4/Unreal/PetGameUE/PetGameUE/Content/Levels/DefaultMap/DefaultMap.umap"
+				"Z:/Year Three/Module4/Unreal/PetGameUE/PetGameUE/Content/Levels/DefaultMap/DefaultMap.umap",
+				"Z:/Year Three/Module4/Unreal/PetGameUE/PetGameUE/Content/Props/BPs/BP_Incubator.uasset"
 			]
 		}
 	]
