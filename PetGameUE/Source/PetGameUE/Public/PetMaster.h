@@ -73,10 +73,16 @@ public:
 
 
 	//fname for morph target CHANGE TO ADULT WHEN MESH DONE
-	FName BashfulMorph = TEXT("Adult1Bashful");
-	FName CalmMorph = TEXT("Adult1Calm");
-	FName SeriousMorph = TEXT("Adult1Joyful");
-	FName JoyfulMorph = TEXT("Adult1Serious");
+	FName BashfulMorph = TEXT("AdultBashful");
+	FName CalmMorph = TEXT("AdultCalm");
+	FName SeriousMorph = TEXT("AdultJoyful");
+	FName JoyfulMorph = TEXT("AdultSerious");
+
+	//fname for baby morphs
+	FName BabyBashful = TEXT("BabyBashful");
+	FName BabyCalm = TEXT("BabyCalm");
+	FName BabyJoyful = TEXT("BabyJoyful");
+	FName BabySerious = TEXT("BabySerious");
 
 	//bool to remove zero weight?
 

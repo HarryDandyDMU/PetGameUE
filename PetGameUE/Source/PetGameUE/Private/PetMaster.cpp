@@ -114,7 +114,10 @@ void APetMaster::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
 
-	Morph();// might need to make it less intensive
+	if (CurrentEvolution != EEvolution::Elder) //if you're not an elder
+	{
+		Morph();// might need to make it less intensive
+	}
 
 	Eat();//if hungry in functino
 
@@ -253,6 +256,19 @@ void APetMaster::Morph()
 	PetMeshAdult->SetMorphTarget(SeriousMorph, NFSerious, false);
 	PetMeshAdult->SetMorphTarget(CalmMorph, PFCalm, false);
 	PetMeshAdult->SetMorphTarget(JoyfulMorph, PFJoyful, false); 
+
+
+	PetMeshBaby->SetMorphTarget(BabyBashful, NFBashful, false);
+	PetMeshBaby->SetMorphTarget(BabySerious, NFSerious, false);
+	PetMeshBaby->SetMorphTarget(BabyCalm, PFCalm, false);
+	PetMeshBaby->SetMorphTarget(BabyJoyful, PFJoyful, false);
+
+
+	PetMeshElder->SetMorphTarget(BashfulMorph, NFBashful, false);
+	PetMeshElder->SetMorphTarget(SeriousMorph, NFSerious, false);
+	PetMeshElder->SetMorphTarget(CalmMorph, PFCalm, false);
+	PetMeshElder->SetMorphTarget(JoyfulMorph, PFJoyful, false);
+
 }
 
 void APetMaster::Eat()
