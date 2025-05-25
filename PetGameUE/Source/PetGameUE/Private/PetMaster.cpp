@@ -41,6 +41,20 @@ APetMaster::APetMaster()
 
 	PetMeshElder->SetupAttachment(RootComponent);
 
+	//PetmeshElder Grooms
+
+	GroomBashful = CreateDefaultSubobject<UGroomComponent>(TEXT("BashfulHair"));
+	GroomCalm = CreateDefaultSubobject<UGroomComponent>(TEXT("CalmHair"));
+	GroomJoyful = CreateDefaultSubobject<UGroomComponent>(TEXT("JoyfulHair"));
+	GroomSerious = CreateDefaultSubobject<UGroomComponent>(TEXT("SeriousHair"));
+
+	GroomBashful->AttachToComponent(PetMeshElder,FAttachmentTransformRules::SnapToTargetIncludingScale);
+	GroomCalm->AttachToComponent(PetMeshElder, FAttachmentTransformRules::SnapToTargetIncludingScale);
+	GroomJoyful->AttachToComponent(PetMeshElder, FAttachmentTransformRules::SnapToTargetIncludingScale);
+	GroomSerious->AttachToComponent(PetMeshElder, FAttachmentTransformRules::SnapToTargetIncludingScale);
+
+	
+
 
 	CapsuleComp->OnComponentHit.AddDynamic(this, &APetMaster::OnCapsuleHit);//bind hit to this
 
@@ -81,11 +95,18 @@ void APetMaster::OnCapsuleHit(UPrimitiveComponent* HitComponent, AActor* OtherAc
 void APetMaster::BeginPlay()
 {
 	Super::BeginPlay();
-
+	
 	//remove all meshes
 	PetMeshAdult->SetVisibility(false);
 	PetMeshBaby->SetVisibility(false);
 	PetMeshElder->SetVisibility(false);
+
+	//set all grooms to false
+	GroomBashful->SetVisibility(false);
+	GroomCalm->SetVisibility(false);
+	GroomJoyful->SetVisibility(false);
+	GroomSerious->SetVisibility(false);
+
 
 
 	Evolve(); //sets to default evolution
@@ -157,6 +178,23 @@ void APetMaster::Evolve()
 	case EEvolution::Elder:
 		//show elder mesh
 			PetMeshElder->SetVisibility(true);
+
+			if (NFBashful >= 1.0f)
+			{
+				GroomBashful->SetVisibility(true);
+			}
+			else if (NFSerious >= 1.0f)
+			{
+				GroomSerious->SetVisibility(true);
+			}
+			else if (PFCalm >= 1.0f)
+			{
+				GroomCalm->SetVisibility(true);
+			}
+			else if (PFJoyful >= 1.0f)
+			{
+				GroomJoyful->SetVisibility(true);
+			}
 			//hide other meshes
 			PetMeshAdult->SetVisibility(false);
 			PetMeshBaby->SetVisibility(false);

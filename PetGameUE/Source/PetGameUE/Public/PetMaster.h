@@ -7,7 +7,7 @@
 
 #include "Components/CapsuleComponent.h"//added for capsule
 
-//#include "GroomComponent.h"
+#include "GroomComponent.h"
 
 #include "PetMaster.generated.h"
 
@@ -68,6 +68,19 @@ public:
 	//include skeletal mesh component
 	UPROPERTY(BlueprintReadOnly, VisibleAnywhere, Category = "Mesh")
 	USkeletalMeshComponent* PetMeshElder;
+
+	//include elder grooms
+	UPROPERTY(BlueprintReadOnly, VisibleAnywhere, Category = "Grooms")
+	UGroomComponent* GroomBashful;
+
+	UPROPERTY(BlueprintReadOnly, VisibleAnywhere, Category = "Grooms")
+	UGroomComponent* GroomJoyful;
+
+	UPROPERTY(BlueprintReadOnly, VisibleAnywhere, Category = "Grooms")
+	UGroomComponent* GroomCalm;
+
+	UPROPERTY(BlueprintReadOnly, VisibleAnywhere, Category = "Grooms")
+	UGroomComponent* GroomSerious;
 
 	//scene root
 	UPROPERTY(BlueprintReadOnly, VisibleAnywhere, Category = "Mesh")

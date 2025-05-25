@@ -276,6 +276,8 @@
 /I "..\Plugins\FX\Niagara\Intermediate\Build\Win64\UnrealEditor\Inc\NiagaraShader\UHT"
 /I "..\Plugins\FX\Niagara\Source\NiagaraShader\Public"
 /I "..\Plugins\FX\Niagara\Source\NiagaraVertexFactories\Public"
+/I "..\Plugins\Runtime\HairStrands\Intermediate\Build\Win64\UnrealEditor\Inc\HairStrandsCore\UHT"
+/I "..\Plugins\Runtime\HairStrands\Source\HairStrandsCore\Public"
 /external:W0
 /external:I "ThirdParty\mimalloc\include"
 /external:I "ThirdParty\LibTiff\Source\Win64"
