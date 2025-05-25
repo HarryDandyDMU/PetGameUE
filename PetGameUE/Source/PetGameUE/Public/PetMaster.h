@@ -6,6 +6,9 @@
 #include "GameFramework/Character.h"
 
 #include "Components/CapsuleComponent.h"//added for capsule
+
+//#include "GroomComponent.h"
+
 #include "PetMaster.generated.h"
 
 //states of evolution to dictate models 

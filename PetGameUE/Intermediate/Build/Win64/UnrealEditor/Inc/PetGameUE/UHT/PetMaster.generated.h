@@ -17,10 +17,10 @@ struct FHitResult;
 #endif
 #define PETGAMEUE_PetMaster_generated_h
 
-#define FID_PetGameUE_Source_PetGameUE_Public_PetMaster_h_22_SPARSE_DATA
-#define FID_PetGameUE_Source_PetGameUE_Public_PetMaster_h_22_SPARSE_DATA_PROPERTY_ACCESSORS
-#define FID_PetGameUE_Source_PetGameUE_Public_PetMaster_h_22_EDITOR_ONLY_SPARSE_DATA_PROPERTY_ACCESSORS
-#define FID_PetGameUE_Source_PetGameUE_Public_PetMaster_h_22_RPC_WRAPPERS_NO_PURE_DECLS \
+#define FID_PetGameUE_Source_PetGameUE_Public_PetMaster_h_25_SPARSE_DATA
+#define FID_PetGameUE_Source_PetGameUE_Public_PetMaster_h_25_SPARSE_DATA_PROPERTY_ACCESSORS
+#define FID_PetGameUE_Source_PetGameUE_Public_PetMaster_h_25_EDITOR_ONLY_SPARSE_DATA_PROPERTY_ACCESSORS
+#define FID_PetGameUE_Source_PetGameUE_Public_PetMaster_h_25_RPC_WRAPPERS_NO_PURE_DECLS \
  \
 	DECLARE_FUNCTION(execRagdollReset); \
 	DECLARE_FUNCTION(execRagdollTimer); \
@@ -28,8 +28,8 @@ struct FHitResult;
 	DECLARE_FUNCTION(execOnCapsuleHit);
 
 
-#define FID_PetGameUE_Source_PetGameUE_Public_PetMaster_h_22_ACCESSORS
-#define FID_PetGameUE_Source_PetGameUE_Public_PetMaster_h_22_INCLASS_NO_PURE_DECLS \
+#define FID_PetGameUE_Source_PetGameUE_Public_PetMaster_h_25_ACCESSORS
+#define FID_PetGameUE_Source_PetGameUE_Public_PetMaster_h_25_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAPetMaster(); \
 	friend struct Z_Construct_UClass_APetMaster_Statics; \
@@ -38,7 +38,7 @@ public: \
 	DECLARE_SERIALIZER(APetMaster)
 
 
-#define FID_PetGameUE_Source_PetGameUE_Public_PetMaster_h_22_ENHANCED_CONSTRUCTORS \
+#define FID_PetGameUE_Source_PetGameUE_Public_PetMaster_h_25_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API APetMaster(APetMaster&&); \
@@ -50,17 +50,17 @@ public: \
 	NO_API virtual ~APetMaster();
 
 
-#define FID_PetGameUE_Source_PetGameUE_Public_PetMaster_h_19_PROLOG
-#define FID_PetGameUE_Source_PetGameUE_Public_PetMaster_h_22_GENERATED_BODY \
+#define FID_PetGameUE_Source_PetGameUE_Public_PetMaster_h_22_PROLOG
+#define FID_PetGameUE_Source_PetGameUE_Public_PetMaster_h_25_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_PetGameUE_Source_PetGameUE_Public_PetMaster_h_22_SPARSE_DATA \
-	FID_PetGameUE_Source_PetGameUE_Public_PetMaster_h_22_SPARSE_DATA_PROPERTY_ACCESSORS \
-	FID_PetGameUE_Source_PetGameUE_Public_PetMaster_h_22_EDITOR_ONLY_SPARSE_DATA_PROPERTY_ACCESSORS \
-	FID_PetGameUE_Source_PetGameUE_Public_PetMaster_h_22_RPC_WRAPPERS_NO_PURE_DECLS \
-	FID_PetGameUE_Source_PetGameUE_Public_PetMaster_h_22_ACCESSORS \
-	FID_PetGameUE_Source_PetGameUE_Public_PetMaster_h_22_INCLASS_NO_PURE_DECLS \
-	FID_PetGameUE_Source_PetGameUE_Public_PetMaster_h_22_ENHANCED_CONSTRUCTORS \
+	FID_PetGameUE_Source_PetGameUE_Public_PetMaster_h_25_SPARSE_DATA \
+	FID_PetGameUE_Source_PetGameUE_Public_PetMaster_h_25_SPARSE_DATA_PROPERTY_ACCESSORS \
+	FID_PetGameUE_Source_PetGameUE_Public_PetMaster_h_25_EDITOR_ONLY_SPARSE_DATA_PROPERTY_ACCESSORS \
+	FID_PetGameUE_Source_PetGameUE_Public_PetMaster_h_25_RPC_WRAPPERS_NO_PURE_DECLS \
+	FID_PetGameUE_Source_PetGameUE_Public_PetMaster_h_25_ACCESSORS \
+	FID_PetGameUE_Source_PetGameUE_Public_PetMaster_h_25_INCLASS_NO_PURE_DECLS \
+	FID_PetGameUE_Source_PetGameUE_Public_PetMaster_h_25_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

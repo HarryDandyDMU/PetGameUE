@@ -34,6 +34,7 @@
 /NODEFAULTLIB:"LIBCD"
 /NODEFAULTLIB:"LIBCPD"
 /FUNCTIONPADMIN:6
+/NATVIS:"..\Plugins\FX\Niagara\Intermediate\Build\Win64\x64\UnrealEditor\Development\Niagara\Niagara.natvis"
 "Z:\Year Three\Module4\Unreal\PetGameUE\PetGameUE\Intermediate\Build\Win64\x64\PetGameUEEditor\Development\UnrealEd\SharedPCH.UnrealEd.Cpp20.h.obj"
 "Z:\Year Three\Module4\Unreal\PetGameUE\PetGameUE\Intermediate\Build\Win64\x64\UnrealEditor\Development\PetGameUE\AGem.gen.cpp.obj"
 "Z:\Year Three\Module4\Unreal\PetGameUE\PetGameUE\Intermediate\Build\Win64\x64\UnrealEditor\Development\PetGameUE\AIncubator.gen.cpp.obj"
@@ -68,6 +69,7 @@
 "..\Intermediate\Build\Win64\x64\UnrealEditor\Development\CoreUObject\UnrealEditor-CoreUObject.lib"
 "..\Intermediate\Build\Win64\x64\UnrealEditor\Development\InputCore\UnrealEditor-InputCore.lib"
 "..\Plugins\EnhancedInput\Intermediate\Build\Win64\x64\UnrealEditor\Development\EnhancedInput\UnrealEditor-EnhancedInput.lib"
+"..\Plugins\FX\Niagara\Intermediate\Build\Win64\x64\UnrealEditor\Development\Niagara\UnrealEditor-Niagara.lib"
 "delayimp.lib"
 "wininet.lib"
 "rpcrt4.lib"
