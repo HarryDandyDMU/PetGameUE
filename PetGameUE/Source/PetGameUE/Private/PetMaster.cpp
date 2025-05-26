@@ -290,6 +290,13 @@ void APetMaster::Morph()
 	ClampJoyful();
 	ClampSerious();
 
+	//update blackboard move values
+	UAIBlueprintHelperLibrary::GetBlackboard(this)->SetValueAsFloat(TEXT("Joyful"), PFJoyful);
+	UAIBlueprintHelperLibrary::GetBlackboard(this)->SetValueAsFloat(TEXT("Bashful"), NFBashful);
+	UAIBlueprintHelperLibrary::GetBlackboard(this)->SetValueAsFloat(TEXT("Serious"), NFSerious);
+	UAIBlueprintHelperLibrary::GetBlackboard(this)->SetValueAsFloat(TEXT("Calm"), PFCalm);
+
+
 	PetMeshAdult->SetMorphTarget(BashfulMorph, NFBashful, false);
 	PetMeshAdult->SetMorphTarget(SeriousMorph, NFSerious, false);
 	PetMeshAdult->SetMorphTarget(CalmMorph, PFCalm, false);
@@ -315,7 +322,8 @@ void APetMaster::Eat()
 	{
 
 		//create start and end locations
-		FVector Start = RootComponent->GetComponentLocation();//returns root location
+
+		FVector Start = (RootComponent->GetComponentLocation() + MouthOffset);//returns root location
 		FVector End = (Start)+(RootComponent->GetForwardVector() * FoodDistance);//returns root add forward vector times by FoodDistance
 
 		//array of actors to ignore;

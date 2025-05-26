@@ -357,6 +357,10 @@ void EmptyLinkFunctionForGeneratedCodePetMaster() {}
 #endif
 		static const UECodeGen_Private::FObjectPropertyParams NewProp_DefaultSceneRoot;
 #if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_MouthOffset_MetaData[];
+#endif
+		static const UECodeGen_Private::FStructPropertyParams NewProp_MouthOffset;
+#if WITH_METADATA
 		static const UECodeGen_Private::FMetaDataPairParam NewProp_BabyTime_MetaData[];
 #endif
 		static const UECodeGen_Private::FFloatPropertyParams NewProp_BabyTime;
@@ -603,6 +607,19 @@ void EmptyLinkFunctionForGeneratedCodePetMaster() {}
 #endif
 	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_APetMaster_Statics::NewProp_DefaultSceneRoot = { "DefaultSceneRoot", nullptr, (EPropertyFlags)0x00100000000a001d, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(APetMaster, DefaultSceneRoot), Z_Construct_UClass_USceneComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_APetMaster_Statics::NewProp_DefaultSceneRoot_MetaData), Z_Construct_UClass_APetMaster_Statics::NewProp_DefaultSceneRoot_MetaData) };
 #if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_APetMaster_Statics::NewProp_MouthOffset_MetaData[] = {
+		{ "Category", "Mouth" },
+#if !UE_BUILD_SHIPPING
+		{ "Comment", "//var to offset the mouth raytrace\n" },
+#endif
+		{ "ModuleRelativePath", "Public/PetMaster.h" },
+#if !UE_BUILD_SHIPPING
+		{ "ToolTip", "var to offset the mouth raytrace" },
+#endif
+	};
+#endif
+	const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_APetMaster_Statics::NewProp_MouthOffset = { "MouthOffset", nullptr, (EPropertyFlags)0x0010000000000001, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(APetMaster, MouthOffset), Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_APetMaster_Statics::NewProp_MouthOffset_MetaData), Z_Construct_UClass_APetMaster_Statics::NewProp_MouthOffset_MetaData) };
+#if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_APetMaster_Statics::NewProp_BabyTime_MetaData[] = {
 		{ "Category", "Timer" },
 #if !UE_BUILD_SHIPPING
@@ -733,6 +750,7 @@ void EmptyLinkFunctionForGeneratedCodePetMaster() {}
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_APetMaster_Statics::NewProp_GroomCalm,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_APetMaster_Statics::NewProp_GroomSerious,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_APetMaster_Statics::NewProp_DefaultSceneRoot,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_APetMaster_Statics::NewProp_MouthOffset,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_APetMaster_Statics::NewProp_BabyTime,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_APetMaster_Statics::NewProp_AdultTime,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_APetMaster_Statics::NewProp_EvolutionTime,
@@ -786,9 +804,9 @@ void EmptyLinkFunctionForGeneratedCodePetMaster() {}
 		{ EEvolution_StaticEnum, TEXT("EEvolution"), &Z_Registration_Info_UEnum_EEvolution, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 1680861448U) },
 	};
 	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_PetGameUE_Source_PetGameUE_Public_PetMaster_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_APetMaster, APetMaster::StaticClass, TEXT("APetMaster"), &Z_Registration_Info_UClass_APetMaster, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(APetMaster), 78403299U) },
+		{ Z_Construct_UClass_APetMaster, APetMaster::StaticClass, TEXT("APetMaster"), &Z_Registration_Info_UClass_APetMaster, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(APetMaster), 3492660422U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_PetGameUE_Source_PetGameUE_Public_PetMaster_h_2021758649(TEXT("/Script/PetGameUE"),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_PetGameUE_Source_PetGameUE_Public_PetMaster_h_2292625669(TEXT("/Script/PetGameUE"),
 		Z_CompiledInDeferFile_FID_PetGameUE_Source_PetGameUE_Public_PetMaster_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_PetGameUE_Source_PetGameUE_Public_PetMaster_h_Statics::ClassInfo),
 		nullptr, 0,
 		Z_CompiledInDeferFile_FID_PetGameUE_Source_PetGameUE_Public_PetMaster_h_Statics::EnumInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_PetGameUE_Source_PetGameUE_Public_PetMaster_h_Statics::EnumInfo));

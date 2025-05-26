@@ -86,6 +86,9 @@ public:
 	UPROPERTY(BlueprintReadOnly, VisibleAnywhere, Category = "Mesh")
 	USceneComponent* DefaultSceneRoot;
 
+	//var to offset the mouth raytrace
+	UPROPERTY(EditAnywhere, Category = "Mouth")
+	FVector MouthOffset;
 
 
 	//fname for morph target CHANGE TO ADULT WHEN MESH DONE
@@ -185,7 +188,7 @@ private:
 	void Eat();//function to ray trace food infront of pet
 
 	UPROPERTY(VisibleAnywhere, Category = "Eat")
-	float FoodDistance = 100.f;//distance to food check
+	float FoodDistance = 125.f;//distance to food check
 
 	UPROPERTY(VisibleAnywhere, Category = "Eat")
 	bool Hit;//if hit anything
