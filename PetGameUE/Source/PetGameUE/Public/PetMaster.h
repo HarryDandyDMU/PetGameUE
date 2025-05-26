@@ -91,8 +91,8 @@ public:
 	//fname for morph target CHANGE TO ADULT WHEN MESH DONE
 	FName BashfulMorph = TEXT("AdultBashful");
 	FName CalmMorph = TEXT("AdultCalm");
-	FName SeriousMorph = TEXT("AdultJoyful");
-	FName JoyfulMorph = TEXT("AdultSerious");
+	FName SeriousMorph = TEXT("AdultSerious");
+	FName JoyfulMorph = TEXT("AdultJoyful");
 
 	//fname for baby morphs
 	FName BabyBashful = TEXT("BabyBashful");

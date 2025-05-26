@@ -1,0 +1,37 @@
+/NOLOGO
+/errorReport:prompt
+/MACHINE:x64
+/SUBSYSTEM:WINDOWS
+/DEF
+/NAME:"UnrealEditor-PetGameUE-7105.dll"
+/IGNORE:4221
+/NODEFAULTLIB
+"Z:\Year Three\Module4\Unreal\PetGameUE\PetGameUE\Intermediate\Build\Win64\x64\PetGameUEEditor\Development\UnrealEd\SharedPCH.UnrealEd.Cpp20.h.obj"
+"Z:\Year Three\Module4\Unreal\PetGameUE\PetGameUE\Intermediate\Build\Win64\x64\UnrealEditor\Development\PetGameUE\AGem.gen.cpp.obj"
+"Z:\Year Three\Module4\Unreal\PetGameUE\PetGameUE\Intermediate\Build\Win64\x64\UnrealEditor\Development\PetGameUE\AIncubator.gen.cpp.obj"
+"Z:\Year Three\Module4\Unreal\PetGameUE\PetGameUE\Intermediate\Build\Win64\x64\UnrealEditor\Development\PetGameUE\ARubbleMaster.gen.cpp.obj"
+"Z:\Year Three\Module4\Unreal\PetGameUE\PetGameUE\Intermediate\Build\Win64\x64\UnrealEditor\Development\PetGameUE\AUpdatedEgg.gen.cpp.obj"
+"Z:\Year Three\Module4\Unreal\PetGameUE\PetGameUE\Intermediate\Build\Win64\x64\UnrealEditor\Development\PetGameUE\BTAIPetController.gen.cpp.obj"
+"Z:\Year Three\Module4\Unreal\PetGameUE\PetGameUE\Intermediate\Build\Win64\x64\UnrealEditor\Development\PetGameUE\CaveMaster.gen.cpp.obj"
+"Z:\Year Three\Module4\Unreal\PetGameUE\PetGameUE\Intermediate\Build\Win64\x64\UnrealEditor\Development\PetGameUE\DayNightCycle.gen.cpp.obj"
+"Z:\Year Three\Module4\Unreal\PetGameUE\PetGameUE\Intermediate\Build\Win64\x64\UnrealEditor\Development\PetGameUE\MainCharacter.gen.cpp.obj"
+"Z:\Year Three\Module4\Unreal\PetGameUE\PetGameUE\Intermediate\Build\Win64\x64\UnrealEditor\Development\PetGameUE\PetGameModeBase.gen.cpp.obj"
+"Z:\Year Three\Module4\Unreal\PetGameUE\PetGameUE\Intermediate\Build\Win64\x64\UnrealEditor\Development\PetGameUE\PetGameUE.init.gen.cpp.obj"
+"Z:\Year Three\Module4\Unreal\PetGameUE\PetGameUE\Intermediate\Build\Win64\x64\UnrealEditor\Development\PetGameUE\PetMaster.gen.cpp.obj"
+"Z:\Year Three\Module4\Unreal\PetGameUE\PetGameUE\Intermediate\Build\Win64\x64\UnrealEditor\Development\PetGameUE\SaveGameClass.gen.cpp.obj"
+"Z:\Year Three\Module4\Unreal\PetGameUE\PetGameUE\Intermediate\Build\Win64\x64\UnrealEditor\Development\PetGameUE\PetGameUE.cpp.obj"
+"Z:\Year Three\Module4\Unreal\PetGameUE\PetGameUE\Intermediate\Build\Win64\x64\UnrealEditor\Development\PetGameUE\AGem.cpp.obj"
+"Z:\Year Three\Module4\Unreal\PetGameUE\PetGameUE\Intermediate\Build\Win64\x64\UnrealEditor\Development\PetGameUE\AIncubator.cpp.obj"
+"Z:\Year Three\Module4\Unreal\PetGameUE\PetGameUE\Intermediate\Build\Win64\x64\UnrealEditor\Development\PetGameUE\ARubbleMaster.cpp.obj"
+"Z:\Year Three\Module4\Unreal\PetGameUE\PetGameUE\Intermediate\Build\Win64\x64\UnrealEditor\Development\PetGameUE\AUpdatedEgg.cpp.obj"
+"Z:\Year Three\Module4\Unreal\PetGameUE\PetGameUE\Intermediate\Build\Win64\x64\UnrealEditor\Development\PetGameUE\BTAIPetController.cpp.obj"
+"Z:\Year Three\Module4\Unreal\PetGameUE\PetGameUE\Intermediate\Build\Win64\x64\UnrealEditor\Development\PetGameUE\CaveMaster.cpp.obj"
+"Z:\Year Three\Module4\Unreal\PetGameUE\PetGameUE\Intermediate\Build\Win64\x64\UnrealEditor\Development\PetGameUE\DayNightCycle.cpp.obj"
+"Z:\Year Three\Module4\Unreal\PetGameUE\PetGameUE\Intermediate\Build\Win64\x64\UnrealEditor\Development\PetGameUE\FGemStruct.cpp.obj"
+"Z:\Year Three\Module4\Unreal\PetGameUE\PetGameUE\Intermediate\Build\Win64\x64\UnrealEditor\Development\PetGameUE\GemStruct.cpp.obj"
+"Z:\Year Three\Module4\Unreal\PetGameUE\PetGameUE\Intermediate\Build\Win64\x64\UnrealEditor\Development\PetGameUE\MainCharacter.cpp.obj"
+"Z:\Year Three\Module4\Unreal\PetGameUE\PetGameUE\Intermediate\Build\Win64\x64\UnrealEditor\Development\PetGameUE\PetGameModeBase.cpp.obj"
+"Z:\Year Three\Module4\Unreal\PetGameUE\PetGameUE\Intermediate\Build\Win64\x64\UnrealEditor\Development\PetGameUE\SaveGameClass.cpp.obj"
+"Z:\Year Three\Module4\Unreal\PetGameUE\PetGameUE\Intermediate\Build\Win64\x64\UnrealEditor\Development\PetGameUE\PetMaster.cpp.obj"
+"Z:\Year Three\Module4\Unreal\PetGameUE\PetGameUE\Intermediate\Build\Win64\x64\UnrealEditor\Development\PetGameUE\Default.rc2.res"
+/OUT:"Z:\Year Three\Module4\Unreal\PetGameUE\PetGameUE\Intermediate\Build\Win64\x64\UnrealEditor\Development\PetGameUE\UnrealEditor-PetGameUE-7105.lib"
