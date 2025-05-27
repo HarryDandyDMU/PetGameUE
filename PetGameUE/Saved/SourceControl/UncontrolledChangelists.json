@@ -9,7 +9,10 @@
 				"Z:/Year Three/Module4/Unreal/PetGameUE/PetGameUE/Content/Pets/AI/Tasks/BTTask_UpdateEmotionSpeed.uasset",
 				"Z:/Year Three/Module4/Unreal/PetGameUE/PetGameUE/Content/Pets/BP_Species1.uasset",
 				"Z:/Year Three/Module4/Unreal/PetGameUE/PetGameUE/Content/Pets/AI/BT_PetAI.uasset",
-				"Z:/Year Three/Module4/Unreal/PetGameUE/PetGameUE/Content/Levels/DefaultMap/DefaultMap.umap"
+				"Z:/Year Three/Module4/Unreal/PetGameUE/PetGameUE/Content/Levels/DefaultMap/DefaultMap.umap",
+				"Z:/Year Three/Module4/Unreal/PetGameUE/PetGameUE/Content/Materials/M_DefaultFlooring_Cave.uasset",
+				"Z:/Year Three/Module4/Unreal/PetGameUE/PetGameUE/Content/Materials/M_DefaultFlooring.uasset",
+				"Z:/Year Three/Module4/Unreal/PetGameUE/PetGameUE/Content/TestLevel.umap"
 			]
 		}
 	]
