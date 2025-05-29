@@ -69,7 +69,6 @@ void AMainCharacter::BeginPlay()
 		}
 	}
 
-	SaveGame(); //save on game load to prevent false file crash
 
 	MainCharacterMesh->bCastDynamicShadow = false; //stops weird floating shadows
 	MainCharacterMesh->CastShadow = false;
@@ -224,10 +223,7 @@ void AMainCharacter::Pet()
 			PetInFront->NFBashful = PetInFront->ClampBashful();
 			PetInFront->NFSerious = PetInFront->ClampSerious();//clamp just in case
 
-			//play happy animation in pet
-
-
-			//play happy noise in pet
+		
 		}
 	}
 }
@@ -445,7 +441,10 @@ void AMainCharacter::LoadGame()
 {
 	if (APetGameModeBase* CurrentGameMode = Cast<APetGameModeBase>(GetWorld()->GetAuthGameMode()))
 	{
-		CurrentGameMode->LoadGame();
+		if (UGameplayStatics::DoesSaveGameExist(FString(TEXT("Slot1")), 0)) //if save game exists
+		{
+			CurrentGameMode->LoadGame();
+		}
 	}
 }
 

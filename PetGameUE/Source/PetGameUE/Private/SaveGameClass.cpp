@@ -6,7 +6,7 @@
 USaveGameClass::USaveGameClass()
 {
 	//defaults
-	SaveName = TEXT("SaveSlotTest");
+	SaveName = TEXT("Slot1");
 	UserIndex = 0;//set to 0
 	PlayerLocation = FVector(0.f, 0.f, 0.f);
 	BlueStack = 0;
