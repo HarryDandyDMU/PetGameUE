@@ -48,6 +48,21 @@ public:
 	UPROPERTY(EditDefaultsOnly, Category = "Gems")
 	TSubclassOf<AAGem> GreenGem;
 
+	//PLAYER
+	FVector PlayerLocationGM;
+
+	AMainCharacter* PlayerGM;
+
+	int RedStackGM;//red gem count
+
+	int GreenStackGM; //green gem count
+
+	int BlueStackGM;//blue gem stack
+
+	int YellowStackGM;//yellow gem stack
+
+
+
 	TMap<int32, FName> GemTypeMapGM; //dictionary of gem types
 	TMap<int32, FVector> GemLocationMapGM;//Dictionary of gem locations
 

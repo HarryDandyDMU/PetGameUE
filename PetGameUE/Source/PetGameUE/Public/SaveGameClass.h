@@ -28,7 +28,7 @@ public:
 
 	//player location
 	UPROPERTY(VisibleAnywhere, Category = "SavePlayer")
-	FVector3d PlayerLocation;
+	FVector PlayerLocation;
 
 	//inventory stacks
 	UPROPERTY(VisibleAnywhere, Category = "SavePlayer")
@@ -39,6 +39,8 @@ public:
 	int YellowStack;
 	UPROPERTY(VisibleAnywhere, Category = "SavePlayer")
 	int RedStack;
+
+
 
 	//Gems
 	UPROPERTY(VisibleAnywhere, Category = "Gems")

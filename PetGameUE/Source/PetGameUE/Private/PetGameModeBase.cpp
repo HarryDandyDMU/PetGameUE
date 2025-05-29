@@ -15,6 +15,22 @@ APetGameModeBase::APetGameModeBase()
 
 void APetGameModeBase::ActorIterator()
 {
+	//player find player character
+	for (TActorIterator<AMainCharacter> Iterator(World); Iterator; ++Iterator)
+	{
+		//should only be one but can be expanded for multiplayer
+		PlayerGM = *Iterator;
+		//get location
+		PlayerLocationGM = PlayerGM->GetActorLocation();
+
+		//get stacks
+		RedStackGM = PlayerGM->RedStack;
+		BlueStackGM = PlayerGM->BlueStack;
+		GreenStackGM = PlayerGM->GreenStack;
+		YellowStackGM = PlayerGM->YellowStack;
+	}
+
+
 	int it = 0;//temp var for index key
 
 	//empty gem arrays
@@ -116,7 +132,16 @@ void APetGameModeBase::SaveGame()
 
 	if (CurrentSaveInstance)//if valid
 	{
-		GEngine->AddOnScreenDebugMessage(-1, 60.f, FColor::White, FString::Printf(TEXT("Save Valid")));
+		//player
+		
+		CurrentSaveInstance->PlayerLocation = PlayerLocationGM;
+		CurrentSaveInstance->RedStack = RedStackGM;
+		CurrentSaveInstance->BlueStack = BlueStackGM;
+		CurrentSaveInstance->YellowStack = YellowStackGM;
+		CurrentSaveInstance->GreenStack = GreenStackGM;
+
+
+
 
 		////save the type and location of each gem
 		for (int i = 0; i < GemLocationMapGM.Num(); i++) //for every location obtained (location and type will always be equal)
@@ -165,6 +190,14 @@ void APetGameModeBase::LoadGame()
 	if (CurrentLoadInstance != nullptr)//if valid
 	{
 		GEngine->AddOnScreenDebugMessage(-1, 60.f, FColor::White, FString::Printf(TEXT("Load Valid")));
+
+		//player
+		PlayerGM->SetActorLocation(CurrentLoadInstance->PlayerLocation);
+		PlayerGM->RedStack = CurrentLoadInstance->RedStack;
+		PlayerGM->BlueStack = CurrentLoadInstance->BlueStack;
+		PlayerGM->GreenStack = CurrentLoadInstance->GreenStack;
+		PlayerGM->YellowStack = CurrentLoadInstance->YellowStack;
+
 
 		int32 max = CurrentLoadInstance->GemTypeMap.Num();
 

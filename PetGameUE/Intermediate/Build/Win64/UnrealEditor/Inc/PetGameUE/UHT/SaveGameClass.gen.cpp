@@ -11,7 +11,6 @@ void EmptyLinkFunctionForGeneratedCodeSaveGameClass() {}
 // Cross Module References
 	COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
 	COREUOBJECT_API UScriptStruct* Z_Construct_UScriptStruct_FVector();
-	COREUOBJECT_API UScriptStruct* Z_Construct_UScriptStruct_FVector3d();
 	ENGINE_API UClass* Z_Construct_UClass_USaveGame();
 	PETGAMEUE_API UClass* Z_Construct_UClass_APetMaster_NoRegister();
 	PETGAMEUE_API UClass* Z_Construct_UClass_USaveGameClass();
@@ -190,7 +189,7 @@ void EmptyLinkFunctionForGeneratedCodeSaveGameClass() {}
 #endif
 	};
 #endif
-	const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_USaveGameClass_Statics::NewProp_PlayerLocation = { "PlayerLocation", nullptr, (EPropertyFlags)0x0010000000020001, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(USaveGameClass, PlayerLocation), Z_Construct_UScriptStruct_FVector3d, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_USaveGameClass_Statics::NewProp_PlayerLocation_MetaData), Z_Construct_UClass_USaveGameClass_Statics::NewProp_PlayerLocation_MetaData) };
+	const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_USaveGameClass_Statics::NewProp_PlayerLocation = { "PlayerLocation", nullptr, (EPropertyFlags)0x0010000000020001, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(USaveGameClass, PlayerLocation), Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_USaveGameClass_Statics::NewProp_PlayerLocation_MetaData), Z_Construct_UClass_USaveGameClass_Statics::NewProp_PlayerLocation_MetaData) };
 #if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_USaveGameClass_Statics::NewProp_BlueStack_MetaData[] = {
 		{ "Category", "SavePlayer" },
@@ -472,9 +471,9 @@ void EmptyLinkFunctionForGeneratedCodeSaveGameClass() {}
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
 	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_PetGameUE_Source_PetGameUE_Public_SaveGameClass_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_USaveGameClass, USaveGameClass::StaticClass, TEXT("USaveGameClass"), &Z_Registration_Info_UClass_USaveGameClass, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(USaveGameClass), 1749713626U) },
+		{ Z_Construct_UClass_USaveGameClass, USaveGameClass::StaticClass, TEXT("USaveGameClass"), &Z_Registration_Info_UClass_USaveGameClass, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(USaveGameClass), 2431531354U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_PetGameUE_Source_PetGameUE_Public_SaveGameClass_h_1007451356(TEXT("/Script/PetGameUE"),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_PetGameUE_Source_PetGameUE_Public_SaveGameClass_h_3961672689(TEXT("/Script/PetGameUE"),
 		Z_CompiledInDeferFile_FID_PetGameUE_Source_PetGameUE_Public_SaveGameClass_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_PetGameUE_Source_PetGameUE_Public_SaveGameClass_h_Statics::ClassInfo),
 		nullptr, 0,
 		nullptr, 0);

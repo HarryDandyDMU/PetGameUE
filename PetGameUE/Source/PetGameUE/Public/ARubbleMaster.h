@@ -4,7 +4,9 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/Actor.h"
+#include "AUpdatedEgg.h"
 #include "AGem.h" //included for gems
+
 #include "ARubbleMaster.generated.h"
 
 UCLASS()
@@ -26,6 +28,10 @@ public:
 	//bp children of gem
 	UPROPERTY(EditDefaultsOnly, Category = "Gems")
 	TArray<TSubclassOf<AAGem>> Gems;//contains gems
+
+	UPROPERTY(EditDefaultsOnly, Category = "Gems")
+	TSubclassOf<AAUpdatedEgg> EggType;
+
 
 	void Break();//function when it breaks
 };

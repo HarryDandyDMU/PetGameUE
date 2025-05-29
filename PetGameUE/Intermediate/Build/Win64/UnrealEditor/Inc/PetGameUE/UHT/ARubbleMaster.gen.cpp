@@ -16,6 +16,7 @@ void EmptyLinkFunctionForGeneratedCodeARubbleMaster() {}
 	PETGAMEUE_API UClass* Z_Construct_UClass_AAGem_NoRegister();
 	PETGAMEUE_API UClass* Z_Construct_UClass_AARubbleMaster();
 	PETGAMEUE_API UClass* Z_Construct_UClass_AARubbleMaster_NoRegister();
+	PETGAMEUE_API UClass* Z_Construct_UClass_AAUpdatedEgg_NoRegister();
 	UPackage* Z_Construct_UPackage__Script_PetGameUE();
 // End Cross Module References
 	void AARubbleMaster::StaticRegisterNativesAARubbleMaster()
@@ -45,6 +46,10 @@ void EmptyLinkFunctionForGeneratedCodeARubbleMaster() {}
 		static const UECodeGen_Private::FMetaDataPairParam NewProp_Gems_MetaData[];
 #endif
 		static const UECodeGen_Private::FArrayPropertyParams NewProp_Gems;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_EggType_MetaData[];
+#endif
+		static const UECodeGen_Private::FClassPropertyParams NewProp_EggType;
 		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UECodeGen_Private::FClassParams ClassParams;
@@ -102,11 +107,25 @@ void EmptyLinkFunctionForGeneratedCodeARubbleMaster() {}
 	};
 #endif
 	const UECodeGen_Private::FArrayPropertyParams Z_Construct_UClass_AARubbleMaster_Statics::NewProp_Gems = { "Gems", nullptr, (EPropertyFlags)0x0014000000010001, UECodeGen_Private::EPropertyGenFlags::Array, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AARubbleMaster, Gems), EArrayPropertyFlags::None, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_AARubbleMaster_Statics::NewProp_Gems_MetaData), Z_Construct_UClass_AARubbleMaster_Statics::NewProp_Gems_MetaData) };
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AARubbleMaster_Statics::NewProp_EggType_MetaData[] = {
+		{ "Category", "Gems" },
+#if !UE_BUILD_SHIPPING
+		{ "Comment", "//contains gems\n" },
+#endif
+		{ "ModuleRelativePath", "Public/ARubbleMaster.h" },
+#if !UE_BUILD_SHIPPING
+		{ "ToolTip", "contains gems" },
+#endif
+	};
+#endif
+	const UECodeGen_Private::FClassPropertyParams Z_Construct_UClass_AARubbleMaster_Statics::NewProp_EggType = { "EggType", nullptr, (EPropertyFlags)0x0014000000010001, UECodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AARubbleMaster, EggType), Z_Construct_UClass_UClass, Z_Construct_UClass_AAUpdatedEgg_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_AARubbleMaster_Statics::NewProp_EggType_MetaData), Z_Construct_UClass_AARubbleMaster_Statics::NewProp_EggType_MetaData) };
 	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AARubbleMaster_Statics::PropPointers[] = {
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AARubbleMaster_Statics::NewProp_RubbleMesh,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AARubbleMaster_Statics::NewProp_DropLocation,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AARubbleMaster_Statics::NewProp_Gems_Inner,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AARubbleMaster_Statics::NewProp_Gems,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AARubbleMaster_Statics::NewProp_EggType,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_AARubbleMaster_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<AARubbleMaster>::IsAbstract,
@@ -146,9 +165,9 @@ void EmptyLinkFunctionForGeneratedCodeARubbleMaster() {}
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
 	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_PetGameUE_Source_PetGameUE_Public_ARubbleMaster_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_AARubbleMaster, AARubbleMaster::StaticClass, TEXT("AARubbleMaster"), &Z_Registration_Info_UClass_AARubbleMaster, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AARubbleMaster), 2919682848U) },
+		{ Z_Construct_UClass_AARubbleMaster, AARubbleMaster::StaticClass, TEXT("AARubbleMaster"), &Z_Registration_Info_UClass_AARubbleMaster, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AARubbleMaster), 726864713U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_PetGameUE_Source_PetGameUE_Public_ARubbleMaster_h_449542301(TEXT("/Script/PetGameUE"),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_PetGameUE_Source_PetGameUE_Public_ARubbleMaster_h_4091837814(TEXT("/Script/PetGameUE"),
 		Z_CompiledInDeferFile_FID_PetGameUE_Source_PetGameUE_Public_ARubbleMaster_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_PetGameUE_Source_PetGameUE_Public_ARubbleMaster_h_Statics::ClassInfo),
 		nullptr, 0,
 		nullptr, 0);

@@ -83,14 +83,6 @@ public:
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Input")
 	class UInputAction* Inventory;
 
-	//input action for save
-	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Input")
-	class UInputAction* Save;
-
-	//input action for load
-	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Input")
-	class UInputAction* Load;
-
 	//input action for pet
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Input")
 	class UInputAction* PetAction;

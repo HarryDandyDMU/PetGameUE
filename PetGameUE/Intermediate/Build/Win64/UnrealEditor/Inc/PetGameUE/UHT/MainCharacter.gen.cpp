@@ -238,14 +238,6 @@ void FInventoryUpdated_DelegateWrapper(const FMulticastScriptDelegate& Inventory
 #endif
 		static const UECodeGen_Private::FObjectPropertyParams NewProp_Inventory;
 #if WITH_METADATA
-		static const UECodeGen_Private::FMetaDataPairParam NewProp_Save_MetaData[];
-#endif
-		static const UECodeGen_Private::FObjectPropertyParams NewProp_Save;
-#if WITH_METADATA
-		static const UECodeGen_Private::FMetaDataPairParam NewProp_Load_MetaData[];
-#endif
-		static const UECodeGen_Private::FObjectPropertyParams NewProp_Load;
-#if WITH_METADATA
 		static const UECodeGen_Private::FMetaDataPairParam NewProp_PetAction_MetaData[];
 #endif
 		static const UECodeGen_Private::FObjectPropertyParams NewProp_PetAction;
@@ -453,32 +445,6 @@ void FInventoryUpdated_DelegateWrapper(const FMulticastScriptDelegate& Inventory
 #endif
 	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AMainCharacter_Statics::NewProp_Inventory = { "Inventory", nullptr, (EPropertyFlags)0x0010000000000015, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AMainCharacter, Inventory), Z_Construct_UClass_UInputAction_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_AMainCharacter_Statics::NewProp_Inventory_MetaData), Z_Construct_UClass_AMainCharacter_Statics::NewProp_Inventory_MetaData) };
 #if WITH_METADATA
-	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AMainCharacter_Statics::NewProp_Save_MetaData[] = {
-		{ "Category", "Input" },
-#if !UE_BUILD_SHIPPING
-		{ "Comment", "//input action for save\n" },
-#endif
-		{ "ModuleRelativePath", "Public/MainCharacter.h" },
-#if !UE_BUILD_SHIPPING
-		{ "ToolTip", "input action for save" },
-#endif
-	};
-#endif
-	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AMainCharacter_Statics::NewProp_Save = { "Save", nullptr, (EPropertyFlags)0x0010000000000015, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AMainCharacter, Save), Z_Construct_UClass_UInputAction_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_AMainCharacter_Statics::NewProp_Save_MetaData), Z_Construct_UClass_AMainCharacter_Statics::NewProp_Save_MetaData) };
-#if WITH_METADATA
-	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AMainCharacter_Statics::NewProp_Load_MetaData[] = {
-		{ "Category", "Input" },
-#if !UE_BUILD_SHIPPING
-		{ "Comment", "//input action for load\n" },
-#endif
-		{ "ModuleRelativePath", "Public/MainCharacter.h" },
-#if !UE_BUILD_SHIPPING
-		{ "ToolTip", "input action for load" },
-#endif
-	};
-#endif
-	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AMainCharacter_Statics::NewProp_Load = { "Load", nullptr, (EPropertyFlags)0x0010000000000015, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AMainCharacter, Load), Z_Construct_UClass_UInputAction_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_AMainCharacter_Statics::NewProp_Load_MetaData), Z_Construct_UClass_AMainCharacter_Statics::NewProp_Load_MetaData) };
-#if WITH_METADATA
 	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AMainCharacter_Statics::NewProp_PetAction_MetaData[] = {
 		{ "Category", "Input" },
 #if !UE_BUILD_SHIPPING
@@ -627,8 +593,6 @@ void FInventoryUpdated_DelegateWrapper(const FMulticastScriptDelegate& Inventory
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AMainCharacter_Statics::NewProp_LookAction,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AMainCharacter_Statics::NewProp_InteractAction,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AMainCharacter_Statics::NewProp_Inventory,
-		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AMainCharacter_Statics::NewProp_Save,
-		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AMainCharacter_Statics::NewProp_Load,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AMainCharacter_Statics::NewProp_PetAction,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AMainCharacter_Statics::NewProp_KickAction,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AMainCharacter_Statics::NewProp_GrabAction,
@@ -679,9 +643,9 @@ void FInventoryUpdated_DelegateWrapper(const FMulticastScriptDelegate& Inventory
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
 	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_PetGameUE_Source_PetGameUE_Public_MainCharacter_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_AMainCharacter, AMainCharacter::StaticClass, TEXT("AMainCharacter"), &Z_Registration_Info_UClass_AMainCharacter, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AMainCharacter), 2531727759U) },
+		{ Z_Construct_UClass_AMainCharacter, AMainCharacter::StaticClass, TEXT("AMainCharacter"), &Z_Registration_Info_UClass_AMainCharacter, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AMainCharacter), 3187640701U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_PetGameUE_Source_PetGameUE_Public_MainCharacter_h_1791165333(TEXT("/Script/PetGameUE"),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_PetGameUE_Source_PetGameUE_Public_MainCharacter_h_1159206388(TEXT("/Script/PetGameUE"),
 		Z_CompiledInDeferFile_FID_PetGameUE_Source_PetGameUE_Public_MainCharacter_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_PetGameUE_Source_PetGameUE_Public_MainCharacter_h_Statics::ClassInfo),
 		nullptr, 0,
 		nullptr, 0);

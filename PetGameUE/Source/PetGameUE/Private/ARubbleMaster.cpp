@@ -26,7 +26,7 @@ void AARubbleMaster::Break()
 	//spawn all gems
 	for (TSubclassOf<AAGem> Gem : Gems)
 	{
-		int iRandAmount = rand() % 3; //for each gem random int between0-2
+		int iRandAmount = rand() % 2; //for each gem random int between0-1
 
 		for (int i = 0; i < iRandAmount; i++)//spawn loop
 		{
@@ -37,7 +37,17 @@ void AARubbleMaster::Break()
 	}
 	//spawn particles?
 	
-	
+	//spawn egg code 
+	int RandEgg = rand() % 101;
+
+	if (RandEgg < 10)
+	{
+		FActorSpawnParameters SpawnParams;
+
+		AActor* ItemToDrop = GetWorld()->SpawnActor<AAUpdatedEgg>(EggType, DropLocation->GetComponentLocation(), FRotator::ZeroRotator, SpawnParams); //no rotation and worldspace component location
+
+	}
+
 	Destroy();
 }
 

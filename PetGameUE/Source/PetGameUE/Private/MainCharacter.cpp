@@ -69,6 +69,7 @@ void AMainCharacter::BeginPlay()
 		}
 	}
 
+	SaveGame();//stops crashing on load without save but needs to be refactored for continue game
 
 	MainCharacterMesh->bCastDynamicShadow = false; //stops weird floating shadows
 	MainCharacterMesh->CastShadow = false;
@@ -110,12 +111,6 @@ void AMainCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputCompo
 
 		//Looking
 		EnhancedInputComponent->BindAction(InteractAction, ETriggerEvent::Triggered, this, &AMainCharacter::Interact);
-
-		//Save
-		EnhancedInputComponent->BindAction(Save, ETriggerEvent::Triggered, this, &AMainCharacter::SaveGame);
-
-		//Load
-		EnhancedInputComponent->BindAction(Load, ETriggerEvent::Triggered, this, &AMainCharacter::LoadGame);
 
 		//Pet
 		EnhancedInputComponent->BindAction(PetAction, ETriggerEvent::Completed, this, &AMainCharacter::Pet);//should fire on release
