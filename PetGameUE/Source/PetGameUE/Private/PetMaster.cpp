@@ -48,12 +48,10 @@ APetMaster::APetMaster()
 	GroomJoyful = CreateDefaultSubobject<UGroomComponent>(TEXT("JoyfulHair"));
 	GroomSerious = CreateDefaultSubobject<UGroomComponent>(TEXT("SeriousHair"));
 
-	GroomBashful->AttachToComponent(PetMeshElder,FAttachmentTransformRules::SnapToTargetIncludingScale);
-	GroomCalm->AttachToComponent(PetMeshElder, FAttachmentTransformRules::SnapToTargetIncludingScale);
-	GroomJoyful->AttachToComponent(PetMeshElder, FAttachmentTransformRules::SnapToTargetIncludingScale);
-	GroomSerious->AttachToComponent(PetMeshElder, FAttachmentTransformRules::SnapToTargetIncludingScale);
-
-	
+	GroomBashful->SetupAttachment(PetMeshElder);
+	GroomCalm->SetupAttachment(PetMeshElder);
+	GroomJoyful->SetupAttachment(PetMeshElder);
+	GroomSerious->SetupAttachment(PetMeshElder);
 
 
 	CapsuleComp->OnComponentHit.AddDynamic(this, &APetMaster::OnCapsuleHit);//bind hit to this

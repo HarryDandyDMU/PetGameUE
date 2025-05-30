@@ -30,5 +30,12 @@
 			"Name": "HairStrands",
 			"Enabled": true
 		}
+	],
+	"TargetPlatforms": [
+		"IOS",
+		"LinuxArm64",
+		"Mac",
+		"Windows",
+		"Linux"
 	]
 }

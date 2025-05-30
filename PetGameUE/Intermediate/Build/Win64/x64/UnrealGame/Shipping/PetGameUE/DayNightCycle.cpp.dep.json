@@ -1,0 +1,21 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "z:\\year three\\module4\\unreal\\petgameue\\petgameue\\source\\petgameue\\private\\daynightcycle.cpp",
+        "ProvidedModule": "",
+        "PCH": "z:\\year three\\module4\\unreal\\petgameue\\petgameue\\intermediate\\build\\win64\\x64\\petgameue\\shipping\\engine\\sharedpch.engine.cpp20.h.pch",
+        "Includes": [
+            "z:\\year three\\module4\\unreal\\petgameue\\petgameue\\intermediate\\build\\win64\\x64\\unrealgame\\shipping\\petgameue\\definitions.petgameue.h",
+            "z:\\year three\\module4\\unreal\\petgameue\\petgameue\\source\\petgameue\\public\\daynightcycle.h",
+            "e:\\epic\\ue_5.3\\engine\\source\\runtime\\engine\\classes\\curves\\curvevector.h",
+            "e:\\epic\\ue_5.3\\engine\\intermediate\\build\\win64\\unrealgame\\inc\\engine\\uht\\curvevector.generated.h",
+            "e:\\epic\\ue_5.3\\engine\\source\\runtime\\engine\\classes\\engine\\directionallight.h",
+            "e:\\epic\\ue_5.3\\engine\\source\\runtime\\engine\\classes\\engine\\light.h",
+            "e:\\epic\\ue_5.3\\engine\\intermediate\\build\\win64\\unrealgame\\inc\\engine\\uht\\light.generated.h",
+            "e:\\epic\\ue_5.3\\engine\\intermediate\\build\\win64\\unrealgame\\inc\\engine\\uht\\directionallight.generated.h",
+            "z:\\year three\\module4\\unreal\\petgameue\\petgameue\\intermediate\\build\\win64\\unrealgame\\inc\\petgameue\\uht\\daynightcycle.generated.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}
